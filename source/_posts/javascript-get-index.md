@@ -7,6 +7,8 @@ tags: [javascript]
 
 제이쿼리의 `index()`를 자바스크립트만으로 구현할 수 있다.
 
+<!-- more -->
+
 # HTML
 ```html
 <ul id="ul">

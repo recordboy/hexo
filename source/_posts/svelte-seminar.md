@@ -14,6 +14,8 @@ W3C HTML5 Conference 2019에서 변규현 강사님의 내용을 간략하게 �
 * [듀토리얼](https://svelte.dev/tutorial/basics)
 * [예제](https://svelte.dev/examples#hello-world)
 
+<!-- more -->
+
 ## 스벨트란?
 
 * 코드가 간결하다. 리액트와 뷰와 스벨트를 비교했을 때 코드의 양이 차이가 많이난다.

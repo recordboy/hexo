@@ -7,6 +7,8 @@ tags: [github]
 
 깃허브 호스팅 페이지가 404에러가 뜰 경우 아래 명령어를 실행하자, 설명은 아래 레퍼런스 참조
 
+<!-- more -->
+
 ```
 $ git commit --allow-empty -m 'Trigger rebuild'
 $ git push origin

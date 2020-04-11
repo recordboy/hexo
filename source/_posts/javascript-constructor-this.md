@@ -7,6 +7,8 @@ tags: [javascript]
 
 객체를 생성하는 방법은 크게 객체 리터널 방식과 생성자 함수 방식, Object() 생성자 함수 방식이 있다. 
 
+<!-- more -->
+
 ```javascript
 var obj = {};
 var obj = new Func();

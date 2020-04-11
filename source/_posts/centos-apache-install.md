@@ -5,11 +5,15 @@ categories: "centos"
 tags: [linux, centos]
 ---
 
+<!-- more -->
+
 1. yum을 이용하여 apache를 설치한다.
 
 ```
 # yum -y install httpd
 ```
+
+<!-- more -->
 
 2. apache 버전을 확인하여 설치가 제대로 되었는지 확인해 본다.  
 

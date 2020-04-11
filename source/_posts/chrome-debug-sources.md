@@ -7,6 +7,8 @@ tags: [chrome, debug]
 
 크롬 개발자 도구의 `Sources`패널로 디버깅을 할 수 있다.
 
+<!-- more -->
+
 ## 예제
 
 ```javascript

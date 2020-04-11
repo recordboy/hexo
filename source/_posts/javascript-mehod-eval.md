@@ -9,6 +9,8 @@ tags: [javascript]
 * eval()은 전역 객체(window)의 함수 속성이다.
 * eval()의 인자는 문자열이며 문자열 형태를 연산할 수 있다.
 
+<!-- more -->
+
 ```javascript
 console.log('2 + 2');
 // 2 + 2

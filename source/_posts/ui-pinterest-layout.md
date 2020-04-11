@@ -7,6 +7,8 @@ tags: [ui, vanillaJs]
 
 핀터레스트 레이아웃 사용시 자바스크립트만으로 구현이 가능하다. Masonry 플러그인을 활용하면 좀더 다양한 인터렉션을 활용할 수 있지만 성능 및 블록 틀어짐 이슈 때문에 자바스크립트만 활용하였다.
 
+<!-- more -->
+
 ## [예제 확인](https://recordboy.github.io/ui/pinterest-layout)
 
 ## 장점

@@ -10,6 +10,8 @@ tags: [javascript]
 Data 객체는 날짜와 시간을 제공하는 생성자 함수이다. 
 인자 없이 객체를 선언하면 현재 날짜와 시간을 반환한다.
 
+<!-- more -->
+
 ```javascript
 var value = new Date();
 console.log(value);

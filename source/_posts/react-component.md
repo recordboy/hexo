@@ -7,6 +7,8 @@ tags: [react]
 
 리액트는 제이쿼리처럼 단순히 `<script src="..."><script>`의 형태로 사용했던 것처럼 사용하지 않는다. 이렇게 하려면 가능은 하지만 굉장히 제한적이다. 리액트를 제대로 작업하려면 로컬에 Node, Npm, Webpack, Babel 등의 도구를 설치하여 프로젝트를 설정해주어야 한다. 리액트 프로젝트를 바닥부터 설정하는 것은 꽤나 복잡하지만, 페이스북에서 제공해주는 [create-react-app](https://github.com/facebook/create-react-app)도구 를 통하여 간단히 리액트 프로젝트를 준비할 수 있다.
 
+<!-- more -->
+
 ## 프로젝트 시작하기
 
 ### 설치 환경

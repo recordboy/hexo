@@ -7,6 +7,8 @@ tags: [ui, vanillaJs]
 
 vanilla JS로 제작된 기본 탭 메뉴
 
+<!-- more -->
+
 ## 구현
 
 <script>

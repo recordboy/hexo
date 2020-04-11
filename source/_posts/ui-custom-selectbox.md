@@ -12,6 +12,8 @@ tags: [ui, jQuery]
 * 항목이 많아질 경우 커스텀된 스크롤바가 생긴다(크롬에서만 적용).
 * 생성자 함수방식 및 프로토타입에 메서드를 추가하여 재사용 및 메모리 관리에 용이하다.
 
+<!-- more -->
+
 ## 구현
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

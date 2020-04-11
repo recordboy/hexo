@@ -12,6 +12,8 @@ var num = 3.5;
 console.log(Math.round(num)); // 4
 ```
 
+<!-- more -->
+
 올림  
 `Math.ceil();`
 ```javascript

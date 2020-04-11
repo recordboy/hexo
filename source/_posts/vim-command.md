@@ -5,6 +5,10 @@ categories: "linux"
 tags: [linux, vim, command]
 ---
 
+VIM 명령어 정리
+
+<!-- more -->
+
 ## 1. vi 실행
 
 | 명령어 | 동작 |

@@ -8,6 +8,8 @@ tags: [linux, centos, nginx, youngcart5]
 ## 초기 설치 환경
 * CentOS 7
 
+<!-- more -->
+
 ## 사용자 설정
 
 로그인

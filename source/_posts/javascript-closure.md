@@ -7,6 +7,8 @@ tags: [javascript]
 
 중첩함수에서 내부함수가 외부함수의 환경을 기억하는것을 클로저라고 한다.
 
+<!-- more -->
+
 ```javascript
 function func() {
     var foo = 'data'

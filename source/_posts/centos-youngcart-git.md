@@ -16,6 +16,8 @@ tags: [linux, centos, git, youngcart5]
 로컬
 * Homestead
 
+<!-- more -->
+
 ## Git 설치
 
 원격 저장소 만들고 ssh 접속하여 `root`권한으로 변경

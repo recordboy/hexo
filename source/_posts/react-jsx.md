@@ -7,6 +7,8 @@ tags: [react]
 
 JSX란 자바스크립트를 학장한 문법이다. 얼핏보면 HTML과 비슷하여 템플릿 언어가 떠오를 수도 있지만, 자바스크립트의 모든 기능이 포함되어 있다. JSX를 제대로 사용하기 위해서 몇가지 규칙을 준수해줘야 한다. 이전 포스팅 [[React] React 시작하기](https://recordboy.github.io/react-component/)에 나온 `App.js`파일에 예제를 작성하여 진행하겠다. 기존의 코드는 지우고 클래스 방식으로 컴포넌트를 만들어준 뒤 아래 예제들을 살펴보겠다.
 
+<!-- more -->
+
 ```javascript
 import React, { Component } from 'react';
 

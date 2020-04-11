@@ -5,6 +5,7 @@ categories: "centos"
 tags: [linux, centos]
 ---
 
+
 ## 설치환경
 
 * CentOS 7.2
@@ -16,6 +17,8 @@ tags: [linux, centos]
 
 > **Extra Packages for Enterprise Linux (EPEL) repository**  
 > EPEL (Extra Packages for Enterprise Linux) 은 Fedora Project 에서 제공되는 저장소로 각종 패키지의 최신 버전을 제공하는 community 기반의 저장소이다.
+
+<!-- more -->
 
 ## wget 설치
 인터넷에 있는 PHP압축파일을 설치하기 위해선 wget을 설치해야 한다. wget은 인터넷 파일을 다운받는 명령어로서 리눅스 최소 설치 시에는 wget을 따로 설치해야 한다. 아래 Yum 명령어를 이용하여 설치해 준다.

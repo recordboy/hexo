@@ -8,6 +8,8 @@ tags: [algorithm, javascript]
 0부터 100까지 특정 배수를 구하는법이다.  
 반복문과 조건문, 나머지 연산자가 사용된다.
 
+<!-- more -->
+
 ```javascript
 for(var i = 0;i <= 100;i++){
     console.log(i);

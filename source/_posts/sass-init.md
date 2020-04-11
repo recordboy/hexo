@@ -7,6 +7,8 @@ tags: [sass]
 
 CSS전처리기(CSS pre-processor)라 불리는 SASS(Syntactically Awesome StyleSheet)는 CSS의 단점을 보완한 CSS의 확장형이다. 전처리기란 자신만의 특별한 구문을 가지고 CSS를 생성하도록 하는 프로그램이다.
 
+<!-- more -->
+
 ## CSS 전처리기 종류
 * [SASS](https://sass-lang.com/)  
 * [LESS](http://lesscss.org/)  

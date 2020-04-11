@@ -15,6 +15,8 @@ tags: [nginx, linux]
 # systemctl enable nginx
 ```
 
+<!-- more -->
+
 ## PHP 설치
 
 ```

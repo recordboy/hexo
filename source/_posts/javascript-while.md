@@ -7,6 +7,8 @@ tags: [javascript]
 
 `while`문은 조건을 검사하여 `true`일경우 계속 구문을 실행시키는 반복문이다.
 
+<!-- more -->
+
 ```javascript
 while (조건) {
     구문

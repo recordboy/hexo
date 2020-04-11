@@ -7,6 +7,8 @@ tags: [javascript, es5]
 
 `Array.every`메서드는 `Array.some`와 비슷하지만 모든 요소가 조건을 만족해야 `true`를 반환한다.
 
+<!-- more -->
+
 ## Parameter
 
 1. 현재 배열 요소의 값

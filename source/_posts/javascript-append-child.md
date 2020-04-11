@@ -10,6 +10,8 @@ tags: [javascript]
 var input = document.createElement('input');
 ```
 
+<!-- more -->
+
 생성된 노드 속성 추가
 ```javascript
 input.setAttribute('type', 'text');

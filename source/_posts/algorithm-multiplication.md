@@ -9,6 +9,8 @@ tags: [algorithm, javascript]
 얼마전에 코딩 테스트를 봤었는데 해당 문제가 나와 이참에 적어본다. 
 우선 반복문으로 2단의 값을 출력해 보자
 
+<!-- more -->
+
 ```javascript
 for(var i = 1;i <= 9;i++){
     console.log(2 * i);
