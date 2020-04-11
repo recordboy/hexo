@@ -1,0 +1,52 @@
+---
+title: "자바스크립트 인덱스 구하기"
+date: 2018-01-15 21:28:59
+categories: "javascript"
+tags: [javascript]
+---
+
+제이쿼리의 `index()`를 자바스크립트만으로 구현할 수 있다.
+
+# HTML
+```html
+<ul id="ul">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+```
+
+# javascript
+```javascript
+var ul = document.getElementById('ul'),
+    li = ul.getElementsByTagName('li');
+for (var i = 0; i < li.length; i++) {
+    (function (idx) {
+        li[idx].onclick = function () {
+            alert(idx);
+        }
+    })(i);
+};
+```
+
+# 결과
+리스트를 클릭하면 인덱스를 구할 수 있다.
+
+<ul id="ul">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+var ul = document.getElementById('ul'),
+    li = ul.getElementsByTagName('li');
+for (var i = 0; i < li.length; i++) {
+    (function (idx) {
+        li[idx].onclick = function () {
+            alert(idx);
+        }
+    })(i);
+};
+</script>
