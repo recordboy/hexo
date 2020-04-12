@@ -4,7 +4,6 @@ date: 2019-07-01 08:52:44
 categories: "vue.js"
 tags: [vue.js, cli, command]
 thumbnail: "/gallery/thumbnail-vue.png"
-thumbnail: "/gallery/thumbnail-vue.png"
 ---
 
 * 최소 뷰 기능만 들어간 HTML 파일 1개 생성  
