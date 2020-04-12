@@ -59,7 +59,7 @@ function greetinf() {
 ## 디버깅
 크롬 개발자 도구의 소스탭을 들어가면 아래 처럼 확인할 수 있다.
 
-![소스탭](/image/chrome-debug-sources-01.png)
+![소스탭](/gallery/post/chrome-debug-sources-01.png)
 
 개발자 도구는 특정 라인이 아닌 글로벌한 이벤트에 대해 중단점을 만들 수 있다. 좌측 하단의 `Event Listener Breakpoints`탭으로 들어가  `Mouse > click`를 체크해준다. 화면으로 넘어가 버튼을 클릭하면 이벤트가 실행되면서 이벤트가 실행된 코드를 소스탭에서 확인할 수 있다.
 
