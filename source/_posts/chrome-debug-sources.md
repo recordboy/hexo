@@ -3,6 +3,7 @@ title: "크롬으로 디버깅하기"
 date: 2020-01-29 10:58:03
 categories: "chrome"
 tags: [chrome, debug]
+thumbnail: "/gallery/thumbnail-chrome.png"
 ---
 
 크롬 개발자 도구의 `Sources`패널로 디버깅을 할 수 있다.

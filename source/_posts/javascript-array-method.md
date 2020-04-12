@@ -3,6 +3,7 @@ title: "배열 메소드"
 date: 2018-05-15 21:49:54
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 자바스크립트에서 자주 쓰이는 배열 메소드 정리, 추후 계속 업데이트 예정

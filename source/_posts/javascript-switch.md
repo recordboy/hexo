@@ -3,6 +3,7 @@ title: "switch 조건문"
 date: 2018-01-01 21:14:49
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `switch`키워드 오른쪽 `()`안의 값과 `case`키워드 오른쪽의 값을 비교하여 `true`일시 콜론 오른쪽 구문을 실행하게 된다.

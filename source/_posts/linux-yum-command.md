@@ -3,6 +3,7 @@ title: "Yum 명령어"
 date: 2019-10-23 09:46:00
 categories: "linux"
 tags: [linux]
+thumbnail: "/gallery/thumbnail-linux.png"
 ---
 
 패키지 설치  

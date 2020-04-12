@@ -3,6 +3,7 @@ title: "ES5(ECMAScript 5)"
 date: 2020-02-13 15:12:44
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 ECMAScript(ES)는 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 표준화된 스크립트 프로그래밍 언어이다. 자바스크립트를 표준화하기 위해 만들어졌고 지금도 자바스크립트가 제일 잘 알려져 있지만, 액션스크립트와 J스크립트 등 다른 구현체도 포함하고 있다. ECMA스크립트는 웹의 클라이언트 사이드 스크립트로 많이 사용되며 Node.js를 사용한 서버 응용 프로그램 및 서비스에도 점차 많이 쓰이고 있다. 

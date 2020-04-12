@@ -3,6 +3,7 @@ title: "함수 메소드(call, apply, bind)"
 date: 2018-11-08 08:11:18
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 함수의 기본 메소드중 call, apply, bind 에 대해 알아보자

@@ -3,6 +3,7 @@ title: "자바스크립트 반올림, 올림, 내림"
 date: 2017-11-01 18:34:26
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 반올림  

@@ -3,6 +3,7 @@ title: "디바이스 구분 스크립트"
 date: 2019-11-18 10:10:16
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 어떤 디바이스로 접속했는지 확인 가능한 코드

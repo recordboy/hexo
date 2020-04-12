@@ -3,6 +3,7 @@ title: "배수 구하기"
 date: 2017-12-14 21:03:09
 categories: "algorithm"
 tags: [algorithm, javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 0부터 100까지 특정 배수를 구하는법이다.  

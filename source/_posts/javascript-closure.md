@@ -3,6 +3,7 @@ title: "자바스크립트 클로저"
 date: 2020-02-01 11:41:10
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 중첩함수에서 내부함수가 외부함수의 환경을 기억하는것을 클로저라고 한다.

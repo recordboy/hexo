@@ -3,6 +3,7 @@ title: "ES5 Array.some"
 date: 2020-02-19 18:55:20
 categories: "javascript"
 tags: [javascript, es5]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `Array.some`메서드는 배열의 각 요소를 순회하며 콜백 함수를 실행하며 하나의 요소라도 조건을 만족할 때 `true`를 반환하며, 만족하지 않을 때 `false`를 반환한다. 특정 조건을 만족하는지 알고 싶을 때 적합한 메서드다.

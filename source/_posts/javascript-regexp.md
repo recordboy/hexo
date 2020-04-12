@@ -3,6 +3,7 @@ title: "정규표현식"
 date: 2018-03-02 21:41:31
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 정규표현식은 문자열에 포함된 문자 조합을 찾기 위해 사용되거나 그 문자열을 다른 문자열로 치환해 주는 패턴이다. 예를 들면 회원가입 화면에서 사용자로 부터 입력받는 전화번호가 유효한지 체크할 필요가 있을 때 정규표현식을 사용하면 간단하게 처리할 수 있다.

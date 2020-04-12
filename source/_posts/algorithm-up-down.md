@@ -3,6 +3,7 @@ title: "증가 감소"
 date: 2017-12-15 21:04:48
 categories: "algorithm"
 tags: [algorithm, javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 슬라이드 배너 코드를 작성할 때 이전 슬라이드, 다음 슬라이드 인덱스 값이 필요할 경우 쓰이는 방법이다. 슬라이드 갯수와 다음, 이전 인덱스 값을 초기 설정해준다.

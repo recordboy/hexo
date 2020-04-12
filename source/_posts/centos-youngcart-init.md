@@ -3,6 +3,7 @@ title: "CentOS7 영카트 설치 및 초기 세팅"
 date: 2019-12-10 10:33:20
 categories: "centos"
 tags: [linux, centos, nginx, youngcart5]
+thumbnail: "/gallery/thumbnail-centos.png"
 ---
 
 ## 초기 설치 환경

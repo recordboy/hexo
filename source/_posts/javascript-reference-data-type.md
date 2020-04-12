@@ -3,6 +3,7 @@ title: "자료형(참조 타입)"
 date: 2017-05-05 18:27:57
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 이전 포스팅에서도 언급했지만 참조타입으로는 객체(Object), 배열(Array), 함수(Function)가 있다. 원시타입과 참조타입을 비교하는것에 초점을 두어 간단히 알아본다.

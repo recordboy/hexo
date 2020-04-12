@@ -3,6 +3,7 @@ title: "ES6(ECMASrcipt 6) Class"
 date: 2020-03-04 19:53:03
 categories: "javascript"
 tags: [javascript, es6]
+thumbnail: "/gallery/thumbnail-es6.png"
 ---
 
 ES6에서 `class`라는 문법이 추가되었고, 기존의 prototype 기반으로 클래스를 선언하는 것보다 명료하게 클래스를 선언할 수 있게 되었다. 

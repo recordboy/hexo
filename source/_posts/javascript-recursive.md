@@ -3,6 +3,7 @@ title: "재귀 함수(Recursive Function)"
 date: 2017-12-16 21:13:28
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 재귀(Recursive)를 정의한다면 한 함수가 자기 자신을 호출하는 순간이다. 재귀함수를 이해하기 전에는 `팩토리얼` 이라는 개념이 필요하다. `팩토리얼`이란 자기 자신의 수에 1 작은 수를 곱하고 또 1 작은 수를 곱하고 해서 1 작은 수가 1이 될때까지 곱하는 것이다. 팩토리얼의 기호는 `!`이며 아래의 예제는 `5!`의 팩토리얼을 나타내고 있다.

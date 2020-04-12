@@ -3,6 +3,7 @@ title: "var, let, const 차이"
 date: 2019-06-05 08:12:48
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `var`는 변수를 선언하는 키워드이며, ES6부터 `let`과 `const`가 추가되었다.

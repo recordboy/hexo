@@ -3,6 +3,7 @@ title: "자바스크립트 This"
 date: 2018-11-01 22:03:02
 categories: "javascript"
 tags: [javascript]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 this는 함수가 호출되면 함수 내부로 암묵적으로 전달된다. this는 메서드를 호출한 객체가 저장되어 있는 속성이다. 메서드 뿐만 아니라 일반 함수를 호출할때도 만들어 지며, 이벤트 리스너가 호출될 때에도 만들어진다. 문제는 this 속성에 저장되는 값이 동일한 값이 아니라 각각 다른점이다.

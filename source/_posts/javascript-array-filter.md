@@ -3,6 +3,7 @@ title: "ES5 Array.filter"
 date: 2020-02-18 18:53:36
 categories: "javascript"
 tags: [javascript, es5]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `Array.filter`메서드는 배열의 각 요소를 순회하며 콜백 함수를 실행하며 특정 조건에 맞는 요소만 모아 배열로 리턴한다. 특정 케이스만 필터링해서 추출할 때 유용하다. 

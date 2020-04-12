@@ -3,6 +3,7 @@ title: "React Props, State"
 date: 2020-03-08 19:59:22
 categories: "react"
 tags: [react]
+thumbnail: "/gallery/thumbnail-react.png"
 ---
 
 리액트에서 다루는 데이터는 두개로 나뉜다. 바로 props와 state인데, 요약하여 설명하자면 props는 부모 컴포넌트가 자식 컴포넌트에게 주는 값이다. 자식 컴포넌트에서는 props를 받아오기만 하고, 받아온 props를 직접 수정할 수는 없다. 자식 입장에서 읽기 전용인 데이터이다. 반면에 state는 컴포넌트 내부에서 선언하며, 내부에서 값을 변경할 수 있다. 자신이 들고있는 값이며 props와 비교한다면, 쓰기 전용이라고 볼 수 있다. 
