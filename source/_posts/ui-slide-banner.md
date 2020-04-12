@@ -3,6 +3,7 @@ title: "슬라이드 배너(slide banner)"
 date: 2019-04-10 08:24:06
 categories: "ui"
 tags: [ui, vanillaJs]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 vanilla JS로 만들어본 기본 슬라이드 배너

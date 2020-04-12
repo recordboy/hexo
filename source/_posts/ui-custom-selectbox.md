@@ -3,6 +3,7 @@ title: "커스텀 셀렉트박스(custom selectbox)"
 date: 2019-10-02 09:17:59
 categories: "ui"
 tags: [ui, jQuery]
+thumbnail: "/gallery/thumbnail-jquery.png"
 ---
 
 이번 프로모션에 커스텀이 필요한 셀렉트박스가 필요하여 제작하였다.

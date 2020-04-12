@@ -3,6 +3,7 @@ title: "스벨트 요약"
 date: 2019-10-20 09:37:50
 categories: "svelte.js"
 tags: [svelte.js]
+thumbnail: "/gallery/thumbnail-svelte.png"
 ---
 
 ## REACT/VUE 에서 이젠 SVELTE

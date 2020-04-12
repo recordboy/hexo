@@ -3,6 +3,7 @@ title: "탭메뉴(tab menu)"
 date: 2019-04-08 08:36:59
 categories: "ui"
 tags: [ui, vanillaJs]
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 vanilla JS로 제작된 기본 탭 메뉴

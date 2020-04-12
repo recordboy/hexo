@@ -3,6 +3,7 @@ title: "Vue Cli 2.x를 이용한 Github페이지 만들기"
 date: 2019-11-02 09:58:43
 categories: "vue.js"
 tags: [vue.js]
+thumbnail: "/gallery/thumbnail-vue.png"
 ---
 
 Vue Cli 2.x 버전을 이용하여 프로젝트를 생성하고 깃허브 페이지에 적용하는 방법을 알아보도록 한다.

@@ -3,6 +3,7 @@ title: "웹 크롤링(Web Crawling)"
 date: 2019-08-20 08:54:33
 categories: "web"
 tags: [web crawling, node.js]
+thumbnail: "/gallery/thumbnail-web.png"
 ---
 
 특정 데이터가 필요한 경우 Node.js를 이용하여 웹 크롤링을 하면 쉽게 데이터를 추출할 수 있다.
