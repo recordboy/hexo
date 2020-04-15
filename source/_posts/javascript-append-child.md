@@ -4,7 +4,6 @@ date: 2017-12-12 20:44:40
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
-toc: true
 ---
 
 노드 생성
@@ -29,7 +28,6 @@ var txt = document.createTextNode('hello');
 부모노드.appendChild(input);
 ```
 
-# 테이블 생성 예제
 위 노드 추가 방법으로 테이블 추가 예제를 만들어 보자, 버튼을 계속 클릭하면 테이블이 추가된다.
 
 ```html
@@ -102,7 +100,9 @@ window.onload = function () {
 
 }
 ```
-## 구현
+
+아래 버튼을 클릭하여 결과를 확인할 수 있다.
+
 <style>
 .wrap {
     position: relative;

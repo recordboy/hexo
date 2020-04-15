@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그 SEO 세팅"
+title: "깃허브 블로그(Jekyll) SEO 세팅"
 date: 2019-12-01 10:15:25
 categories: "github"
 tags: [github, seo]
@@ -19,10 +19,43 @@ toc: true
 * 검색엔진에 크롤링해야하는 URL을 알려줌으로써 색인을 생성하는 방법과 색인을 생성하는 방법을 제어한다.
 
 ### Sitemap.xml 생성하기
-1. 원활한 작업을 위해 /root 디렉토리를 생성해 준다.
-2. <a href="/file/post/sitemap.zip" download="sitemap.zip">sitemap.zip</a> 파일을 다운받아 압축 풀고 /root 디렉토리에 넣어준다.
+1. 루트 경로에 root 디렉토리를 생성해 준다.
+2. 아래 내용으로 sitemap.xml 파일을 만들고 root 디렉토리에 넣어준다.
+
+```
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
+</urlset>
+```
+
 3. 해당 파일을 커밋, 푸쉬 한다.
-4. 블로그 주소/sitemap.xml 에 들어가여 제대로 사이트맵이 등록되었는지 확인해 보자
+4. 블로그 주소/sitemap.xml 에 들어가서 제대로 사이트맵이 등록되었는지 확인해 보자
 5. 홈페이지의 모든글의 정보를 담고있는 사이트맵이 출력되는 것을 알 수 있다. 추후에 블로그 포스팅을 푸쉬 하면 jekyll이 빌드하면서 사이트맵도 자동으로 갱신된다.
 6. 사이트 맵에서 특정글의 정보를 변경하고 싶으면 아래와 같이 특정 글의 설정 값을 변경해 주면 된다. changefreq를 너무 짧게 하면 빈번한 접속으로 안좋은 영향을 미칠수 있다고 한다. 설정이 없을때 default 값은 사이트맵에 정의되어 있다.
 
@@ -43,13 +76,45 @@ sitemap :
 * RSS피드는 정기적으로 업데이트 되는 웹 콘텐츠를 전달해 주는 형태이며, 글의 전체 혹은 요약된 정보와 작성자 등의 정보가 포함되어 있다. 즉 블로그의 글을 작성하면 RSS피드에도 전달이 되고, 구글, 네이버, 다음 등을 통해 글을 검색하면, 검색 엔진은 블로그의 RSS피드로부터 글을 받게 되어 해당 블로그로 들어오게 된다.
 
 ### RSS feed.xml 생성하기
-1. 사이트맵과 동일하게 <a href="/file/post/feed.zip" download="feed.zip">feed.zip</a>을 다운받아 압축 풀어준 뒤 /root 디렉토리에 넣어준다.
+1. 사이트맵과 동일하게 아래 코드를 넣어준 뒤 feed.xml 파일을 만들고 root 디렉토리에 넣어준다.
+
+```
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:30 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
+```
+
 2. 해당 파일을 커밋, 푸쉬 하고 블로그 주소/feed.xml 에 제대로 등록되었는지 확인해 보자.
 
 ## robots.txt
-robots.txt는 로봇 배제 표준을 따르는 일반 텍스트 파일이다. 쉽게 표현하면 검색 엔진이 해당 사이트의 콘텐츠를 가져가도 허락하는 부분과 가져가면 안된다 라는 설정을 하는 부분이라고 보면 된다.
-
-위와 동일하게 /root 디렉토리에 위치한다.
+robots.txt는 로봇 배제 표준을 따르는 일반 텍스트 파일이다. 쉽게 표현하면 검색 엔진이 해당 사이트의 콘텐츠를 가져가도 허락하는 부분과 가져가면 안된다 라는 설정을 하는 부분이라고 보면 된다. 위와 동일하게 root 디렉토리에 위치한다.
 
 ### robots.txt 생성
 1. robots.txt 파일을 만들고 아래와 같이 입력한다.

@@ -29,7 +29,7 @@ function func() {
 }
 ```
 
-## var
+### var
 기존의 `var`는 위 세개중 함수에서만 스코프를 가진다.
 
 ```javascript
@@ -61,7 +61,7 @@ console.log(a);
 // 2
 ```
 
-## let, const
+### let, const
 ES6부터 추가된 `let`, `const`는 조건문과 반복문에도 스코프를 가진다.
 
 ```javascript

@@ -1,8 +1,8 @@
 ---
 title: "입력 서식 관련 접근성(Information Accessibility Technology Conference)"
 date: 2019-12-04 10:24:31
-categories: "web"
-tags: [web]
+categories: "html"
+tags: [html]
 thumbnail: "/gallery/thumbnail-html.png"
 toc: true
 ---
