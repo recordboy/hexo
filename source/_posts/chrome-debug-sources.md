@@ -25,7 +25,7 @@ function world() {
 function greetinf() {
     var h = hello();
     var w = world();
-    document.getElementById('msg').setAttribute('value', h + w);
+    document.getElementById('msg').setAttribute('value', h + w)
 }
 ```
 
@@ -49,7 +49,7 @@ function world() {
 function greetinf() {
     var h = hello();
     var w = world();
-    document.getElementById('msg').setAttribute('value', h + w);
+    document.getElementById('msg').setAttribute('value', h + w)
 }
 </script>
 <div>

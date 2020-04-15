@@ -36,19 +36,19 @@ function func() {
 if (true) {
     var a = 1;
 }
-console.log(a);
+console.log(a)
 // 1
 
 for (var i = 0; i < 1; i++) {
     var b = 2;
 }
-console.log(b);
+console.log(b)
 // 2
 
 function func() {
     var c = 3;
 }
-console.log(c);
+console.log(c)
 // Uncaught ReferenceError: foo is not defined at window.onload
 ```
 
@@ -57,7 +57,7 @@ console.log(c);
 ```javascript
 var a = 1;
     a = 2;
-console.log(a);
+console.log(a)
 // 2
 ```
 
@@ -68,33 +68,33 @@ ES6부터 추가된 `let`, `const`는 조건문과 반복문에도 스코프를 
 if (true) {
     let a = 1;
     const b = 2;
-    console.log(a); // 1
-    console.log(B); // 2
+    console.log(a) // 1
+    console.log(B) // 2
 }
-console.log(a);
+console.log(a)
 // Uncaught ReferenceError: a is not defined at window.onload
-console.log(b);
+console.log(b)
 // Uncaught ReferenceError: a is not defined at window.onload
 
 for (var i = 0; i < 1; i++) {
     let c = 3;
     const d = 4;
-    console.log(c); // 3
-    console.log(d); // 4
+    console.log(c) // 3
+    console.log(d) // 4
 }
-console.log(c); // Uncaught ReferenceError: a is not defined at window.onload
-console.log(d); // Uncaught ReferenceError: a is not defined at window.onload
+console.log(c) // Uncaught ReferenceError: a is not defined at window.onload
+console.log(d) // Uncaught ReferenceError: a is not defined at window.onload
 
 function func() {
     let e = 5;
     const f = 6;
-    console.log(e); // 5
-    console.log(f); // 6
+    console.log(e) // 5
+    console.log(f) // 6
 }
-func();
-console.log(e);
+func()
+console.log(e)
 // Uncaught ReferenceError: foo is not defined at window.onload
-console.log(f);
+console.log(f)
 // Uncaught ReferenceError: foo is not defined at window.onload
 ```
 
@@ -102,12 +102,12 @@ console.log(f);
 
 ```javascript
 let a;
-    a = 1;
-console.log(a);
+a = 1;
+console.log(a)
 // 1
 
 const b;
-    b = 2;
+b = 2;
 // Uncaught TypeError: Assignment to constant variable.
 ```
 

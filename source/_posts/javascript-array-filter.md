@@ -26,7 +26,7 @@ var val = arr.filter(function (item, index, array) {
     return item < 7;
 });
 
-console.log(val);
+console.log(val)
 // [1, 3, 5, 6]
 ```
 

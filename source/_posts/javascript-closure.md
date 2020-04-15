@@ -7,13 +7,15 @@ thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 
+## 정의
+
 중첩함수에서 내부함수가 외부함수의 환경을 기억하는것을 클로저라고 한다.
 
 <!-- more -->
 
 ```javascript
 function func() {
-    var foo = 'data'
+    var foo = 'data';
     return function () {
         return foo;
     }
@@ -24,7 +26,7 @@ func라는 함수를 선언하고 foo변수에 'data'문자열을 추가한 뒤 
 
 ```javascript
 var closure = func();
-console.log(closure());
+console.log(closure())
 // 'data'
 ```
 
@@ -40,9 +42,9 @@ function count() {
 }
 
 var closure = count();
-console.log(closure());
-console.log(closure());
-console.log(closure());
+console.log(closure())
+console.log(closure())
+console.log(closure())
 // 1
 // 2
 // 3
@@ -50,7 +52,9 @@ console.log(closure());
 
 count함수의 지역변수인 num값이 소멸되지 않고 계속 카운트되는 것을 확인해 볼 수 있다.
 
-## 은닉화
+## 특징
+
+### 변수의 은닉화
 
 자바스크립트에서는 인스턴스를 생성할때 Private Variables에 대한 접근 권한 문제가 있다.
 
@@ -68,7 +72,7 @@ console.log(obj._name);
 
 ```javascript
 obj._name = '인성';
-console.log(obj._name);
+console.log(obj._name)
 // 인성
 ```
 
@@ -78,7 +82,7 @@ console.log(obj._name);
 function create(name) {
     var _name = name;
     return function () {
-        console.log(_name);
+        console.log(_name)
     }
 }
 
@@ -89,7 +93,9 @@ hello();
 
 여기서는 외부에서 _name에 접근할 방법이 전혀 없다. 이렇게 클로저를 활용하여 은닉화를 해결할 수 있다.
 
-## 클로저는 고유한 환경을 가지고 있다.
+### 고유한 환경
+
+클로저는 고유한 환경을 가지고 있다.
 
 ```javascript
 function func(name) {
@@ -99,13 +105,13 @@ function func(name) {
     }
 }
 
-var closure01 = func('민수');
-var closure02 = func('인성');
-var closure03 = func('주영');
+var closure01 = func('민수')
+var closure02 = func('인성')
+var closure03 = func('주영')
 
-console.log(closure01()); // 민수
-console.log(closure02()); // 인성
-console.log(closure03()); // 주영
+console.log(closure01()) // 민수
+console.log(closure02()) // 인성
+console.log(closure03()) // 주영
 ```
 
 위의 구문을 보면 txt변수가 동적으로 변화하는 것처럼 보이지만, 실제로는 txt변수 자체가 여러번 생성된 것이다. 즉, closure01(), closure02(), closure03()은 서로 다른 환경을 가지고 있다. 서로 다른 환경을 가지고 있다는것은 그만큼 메모리면에서 큰 비효율을 낳는다.
@@ -122,7 +128,7 @@ function Func(input) {
 }
 
 var obj = new Func('민수');
-console.log(obj.get());
+console.log(obj.get())
 ```
 
 위 코드는 생성자함수를 사용하여 인스턴스를 생성하는 구문인데, 클로저가 두번(get, set)이나 생성되었다. 이 상태에서 인스턴스를 계속 만들면 같은일을 하는 클로저가 중복으로 생성되고 메모리낭비가 심해질 것이다.  
@@ -140,7 +146,7 @@ Func.prototype.set = function (rename) {
 };
 
 var obj = new Func('민수');
-console.log(obj.get());
+console.log(obj.get())
 ```
 
 이렇게 prototype안에 클로저를 넣으면, 인스턴스가 생성되더라도 중복으로 메모리를 낭비하지 않고, 생성자 내부의 prototype안의 클로저를 참조하기 때문에 메모리낭비를 방지할 수 있다.

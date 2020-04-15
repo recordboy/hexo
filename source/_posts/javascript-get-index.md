@@ -1,17 +1,16 @@
 ---
-title: "자바스크립트 인덱스 구하기"
+title: "인덱스 구하기"
 date: 2018-01-15 21:28:59
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
-toc: true
 ---
 
-제이쿼리의 `index()`를 자바스크립트만으로 구현할 수 있다.
+제이쿼리의 `index()`를 바닐라 자바스크립트로 구현하는 방법이다.
 
 <!-- more -->
 
-# HTML
+**HTML**
 ```html
 <ul id="ul">
     <li>0</li>
@@ -21,20 +20,20 @@ toc: true
 </ul>
 ```
 
-# javascript
+**javascript**
 ```javascript
 var ul = document.getElementById('ul'),
     li = ul.getElementsByTagName('li');
 for (var i = 0; i < li.length; i++) {
     (function (idx) {
         li[idx].onclick = function () {
-            alert(idx);
+            alert(idx)
         }
-    })(i);
-};
+    })(i)
+}
 ```
 
-# 결과
+**결과**
 리스트를 클릭하면 인덱스를 구할 수 있다.
 
 <ul id="ul">
@@ -49,8 +48,8 @@ var ul = document.getElementById('ul'),
 for (var i = 0; i < li.length; i++) {
     (function (idx) {
         li[idx].onclick = function () {
-            alert(idx);
+            alert(idx)
         }
-    })(i);
-};
+    })(i)
+}
 </script>

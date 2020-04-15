@@ -6,7 +6,7 @@ tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 
-자바스크립트에서 자주 쓰이는 배열 메소드 정리, 추후 계속 업데이트 예정
+자바스크립트에서 자주 쓰이는 배열 메소드 정리
 
 <!-- more -->
 
@@ -20,10 +20,10 @@ var arr3 = [7, 8, 9];
 
 var wrap = arr1.concat(arr2, arr2, arr3);
 
-console.log(wrap);
+console.log(wrap)
 // (12) [1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9]
 
-console.log(arr1);
+console.log(arr1)
 // (3) [1, 2, 3]
 ```
 
@@ -33,8 +33,8 @@ console.log(arr1);
 ```javascript
 var arr = ['a', 'b', 'c'];
 
-arr.forEach(function(element){
-    console.log(element);
+arr.forEach(function (element) {
+    console.log(element)
     // a
     // b
     // c
@@ -57,7 +57,7 @@ var usersName = users.map(function (element) {
     // 각 요소의 nama 값만 반환
 });
 
-console.log(usersName);
+console.log(usersName)
 // (4) ["철수", "영희", "민수", "주연"]
 ```
 
@@ -76,7 +76,7 @@ var usersOld = users.filter(function (element) {
     return element.age > 23;
 });
 
-console.log(usersOld);
+console.log(usersOld)
 // (2) [{…}, {…}]
 // 0: {name: "영희", age: 25}
 // 1: {name: "주연", age: 27}
@@ -90,18 +90,18 @@ console.log(usersOld);
 ```javascript
 var arr = [5, 2, 1, 3, 10, 4];
 
-arr.sort(function(a, b){
+arr.sort(function (a, b) {
     return a - b;
     // 오름차순
 });
-console.log(arr);
+console.log(arr)
 // (6) [1, 2, 3, 4, 5, 10]
 
-arr.sort(function(a, b){
+arr.sort(function (a, b) {
     return b - a;
     // 내림차순
 });
-console.log(arr);
+console.log(arr)
 // (6) [10, 5, 4, 3, 2, 1]
 ```
 
@@ -111,8 +111,8 @@ console.log(arr);
 ```javascript
 var arr = ['a', 'b', 'c', 'd'];
 
-console.log(arr.indexOf('c')); // 2
-console.log(arr.indexOf('e')); // -1
+console.log(arr.indexOf('c')) // 2
+console.log(arr.indexOf('e')) // -1
 ```
 
 ## every()
@@ -121,8 +121,8 @@ console.log(arr.indexOf('e')); // -1
 ```javascript
 var arr = [1, 2, 3, 4, 5];
 
-arr.every(function(element){
-    console.log(element);
+arr.every(function (element) {
+    console.log(element)
     // 1
     // 2
     // 3

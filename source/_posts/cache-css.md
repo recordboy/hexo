@@ -10,17 +10,17 @@ thumbnail: "/gallery/thumbnail-css.png"
 
 <!-- more -->
 
-*html*
+**html**
 ```html
 <link type="text/css" href="./common.css?ver=1" />
 ```
 
 위 방법은 수정될 때 마다 쿼리스트링을 변경해줘야되는데, 이것도 번거롭다면 자바스크립트를 이용하여 동적으로 랜덤한 쿼리스트링을 생성하여 붙여주는 방법이 있다.
 
-*javascript*
+**javascript**
 ```javascript
 var bust = Math.floor((Math.random() * 1000));
-document.write('<link type="text/css" href="./common.css?bust=' + bust + '" />');
+document.write('<link type="text/css" href="./common.css?bust=' + bust + '" />')
 ```
 
 이 방법은 브라우저가 로딩될 때 마다 쿼리스트링 값이 다르기 때문에 항상 파일을 새로 불러오게 된다.

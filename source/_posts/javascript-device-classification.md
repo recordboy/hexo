@@ -4,20 +4,17 @@ date: 2019-11-18 10:10:16
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
-toc: true
 ---
 
 어떤 디바이스로 접속했는지 확인 가능한 코드
 
-<!-- more -->
-
 ```javascript
 var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
-if(navigator.platform){
-    if(filter.indexOf(navigator.platform.toLowerCase()) < 0){
-        alert("모바일에서 접속하셨습니다");
-    }else{
-        alert("PC에서 접속하셨습니다");
-    };
-};
+if (navigator.platform) {
+    if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+        alert("모바일에서 접속하셨습니다")
+    } else {
+        alert("PC에서 접속하셨습니다")
+    }
+}
 ```

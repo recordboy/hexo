@@ -28,11 +28,11 @@ var newArr = arr.map(function (item, index, array) {
 });
 
 //메서드 수행 후 원본 배열
-console.log(arr);
+console.log(arr)
 // ["a", "b", "c"]
 
 //메서드 수행 후 생성된 배열
-console.log(newArr);
+console.log(newArr)
 // ["aNEW", "bNEW", "cNEW"]
 ```
 
@@ -85,7 +85,7 @@ function addTbl(dom) {
 // 위 로직을 실행
 function render() {
     var list = makeDom();
-    addTbl(list);
+    addTbl(list)
 }
 ```
 
@@ -134,7 +134,7 @@ function addTbl(dom) {
 // 위 로직을 실행
 function render() {
     var list = makeDom();
-    addTbl(list);
+    addTbl(list)
 }
 </script>
 

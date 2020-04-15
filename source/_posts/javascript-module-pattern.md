@@ -7,9 +7,9 @@ thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 
-모듈이란 전제 어플리케이션의 일부를 독립된 코드로 분리하여 만들어 놓은 것이다.
+## 모듈 패턴이란?
 
-<!-- more -->
+모듈이란 전제 어플리케이션의 일부를 독립된 코드로 분리하여 만들어 놓은 것이다.
 
 ## 모듈화를 했을 때 장점
 * 자주 사용되는 코드를 별도의 파일로 만들어서 필요할 때마다 활용할 수 있다.
@@ -17,6 +17,10 @@ toc: true
 * 코드 수정 시에 필요한 로직을 빠르게 찾을 수 있다.
 * 필요한 로직만을 로드해서 메모리의 낭비를 줄일 수 있다.
 * 한번 다운로드된 모듈은 웹브라우저에 의해서 저장되기 때문에 동일한 로직을 로드할 때 시간과 네트워크 트래픽을 절약할 수 있다.(브라우저에서만 해당)
+
+<!-- more -->
+
+## 객체 리터럴을 사용한 모듈 패턴
 
 자바스크립트에서 모듈을 구현하는 가장 쉬운 방법은 객체 리터럴을 사용하는 방법이다.
 
@@ -28,13 +32,15 @@ var module = {
     }
 }
 
-console.log(module.key); // data
-console.log(module.publicMethod()); // data
+console.log(module.key) // data
+console.log(module.publicMethod()) // data
 ```
 
 객체 리터럴은 모듈 패턴이기도 하며, 하나의 객체라는 점에서 싱글톤 패턴이라고도 할 수 있다. 동일한 코드를 어떠한 관점에서 보느냐에 따라 다양한 패턴이 될 수 있다. 객체 리터럴은 간단하지만 모든 속성이 공개되어있다는 단점이 있다. 독립된 모듈은 자체적으로 필요한 내부 변수 및 내부 함수를 모두 갖고 있어야 하므로 클로저를 이용해야 한다.
 
-아래는 클로저를 이용한 모듈패턴이다.
+아래는 클로저를 활용한 모듈패턴이다.
+
+## 클로저를 활용한 모듈 패턴
 
 ```javascript
 var module = (function () {
@@ -58,15 +64,16 @@ var module = (function () {
             return privateMethod();
         }
     }
-})();
 
-console.log(module.publicMethod()); // 0
-console.log(module.publicMethod()); // 1
+})()
+
+console.log(module.publicMethod()) // 0
+console.log(module.publicMethod()) // 1
 ```
 
 모듈 패턴의 반환값은 함수가 아닌 객체이다. 위의 코드를 순서대로 보면 익명함수가 자동으로 실행되고 반환된 객체를 module 변수에 할당한다. 따라서 module.publicMethod()처럼 메소드를 호출할 수 있다. 자동 호출되는점을 제외하고 클로저와 유사하다.
 
-### 클로저 경우
+#### 클로저 경우
 ```javascript
 function func() {
     var private = 0;
@@ -76,13 +83,13 @@ function func() {
     }
 }
 var val = func();
-console.log(val()); // 1
-console.log(val()); // 2
+console.log(val()) // 1
+console.log(val()) // 2
 ```
 
 그리고 인스턴스를 여러개 만들어 낼 수 있는 구조라는 점에서 싱글톤 패턴과 차이가 있다.
 
-### 싱글톤 패턴 경우
+#### 싱글톤 패턴 경우
 ```javascript
 var singleton = (function () {
 
@@ -104,7 +111,7 @@ var singleton = (function () {
         }
         return instance;
     }
-})();
+})()
 
 var singleton1 = singleton();
 var singleton2 = singleton();

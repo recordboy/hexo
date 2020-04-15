@@ -31,7 +31,7 @@ var val = arr.reduce(function (previousItem, currentItem, index, array) {
 // 첫번째 콜백의 previousItem값
 }, 0);
 
-console.log(val);
+console.log(val)
 // 15
 // 위 결과를 수식으로 나타내면 0 + 1 + 2 + 3 + 4 + 5 이다.(0부터 5까지의 합)
 ```
