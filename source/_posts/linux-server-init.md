@@ -4,6 +4,7 @@ date: 2019-10-21 09:40:18
 categories: "linux"
 tags: [linux]
 thumbnail: "/gallery/thumbnail-linux.png"
+toc: true
 ---
 
 ## 목적

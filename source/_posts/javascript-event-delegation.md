@@ -4,6 +4,7 @@ date: 2020-03-02 19:05:42
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 어플리케이션을 제작할 때 사용자가 페이지 요소들을 조작할 수 있도록 페이지의 버튼, 텍스트 등에 이벤트를 붙여야 할 때가 있다. 아래 리스트의 각 요소를 클릭하면 경고창이 뜨는 이벤트를 걸어줘야 된다고 가정해보면 아래처럼 구현할 것이다.

@@ -4,6 +4,7 @@ date: 2017-02-01 15:29:58
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 자바스크립트는 프로토타입 기반의 스크립트 언어이다. 주로 웹 브라우저 내에서 주로 사용되며 Node.js 와 같은 런타입 환경과 같이 서버 사이드 프로그래밍에도 사용되고 있다. 창시자는 넷스케이프사의 브렌던 아이크이다.

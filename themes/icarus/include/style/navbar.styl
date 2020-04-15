@@ -35,15 +35,24 @@ $navbar-item-margin-h ?= 0
         margin: $navbar-item-margin-v $navbar-item-margin-h
 
         &.is-active
-            font-weight: bold
             background-color: transparent
             color: $grey-darker
 
         &:hover
-            font-weight: bold
             background-color: transparent
             color: $grey-darker
 
+        &:focus
+            color: $grey-darker
+
+    .navbar-start .navbar-item
+
+        &.is-active
+            font-weight: bold
+
+        &:hover
+            font-weight: bold
+            
     +until($navbar-breakpoint)
         .navbar-menu
             justify-content: center

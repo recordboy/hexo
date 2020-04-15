@@ -4,6 +4,7 @@ date: 2017-05-02 17:02:04
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 프로그래밍에서 기본이 되는 데이터를 담는 공간이다. 어떠한 값을 저장하기 위한 공간이면서 변할수 있다는 뜻을 가지고 있다. 변수의 반대말로는 변하지 않는 상수가 있다. 선언 방법은 var 라는 키워드를 사용한다.

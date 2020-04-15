@@ -4,6 +4,7 @@ date: 2020-02-16 18:46:41
 categories: "javascript"
 tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 `Array.forEach` 매서드는 배열 전체를 돌때, 요소마다 콜백 함수를 실행한다. 배열의 요소에 직접 어떠한 작업을 수행하고 싶을 때 적합한 메서드이다. `Array.forEach` 메서드는 리턴 값이 없다.

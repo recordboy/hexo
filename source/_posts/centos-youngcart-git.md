@@ -4,6 +4,7 @@ date: 2019-12-11 10:39:26
 categories: "centos"
 tags: [linux, centos, git, youngcart5]
 thumbnail: "/gallery/thumbnail-centos.png"
+toc: true
 ---
 
 ## 초기 설치 환경
@@ -22,6 +23,7 @@ thumbnail: "/gallery/thumbnail-centos.png"
 ## Git 설치
 
 원격 저장소 만들고 ssh 접속하여 `root`권한으로 변경
+
 ```
 # su root
 ```
@@ -96,7 +98,8 @@ host 파일에 로컬주소 추가(관리자권한으로 실행)
 ```
 $ mysqldump -p db명 > 저장할 파일이름.sql
 ```
-해당 파일 찾아서 local DB 인 Homestead에 넣어주기  
+
+해당 파일 찾아서 local DB인 Homestead에 넣어주기  
 `symlink(): Protocol error` 에러 뜰경우
 
 Git Bash 를 관리자 권한으로 실행 후
@@ -117,8 +120,8 @@ $ vagrant up
 $ cd /data/web_htdocs/
 $ git pull
 ```
-`error cannot open .git/fetch_head permission denied` 에러 날경우
-.git 파일의 권한이 root 여서 오류남, 일반 계정으로 변경 해야함, 루트 계정으로 접속
+
+`error cannot open .git/fetch_head permission denied` 에러 날경우 .git 파일의 권한이 root 여서 오류남, 일반 계정으로 변경 해야함, 루트 계정으로 접속
 
 ```
 $ su root
@@ -129,11 +132,13 @@ exit
 ```
 
 다시 git pull, 그래도 안된다면
+
 ```
 $ git pull origin master
 ```
 
 또는
+
 ```
 $ git branch --set-upstream-to=origin/master master
 $ git pull

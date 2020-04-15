@@ -4,6 +4,7 @@ date: 2017-11-01 18:34:26
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 반올림  

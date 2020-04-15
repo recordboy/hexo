@@ -4,6 +4,7 @@ date: 2017-12-13 20:48:10
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 ## Data

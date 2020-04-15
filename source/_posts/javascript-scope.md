@@ -4,6 +4,7 @@ date: 2017-12-02 19:14:45
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 자바스크립트에서의 스코프란 코드가 실행되는 컨텍스트(유효범위)이며 `전역 스코프`, `지역 스코프`, `eval 스코프`로 나눌 수 있다.

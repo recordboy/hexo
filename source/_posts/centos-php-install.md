@@ -4,6 +4,7 @@ date: 2019-10-24 09:47:28
 categories: "centos"
 tags: [linux, centos]
 thumbnail: "/gallery/thumbnail-centos.png"
+toc: true
 ---
 
 
@@ -41,7 +42,7 @@ Usage: wget [OPTION]... [URL]...
 Try `wget --help' for more options.
 ```
 
-**1. remi repository를 yum 에 추가 한다.**
+1. remi repository를 yum 에 추가 한다.
 
 ```
 # wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -52,19 +53,19 @@ Try `wget --help' for more options.
 # yum-config-manager --enable remi-php72
 ```
 
-**2. 기존의 설치된 PHP 패키지를 확인하여 잘못된 패키지가 삭제되지 않도록 한다.**
+2. 기존의 설치된 PHP 패키지를 확인하여 잘못된 패키지가 삭제되지 않도록 한다.
 
 ```
 # yum list installed | cut -d " " -f 1 | grep php
 ```
 
-**3. 기존 설치된 PHP를 제거한다.**
+3. 기존 설치된 PHP를 제거한다.
 
 ```
 # yum remove -y `yum list installed | cut -d " " -f 1  | grep php`
 ```
 
-**4. php 패키지 설치한다. php-common 외의 패키지는 자신의 상황에 맞게 조정해서 설치한다.**
+4. php 패키지 설치한다. php-common 외의 패키지는 자신의 상황에 맞게 조정해서 설치한다.
 
 ```
 # yum install -y php-common php-fpm php-cli \
@@ -85,7 +86,7 @@ Try `wget --help' for more options.
 # yum update php-*
 ```
 
-**5. 설치된 php 버전을 확인해 본다.**
+5. 설치된 php 버전을 확인해 본다.
 
 ```
 # php -v

@@ -4,6 +4,7 @@ date: 2019-10-01 09:11:43
 categories: "git"
 tags: [git, command]
 thumbnail: "/gallery/thumbnail-git.png"
+toc: true
 ---
 
 자주 쓴 명령어 위주로 작성, 추후 계속 추가 예정

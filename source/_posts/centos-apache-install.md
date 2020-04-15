@@ -60,7 +60,7 @@ vi 편집기를 실행하여 "hello world!"를 입력하고 ESC를 누른뒤 아
 # wq
 ```
 
-공인아이피로 들어가 보면 "hello world!"가 제대로 출력되는 것을 확인할 수 있다.
+공인아이피로 들어가 보면 "hello world!"가 제대로 출력되는 것을 확인할 수 있다. 
 
 apache를 재시작할일이 드물기 때문에 종종 명령어를 잃어버린다. 아래 명령어를 참고하도록 한다.
 
@@ -86,7 +86,7 @@ apache를 재시작할일이 드물기 때문에 종종 명령어를 잃어버�
 `# service httpd restart`  
 `# apachectl restart`
 
-### References
+## References
 > [CentOS 아파치 설치](https://zetawiki.com/wiki/CentOS_아파치_설치)  
 > [CentOS에서 apache 설치](https://toma0912.tistory.com/55)  
 > [CentOS 아파치 상태/재시작/시작/중지 명령어](https://web-inf.tistory.com/16)

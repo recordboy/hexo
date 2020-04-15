@@ -4,6 +4,7 @@ date: 2019-12-10 10:33:20
 categories: "centos"
 tags: [linux, centos, nginx, youngcart5]
 thumbnail: "/gallery/thumbnail-centos.png"
+toc: true
 ---
 
 ## 초기 설치 환경

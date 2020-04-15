@@ -4,6 +4,7 @@ date: 2019-10-10 09:28:27
 categories: "linux"
 tags: [linux, command]
 thumbnail: "/gallery/thumbnail-linux.png"
+toc: true
 ---
 
 ## 체크

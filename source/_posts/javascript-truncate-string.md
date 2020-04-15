@@ -4,6 +4,7 @@ date: 2017-12-04 20:50:52
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 * `split()`

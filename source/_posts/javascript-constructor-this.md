@@ -4,6 +4,7 @@ date: 2018-11-02 22:04:56
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 객체를 생성하는 방법은 크게 객체 리터널 방식과 생성자 함수 방식, Object() 생성자 함수 방식이 있다. 

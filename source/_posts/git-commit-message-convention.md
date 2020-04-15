@@ -4,6 +4,7 @@ date: 2019-11-01 09:54:06
 categories: "git"
 tags: [git]
 thumbnail: "/gallery/thumbnail-git.png"
+toc: true
 ---
 
 커밋 메시지는 제목, 본문(선택), 꼬리말(선택) 세 부분으로 작성한다.

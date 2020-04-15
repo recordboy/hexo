@@ -4,6 +4,7 @@ date: 2018-01-15 21:28:59
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 제이쿼리의 `index()`를 자바스크립트만으로 구현할 수 있다.

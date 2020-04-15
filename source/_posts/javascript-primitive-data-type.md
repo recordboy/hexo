@@ -4,6 +4,7 @@ date: 2017-05-03 18:24:55
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 ## 자료형은 데이터 값의 유형이다.

@@ -4,6 +4,7 @@ date: 2020-01-29 10:58:03
 categories: "chrome"
 tags: [chrome, debug]
 thumbnail: "/gallery/thumbnail-chrome.png"
+toc: true
 ---
 
 크롬 개발자 도구의 `Sources`패널로 디버깅을 할 수 있다.
@@ -72,16 +73,16 @@ function greetinf() {
 ### 3. Resume Script Execution(단축키: F8)
 스크립트 실행을 다시 시작한다. 추가 중단점이 없는 경우, 실행이 쭉 이어지고 디버거는 동작하지 않는다.
 
-### 7. Step (단축키 F9)
+### 4. Step (단축키 F9)
 다음 명령어를 실행한다. `Step`버튼을 계속 누르면 스크립트 전체를 문 단위로 하나하나 실행할 수 있다.
 
-### 4. Step over next function call(단축키 F10)
+### 5. Step over next function call(단축키 F10)
 다음 명령어를 실행하되, 함수 안으로 들어가진 않는다. `Step`과 유사하지만, 다음 문이 함수 호출일 때 `Step`과는 다르게 동작한다.(`alert` 같은 내장함수에는 해당하지 않고, 직접 작성한 함수일 때만 동작이 다르다.) `Step`은 함수 내부로 들어가 함수 본문 첫 번째 줄에서 실행을 멈춘다. 반면 `Step over next function call`은 보이지 않는 곳에서 중첩 함수를 실행하긴 하지만 함수 내로 진입하지 않는다. 함수 호출 시 내부에서 어떤 일이 일어나는지 궁금하지 않을 때 유용하다. 실행은 함수 실행이 끝난 후에 즉시 멈춘다.
 
-### 5. Step into next function call(단축키 F11)
+### 6. Step into next function call(단축키 F11)
 `Step`과 유사한데, 비동기 함수 호출에서 `Step`과는 다르게 동작한다. `Step`은 `setTimeout`(함수 호출 스케줄링에 쓰이는 내장 메서드)같은 비동기 동작은 무시한다. 반면 `Step into next function call`는 비동기 동작을 담당하는 코드로 진입하고, 필요하다면 비동기 동작이 완료될 때까지 대기한다.
 
-### 6. Step out of current function(단축키 shift + F11)
+### 7. Step out of current function(단축키 shift + F11)
 현재 실행 중인 함수의 실행을 계속 이어가다가 함수 본문 마지막 줄에서 실행을 멈춘다. 실수로 을 눌러 내부 동작을 알고 싶지 않은 중첩 함수로 진입했거나 가능한 한 빨리 함수 실행을 끝내고 싶은 경우 유용하다.
 
 ### 8. Deactivate breakpoints

@@ -4,6 +4,7 @@ date: 2019-12-03 10:21:08
 categories: "web"
 tags: [web]
 thumbnail: "/gallery/thumbnail-html.png"
+toc: true
 ---
 
 2019년 11월 22일 정보접근성 기술 컨퍼런스를 다녀온뒤 세미나 내용을 정리 및 웹 접근성에 대해 작성한 글이다.

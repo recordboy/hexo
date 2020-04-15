@@ -4,6 +4,7 @@ date: 2020-02-03 14:57:31
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 모듈이란 전제 어플리케이션의 일부를 독립된 코드로 분리하여 만들어 놓은 것이다.
