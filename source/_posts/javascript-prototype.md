@@ -24,10 +24,10 @@ function Person() {
 var kang = new Person();
 var park = new Person();
 
-console.log(kang.eyes); // 2
-console.log(kang.nose); // 1
-console.log(park.eyes); // 2
-console.log(park.nose); // 1
+console.log(kang.eyes) // 2
+console.log(kang.nose) // 1
+console.log(park.eyes) // 2
+console.log(park.nose) // 1
 ```
 
 `kang`과 `park`은 `eyes`와 `nose`를 공통적으로 가지고 있는데, 메모리는 `eyes`와 `nose`가 두개씩 총 4개에 할당된다. 객체를 100개를 만들면 200개의 변수가 메모리에 할당된다. 이런 메모리 낭비 문제를 프로토타입으로 해결할 수 있다.
@@ -41,8 +41,8 @@ Person.prototype.nose = 1;
 var kang  = new Person();
 var park = new Person();
 
-console.log(kang.eyes); // 2
-console.log(park.nose); // 1
+console.log(kang.eyes) // 2
+console.log(park.nose) // 1
 ```
 
 간략히 설명하면 `Person.prototype`라는 빈 객체가 어딘가에 존재하고 `Person`함수로부터 생성된 객체(`kang`, `park`)은 어딘가에 존재하는 객체의 값을 모두 갖다쓸 수 있다. 즉, `eyes`와 `nose`를 어딘가에 있는 빈 객체(`Person.prototype`)에 넣어두고, `kim`과 `park`이 공유해서 사용하는 것이다.
@@ -73,7 +73,7 @@ var obj = new Object();
 
 ## 함수가 정의될 때
 
-### 1. 해당 함수에 constructor(생성자) 자격 부여
+### 해당 함수에 constructor(생성자) 자격 부여
 constructor 자격이 부여되면 new 키워드를 통해 객체를 만들수 있다. 오직 함수만 new 키워드를 사용할 수 있다.
 
 ```javascript
@@ -83,13 +83,13 @@ var a = new obj();
 ```
 `obj`는 생성자 자격이 없다고 나온다. 오직 함수만이 constructor 자격을 가질 수 있다.
 
-### 2. 해당 함수의 프로토타입 객체 생성 및 연결
+### 해당 함수의 프로토타입 객체 생성 및 연결
 
 함수를 정의하면 함수만 생성되는 것이 아니라 프로토타입 객체도 같이 생성이 된다. 생성된 함수는 `prototype`라는 속성을 통해 프로토타입 객체에 접근할 수 있다. 프로토타입 객체는 일반적인 객체와 같으며, 기본적인 속성으로 `constructor`와 `__proto__`를 가지고 있다.
 
 ```javascript
 function Person() {}
-console.log(Person.prototype);
+console.log(Person.prototype)
 // {constructor: ƒ}
 // > constructor: ƒ Person()
 // > __proto__: Object
@@ -106,7 +106,7 @@ Person.prototype.nose = 1;
 var kang  = new Person();
 var park = new Person();
 
-console.log(Person.prototype);
+console.log(Person.prototype)
 // {eyes: 2, nose: 1, constructor: ƒ}
 // > eyes: 2
 // > nose: 1
@@ -123,16 +123,16 @@ function Person() {}
 Person.prototype.eyes = 2;
 var kang  = new Person();
 
-console.log(kang);
+console.log(kang)
 // Person {}
-console.log(kang.eyes);
+console.log(kang.eyes)
 // 2
 ```
 
 `kang`객체에 따로 `eyes`속성을 선언하지 않았지만 `kang.eyes`를 실행하면 `2`라는 값을 참조한다. 위에서 설명했듯이 프로토타입 객체의 `eyes`속성을 참조한 것인데, 이것이 가능한 이유는 `kang`이 가지고 있는 `__proto__`속성이 프로토타입 객체를 가르키고 있기 때문이다.
 
 ```javascript
-console.log(kang.__proto__);
+console.log(kang.__proto__)
 // {eyes: 2, nose: 1, constructor: ƒ}
 ```
 

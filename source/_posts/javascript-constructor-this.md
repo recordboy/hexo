@@ -28,7 +28,7 @@ var obj = new Object();
 
 생성자 함수는 기존 함수에 new 키워드를 붙여서 호출하면 해당 함수는 생성자 함수로 동작한다. 일반 함수에서의 this는 window를 가르키지만 생성자 함수에서는 다르게 동작한다. 이때문에 원치 않은 상황이 나타날 수 있는데, 이를 피하기 위해 생성자 함수 이름의 첫 글자는 대문자로 작성하기를 권장하고 있다. 
 
-### 일반 함수의 this
+## 일반 함수의 this
 
 ```javascript
 function func() {
@@ -37,7 +37,7 @@ function func() {
 func(); // window
 ```
 
-### 생성자 함수의 this
+## 생성자 함수의 this
 
 ```javascript
 function Func(name) {

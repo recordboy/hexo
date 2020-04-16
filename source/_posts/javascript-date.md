@@ -4,10 +4,7 @@ date: 2017-12-13 20:48:10
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
-toc: true
 ---
-
-## 정의
 
 Data 객체는 날짜와 시간을 제공하는 생성자 함수이다. 
 인자 없이 객체를 선언하면 현재 날짜와 시간을 반환한다.
@@ -20,7 +17,7 @@ console.log(value)
 // Thu Jan 09 2020 14:44:13 GMT+0900 (한국 표준시)
 ```
 
-### 특정 값을 구하는 메서드
+## 특정 값을 구하는 메서드
 
 | 메서드 | 값 |
 |:--------|:--------|
@@ -29,7 +26,7 @@ console.log(value)
 | getDate() | 날짜 |
 | getDay() | 요일 |
 
-### 응용
+## 응용
 
 2015년 12월 25일의 요일을 구하는 법
 

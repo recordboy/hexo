@@ -73,7 +73,7 @@ console.log(module.publicMethod()) // 1
 
 모듈 패턴의 반환값은 함수가 아닌 객체이다. 위의 코드를 순서대로 보면 익명함수가 자동으로 실행되고 반환된 객체를 module 변수에 할당한다. 따라서 module.publicMethod()처럼 메소드를 호출할 수 있다. 자동 호출되는점을 제외하고 클로저와 유사하다.
 
-#### 클로저 경우
+### 클로저 경우
 ```javascript
 function func() {
     var private = 0;
@@ -89,7 +89,7 @@ console.log(val()) // 2
 
 그리고 인스턴스를 여러개 만들어 낼 수 있는 구조라는 점에서 싱글톤 패턴과 차이가 있다.
 
-#### 싱글톤 패턴 경우
+### 싱글톤 패턴 경우
 ```javascript
 var singleton = (function () {
 
@@ -115,7 +115,7 @@ var singleton = (function () {
 
 var singleton1 = singleton();
 var singleton2 = singleton();
-console.log(singleton1 === singleton2); // true
+console.log(singleton1 === singleton2) // true
 ```
 
 하나의 인스턴스를 선언하지 않고 여러개의 인스턴스를 생성하려면 익명함수를 사용하지 않고 생성자 함수 방식으로 만들면 된다.
@@ -138,12 +138,12 @@ var Module = function () {
 }
 
 var obj1 = Module();
-console.log(obj1.publicMethod()); // 1
-console.log(obj1.publicMethod()); // 2
+console.log(obj1.publicMethod()) // 1
+console.log(obj1.publicMethod()) // 2
 
 var obj2 = Module();
-console.log(obj2.publicMethod()); // 1
-console.log(obj2.publicMethod()); // 2
+console.log(obj2.publicMethod()) // 1
+console.log(obj2.publicMethod()) // 2
 ```
 
 위처럼 Module 함수를 정의하여 함수를 호출하면 여러개의 인스턴스를 생성할 수 있다. 클로저 인스턴스와 유사하지만, 한가지 차이점은 내부의 익명함수에서 반환값이 함수가 아니라 객체를 반환한다는 점이다.
@@ -165,10 +165,10 @@ app.module = (function () {
             return privateMethod();
         }
     }
-})();
+})()
 
-console.log(app.module.publicMethod()); // 0
-console.log(app.module.publicMethod()); // 1
+console.log(app.module.publicMethod()) // 0
+console.log(app.module.publicMethod()) // 1
 ```
 
 ## References

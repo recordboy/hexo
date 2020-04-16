@@ -55,7 +55,7 @@ func()
 // at foo (index.html:26)
 // at foo (index.html:26)
 ```
-엔진에서 이 코드를 실행할 때, `func()`에 의해서 `func` 함수가 호출된다. 여기서 다시 `func` 함수를 호출하고 반복적으로 함수를 호출하게 된다. 그러면 매번 실행할 때마다 호출스택에 `func()` 가 쌓이며 최대 허용치를 넘으면 위처럼 에러를 발생시킨다.
+엔진에서 이 코드를 실행할 때, `func()`에 의해서 `func`함수가 호출된다. 여기서 다시 `func`함수를 호출하고 반복적으로 함수를 호출하게 된다. 그러면 매번 실행할 때마다 호출스택에 `func()`가 쌓이며 최대 허용치를 넘으면 위처럼 에러를 발생시킨다.
 
 ## References
 > [Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)  

@@ -18,11 +18,11 @@ toc: true
 ```javascript
 // 전역 스코프
 var foo = 1;
-console.log(foo); // 1
+console.log(foo) // 1
 
 function func() {
     // foo가 전역에서 선언되었기 때문에 함수 내부에서도 foo값을 사용할 수 있다.
-    console.log(foo); // 1
+    console.log(foo) // 1
 }
 ```
 
@@ -36,11 +36,11 @@ function func() {
 
     // 지역 스코프
     var foo = 1;
-    console.log(foo); // 1
+    console.log(foo) // 1
 }
 
 // foo가 func 함수 내부에서 선언되었기 때문에 함수 외부에서 사용을 할 수 없다.
-console.log(foo); // Uncaught ReferenceError: foo is not defined
+console.log(foo) // Uncaught ReferenceError: foo is not defined
 ```
 
 ### 객체 지역 스코프
@@ -48,8 +48,8 @@ console.log(foo); // Uncaught ReferenceError: foo is not defined
 var obj = {
     foo: 1
 };
-console.log(obj.boo); // 1
-console.log(boo); // Uncaught ReferenceError: foo is not defined
+console.log(obj.boo) // 1
+console.log(boo) // Uncaught ReferenceError: foo is not defined
 ```
 
 ## eval 스코프
