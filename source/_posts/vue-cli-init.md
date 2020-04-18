@@ -4,6 +4,7 @@ date: 2019-11-01 10:05:51
 categories: "vue.js"
 tags: [vue.js, cli]
 thumbnail: "/gallery/thumbnail-vue.png"
+toc: true
 ---
 
 ## Vue CLI

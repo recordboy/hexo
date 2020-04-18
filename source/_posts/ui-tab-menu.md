@@ -4,6 +4,7 @@ date: 2019-04-08 08:36:59
 categories: "ui"
 tags: [ui, vanillaJs]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 vanilla JS로 제작된 기본 탭 메뉴
@@ -107,7 +108,7 @@ window.addEventListener('load', function(){
     </div>
 </div>
 
-## HTML
+## html
 
 ```html
 <div id="tab">

@@ -4,13 +4,12 @@ date: 2019-12-12 10:43:21
 categories: "mysql"
 tags: [linux, mysql]
 thumbnail: "/gallery/thumbnail-linux.png"
-toc: true
 ---
 
 리눅스 MySQL 시작, 정지, 재시작, 상태확인
 
 | 작업 | 우분투 명령어 | CentOS6 명령어 | CentOS7 명령어 |
-|:--------|:--------|:--------|:--------|
+|:---|:----|:---|:---|
 | 시작 | # service mysql start | # service mysqld start | # systemctl start mysqld |
 | 정지 | # service mysql stop | # service mysqld stop | # systemctl stop mysqld |
 | 재시작 | # service mysql restart | # service mysqld restart | # systemctl restart mysqld |

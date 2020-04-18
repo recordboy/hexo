@@ -4,6 +4,7 @@ date: 2019-04-10 08:24:06
 categories: "ui"
 tags: [ui, vanillaJs]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 vanilla JS로 만들어본 기본 슬라이드 배너
@@ -274,7 +275,7 @@ window.addEventListener('load', function(){
     </div>
 </div>
 
-## HTML
+## html
 
 ```html
 <div id="slide">

@@ -4,7 +4,6 @@ date: 2018-01-16 21:20:27
 categories: "javascript"
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
-toc: true
 ---
 
 `while`문은 조건을 검사하여 `true`일경우 계속 구문을 실행시키는 반복문이다.
@@ -20,7 +19,7 @@ while (조건) {
 ```javascript
 var i = 0;
 while (i < 3) {
-    console.log(i);
+    console.log(i)
     i++;
 }
 // 0
@@ -40,7 +39,7 @@ do {
 ```javascript
 var i = 0;
 do {
-    console.log(i);
+    console.log(i)
 } while (i == 3)
 // 0
 ```

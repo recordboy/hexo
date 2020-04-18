@@ -4,9 +4,10 @@ date: 2020-03-07 19:57:39
 categories: "react"
 tags: [react]
 thumbnail: "/gallery/thumbnail-react.png"
+toc: true
 ---
 
-JSX란 자바스크립트를 학장한 문법이다. 얼핏보면 HTML과 비슷하여 템플릿 언어가 떠오를 수도 있지만, 자바스크립트의 모든 기능이 포함되어 있다. JSX를 제대로 사용하기 위해서 몇가지 규칙을 준수해줘야 한다. 이전 포스팅 [[React] React 시작하기](https://recordboy.github.io/react-component/)에 나온 `App.js`파일에 예제를 작성하여 진행하겠다. 기존의 코드는 지우고 클래스 방식으로 컴포넌트를 만들어준 뒤 아래 예제들을 살펴보겠다.
+JSX란 자바스크립트를 확장한 문법이다. 얼핏 보면 HTML과 비슷하여 템플릿 언어가 떠오를 수도 있지만, 자바스크립트의 모든 기능이 포함되어 있다. JSX를 제대로 사용하기 위해서 몇가지 규칙을 준수해줘야 한다. 이전 포스팅 [[React] React 시작하기](https://recordboy.github.io/react-component/)에 나온 `App.js`파일에 예제를 작성하여 진행하겠다. 기존의 코드는 지우고 클래스 방식으로 컴포넌트를 만들어준 뒤 아래 예제들을 살펴보겠다.
 
 <!-- more -->
 
@@ -27,8 +28,8 @@ export default App;
 ```
 
 ## JSX 엘리먼트 규칙
-
-태그는 꼭 닫혀줘야 된다. `<div>`를 열었으면 꼭`</div>`로 태그를 닫아주도록 한다. 또한 input이나 br태그 같은 단일 태그들은 HTML5에서 안닫아도 상관 없었지만, 리액트에서는 오류를 출력하므로 꼭 태그를 닫아주도록 한다.
+### 태그는 꼭 닫혀줘야 된다.
+`<div>`를 열었으면 꼭`</div>`로 태그를 닫아주도록 한다. 또한 input이나 br태그 같은 단일 태그들은 HTML5에서 안닫아도 상관 없었지만, 리액트에서는 오류를 출력하므로 꼭 태그를 닫아주도록 한다.
 
 ```javascript
 import React, { Component } from 'react';
@@ -46,7 +47,8 @@ class App extends Component {
 export default App;
 ```
 
-하나의 엘리먼트로 감싸줘야 한다. 리턴값이 두개의 엘리먼트로 되어있으면 오류를 출력한다.
+### 하나의 엘리먼트로 감싸줘야 한다.
+리턴값이 두개의 엘리먼트로 되어있으면 오류를 출력한다.
 
 ```javascript
 import React, { Component } from 'react';
@@ -67,7 +69,10 @@ class App extends Component {
 export default App;
 ```
 
-위 문제를 해결하기 위해서 두개의 엘리먼트를 하나의 엘리먼트로 감싸야 하는데, 약간 까다로운 경우가 있다. CSS로 인한 스타일 관련 문제나 table관련 태그를 작성할 때 번거로운 경우이다. 이럴때는 아래처럼 `Fragment`을 사용하면 된다.(이 기능은 v.16.2에 도입되었다.)
+위 문제를 해결하기 위해서 두개의 엘리먼트를 하나의 엘리먼트로 감싸야 한다.
+
+### 하나의 엘리먼트로 감싸기 까다로운 경우
+하지만 위처럼 하나의 엘리먼트로 감싸기엔 까다로운 경우가 있다. CSS로 인한 스타일 관련 문제나 table관련 태그를 작성할 때 번거로운 경우이다. 이럴때는 아래처럼 `Fragment`을 사용하면 된다.(이 기능은 v.16.2에 도입되었다.)
 
 ```javascript
 import React, { Component, Fragment } from 'react';
@@ -93,7 +98,6 @@ export default App;
 나눠진 엘리먼트를 `Fragment`로 감싼뒤 `import`의 `{ Component }`에 `Fragment`을 추가하면 된다.
 
 ## JSX 자바스크립트 사용하기
-
 ### 변수 사용하기
 JSX 내부에서 변수를 사용 할 땐 아래처럼 할 수 있다.
 
@@ -215,9 +219,7 @@ class App extends Component {
 export default App;
 ```
 
-HTML에서는 그냥 텍스트 형태로 `="padding: 10px; font-size: 15px;"` 이런 형태로 작성하였다면 리액트에서는 객체 형태로 작성해줘야 한다. 
-
-그리고 class는 `class`대신에 `className`을 사용한다.
+HTML에서는 그냥 텍스트 형태로 `="padding: 10px; font-size: 15px;"` 이런 형태로 작성하였다면 리액트에서는 객체 형태로 작성해줘야 한다. 그리고 class는 `class`대신에 `className`을 사용한다.
 
 ```javascript
 import React, { Component } from 'react';

@@ -4,6 +4,7 @@ date: 2020-03-05 19:54:10
 categories: "react"
 tags: [react]
 thumbnail: "/gallery/thumbnail-react.png"
+toc: true
 ---
 
 리액트는 페이스북이 제작한 프론트엔드 라이브러리이다. 2017년 기준으로 프론트엔드 라이브러리/프레임워크로는 대표적으로 React, Angular, Vue 이렇게 세가지가 있다.

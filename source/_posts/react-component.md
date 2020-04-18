@@ -4,6 +4,7 @@ date: 2020-03-06 19:55:52
 categories: "react"
 tags: [react]
 thumbnail: "/gallery/thumbnail-react.png"
+toc: true
 ---
 
 리액트는 제이쿼리처럼 단순히 `<script src="..."><script>`의 형태로 사용했던 것처럼 사용하지 않는다. 이렇게 하려면 가능은 하지만 굉장히 제한적이다. 리액트를 제대로 작업하려면 로컬에 Node, Npm, Webpack, Babel 등의 도구를 설치하여 프로젝트를 설정해주어야 한다. 리액트 프로젝트를 바닥부터 설정하는 것은 꽤나 복잡하지만, 페이스북에서 제공해주는 [create-react-app](https://github.com/facebook/create-react-app)도구 를 통하여 간단히 리액트 프로젝트를 준비할 수 있다.
@@ -16,12 +17,13 @@ thumbnail: "/gallery/thumbnail-react.png"
 * node.js
 * npm
 
-#### 전역에 create-react-app 설치
+
+### 전역에 create-react-app 설치
 ```
 $ npm install -g create-react-app
 ```
 
-#### 프로젝트 생성
+### 프로젝트 생성
 ```
 // 자바스크립트를 사용
 $ create-react-app 프로젝트명 --use-npm
@@ -31,7 +33,7 @@ $ create-react-app 프로젝트명 --use-npm
 $ create-react-app 프로젝트명 --use-npm --template typescript
 ```
 
-#### 프로젝트 실행
+### 프로젝트 실행
 해당 디렉토리로 이송해서 명령어를 실행하면 리액트 앱이 `localhost:3000`에 실행된다.
 
 ```
@@ -60,7 +62,7 @@ $ npm start
     └── package .. // version, dependencies, proxy 등의 정보가 들어있는 파일
 ```
 
-## 컴포넌트 파일 파헤치기
+## 컴포넌트 파일 살펴보기
 `src` 폴더의 `App.js`파일을 열어본다.
 
 ```
@@ -101,7 +103,7 @@ import './App.css';
 
 `import`는 파일을 불러오겠다는 것이다. 첫번째 코드는 리액트와 그 내부의 `Component`를 불러온다. <mark>파일에서 `JSX`를 사용하려면, 꼭 `React`를 `import`해주어야 한다.</mark> 그 아래에는 같은 디렉토리의 `logo.svg`와 `App.css`를 불러온다는 것이다.
 
-#### 함수를 이용한 컴포넌트 생성
+### 함수를 이용한 컴포넌트 생성
 ```javascript
 function App() {
   return (
@@ -131,7 +133,7 @@ function App() {
 
 `App`함수를 생성하여 컴포넌트를 만들었다. 리액트에서 컴포넌트를 만드는 방법은 두가지가 있으며 위처럼 함수를 이용하여 만드는 방법과, 클래스를 이용하여 만드는 방법이 있다. 함수형 컴포넌트와 클래스형 컴포넌트의 주요 차이점은 함수형 클래스는 state와 life cycle이 빠져있다는 점이다. 그래서 컴포넌트 초기 마운트가 아주 미세하게 빠르고, 메모리 자원을 덜 사용하지만 컴포넌트를 무수히 많이 랜더링하는게 아니라면 성능에 큰 차이는 없다. state와 life cycle는 추후에 알아보도록 하고, 지금부터는 클래스형 컴포넌트로 작성하도록 하겠다. 
 
-#### 클래스를 이용한 컴포넌트 생성
+### 클래스를 이용한 컴포넌트 생성
 ```javascript
 class App extends Component {
   render() {
@@ -175,7 +177,7 @@ export default App;
 
 이제 컴포넌트를 생성하고 내보냈으니, 이 컴포넌트를 불러오는 `index.js`파일을 열어보겠다.
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

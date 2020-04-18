@@ -4,6 +4,7 @@ date: 2020-02-10 15:11:16
 categories: "sass"
 tags: [sass]
 thumbnail: "/gallery/thumbnail-sass.png"
+toc: true
 ---
 
 SASS는 기본적인 연산 기능을 지원한다. 레이아웃 작업시 상황에 맞게 크기를 계산하거나 정해진 값을 나눠서 작성할 경우 유용하다. 아래는 SASS에서 사용 가능한 연산자 종류이다.
@@ -100,7 +101,7 @@ div {
 
 문자 연산에는 `+`가 사용된다. 문자 연산의 결과는 첫번째 피연산자를 기준으로 한다. 첫번째 피연산자에 따옴표가 붙어있다면 연산 결과를 따옴표로 묶는다. 반대로 첫번째 피연산자에 따옴표가 붙어있지 않으면 연산 결과도 따옴표를 처리하지 않는다.
 
-#### SCSS
+### SCSS
 ```scss
 div::after {
     content: "hello" + world;
@@ -110,7 +111,7 @@ div::after {
 }
 ```
 
-#### Compiled to
+### Compiled to
 ```scss
 div::after {
   content: "helloworld";
@@ -129,7 +130,7 @@ div::after {
 
 SASS의 `@if`조건문에서 사용되는 논리 연삭에는 `그리고`, `또는`, `부정`이 있다. 자바스크립트의 `&&`, `||`, `!`와 같은 기능이라 보면 된다.
 
-#### SCSS
+### SCSS
 ```scss
 $width: 90px;
 div {
@@ -139,7 +140,7 @@ div {
 }
 ```
 
-#### Compiled to
+### Compiled to
 ```scss
 div {
   height: 300px;

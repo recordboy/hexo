@@ -4,6 +4,7 @@ date: 2019-05-28 08:50:10
 categories: "ui"
 tags: [ui, vanillaJs]
 thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 ---
 
 vanilla JS로 만들어진 전체동의 체크박스, 보통 이용 약관에 많이 사용되된다.
@@ -93,7 +94,7 @@ window.onload = function(){
     </div>
 </div>
 
-## HTML
+## html
 
 ```html
 <div id="checkWrap">

@@ -95,7 +95,7 @@ MySQL 5.7 데몬 시작
 # sudo systemctl start mysqld
 ```
 
-### 비밀번호 설정
+## 비밀번호 설정
 
 MySQL 접속
 ```

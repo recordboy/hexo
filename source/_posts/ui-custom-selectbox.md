@@ -4,6 +4,7 @@ date: 2019-10-02 09:17:59
 categories: "ui"
 tags: [ui, jQuery]
 thumbnail: "/gallery/thumbnail-jquery.png"
+toc: true
 ---
 
 이번 프로모션에 커스텀이 필요한 셀렉트박스가 필요하여 제작하였다.
@@ -178,7 +179,7 @@ $(function(){
     </div>
 </div>
 
-## HTML
+## html
 
 ```html
 <div class="wrap">

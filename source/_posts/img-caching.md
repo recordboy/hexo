@@ -3,7 +3,7 @@ title: "이미지 캐싱"
 date: 2019-10-17 09:34:04
 categories: "web"
 tags: [web]
-thumbnail: "/gallery/thumbnail-web.png"
+thumbnail: "/gallery/thumbnail-css.png"
 ---
 
 웹사이트의 이미지가 변경된 경우 캐쉬가 남아있어 변경사항이 적용안되는 경우가 있다.
