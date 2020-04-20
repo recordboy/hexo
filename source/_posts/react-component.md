@@ -101,7 +101,7 @@ import logo from './logo.svg';
 import './App.css';
 ```
 
-`import`는 파일을 불러오겠다는 것이다. 첫번째 코드는 리액트와 그 내부의 `Component`를 불러온다. <mark>파일에서 `JSX`를 사용하려면, 꼭 `React`를 `import`해주어야 한다.</mark> 그 아래에는 같은 디렉토리의 `logo.svg`와 `App.css`를 불러온다는 것이다.
+`import`는 파일을 불러오겠다는 것이다. 첫번째 코드는 리액트와 그 내부의 `Component`를 불러온다. 파일에서 `JSX`를 사용하려면, 꼭 `React`를 `import`해주어야 한다. 그 아래에는 같은 디렉토리의 `logo.svg`와 `App.css`를 불러온다는 것이다.
 
 ### 함수를 이용한 컴포넌트 생성
 ```javascript
