@@ -169,8 +169,20 @@ $ hexo clean
 $ hexo deploy --generate
 ```
 
-## 깃허브에 소스 저장하기
-git pull origin master --allow-unrelated-histories
+## 깃허브 저장소에 소스 저장하기
+
+위의 배포 과정은 보여지는 페이지를 저장한 것이고, 이제 실제 소스를 깃허브 저장소에 저장할 것이다. 새로운 저장소를 만들어 준다. 나는 `hexo`라고 저장소를 생성하였다. 다시 `hexo`폴더로 가서 아래 명령어를 입력해 깃을 설치하고, 소스가 들어갈 저장소를 선택한 뒤 푸쉬해준다.
+
+```
+$ git init
+$ git remote add origin 저장소 주소
+$ git add .
+$ git commit -m '커밋 메세지'
+$ git push origin
+```
+
+
+
 위 배포 과정은 
 
 
