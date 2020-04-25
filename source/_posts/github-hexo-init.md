@@ -181,7 +181,7 @@ $ git commit -m '커밋 메세지'
 $ git push origin master
 ```
  
-간혹 깃의 히스토리가 충돌되어 푸쉬가 안되는 경우가 있는데 이럴경우는 아래 명령어를 사용하여 해결해 준다.
+간혹 깃의 히스토리가 충돌되어 푸쉬가 안되는 경우가 있는데 이런 상황에는 아래 명령어를 사용하여 해결해 준다.
 
 ```
 $ git pull origin 브랜치명 --allow-unrelated-histories

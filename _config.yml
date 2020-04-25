@@ -103,9 +103,13 @@ deploy:
   branch: master
 
 # Customize
-# Rss feed
+## rss feed
 feed:
   type: rss2
   path: rss2.xml
   limit: 20
-  
+## robots.txt
+robotstxt:
+  User-agent: '*'
+  Allow: /
+  Sitemap: https://recordboy.github.io/sitemap.xml
