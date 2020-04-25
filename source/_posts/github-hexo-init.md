@@ -169,7 +169,6 @@ $ hexo clean
 $ hexo deploy --generate
 ```
 
-
 ## 깃허브 저장소에 소스 저장하기
 
 위의 배포 과정은 보여지는 페이지를 저장한 것이고, 이제 실제 소스를 깃허브 저장소에 저장할 것이다. 새로운 저장소를 만들어 준다. 나는 `hexo`라고 저장소를 생성하였다. 다시 `hexo`폴더로 가서 아래 명령어를 입력해 깃을 설치하고, 소스가 들어갈 저장소를 선택한 뒤 푸쉬해준다.
@@ -182,11 +181,12 @@ $ git commit -m '커밋 메세지'
 $ git push origin master
 ```
  
-간혹 깃의 히스토리가 충돌되어 푸쉬가 안되는 경우가 있는데 이럴경우는 아래 명령어를 사용하여 해결해 준다. 이 문제는 추후에 다시 짚어볼 예정이다.
+간혹 깃의 히스토리가 충돌되어 푸쉬가 안되는 경우가 있는데 이럴경우는 아래 명령어를 사용하여 해결해 준다.
 
 ```
 $ git pull origin 브랜치명 --allow-unrelated-histories
 ```
+
 ## References
 > [Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기](https://www.holaxprogramming.com/2017/04/16/github-page-and-hexo/)  
 > [Github 블로그 만들기 with Hexo - 초기설정](https://mingpd.github.io/2019/04/14/github-blog-with-hexo-1/)  
