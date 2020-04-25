@@ -170,11 +170,14 @@ $ hexo deploy --generate
 ```
 
 ## 깃허브에 소스 저장하기
-
+git pull origin master --allow-unrelated-histories
 위 배포 과정은 
 
 
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
+    git push --set-upstream origin master
 
 
 
