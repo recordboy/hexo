@@ -178,21 +178,14 @@ $ git init
 $ git remote add origin 저장소 주소
 $ git add .
 $ git commit -m '커밋 메세지'
-$ git push origin
+$ git push origin master
 ```
+ 
+간혹 깃의 히스토리가 충돌되어 푸쉬가 안되는 경우가 있는데 이럴경우는 아래 명령어를 사용하여 해결해 준다. 이 문제는 추후에 다시 짚어볼 예정이다.
 
-
-
-위 배포 과정은 
-
-
-fatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin master
-
-
-
+```
+$ git pull origin 브랜치명 --allow-unrelated-histories
+```
 ## References
 > [Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기](https://www.holaxprogramming.com/2017/04/16/github-page-and-hexo/)  
 > [Github 블로그 만들기 with Hexo - 초기설정](https://mingpd.github.io/2019/04/14/github-blog-with-hexo-1/)  
