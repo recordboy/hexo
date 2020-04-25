@@ -101,3 +101,11 @@ deploy:
   type: git
   repo: https://github.com/recordboy/recordboy.github.io.git
   branch: master
+
+# Customize
+# Rss feed
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  

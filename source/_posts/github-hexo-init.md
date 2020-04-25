@@ -38,7 +38,7 @@ $ npm install
 
 설치 후 터미널에서 `hexo server`명령어를 실행해 준다. 로컬 서버가 구동되면 `http://localhost:4000`주소로 들어가 보자, 아래 화면이 나온다면 헥소가 정상적으로 설치된 것이다.
 
-![헥소 초기 사이트](/gallery/post/github-hexo-init-01.png)
+![헥소 초기 화면](/gallery/post/github-hexo-init-01.png)
 
 
 ### icarus 테마 적용
@@ -81,7 +81,7 @@ $ npm install --save bulma-stylus@0.8.0 hexo-component-inferno@^0.2.4 hexo-rende
 ```
 설치한 후 다시 서버를 실행하면 성공적으로 `icarus`테마 사이트가 만들어 진다.
 
-![아카루스 초기 사이트](/gallery/post/github-hexo-init-02.png)
+![이카루스 초기 화면](/gallery/post/github-hexo-init-02.png)
 
 ### about 페이지 생성
 
