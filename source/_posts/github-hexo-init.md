@@ -129,7 +129,7 @@ deploy:
 ```
 deploy:
   type: git
-  repo: 저장소 주소(예: https://github.com/사용자 계정/사용자 계정.github.io.git)
+  repo: 저장소 주소(예: https://github.com/사용자계정/사용자계정.github.io.git)
   branch: master
 ```
 
@@ -151,7 +151,7 @@ $ hexo generate
 
 ### 배포하기
 
-아래 명령어를 사용하면 생성한 정적 리소스를 배포하게 된다. `사용자 계정.github.io`주소로 들어가면 정상적으로 배포된 것을 확인할 수 있다.
+아래 명령어를 사용하면 생성한 정적 리소스를 배포하게 된다. `사용자계정.github.io`주소로 들어가면 정상적으로 배포된 것을 확인할 수 있다.
 
 ```
 $ hexo deploy
