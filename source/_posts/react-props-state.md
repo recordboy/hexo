@@ -156,7 +156,7 @@ handleIncrease = () => {
   this.setState({
     number: this.state.number + 1
   })
-  console.log(this) // Counter
+  console.log(this); // Counter
 }
 ```
 
@@ -167,7 +167,7 @@ handleIncrease() {
   this.setState({
       number: this.state.number + 1 // TypeError
   })
-  console.log(this) // undefined
+  console.log(this); // undefined
 }
 ```
 
