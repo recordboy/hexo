@@ -7,298 +7,217 @@ thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---
 
-## 비구조화 할당의 정의
-ECMAScript6(2015)에서 새로 추가된 비구조화 할당(Destructuring Assignment)이란 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 자바스크립트 표현식(expression)이다.
+리엑트로 간단한 전화번호부를 만들어 보자, 우선 새로운 리엑트 프로젝트를 만들고, 로컬 서버를 시작한다. 프로젝트 이름은 `phone-book`으로 하겠다.
 
 <!-- more -->
 
-## 기본 문법(배열)
-```javascript
-const animalList = ["CAT", "DOG", "TIGER"];
-const cat = animalList[0];
-const dog = animalList[1];
-const tiger = animalList[2];
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
+## 프로젝트 초기화
+
+```
+$ create-react-app phone-book --use-npm
+$ cd phone-book
+$ npm server
 ```
 
-animalList는 "CAT", "DOG", "TIGER" 값을 가지고 있는 배열이다. 이 배열의 값을 각각 변수에 할당 하려면 위처럼 각각 하나씩 지정해 줘야 한다. 번거로운 작업이며, 코드도 복잡해보이는 단점이 있다.
+App.js 파일을 열어 필요없는 코드를 전부 지워준 뒤 App 컴포넌트만 추가해 본다.
 
 ```javascript
-const [cat, dog, tiger] = ["CAT", "DOG", "TIGER"];
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
-```
-
-비구조화 할당을 이용하면 위처럼 간단하게 작성할 수 있다. 좌항이 호출될 변수명 집합, 우항이 할당할 값이다. 좌항의 각 요소에는 같은 index를 가지는 배열값이 할당된다.
-
-### 나머지 패턴
-```javascript
-const [cat, ...rest] = ["CAT", "DOG", "TIGER"];
-console.log(cat); // CAT
-console.log(rest); // ["DOG", "TIGER"]
-```
-
-전개 연산자(`...`)를 활용하면 좌항에서 명시적으로 할당되지 않는 나머지 배열 값을 사용할 수 있다.
-
-## 기본 문법(객체) 
-```javascript
-const animals = {
-  cat: "CAT",
-  dog: "DOG",
-  tiger: "TIGER"
-};
-const cat = animals.cat;
-const dog = animals.dog;
-const tiger = animals.tiger;
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
-```
- 
-객체도 배열과 마찬가지로 일일히 값을 따로 넣어주려면 번거롭다.
-
-```javascript
-const { cat, dog, tiger } = {
-  cat: "CAT",
-  dog: "DOG",
-  tiger: "TIGER"
-};
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
-```
-
-위와 같이 작성하면 비구조화 할당을 수행하며, 배열의 경우 좌항의 index값에 값에 할당되었다면, 객체는 같은 key에 있는 값이 담긴다.
-
-### 나머지 패턴
-```javascript
-const { cat, ...rest } = {
-  cat: "CAT",
-  dog: "DOG",
-  tiger: "TIGER"
+import React, { Component } from 'react';
+class App extends Component {
+  render() {
+    return(
+      <div>hello</div>
+    )
+  }
 }
-console.log(cat); // CAT
-console.log(rest); // {dog: "DOG", tiger: "TIGER"}
+export default App;
 ```
 
-배열과 마찬가지로 객체도 나머지 패턴이 있다.
+`http://localhost:3000`에 들어가보면 hello 라고 정상적으로 출력 될 것이다. 이제 본격적으로 하위 컴포넌트를 만들어 App.js에 연결해 보겠다.
 
-### 원래의 key 대신 다른 변수명 사용
+## 입력 폼 컴포넌트 추가
+src 디렉토리 내부에 components 디렉토리를 만든 뒤 그 안에 PhoneForm.js 파일을 만든 뒤 아래 코드를 입력한다.
+
+### 이름 인풋 값 state에 할당
 ```javascript
-const { cat: catName, dog: dogName, ...rest } = {
-  cat: "CAT",
-  dog: "DOG",
-  tiger: "TIGER",
-  monkey: "MONKEY"
+import React, { Component } from 'react';
+class PhoneForm extends Component {
+  state = {
+    name: ''
+  }
+  handleChange = (e) => {
+    this.setState({
+      name: e.target.value
+    })
+  }
+  render() {
+    return(
+      <form>
+        <input
+          type="text"
+          onChange={this.handleChange} 
+        />
+        <div>name: {this.state.name}</div>
+      </form>
+    )	
+  }
 }
-console.log(catName); // CAT
-console.log(dogName); // DOG
-console.log(rest); // {tiger: "TIGER", monkey: "MONKEY"}
+export default PhoneForm;
 ```
 
-좌항의 변수에 다른이름으로 사용할 변수명을 대입하면 되며, 나머지 값을 뜻하하는 전개 연산자는 우항의 key에 영향을 받지 않으므로 `...rest: restName`이라는 표현식은 무의미 하며, 에러가 난다.
+코드를 살펴보면, 우선 인풋태그의 `onChange` 이벤트가 발생하면 `handleChange` 함수를 실행하게 된다. 이벤트 객체를 파라미터로 받은 `handleChange` 함수는 `e.target.value`값을 통해 인풋 요소의 값을 가져와서 `state`의 `name`값을 설정하게 된다. 인풋태그 아래 텍스트가 `state`의 값이 잘 바뀌고 있는지 확인할 수 있게 해준다.
 
+## App컴포넌트에 연결
+App.js 파일에 PhoneForm 컴포넌트를 아래와 같이 연결해 준다.
 
-### 우항의 key 값이 변수명으로 사용 불가 경우
 ```javascript
-const { 'cat-name', 'dog name' } = {
-  'cat-name': "CAT",
-  'dog name': "DOG"
+import React, { Component } from 'react';
+import PhoneForm from './components/PhoneForm';
+class App extends Component {
+  render() {
+    return(
+      <div>
+        <PhoneForm />
+      </div>
+    )
+  }
 }
-// error
+export default App;
 ```
 
-좌항으로 전달 받는 key 값이 `'cat-name'`같이 사용 불가능한 문자열이 있는 경우 에러를 호출한다. 이럴 경우는 아래와 같은 방식으로 비구조화 할 수 있다.
+인풋 태그에 값을 입력할 때 마다 아래에 입력값이 출력되는 것을 확인할 수 있다.
+
+### 전화번호 인풋 태그 추가
+전화번호가 들어갈 phone 인풋태그를 더 추가한다. 아래 코드를 살펴보자
 
 ```javascript
-const key = 'dog name';
-const { 'cat-name': cat_name, [key]: dog_name } = {
-  'cat-name': "CAT",
-  'dog name': "DOG"
+import React, { Component } from 'react';
+class PhoneForm extends Component {
+  state = {
+    name: '',
+    phone: ''
+  }
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+  render() {
+    return(
+      <form>
+        <input
+          type="text"
+          name="name"
+          onChange={this.handleChange}
+        />
+        <input
+          type="text"
+          name="phone"
+          onChange={this.handleChange}
+        />
+        <div>name: {this.state.name}</div>
+        <div>phone: {this.state.phone}</div>
+      </form>
+    )	
+  }
 }
-console.log(cat_name); // CAT
-console.log(dog_name); // DOG
+export default PhoneForm;
 ```
 
-다만 이 경우 `'cat-name'`과 매칭할 변수명 `cat_name`을 작성하지 않으면 에러가 발생한다.
+phone 인풋태그가 추가되었으니 해당 값을 가져오는 이벤트 핸들러 함수를 하나 더 만들어야 될 것 같지만 [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)문법을 사용하면 따로 메소드를 추가 안하고 위처럼 작성이 가능하다. 
 
-### 객체 비구조화시 변수 선언 키워드가 없는 경우
-```javascript
-let cat,
-    dog;
+우선 인풋 태그에 name 값을 추가 하여 각 인풋을 구분할 수 있게 되었다. setState 함수를 보면 `[e.target.name]`로 이벤트 객체의 name 값을 state의 키값으로 활용하고 있다. 즉 name 인풋을 입력하면 `[e.target.name]`값은 name이기 때문에 state의 name 프로퍼티에 e.target.value 값을 할당, phone 인풋을 입력하면 `[e.target.name]`값은 phone이기 때문에 state의 phone 프로퍼티에 e.target.value 값을 할당 한다고 보면 된다. 두 인풋 값이 하단에 잘 출력되는 것을 확인할 수 있다.
 
-// { cat, dog } = { cat: "CAT", dog: "DOG" } // error
-({ cat, dog } = { cat: "CAT", dog: "DOG" }) // 괄호로 감싸줘야 함
-console.log(cat); // CAT
-console.log(dog); // DOG
-```
+## 부모 컴포넌트에게 정보 전달하기
+PhoneForm 컴포넌트에 있는 값을 부모(App)컴포넌트에 값을 전달해줄 차례다. 이런 상황에는, 부모 컴포넌트에서 메소드를 만들고, 이 메소드를 자식에게 전달한 다음에 자식 내부에서 호출하는 방식을 사용한다.
 
-객체 비구조화시 변수 선언 키워드가 없을 경우 소괄호를 사용하여 감싸줘야 한다. 감싸주지 않으면 에러가 난다.
-
-## 기본값 할당
-
-### 배열의 기본값 할당
-```javascript
-const [cat, dog, tiger] = ["CAT", "DOG"];
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // undefined
-```
-
-비구조화의 범위를 벗어나는 값 할당을 시도하면 `undefined`를 반환한다. 이럴 경우를 방지하기 위해 아래처럼 호출될 변수명에 기본값을 할당할 수 있다.
+순서를 보면 우선 App에서 handleCreate라는 메소드를 만들고 이를 props를 이용하여 PhoneForm 컴포넌트에 전달을 한다. 그리고 PhoneForm 컴포넌트에 submit 버튼을 추가하여 이벤트가 발생하면 props로 받은 함수를 호출하여 App에서 파라미터로 받은 값을 사용할 수 있도록 하겠다. 우선 App 컴포넌트는 아래와 같이 수정해 준다.
 
 ```javascript
-const [cat, dog, tiger = "TIGER"] = ["CAT", "DOG"];
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
-```
-
-### 객체의 기본값 할당
-```javascript
-const { cat, dog, tiger = "TIGER" } = {
-  cat: "CAT",
-  dog: "DOG"
-};
-console.log(cat); // CAT
-console.log(dog); // DOG
-console.log(tiger); // TIGER
-```
-
-배열과 마찬가지로 객체도 기본값을 지원한다.
-
-```javascript
-const { monkey: monkey_name = 'MONKEY' } = {};
-console.log(monkey_name); // MONKEY
-```
-
-위 코드처럼 객체의 key에 새로운 변수명을 할당하는 방식에도 기본 기본값 할당을 사용할 수 있다.
-
-## 복사
-전개 연산자를 사용하여 배열, 객체의 깊은 복사를 할 수 있다.
-
-### 배열의 깊은 복사
-```javascript
-let arr = [1, 2, 3];
-let copy1 = arr;
-let [...copy2] = arr;
-let copy3 = [...arr];
-
-arr[0] = 'String';
-console.log(arr); // [ 'String', 2, 3 ]
-console.log(copy1); // [ 'String', 2, 3 ]
-console.log(copy2); // [ 1, 2, 3 ]
-console.log(copy3); // [ 1, 2, 3 ]
-```
-
-얕은 복사인 `copy1`은 `arr`를 참조하기 때문에 0번째 요소가 같이 수정되었지만, 전개 연산자를 사용한 `copy2`와 `copy3`은 깊은 복사가 되었기 때문에 0번째 요소가 변경되지 않았다.
-
-### 객체의 깊은 복사
-객체 역시 전개 연산자로 깊은 복사를 사용할 수 있다. 무엇보다 강력한 점은 복사와 함께 새로운 값을 할당할 수 있다는 점이다.
-
-```javascript
-let prevState = {
-  name: "foo",
-  birth: "1995-01-01",
-  age: 25
-};
-let state = {
-  ...prevState,
-  age: 26
-};
-
-console.log(state); // {name: "foo", birth: "1995-01-01", age: 26}
-```
-
-위와 같이 `...prevState`를 사용하여 기존 객체를 복사함과 동시에 `age`에 새로운 값을 할당했다. 리액트의 props나 state처럼 이전 정보를 이용하는 경우 유용하게 사용할 수 있다.
-
-## 함수에서의 비구조화 할당
-
-함수의 파라미터 부분에서도 비구조화 할당을 사용할 수 있다. 이러한 문법은 특히 API 응답값을 처리하는데에 유용하게 사용된다.
-
-```javascript
-function renderUser({name, age, addr}){
-  console.log(name);
-  console.log(age);
-  console.log(addr);
+import React, { Component } from 'react';
+import PhoneForm from './components/PhoneForm';
+class App extends Component {
+  handleCreate = (data) => {
+    console.log(data)
+  }
+  render() {
+    return(
+      <div>
+        <PhoneForm
+          onCreate={this.handleCreate}
+        />
+      </div>
+    )
+  }
 }
-const users = [
-  {name: 'kim', age: 10, addr:'kor'},
-  {name: 'joe', age: 20, addr:'usa'},
-  {name: 'miko', age: 30, addr:'jp'}
-];
-
-users.map((user) => {
-  renderUser(user);
-});
-// kim
-// 10
-// kor
-// joe
-// 20
-// usa
-// miko
-// 30
-// jp
+export default App;
 ```
-
-`users` 배열의 `map` 메소드로 인하여 `renderUser` 함수에 `users`의 객체가 각각 전달된다. 각 객체의 key 값이 `renderUser`함수의 파라미터 받는 부분에서 비구조화 할당을 받았기 때문에 함수 내에서 객체의 key 값을 각각 가져올 수 있게 된다.
+handleCreate 함수를 추가했다. 이 함수는 자식 컴포넌트에서 전달받아오는 결과값을 콘솔창에 출력할 함수다. PhoneForm 컴포넌트에는 onCreate 라는 속성에 handleCreate 함수를 할당해 주었다.
 
 ```javascript
-const users = [
-  {name: 'kim', age: 10, addr:'kor'},
-  {name: 'joe', age: 20, addr:'usa'},
-  {name: 'miko', age: 30, addr:'jp'}
-];
+import React, { Component } from 'react';
+class PhoneForm extends Component {
+  state = {
+    name: '',
+    phone: ''
+  }
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+  handleSubmit = (e) => {
 
-users.map(({name, age, addr}) => {
-  console.log(name);
-  console.log(age);
-  console.log(addr);
-});
-```
+    // 이벤트 리로딩 방지
+    e.preventDefault()
 
-마찬가지로 위처럼 `map` 메소드의 파라미터에도 바로 사용할 수 있다.
+    // 상태값을 onCreate를 통하여 부모에게 전달
+    this.props.onCreate(this.state)
 
-## for of 문을 이용한 비구조화 할당  
-배열 내 객체들은 for of 문을 사용하여 비구조화 할 수 있다.
-
-```javascript
-const users = [
-  {name: 'kim', age: 10, addr:'kor'},
-  {name: 'joe', age: 20, addr:'usa'},
-  {name: 'miko', age: 30, addr:'jp'}
-];
-
-for(let {name : n, age : a} of users){
-  console.log(n);
-  console.log(a);
+    // 상태 초기화
+    this.setState({
+      name: '',
+      phone: ''
+    })
+  }
+  render() {
+    return(
+      <form onSubmit={this.handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          value={this.state.name}
+          onChange={this.handleChange}
+        />
+        <input
+          type="text"
+          name="phone"
+          value={this.state.phone}
+          onChange={this.handleChange}
+        />
+        <button type="submit">send</button>
+      </form>
+    )	
+  }
 }
+export default PhoneForm;
 ```
 
-## 중첩된 객체 및 배열의 비구조화
-중첩된 객체 및 배열 역시 비구조화가 가능하다.
+render 함수 안을 먼저 보면, submit 버튼을 추가하고, form태그에는 onSubmit 이벤트를 등록하였다. 인풋의 value 값은 현재 state 값을 참조하도록 하여 실시간으로 변경되는 값으로 할당되도록 하였다. state 값이 실시간으로 바뀌는지 확인하기 위한 인풋 아래 텍스트들은 삭제해준다.
+
+메소드는 handleSubmit 함수를 추가하였는데, 우선 submit 이벤트가 발생하면 페이지가 리로드되기 때문에 함수가 실행될 때 e.preventDefault 함수를 이용하여 리로드를 막는다. 다음에 props으로 받은 onCreate 함수를 실행하여 현재 state 값을 전달해주고, 현재 값은 초기화 해준다. submit 버튼을 클릭하면 콘솔창에 전달받은 인풋값이 정상적으로 출력될 것이다.
+
+## 데이터 추가
+PhoneForm 컴포넌트의 데이터를 부모 컴포넌트로 전달했으니 이제 부모 컴포넌트에 데이터를 계속 추가 하도록 하겠다. 데이터 객체를 배열에 계속 추가하기 위해선 리액트에서 배열을 어떻게 다루는지 알아야 한다. 기존의 자바스크립트에서는 배열에 값을 추가할 때 push 메서드를 사용했었다.
 
 ```javascript
-const kim = {
-  name: 'kim',
-  age: 10,
-  addr: 'kor',
-  friends: [
-    {name: 'joe', age: 20, addr:'usa'},
-    {name: 'miko', age: 30, addr:'jp'}
-  ]
-};
-
-let { name: userName, friends: [ ,{ name: jpFriend }] } = kim;
-console.log(userName); // kim
-console.log(jpFriend); // miko
+var arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // [1, 2, 3, 4]
 ```
+
+추가 수정 예정
 
 ## References
-> [자바스크립트 {...} [...] 문법 (비구조화 할당/구조분해 할당)](https://yuddomack.tistory.com/entry/자바스크립트-문법-비구조화-할당)  
-> [JavaScript ) 비구조화 할당 알아보기](https://velog.io/@public_danuel/destructuring-assignment)  
-> [구조 분해 할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+> [누구든지 하는 리액트 6편: input 상태 관리하기](https://velopert.com/3634)  
+> [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)
