@@ -1,9 +1,9 @@
 ---
-title: "ES6 비구조화 할당(Destructuring Assignment)"
+title: "React 전화번호부 만들기"
 date: 2020-04-27 20:51:12
 categories: "react"
-tags: [javascript, es6]
-thumbnail: "/gallery/thumbnail-es6.png"
+tags: [react]
+thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---
 
