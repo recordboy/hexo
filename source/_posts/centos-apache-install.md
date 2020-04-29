@@ -64,27 +64,37 @@ vi 편집기를 실행하여 "hello world!"를 입력하고 ESC를 누른뒤 아
 
 apache를 재시작할일이 드물기 때문에 종종 명령어를 잃어버린다. 아래 명령어를 참고하도록 한다.
 
-* Apache 버전 확인  
-`# httpd -v`
+Apache 버전 확인
+```
+# httpd -v
+```
 
-* Apache 상태 확인  
-`# systemctl status httpd`  
-`# service httpd status`
+Apache 상태 확인
+```
+# systemctl status httpd
+# service httpd status
+```
 
-* Apache 시작  
-`# systemctl start httpd`  
-`# service httpd start`  
-`# apachectl start`
+Apache 시작
+```
+# systemctl start httpd
+# service httpd start
+# apachectl start
+```
 
-* Apache 중지  
-`# systemctl stop httpd`  
-`# service httpd stop`  
-`# apachectl stop`
+Apache 중지
+```
+# systemctl stop httpd
+# service httpd stop
+# apachectl stop
+```
 
-* Apache 재시작  
-`# systemctl restart httpd`  
-`# service httpd restart`  
-`# apachectl restart`
+Apache 재시작
+```
+# systemctl restart httpd
+# service httpd restart
+# apachectl restart
+```
 
 ## References
 > [CentOS 아파치 설치](https://zetawiki.com/wiki/CentOS_아파치_설치)  

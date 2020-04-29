@@ -7,18 +7,17 @@ thumbnail: "/gallery/thumbnail-centos.png"
 toc: true
 ---
 
-
 ## 설치환경
 
 * CentOS 7.2
 * Extra Packages for Enterprise Linux (EPEL) repository
 
 > **CentOS**  
-> CentOS는 리눅스(Linux) 계열의 배포판 버전, 리눅스 계열중에서도 레드햇(RedHat)계열이다.
-> 국내에서 웹 서버로 많이 사용하는 배포판이 센토스(Centos)와 우분투(Ubuntu)이다.
+> * CentOS는 리눅스(Linux) 계열의 배포판 버전, 리눅스 계열중에서도 레드햇(RedHat)계열이다.
+> * 국내에서 웹 서버로 많이 사용하는 배포판이 센토스(Centos)와 우분투(Ubuntu)이다.
 
 > **Extra Packages for Enterprise Linux (EPEL) repository**  
-> EPEL (Extra Packages for Enterprise Linux) 은 Fedora Project 에서 제공되는 저장소로 각종 패키지의 최신 버전을 제공하는 community 기반의 저장소이다.
+> * EPEL (Extra Packages for Enterprise Linux) 은 Fedora Project 에서 제공되는 저장소로 각종 패키지의 최신 버전을 제공하는 community 기반의 저장소이다.
 
 <!-- more -->
 
@@ -26,8 +25,8 @@ toc: true
 인터넷에 있는 PHP압축파일을 설치하기 위해선 wget을 설치해야 한다. wget은 인터넷 파일을 다운받는 명령어로서 리눅스 최소 설치 시에는 wget을 따로 설치해야 한다. 아래 Yum 명령어를 이용하여 설치해 준다.
 
 > **[Yum](https://ko.wikipedia.org/wiki/Yum)**  
-> Yellow dog Updater, Modified의 약자로 RPM 기반의 시스템을 위한 자동 업데이터 겸 패키지 설치/제거 도구이다.
-> 이전에는 rpm으로 설치하였지만 Yum은 의존성을 고려하여 의존성 패키지까지 자동으로 설치된다.
+> * Yellow dog Updater, Modified의 약자로 RPM 기반의 시스템을 위한 자동 업데이터 겸 패키지 설치/제거 도구이다.
+> * 이전에는 rpm으로 설치하였지만 Yum은 의존성을 고려하여 의존성 패키지까지 자동으로 설치된다.
 
 ```
 # yum install wget

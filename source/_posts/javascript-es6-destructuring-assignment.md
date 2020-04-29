@@ -7,7 +7,7 @@ thumbnail: "/gallery/thumbnail-es6.png"
 toc: true
 ---
 
-## 비구조화 할당의 정의
+## 정의
 ECMAScript6(2015)에서 새로 추가된 비구조화 할당(Destructuring Assignment)이란 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 자바스크립트 표현식(expression)이다.
 
 <!-- more -->

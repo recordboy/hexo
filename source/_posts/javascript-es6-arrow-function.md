@@ -10,6 +10,8 @@ toc: true
 ## 정의
 ECMAScript6(2015)에서 새로 추가된 화살표 함수(Arrow Function)는 function 키워드 대신 화살표(`=>`)를 사용하여 보다 간략한 방법으로 함수를 선언할 수 있다.
 
+<!-- more -->
+
 ### 기존 함수
 ```javascript
 var func = function() {
@@ -24,7 +26,6 @@ const func = () => {
 };
 ```
 
-<!-- more -->
 
 ## 기본 문법
 
