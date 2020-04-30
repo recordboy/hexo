@@ -20,7 +20,7 @@ date: 2020-04-11 23:42:36
     * (2016.12 ~ 2018.12)
 
 * Sorriso I&C
-    * UI Developer / Designer
+    * UI Developer / GUI Designer
     * (2015.09 ~ 2016.09)
 
 ## Education
