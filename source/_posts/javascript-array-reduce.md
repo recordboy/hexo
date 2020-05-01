@@ -23,7 +23,7 @@ thumbnail: "/gallery/thumbnail-js.png"
 var arr = [1, 2, 3, 4, 5];
 
 // 각 콜백 마다 리턴값을 previousItem로 넘겨받아 어떤 작업을 수행
-var val = arr.reduce(function (previousItem, currentItem, index, array) {
+var val = arr.reduce(function(previousItem, currentItem, index, array) {
 
     // 콜백의 리턴 값을 받아 현재의 값과 더하려 다시 리턴
     return previousItem + currentItem;
@@ -31,7 +31,7 @@ var val = arr.reduce(function (previousItem, currentItem, index, array) {
 // 첫번째 콜백의 previousItem값
 }, 0);
 
-console.log(val)
+console.log(val);
 // 15
 // 위 결과를 수식으로 나타내면 0 + 1 + 2 + 3 + 4 + 5 이다.(0부터 5까지의 합)
 ```

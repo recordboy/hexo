@@ -32,7 +32,7 @@ var obj = new Object();
 
 ```javascript
 function func() {
-    console.log(this)
+    console.log(this);
 };
 func(); // window
 ```
@@ -42,11 +42,11 @@ func(); // window
 ```javascript
 function Func(name) {
     this.name = name;
-    console.log(this)
+    console.log(this);
     return this;
 };
 var obj = new Func("foo");
-console.log(obj) // Func {name: "foo"}
+console.log(obj); // Func {name: "foo"}
 ```
 
 생성자 함수의 this 는 메서드 함수 호출과의 this 바인딩과 다르게 동한다. 이를 이해하려면 생성자 함수가 어떻게 동작하는지 알아야 한다. 위 코드의 작동 순서를 보면 아래와 같다.

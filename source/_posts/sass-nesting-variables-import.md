@@ -12,7 +12,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 
 <!-- more -->
 
-### SCSS
+**SCSS**
 ```scss
 .wrap {
     width: 100%;
@@ -25,7 +25,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .wrap {
   width: 100%;
@@ -41,7 +41,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 ## 상위 선책자 참조
 중첩 안에서 `&`키워드는 상위(부모) 선택자를 참조한다.
 
-### SCSS
+**SCSS**
 ```scss
 .wrap {
     width: 100%;
@@ -51,7 +51,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .wrap {
   width: 100%;
@@ -63,7 +63,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 
 `&` 키워드는 상위 선택자를 참조했기 때문에 아래와 같이 응용이 가능하다.
 
-### SCSS
+**SCSS**
 ```scss
 .wrap {
     width: 100%;
@@ -73,7 +73,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .wrap {
   width: 100%;
@@ -92,7 +92,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 ## 중첩 벗어나기
 중첩에서 벗어나고 싶을 때 `@at-root`키워드를 사용한다. 중첩 안에서 생성하되 중첩 밖에서 사용해야 하는 경우에 유용하다.
 
-### SCSS
+**SCSS**
 ```scss
 .list {
     width: 100px;
@@ -105,7 +105,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .list {
   width: 100px;
@@ -121,7 +121,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 ## 중첩된 속성
 `font-`, `margin-` 등과 같이 동일한 네임 스페이스를 가지는 속성들은 아래와 같이 사용할 수 있다.
 
-### SCSS
+**SCSS**
 ```scss
 .wrap {
     font: {
@@ -140,7 +140,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .wrap {
   font-weight: bold;
@@ -160,7 +160,7 @@ SASS는 중첩기능을 사용할 수 있다. 상위 선택자의 반복을 피�
 $변수이름: 속성값;
 ```
 
-### SCSS
+**SCSS**
 ```scss
 $color-code: #000;
 $url: "/common/images/";
@@ -173,7 +173,7 @@ $w: 200px;
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .wrap {
   color: #000;
@@ -185,7 +185,7 @@ $w: 200px;
 ## 변수의 유효범위
 변수는 사용 가능한 유효범위가 있다. 선언된 블록({}) 내에서만 유효범위를 가진다.
 
-### SCSS
+**SCSS**
 ```scss
 .wrap {
     $w: 100px;
@@ -205,7 +205,7 @@ $w: 200px;
 ## 변수 재 할당
 아래처럼 변수에 변수를 할당할 수 있다.
 
-### SCSS
+**SCSS**
 ```scss
 $red: #FF0000;
 $color-code: $red;
@@ -215,7 +215,7 @@ $color-code: $red;
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .box {
   color: #FF0000;
@@ -225,7 +225,7 @@ $color-code: $red;
 ## 전역 설정
 `!global` 플래그를 사용하면 변수의 유효범위를 전역(Global)로 설정할 수 있다. 대신 기존에 사용하던 같은 이름의 변수가 있을 경우 값이 덮어져 사용된다.
 
-### SCSS
+**SCSS**
 ```scss
 .box {
     $w: 100px !global;
@@ -240,7 +240,7 @@ $color-code: $red;
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .box {
   width: 100px;
@@ -258,7 +258,7 @@ $color-code: $red;
 ## 초기값 설정
 `!default` 플래그는 할당되지 않은 변수의 초깃값을 설정한다. 즉, 할당되어있는 변수가 있다면 변수가 기존 할당 값을 사용한다.
 
-### SCSS
+**SCSS**
 ```scss
 $w: 100px;
 
@@ -268,7 +268,7 @@ $w: 100px;
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 .box {
   width: 100px;
@@ -280,13 +280,13 @@ $w: 100px;
 ## 문자 보간
 `#{}`를 이용하여 코드의 어디든지 변수 값을 넣을 수 있다.
 
-### SCSS
+**SCSS**
 ```scss
 $family: unquote("Droid+Sans");
 @import url("http://fonts.googleapis.com/css?family=#{$family}");
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 @import url("http://fonts.googleapis.com/css?family=Droid+Sans");
 ```

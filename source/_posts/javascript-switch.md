@@ -14,9 +14,9 @@ toc: true
 ```javascript
 var a = 0;
 switch (1) {
-    case 1: console.log('ok')
+    case 1: console.log('ok');
     break;
-    case 2: console.log('no')
+    case 2: console.log('no');
     break;
 }
 // ok
@@ -26,8 +26,8 @@ switch (1) {
 
 ```javascript
 switch (1) {
-    case 1: console.log('ok')
-    case 1: console.log('no')
+    case 1: console.log('ok');
+    case 1: console.log('no');
 }
 // ok
 // no

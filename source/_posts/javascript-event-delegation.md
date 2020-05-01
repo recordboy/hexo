@@ -27,8 +27,8 @@ var item = document.getElementById('list').getElementsByTagName('li');
 for (var i = 0; i < item.length; i++) {
 
     // 각 li에 이벤트 리스너를 등록한다.
-    item[i].addEventListener('click', function(e){
-        alert(e.target.innerText)
+    item[i].addEventListener('click', function(e) {
+        alert(e.target.innerText);
     })
 }
 ```
@@ -45,8 +45,8 @@ for (var i = 0; i < item.length; i++) {
 var item = document.getElementById('list').getElementsByTagName('li');
 for (var i = 0; i < item.length; i++) {
     // 각 li에 이벤트 리스너를 등록한다.
-    item[i].addEventListener('click', function(e){
-        alert(e.target.innerText)
+    item[i].addEventListener('click', function(e) {
+        alert(e.target.innerText);
     })
 }
 </script>
@@ -59,11 +59,11 @@ var list = document.getElementById('list');
 var item = list.getElementsByTagName('li');
 
 // 리스트에 이벤트를 등록
-list.addEventListener('click', function(e){
+list.addEventListener('click', function(e) {
 
     // 리스트 요소일 때 경고창 출력
     if (e.target.nodeName === 'LI') {
-        alert(e.target.innerText)
+        alert(e.target.innerText);
     }
 })
 ```

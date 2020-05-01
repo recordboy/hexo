@@ -26,7 +26,7 @@ var val = arr.every(function (item, index, array) {
     return item < 10;
 });
 
-console.log(val)
+console.log(val);
 // false
 ```
 

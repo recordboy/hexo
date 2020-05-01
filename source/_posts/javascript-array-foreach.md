@@ -22,7 +22,7 @@ thumbnail: "/gallery/thumbnail-js.png"
 var arr = ['a', 'b', 'c'];
 
 arr.forEach(function (item) {
-    console.log(item)
+    console.log(item);
 });
 
 // a
@@ -38,7 +38,7 @@ arr.forEach(function (item, index, array) {
     array[index] = item + 'EDIT';
 });
 
-console.log(arr)
+console.log(arr);
 ```
 
 ## References

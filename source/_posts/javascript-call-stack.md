@@ -17,13 +17,13 @@ toc: true
 
 ```javascript
 function func01() {
-    throw new Error('Oops!')
+    throw new Error('Oops!');
 }
 function func02() {
-    func01()
+    func01();
 }
 function func03() {
-    func02()
+    func02();
 }
 func03();
 // Uncaught Error: Oops!
@@ -40,9 +40,9 @@ func03();
 
 ```javascript
 function func() {
-    func()
+    func();
 }
-func()
+func();
 // Uncaught RangeError: Maximum call stack size exceeded
 // at foo (index.html:25)
 // at foo (index.html:26)

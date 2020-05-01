@@ -26,7 +26,7 @@ var val = arr.some(function (item, index, array) {
     return item % 2 === 0;
 });
 
-console.log(val)
+console.log(val);
 // ture
 ```
 

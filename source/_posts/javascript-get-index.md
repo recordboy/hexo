@@ -25,11 +25,11 @@ thumbnail: "/gallery/thumbnail-js.png"
 var ul = document.getElementById('ul'),
     li = ul.getElementsByTagName('li');
 for (var i = 0; i < li.length; i++) {
-    (function (idx) {
-        li[idx].onclick = function () {
-            alert(idx)
+    (function(idx) {
+        li[idx].onclick = function() {
+            alert(idx);
         }
-    })(i)
+    })(i);
 }
 ```
 
@@ -46,10 +46,10 @@ for (var i = 0; i < li.length; i++) {
 var ul = document.getElementById('ul'),
     li = ul.getElementsByTagName('li');
 for (var i = 0; i < li.length; i++) {
-    (function (idx) {
-        li[idx].onclick = function () {
-            alert(idx)
+    (function(idx) {
+        li[idx].onclick = function() {
+            alert(idx);
         }
-    })(i)
+    })(i);
 }
 </script>

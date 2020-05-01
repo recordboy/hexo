@@ -12,3 +12,4 @@ thumbnail: "/gallery/thumbnail-web.png"
 |:-----|:-----|
 | dump | 프로그램 디버그 또는 시스템 테스트의 목적을 위해 기록되는 파일 |
 | temp | 임시 폴더 |
+|  |  |

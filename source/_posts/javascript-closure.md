@@ -16,7 +16,7 @@ toc: true
 ```javascript
 function func() {
     var foo = 'data';
-    return function () {
+    return function() {
         return foo;
     }
 }
@@ -26,7 +26,7 @@ func라는 함수를 선언하고 foo변수에 'data'문자열을 추가한 뒤 
 
 ```javascript
 var closure = func();
-console.log(closure())
+console.log(closure());
 // 'data'
 ```
 
@@ -35,16 +35,16 @@ func함수의 리턴값을 closure변수에 할당한 뒤 closure를 실행한 �
 ```javascript
 function count() {
     var num = 0;
-    return function () {
+    return function() {
         num++;
         return num;
     }
 }
 
 var closure = count();
-console.log(closure())
-console.log(closure())
-console.log(closure())
+console.log(closure());
+console.log(closure());
+console.log(closure());
 // 1
 // 2
 // 3
@@ -72,7 +72,7 @@ console.log(obj._name);
 
 ```javascript
 obj._name = '인성';
-console.log(obj._name)
+console.log(obj._name);
 // 인성
 ```
 
@@ -81,8 +81,8 @@ console.log(obj._name)
 ```javascript
 function create(name) {
     var _name = name;
-    return function () {
-        console.log(_name)
+    return function() {
+        console.log(_name);
     }
 }
 
@@ -100,14 +100,14 @@ hello();
 ```javascript
 function func(name) {
     var txt = name;
-    return function () {
+    return function() {
         return txt;
     }
 }
 
-var closure01 = func('민수')
-var closure02 = func('인성')
-var closure03 = func('주영')
+var closure01 = func('민수');
+var closure02 = func('인성');
+var closure03 = func('주영');
 
 console.log(closure01()) // 민수
 console.log(closure02()) // 인성
@@ -119,7 +119,7 @@ console.log(closure03()) // 주영
 ```javascript
 function Func(input) {
     this.name = input;
-    this.get = function () {
+    this.get = function() {
         return this.name;
     }
     this.set = function (rename) {
@@ -128,7 +128,7 @@ function Func(input) {
 }
 
 var obj = new Func('민수');
-console.log(obj.get())
+console.log(obj.get());
 ```
 
 위 코드는 생성자함수를 사용하여 인스턴스를 생성하는 구문인데, 클로저가 두번(get, set)이나 생성되었다. 이 상태에서 인스턴스를 계속 만들면 같은일을 하는 클로저가 중복으로 생성되고 메모리낭비가 심해질 것이다.  
@@ -138,15 +138,15 @@ console.log(obj.get())
 function Func(input) {
     this.name = input;
 }
-Func.prototype.get = function () {
+Func.prototype.get = function() {
     return this.name;
 };
-Func.prototype.set = function (rename) {
+Func.prototype.set = function(rename) {
     this.name = rename;
 };
 
 var obj = new Func('민수');
-console.log(obj.get())
+console.log(obj.get());
 ```
 
 이렇게 prototype안에 클로저를 넣으면, 인스턴스가 생성되더라도 중복으로 메모리를 낭비하지 않고, 생성자 내부의 prototype안의 클로저를 참조하기 때문에 메모리낭비를 방지할 수 있다.

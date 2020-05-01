@@ -13,10 +13,10 @@ thumbnail: "/gallery/thumbnail-js.png"
 <!-- more -->
 
 ```javascript
-console.log('2 + 2')
+console.log('2 + 2');
 // 2 + 2
 
-console.log(eval('2 + 2'))
+console.log(eval('2 + 2'));
 // 4
 ```
 

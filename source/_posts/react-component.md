@@ -65,7 +65,7 @@ $ npm start
 ## 컴포넌트 파일 살펴보기
 `src` 폴더의 `App.js`파일을 열어본다.
 
-```
+```javascript
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';

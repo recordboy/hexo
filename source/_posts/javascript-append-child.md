@@ -15,7 +15,7 @@ var input = document.createElement('input');
 
 생성된 노드 속성 추가
 ```javascript
-input.setAttribute('type', 'text')
+input.setAttribute('type', 'text');
 ```
 
 텍스트 노드 추가
@@ -25,7 +25,7 @@ var txt = document.createTextNode('hello');
 
 부모 노드에 생성된 노드 추가
 ```javascript
-부모노드.appendChild(input)
+부모노드.appendChild(input);
 ```
 
 위 노드 추가 방법으로 테이블 추가 예제를 만들어 보자, 버튼을 계속 클릭하면 테이블이 추가된다.
@@ -73,7 +73,7 @@ window.onload = function () {
 
     // 버튼 이벤트
     btn.addEventListener('click', function () {
-        tblAdd()
+        tblAdd();
     });
 
     // 테이블 추가
@@ -81,10 +81,10 @@ window.onload = function () {
         var tr = document.createElement('tr');
         for (var i = 0; i < 5; i++) {
             var td = document.createElement('td');
-            tr.appendChild(td)
+            tr.appendChild(td);
         };
-        tbl.appendChild(tr)
-        numAdd()
+        tbl.appendChild(tr);
+        numAdd();
     }
 
     // 테이블 번호 추가
@@ -111,7 +111,7 @@ window.onload = function () {
 
 .wrap * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 #tbl td {
@@ -138,7 +138,7 @@ window.onload = function () {
 
     // 버튼 이벤트
     btn.addEventListener('click', function () {
-        tblAdd()
+        tblAdd();
     });
 
     // 테이블 추가
@@ -146,10 +146,10 @@ window.onload = function () {
         var tr = document.createElement('tr');
         for (var i = 0; i < 5; i++) {
             var td = document.createElement('td');
-            tr.appendChild(td)
+            tr.appendChild(td);
         };
-        tbl.appendChild(tr)
-        numAdd()
+        tbl.appendChild(tr);
+        numAdd();
     }
 
     // 테이블 번호 추가
@@ -159,8 +159,8 @@ window.onload = function () {
             for (var j = 0; j < tblTr[i].getElementsByTagName('td').length; j++) {
                 num++;
                 tblTr[i].getElementsByTagName('td')[j % 5].innerHTML = num;
-            };
-        };
+            }
+        }
     }
 
 }

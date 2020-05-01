@@ -18,12 +18,12 @@ ES6에서 `class`라는 문법이 추가되었고, 기존의 prototype 기반으
 클래스가 선언되기 전에 인스턴스를 생성하여 에러가 뜬다.
 ```javascript
 var obj = new Person('주영');
-obj.getName() // TypeError
+obj.getName(); // TypeError
 
 var Person = function(name) {
     this.name = name;
     Person.prototype.getName = function() {
-        console.log(this.name)
+        console.log(this.name);
     }
 }
 ```
@@ -32,12 +32,12 @@ var Person = function(name) {
 인스턴스를 함수 선언 전에 생성해도 오류가 나지 않는다. 클래스를 선언식으로 작성하여 호이스팅되었기 때문이다.
 ```javascript
 var obj = new Person('주영');
-obj.getName() // 주영
+obj.getName(); // 주영
 
 function Person(name) {
     this.name = name;
     Person.prototype.getName = function() {
-        console.log(this.name)
+        console.log(this.name);
     }
 }
 ```
@@ -50,25 +50,25 @@ class Person {
         this.name = name;
     }
     getName() {
-        console.log(this.name)
+        console.log(this.name);
     }
 }
 
 const obj = new Person('민수');
-obj.getName() // 민수
+obj.getName(); // 민수
 ```
 위 코드는 새로운 클래스 키워드로 클래스를 선언하고 인스턴스를 만든 것이다. 함수 선언이 표현식과 선언식이 있듯이 클래스 키워드도 선언식과 표현식 두가지 방법으로 정의가 가능하다.
 
 ```javascript
 const obj = new Person('민수');
-obj.getName() // ReferenceError
+obj.getName(); // ReferenceError
 
 class Person {
     constructor(name) {
         this.name = name;
     }
     getName() {
-        console.log(this.name)
+        console.log(this.name);
     }
 }
 ```
@@ -99,7 +99,7 @@ class Person {
     }
     // 클래스 몸체에는 메소드만 선언할 수 있다.
     getName() {
-        console.log(this.name)
+        console.log(this.name);
     }
 }
 ```
@@ -115,19 +115,19 @@ class Wrap {
         this.name = name;
     }
     getName() {
-        console.log(this.name + ' 슈퍼')
+        console.log(this.name + ' 슈퍼');
     }
 }
 
 class Inner extends Wrap {
     getName() {
         super.getName()
-        console.log(this.name + ' 상속 받은 클래스')
+        console.log(this.name + ' 상속 받은 클래스');
     }
 }
 
 var obj = new Inner('안녕');
-obj.getName()
+obj.getName();
 
 // 결과
 // 안녕 슈퍼
@@ -147,19 +147,19 @@ obj.getName()
 ```javascript
 class Wrap {
     msg() {
-        console.log('안녕')
+        console.log('안녕');
     }
 }
 
 class Inner extends Wrap {
     msg() {
         // 슈퍼 클래스의 msg메소드를 실행한다.
-        super.msg()
+        super.msg();
     }
 }
 
 var obj = new Inner();
-obj.msg()
+obj.msg();
 ```
 
 ### static
@@ -171,14 +171,14 @@ class Inner {
 
     // 인스턴스 없이 클래스에 바로 메소드를 선언해줌
     static msg() {
-        console.log('안녕')
+        console.log('안녕');
     }
 }
 
-Inner.msg() // 안녕
+Inner.msg(); // 안녕
 
 var obj = new Inner();
-obj.msg() // TypeError
+obj.msg(); // TypeError
 ```
 
 동일한 클래스 내의 다른 정적 메서드 내에서 정적 메서드를 호출하는 경우 키워드 this를 사용할 수 있다.
@@ -186,14 +186,14 @@ obj.msg() // TypeError
 ```javascript
 class Inner {
     static msg() {
-        console.log('안녕')
+        console.log('안녕');
     }
     static msg2() {
-        this.msg()
+        this.msg();
     }
 }
 
-Inner.msg2() // 안녕
+Inner.msg2(); // 안녕
 ```
 
 정적 메소드는 어플리케이션을 위한 유틸리티 함수를 생성하는데 주로 사용된다.

@@ -25,7 +25,7 @@ var person = {
 속성명은 name, age 값은 '철수', '20'인 객체를 선언했다. 객체 선언 방식은 {}(중괄호)로 한다. 이 선언 방식은 객체 리터널 방식이라고 하며, 리터널이란 용어의 의미는 표기법이라고 생각하면 된다. 리터널 방식은 간단한 표기법만으로도 객체룰 생성할 수 있는 자바스크립트의 강력한 문법이다. 객체의 프로퍼티에 접근하려면 마침표 표기법과 대괄호 표기법이 있다.
 
 ```javascript
-console.log(person.name) // 철수
+console.log(person.name); // 철수
 ```
 
 ## 배열(Array)
@@ -39,8 +39,8 @@ var person = ['철수', '20'];
 객체와는 다르게 배열의 속성명은 인덱스 값이라고 했다. 그러므로 person의 첫번째 값인 '철수'의 속성명(Key)은 배열의 첫번째 인덱스인 0이고, 두번째 값(value)인 '20'의 속성명은 1이 되는 것이다. 배열의 프로퍼티에 접근하려면 대괄포 표기법을 이용하면 된다.
 
 ```javascript
-console.log(person[0]) // 철수 
-console.log(person[1]) // 20
+console.log(person[0]); // 철수 
+console.log(person[1]); // 20
 ```
 
 ## 함수(Function)
@@ -63,9 +63,9 @@ function 함수이름(파라미터) {
 ```javascript
 var num1 = 10,
     num2 = num1;
-console.log(num2) // 10
+console.log(num2); // 10
     num1 = 20;
-console.log(num2) // 10
+console.log(num2); // 10
 ```
 
 ### 원시타입은 값 자체를 비교한다.
@@ -77,9 +77,9 @@ var obj1 = {
     val: 10
 }
 var obj2 = obj1;
-console.log(obj2.val) // 10
+console.log(obj2.val); // 10
 obj1.val = 20;
-console.log(obj2.val) // 20
+console.log(obj2.val); // 20
 ```
 
 우선 obj1에 객체 리터널을 선언하고, val 프로퍼티에 10을 담았다. 그리고 obj2에 obj1을 할당했다. obj2의 val프로퍼티의 값은 10이 출력된다. 여기서 obj1의 val에 20을 담았다. obj2의 val값을 건들지도 않았는데 obj1 처럼 val값이 20으로 봐뀌어있다. 어떻게 된 것일까? 값 자체가 복사되는 원시값과는 달리 참조타입은 참조(객체를 가르키는 참조값 혹은 메모리 주소)만 복사되고 실제 값은 복사되지 않는다. 즉 obj1과 obj2는 실제 데이터를 가지고 있는 객체의 주소값만 가지고 있는 것이다.

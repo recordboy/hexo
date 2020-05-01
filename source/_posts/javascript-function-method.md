@@ -26,11 +26,11 @@ a, b = 메소드에 전달할 인자
 ```javascript
 var obj1 = {
     name: "obj1",
-    funcThis: function () {
+    funcThis: function() {
         return this;
     }
 };
-console.log(obj1.funcThis()) // Object {name: "obj1"}
+console.log(obj1.funcThis()); // Object {name: "obj1"}
 ```
 
 obj1 객체에 funcThis 메소드를 추가했다. funcThis 메소드는 자신을 감싼 obj1객체를 리턴하고 있다.
@@ -38,14 +38,14 @@ obj1 객체에 funcThis 메소드를 추가했다. funcThis 메소드는 자신�
 ```javascript
 var obj1 = {
     name: "obj1",
-    funcThis: function () {
+    funcThis: function() {
         return this;
     }
 };
 var obj2 = {
     name: "obj2"
 };
-console.log(obj1.funcThis.call(obj2)) // Object {name: "obj2"}
+console.log(obj1.funcThis.call(obj2)); // Object {name: "obj2"}
 ```
 
 call 메소드를 이용하여 obj1 의 funcThis 메소드를 obj2 객체에서 실행한다. obj2객체를 리턴하고 있다. 아무 값을 안넣으면(null) window를 반환한다. call 과 형제격인 apply 메소드는 call 메소드와 같지만 한가지 다른점이 있다. call은 인자값을 하나 하나 전달하지만 apply 메소드는 인자값을 배열로 전달한다.
@@ -64,9 +64,9 @@ call 과 apply 는 보통 함수 내 arguments 객체와 같이 사용하는 모
 
 ```javascript
 function func() {
-    console.log(Array.prototype.slice.call(arguments, 0, 2))
+    console.log(Array.prototype.slice.call(arguments, 0, 2));
 }
-func("눈", "누", "난", "나") // ["눈", "누"]
+func("눈", "누", "난", "나"); // ["눈", "누"]
 ```
 
 위 함수를 보면 배열의 프로토타입에 있는 slice 메소드를 arguments 객체에서 사용하는 것을 알 수 있다.
@@ -80,10 +80,10 @@ start = 선택. 지정된 부분의 끝
 ```
 
 ```javascript
-function func(){
-    console.log(Array.prototype.join.call(arguments))
+function func() {
+    console.log(Array.prototype.join.call(arguments));
 }
-func("눈", "누", "난", "나") // 눈-누-난-나
+func("눈", "누", "난", "나"); // 눈-누-난-나
 ```
 
 join 메소드 : 인자값으로 넘겨진 구문을 모든 배열 요소에 추가한다.
@@ -101,15 +101,15 @@ bind 함수는 함수가 가르키는 this만 바꾸고 호출은 하지 않는�
 ```javascript
 var obj1 = {
     name: "obj1",
-    funcThis: function(){
-        console.log(this)
+    funcThis: function() {
+        console.log(this);
     }
 };
 var obj2 = {
     name: "obj2"
 };
 var func = obj1.funcThis.bind(obj2);
-func() // Object {name: "obj2"}
+func(); // Object {name: "obj2"}
 ```
 
 obj1 의 funcThis 메서드를 obj2 객체로 가져와서 func 변수에 할당했다. func 함수를 실행하면 obj2 객체가 출력된다.

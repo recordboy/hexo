@@ -13,14 +13,14 @@ Data 객체는 날짜와 시간을 제공하는 생성자 함수이다.
 
 ```javascript
 var value = new Date();
-console.log(value)
+console.log(value);
 // Thu Jan 09 2020 14:44:13 GMT+0900 (한국 표준시)
 ```
 
 ## 특정 값을 구하는 메서드
 
 | 메서드 | 값 |
-|:--------|:--------|
+|:---|:---|
 | getFullYear() | 년 |
 | getMonth() | 월 |
 | getDate() | 날짜 |
@@ -34,7 +34,7 @@ console.log(value)
 function func(a, b) {
     return ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][new Date(2015, a - 1, b).getDay()];
 }
-console.log(func(12, 25)) // FRI
+console.log(func(12, 25)); // FRI
 ```
 
 ## References

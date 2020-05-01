@@ -19,7 +19,7 @@ while (조건) {
 ```javascript
 var i = 0;
 while (i < 3) {
-    console.log(i)
+    console.log(i);
     i++;
 }
 // 0
@@ -32,14 +32,14 @@ while (i < 3) {
 ```javascript
 do {
     구문
-} while (조건)
+} while (조건);
 ```
 
 처음 구문을 실행하여 `0`이 출력되고, `i`는 3이 아니므로 로직이 실행이 안된다.
 ```javascript
 var i = 0;
 do {
-    console.log(i)
-} while (i == 3)
+    console.log(i);
+} while (i == 3);
 // 0
 ```

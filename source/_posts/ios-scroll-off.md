@@ -22,9 +22,9 @@ thumbnail: "/gallery/thumbnail-jquery.png"
 ```javascript
 // ios 스크롤 방지
 $('body').addClass('scrollOff').on('scroll touchmove mousewheel', function (e) {
-    e.preventDefault()
+    e.preventDefault();
 });
 
 // ios 스크롤 방지
-$('body').removeClass('scrollOff').off('scroll touchmove mousewheel')
+$('body').removeClass('scrollOff').off('scroll touchmove mousewheel');
 ```

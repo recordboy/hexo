@@ -52,7 +52,7 @@ var request = require('request');
 7. url 변수에 파싱할 주소를 입력하고, request 모듈을 이용하여 웹페이지를 로드한다.
 ```javascript
 var url = 'http://www.naver.com';
-request(url, function(error, response, html){
+request(url, function (error, response, html){
     var $ = cheerio.load(html);
     // 여기서 제이쿼리 셀렉터를 이용하여 원하는 정보를 가져올 수 있다.
 });
@@ -65,7 +65,7 @@ var request = require('request');
 
 var url = 'http://www.naver.com';
 
-request(url, function(error, response, html){
+request(url, function (error, response, html){
     var $ = cheerio.load(html);
 
     // 여기서 제이쿼리 셀렉터를 이용하여 원하는 정보를 가져올 수 있다.

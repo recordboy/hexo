@@ -49,10 +49,10 @@ width: 50% - 20px;  // 단위 모순 에러(Incompatible units error)
 width: calc(50% - 20px);  // 연산 가능
 ```
 
-### 나누기 연산의 주의사항
-CSS는 속성 값의 숫자를 분리하는 방법으로 `/`를 허용하기 때문에 `/`가 나누기 연산으로 사용되지 않을 수 있다. 아래 예제를 보면 나누기 연산자만 연산 되지 않고 그대로 컴파일된다.
+> **나누기 연산의 주의사항**
+> CSS는 속성 값의 숫자를 분리하는 방법으로 `/`를 허용하기 때문에 `/`가 나누기 연산으로 사용되지 않을 수 있다. 아래 예제를 보면 나누기 연산자만 연산 되지 않고 그대로 컴파일된다.
 
-#### SCSS
+**SCSS**
 ```scss
 div {
     width: 20px + 20px;  // 더하기
@@ -62,7 +62,7 @@ div {
 }
 ```
 
-#### Compiled to
+**Compiled to**
 ```scss
 div {
   width: 40px;
@@ -78,7 +78,7 @@ div {
 * 값이 `()`로 묶여있는 경우
 * 값이 다른 산술 표현식의 일부로 사용되는 경우
 
-#### SCSS
+**SCSS**
 ```scss
 div {
     $x: 100px;
@@ -88,7 +88,7 @@ div {
 }
 ```
 
-#### Compiled to
+**Compiled to**
 ```scss
 div {
   width: 50px;
@@ -101,7 +101,7 @@ div {
 
 문자 연산에는 `+`가 사용된다. 문자 연산의 결과는 첫번째 피연산자를 기준으로 한다. 첫번째 피연산자에 따옴표가 붙어있다면 연산 결과를 따옴표로 묶는다. 반대로 첫번째 피연산자에 따옴표가 붙어있지 않으면 연산 결과도 따옴표를 처리하지 않는다.
 
-### SCSS
+**SCSS**
 ```scss
 div::after {
     content: "hello" + world;
@@ -111,7 +111,7 @@ div::after {
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 div::after {
   content: "helloworld";
@@ -130,7 +130,7 @@ div::after {
 
 SASS의 `@if`조건문에서 사용되는 논리 연삭에는 `그리고`, `또는`, `부정`이 있다. 자바스크립트의 `&&`, `||`, `!`와 같은 기능이라 보면 된다.
 
-### SCSS
+**SCSS**
 ```scss
 $width: 90px;
 div {
@@ -140,7 +140,7 @@ div {
 }
 ```
 
-### Compiled to
+**Compiled to**
 ```scss
 div {
   height: 300px;

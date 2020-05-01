@@ -12,9 +12,9 @@ thumbnail: "/gallery/thumbnail-js.png"
 var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
 if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-        alert("모바일에서 접속하셨습니다")
+        alert("모바일에서 접속하셨습니다");
     } else {
-        alert("PC에서 접속하셨습니다")
+        alert("PC에서 접속하셨습니다");
     }
 }
 ```

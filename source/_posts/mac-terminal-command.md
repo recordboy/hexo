@@ -7,7 +7,7 @@ thumbnail: "/gallery/thumbnail-mac.png"
 ---
 
 | 명령어 | Windows 커맨드 | Mac OS 터미널 |
-|:--------|:-------|:-------|
+|:---|:---|:---|
 | 현재 디렉토리 | cd | pwd |
 | 현재 디렉토리 파일 리스트 보기 | dir | ls |
 | 디렉토리 이동 | cd | cd |
