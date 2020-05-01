@@ -6,29 +6,49 @@ tags: [linux]
 thumbnail: "/gallery/thumbnail-linux.png"
 ---
 
-패키지 설치  
-`# install [패키지명]`
+패키지 설치
+```
+# install [패키지명]
+```
 
-패키지 삭제  
-`# yum remove [패키지명]`
+<!-- more -->
 
-패키지 업데이트  
-`# yum update [패키지명]`
+패키지 삭제
+```
+# yum remove [패키지명]
+```
 
-패키지 정보 확인  
-`# yum info [패키지명]`
+패키지 업데이트
+```
+# yum update [패키지명]
+```
 
-패키지 검색  
-`# yum search [검색어]`
+패키지 정보 확인
+```
+# yum info [패키지명]
+```
 
-패키지 목록 보기  
-`# yum list`
+패키지 검색
+```
+# yum search [검색어]
+```
 
-설치된 패키지 목록 보기  
-`# yum list installed`
+패키지 목록 보기
+```
+# yum list
+```
 
-패키지 설치, 변경, 삭제로 변경된 정보 보기  
-`# yum history list`
+설치된 패키지 목록 보기
+```
+# yum list installed
+```
 
-저장소 확인하기  
-`# yum repolist`
+패키지 설치, 변경, 삭제로 변경된 정보 보기
+```
+# yum history list
+```
+
+저장소 확인하기
+```
+# yum repolist
+```
