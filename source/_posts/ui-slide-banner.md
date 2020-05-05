@@ -2,7 +2,7 @@
 title: "슬라이드 배너(slide banner)"
 date: 2019-04-10 08:24:06
 categories: "ui"
-tags: [ui, vanillaJs]
+tags: [ui, vanilla js]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
