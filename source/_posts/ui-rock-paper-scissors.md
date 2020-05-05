@@ -6,7 +6,7 @@ tags: [ui, vanilla js, game]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 
-바닐라 자바스크립트로 추억의 짱깸뽀 게임을 만들어 보았다.
+바닐라 자바스크립트로 만든 추억의 짱깸뽀 게임이다. 5월초 연휴 때 할게 없어 만들어 보았다.
 
 <!-- more -->
 
