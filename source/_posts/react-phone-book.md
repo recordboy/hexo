@@ -295,13 +295,161 @@ render 함수에서도 위와 같이 비구조와 할당으로 information 값�
 배열의 내장 함수인 [map](/2020/02/17/javascript-array-map/)을 이용하여 information을 컴포넌트로 변환하여 출력하도록 하겠다. 
 
 ### 컴포넌트 만들기
-두개의 컴포넌트를 만든다.
+두개의 컴포넌트를 만들 것이다.
 * PhoneInfo: 각 전화번호 정보를 보여주는 컴포넌트
 * PhoneInfoList: 여러개의 PhoneInfo 컴포넌트를 보여줌
 
 #### PhoneInfo 생성
+PhoneInfo.js 파일을 만들고 아래처럼 작성한다.
+```javascript
+import React, { Component } from 'react';
 
-추후 수정 예정
+class PhoneInfo extends Component {
+  static defaultProps = {
+    name: '이름',
+    phone: '000-0000-0000',
+    id: 0
+  }
+  render() {
+    const style = {
+      margin: '2px',
+      border: '2px solid #ccc',
+      padding: '2px'
+    }
+    const {
+      name, phone, id
+    } = this.props
+    return(
+      <div style={style}>
+        <div><b>{name}</b></div>
+        <div>{phone}</div>
+      </div>
+    )
+  }
+}
+
+export default PhoneInfo;
+```
+
+info 객체를 props으로 받아와서 렌더링을 할 것이다. 여기서 만약 info 객체에 값이 전달 안 될 경우 에러가 뜰 것이다. 위 코드에서 info 객체의 값을 비구조화 할당하고 있는데, info가 undefined 경우 내부의 값을 가져오지 못하기 때문이다. 때문에 위 코드에서 defaultProps를 이용하여 info의 기본값을 설정해준다.
+
+#### PhoneInfoList 생성
+다음에 PhoneInfoList 컴포넌트를 생성하고, 아래처럼 코드를 입력한다.
+
+```javascript
+import React, { Component } from 'react';
+import PhoneInfo from './PhoneInfo';
+
+class PhoneInfoList extends Component {
+  static defaultProps = {
+    data: []
+  }
+  render() {
+    const { data } = this.props;
+    const list = data.map(
+      info => (<PhoneInfo key={info.id} info={info} />)
+    )
+    return(
+      <div>
+        { list }
+      </div>
+    )
+  }
+}
+
+export default PhoneInfoList;
+```
+
+이 컴포넌트에서는 data라는 배열을 가져와서 map 함수를 이용하여 JSX로 변환을 해준다. 여기서 컴포넌트에 key라는 값도 설정되었는데, key 값은 리액트에서 배열을 렌더링 할 때 꼭 필요한 값이다. 리액트는 배열을 렌더링 할 때 값을 통하여 업데이트 성능을 최적화 한다. 아래 예시를 통해 살펴보겠다.
+
+```html
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+```
+
+key 값을 설정하지 않으면 배열의 index 값이 자동으로 key 값으로 설정 된다. 때문에 각 요소마다 따로 키값을 설정하지 않으면 아래처럼 각 index 값이 키값으로 들어갈 것이다.
+
+```html
+<div key={0}>A</div>
+<div key={1}>B</div>
+<div key={2}>C</div>
+<div key={3}>D</div>
+```
+
+위 요소들 중 B와 C사이에 X를 집어넣는다고 가정을 해보자. 
+
+```html
+<div key={0}>A</div>
+<div key={1}>B</div>
+<div key={2}>X</div> C 가 X 로 바뀜
+<div key={3}>C</div> D 가 C 로 바뀜
+<div key={4}>D</div> D 는 새로 생성됨
+```
+
+보면 2 index 값으로 X 요소가 들어가면서 index 값이 밀리고, X 요소 이후 부터 값이 전부 바뀔 것이다. 각 요소를 index 값이 아닌 데이터를 추가 할 때마다 고유 값을 부여하면, 리액트가 변화를 감지하고 업데이트 할때 좀 더 효율적이게 처리를 할 수 있게 된다.
+
+```html
+<div key={0}>A</div>
+<div key={1}>B</div>
+<div key={4}>X</div> 새로 생성됨
+<div key={2}>C</div> 유지됨
+<div key={3}>D</div> 유지됨
+```
+
+새로운 요소 하나만 생성되고 나머지는 그대로 유지된다. key 값은 언제나 고유해야 한다. 실제 데이터베이스에도 데이터를 추가하면 해당 데이터를 가리키는 고유 id가 있다. 여기서는 각 요소의 고유 id를 key 값으로 사용하고 있다.
+
+#### PhoneInfoList 렌더링
+이제 PhoneInfoList 컴포넌트를 App 컴포넌트에 렌더링을 하고 data 값을 props으로 전달하면 된다.
+
+```javascript
+import React, { Component } from 'react';
+import PhoneForm from './components/PhoneForm';
+import PhoneInfoList from './components/PhoneInfoList';
+
+class App extends Component {
+  id = 2
+  state = {
+    information: [
+      {
+        id: 0,
+        name: '주영',
+        phone: '000-0000-0000'
+      },
+      {
+        id: 1,
+        name: '민수',
+        phone: '000-0000-0000'
+      }
+    ]
+  }
+  handleCreate = (data) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({ id: this.id++, ...data })
+    })
+  }
+  render() {
+    return(
+      <div>
+        <PhoneForm
+          onCreate={this.handleCreate}
+        />
+        <PhoneInfoList data={this.state.information} />
+      </div>
+    )
+  }
+}
+
+export default App;
+```
+
+확인해 보면 기존 데이터 렌더링 및 신규 데이터 추가도 확인해 볼 수 있다. 가끔 데이터에 고유 값이 없을 수도 있다. 그럴 경우에는 렌더링은 되지만 콘솔창에 경고창이 뜰 것이다. 꼭 배열을 렌더링 할 때는 고유의 key 값을 사용하도록 한다.
+
+## 데이터 제거 및 수정
+
+추후 추가 예정
 
 ## References
 > 이 포스팅은 [벨로퍼트](https://velopert.com/)님의 강의 내용을 바탕으로 작성됨
