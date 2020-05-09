@@ -449,7 +449,7 @@ export default App;
 
 ## 데이터 제거 및 수정
 
-추후 추가 예정
+*추후 추가 예정*
 
 ## References
 > 이 포스팅은 [벨로퍼트](https://velopert.com/)님의 강의 내용을 바탕으로 작성됨
