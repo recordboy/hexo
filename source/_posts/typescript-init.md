@@ -1,8 +1,8 @@
 ---
 title: "타입스크립트(TypeScript) 시작하기"
 date: 2020-05-09 16:36:46
-categories: "typeScript"
-tags: [typeScript, javascript]
+categories: "typescript"
+tags: [typescript, javascript]
 thumbnail: "/gallery/thumbnail-ts.png"
 toc: true
 ---
