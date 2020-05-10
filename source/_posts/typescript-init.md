@@ -61,14 +61,83 @@ function func(msg) {
 var txt = 'world';
 ```
 
+## 로컬에서 작업 하기
+로컬 환경에서 [Parcel 번들러](https://ko.parceljs.org/getting_started.html)를 이용하면 작업을 빠르게 테스트를 할 수 있다.
+
+### Parcel
+Parcel 전역 설치
+```
+$ npm install -g parcel-bundler
+```
+
+프로젝트 파일 생성 및 패키지 파일 생성 후 패키지 및 Parcel를 설치해 준다. 프로젝트 폴더명은 `app`으로 하겠다.
+```
+$ mkdir app
+$ cd app
+$ npm init -y
+$ npm install -D typescript parcel-bundler
+```
+
+`tsconfig.json` 파일을 생성하고 아래 옵션을 추가한다.
+
+```javascript
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+```
+
+`main.ts` 파일을 생성하고 아래 코드를 입력한다.
+
+```javascript
+function add(a: number, b: number) {
+  return a + b;
+}
+const sum: number = add(1, 2);
+console.log(sum);
+```
+
+`index.html` 파일을 생성하고 `main.ts` 파일을 연결한다. Parcel 번들러가 빌드시에 자동으로 타입스크립트를 컴파일한다.
+
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>typescript</title>
+</head>
+<body>
+  <script src="main.ts"></script>
+</body>
+</html>
+```
+
+위에 생성한 프로젝트로 아래 예제들을 확인해 보겠다.
+
 ## 타입 기본
 ### 타입 지정
 타입스크립트는 일반 변수, 매개변수, 객체 속성 등에 `: TYPE`과 같은 형태로 타입을 지정할 수 있다.
+
+```javascript
+function add(a: number, b: number) {
+  return a + b;
+}
+const sum: number = add(1, 2);
+console.log(sum);
+```
+
+위에서 추가한 `main.ts`의 코드이다. 함수 `add`의 매개변수로 들어간 `a`, `b`의 타입은 `number`라고 명시해 줬으며, 함수의 반환값도 숫자로 들어가기 때문에 `sum` 변수도 `number`로 지정하였다.
 
 *추후 추가 예정*
 
 ## References
 > [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
 > [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)  
-> [타입스크립트, 써야할까?](https://hyunseob.github.io/2018/08/12/do-you-need-to-use-ts/)
+> [타입스크립트, 써야할까?](https://hyunseob.github.io/2018/08/12/do-you-need-to-use-ts/)  
+> [모듈화와 npm(node package manager)](https://poiemaweb.com/nodejs-npm)
+
 
