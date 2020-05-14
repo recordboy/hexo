@@ -256,7 +256,6 @@ class App extends Component {
   }
   handleCreate = (data) => {
     const { information } = this.state;
-    alert(1)
     this.setState({
       information: information.concat({ id: this.id++, ...data })
     })
@@ -313,12 +312,12 @@ class PhoneInfo extends Component {
   render() {
     const style = {
       margin: '2px',
-      border: '2px solid #ccc',
+      border: '1px solid #ccc',
       padding: '2px'
     }
     const {
       name, phone, id
-    } = this.props
+    } = this.props.info
     return(
       <div style={style}>
         <div><b>{name}</b></div>
@@ -436,7 +435,9 @@ class App extends Component {
         <PhoneForm
           onCreate={this.handleCreate}
         />
-        <PhoneInfoList data={this.state.information} />
+        <PhoneInfoList
+          data={this.state.information}
+        />
       </div>
     )
   }
@@ -449,9 +450,10 @@ export default App;
 
 ## 데이터 제거 및 수정
 
-*추후 추가 예정*
+이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메소드를 사용할 것이다.
+
+추후 추가 예정
 
 ## References
-> 이 포스팅은 [벨로퍼트](https://velopert.com/)님의 강의 내용을 바탕으로 작성됨
 > [누구든지 하는 리액트 6편: input 상태 관리하기](https://velopert.com/3634)  
 > [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)
