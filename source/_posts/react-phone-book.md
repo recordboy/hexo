@@ -452,7 +452,7 @@ export default App;
 
 이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메소드를 사용할 것이다.
 
-추후 추가 예정
+*추후 추가 예정*
 
 ## References
 > [누구든지 하는 리액트 6편: input 상태 관리하기](https://velopert.com/3634)  
