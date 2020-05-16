@@ -18,7 +18,9 @@ module.exports = class extends Component {
             <Head env={env} site={site} config={config} helper={helper} page={page} />
             <body class={`is-${columnCount}-column`}>
                 <Navbar config={config} helper={helper} page={page} />
-                <div id="bg-main" style="display: none;"></div>
+                <div id="bg-main" style="display: none;">
+                    <h1 class="tit-main">Front-End Technology Blog</h1>
+                </div>
                 <section class="section">
                     <div class="container">
                         <div class="columns">
