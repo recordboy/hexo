@@ -1,18 +1,4 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
 particlesJS('bg-main',
-  
   {
     "particles": {
       "number": {
@@ -41,7 +27,7 @@ particlesJS('bg-main',
         }
       },
       "opacity": {
-        "value": 0.3,
+        "value": 0.5,
         "random": false,
         "anim": {
           "enable": false,
@@ -129,5 +115,4 @@ particlesJS('bg-main',
       "background_size": "cover"
     }
   }
-
 );
