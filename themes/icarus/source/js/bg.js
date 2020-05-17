@@ -16,7 +16,7 @@ particlesJS('bg-main',
   {
     "particles": {
       "number": {
-        "value": 200,
+        "value": 500,
         "density": {
           "enable": true,
           "value_area": 800
@@ -41,7 +41,7 @@ particlesJS('bg-main',
         }
       },
       "opacity": {
-        "value": 0.4,
+        "value": 0.3,
         "random": false,
         "anim": {
           "enable": false,
