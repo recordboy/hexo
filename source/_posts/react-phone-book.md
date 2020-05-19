@@ -25,9 +25,7 @@ App.js 파일을 열어 필요없는 코드를 전부 지워준 뒤 App 컴포�
 import React, { Component } from 'react';
 class App extends Component {
   render() {
-    return(
-      <div>hello</div>
-    )
+    return <div>hello</div>;
   }
 }
 export default App;
@@ -43,23 +41,20 @@ src 디렉토리 내부에 components 디렉토리를 만든 뒤 그 안에 Phon
 import React, { Component } from 'react';
 class PhoneForm extends Component {
   state = {
-    name: ''
-  }
+    name: '',
+  };
   handleChange = (e) => {
     this.setState({
-      name: e.target.value
-    })
-  }
+      name: e.target.value,
+    });
+  };
   render() {
-    return(
+    return (
       <form>
-        <input
-          type="text"
-          onChange={this.handleChange} 
-        />
+        <input type="text" onChange={this.handleChange} />
         <div>name: {this.state.name}</div>
       </form>
-    )	
+    );
   }
 }
 export default PhoneForm;
@@ -75,11 +70,11 @@ import React, { Component } from 'react';
 import PhoneForm from './components/PhoneForm';
 class App extends Component {
   render() {
-    return(
+    return (
       <div>
         <PhoneForm />
       </div>
-    )
+    );
   }
 }
 export default App;
@@ -95,30 +90,22 @@ import React, { Component } from 'react';
 class PhoneForm extends Component {
   state = {
     name: '',
-    phone: ''
-  }
+    phone: '',
+  };
   handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
   render() {
-    return(
+    return (
       <form>
-        <input
-          type="text"
-          name="name"
-          onChange={this.handleChange}
-        />
-        <input
-          type="text"
-          name="phone"
-          onChange={this.handleChange}
-        />
+        <input type="text" name="name" onChange={this.handleChange} />
+        <input type="text" name="phone" onChange={this.handleChange} />
         <div>name: {this.state.name}</div>
         <div>phone: {this.state.phone}</div>
       </form>
-    )	
+    );
   }
 }
 export default PhoneForm;
@@ -138,19 +125,18 @@ import React, { Component } from 'react';
 import PhoneForm from './components/PhoneForm';
 class App extends Component {
   handleCreate = (data) => {
-    console.log(data)
-  }
+    console.log(data);
+  };
   render() {
-    return(
+    return (
       <div>
-        <PhoneForm
-          onCreate={this.handleCreate}
-        />
+        <PhoneForm onCreate={this.handleCreate} />
       </div>
-    )
+    );
   }
 }
 export default App;
+
 ```
 handleCreate 함수를 추가했다. 이 함수는 자식 컴포넌트에서 전달받아오는 결과값을 콘솔창에 출력할 함수다. PhoneForm 컴포넌트에는 onCreate 라는 속성에 handleCreate 함수를 할당해 주었다.
 
@@ -159,29 +145,28 @@ import React, { Component } from 'react';
 class PhoneForm extends Component {
   state = {
     name: '',
-    phone: ''
-  }
+    phone: '',
+  };
   handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
   handleSubmit = (e) => {
-
     // 이벤트 리로딩 방지
-    e.preventDefault()
+    e.preventDefault();
 
     // 상태값을 onCreate를 통하여 부모에게 전달
-    this.props.onCreate(this.state)
+    this.props.onCreate(this.state);
 
     // 상태 초기화
     this.setState({
       name: '',
-      phone: ''
-    })
-  }
+      phone: '',
+    });
+  };
   render() {
-    return(
+    return (
       <form onSubmit={this.handleSubmit}>
         <input
           type="text"
@@ -197,7 +182,7 @@ class PhoneForm extends Component {
         />
         <button type="submit">send</button>
       </form>
-    )	
+    );
   }
 }
 export default PhoneForm;
@@ -239,37 +224,35 @@ import React, { Component } from 'react';
 import PhoneForm from './components/PhoneForm';
 
 class App extends Component {
-  id = 2
+  id = 2;
   state = {
     information: [
       {
         id: 0,
         name: '주영',
-        phone: '000-0000-0000'
+        phone: '000-0000-0000',
       },
       {
         id: 1,
         name: '민수',
-        phone: '000-0000-0000'
-      }
-    ]
-  }
+        phone: '000-0000-0000',
+      },
+    ],
+  };
   handleCreate = (data) => {
     const { information } = this.state;
     this.setState({
-      information: information.concat({ id: this.id++, ...data })
-    })
-  }
+      information: information.concat({ id: this.id++, ...data }),
+    });
+  };
   render() {
     const { information } = this.state;
-    return(
+    return (
       <div>
-        <PhoneForm
-          onCreate={this.handleCreate}
-        />
+        <PhoneForm onCreate={this.handleCreate} />
         {JSON.stringify(information)}
       </div>
-    )
+    );
   }
 }
 
@@ -281,7 +264,7 @@ id 값의 경우, 컴포넌트의 일반 클래스 내부 변수로 선언하였
 ```javascript
 this.setState({
   information: this.state.information.concat({ id: this.id++, ...data })
-})
+});
 ```
 
 render 함수에서도 위와 같이 비구조와 할당으로 information 값을 선언하였으며, [JSON.stringify()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)를 이용해 문자열로 변환하여 출력하였다. send 버튼을 클릭하면 배열에 전달된 데이터 객체가 제대로 출력되는 것을 확인할 수 있다.
@@ -300,6 +283,7 @@ render 함수에서도 위와 같이 비구조와 할당으로 information 값�
 
 #### PhoneInfo 생성
 PhoneInfo.js 파일을 만들고 아래처럼 작성한다.
+
 ```javascript
 import React, { Component } from 'react';
 
@@ -307,23 +291,23 @@ class PhoneInfo extends Component {
   static defaultProps = {
     name: '이름',
     phone: '000-0000-0000',
-    id: 0
-  }
+    id: 0,
+  };
   render() {
     const style = {
       margin: '2px',
       border: '1px solid #ccc',
-      padding: '2px'
-    }
-    const {
-      name, phone, id
-    } = this.props.info
-    return(
+      padding: '2px',
+    };
+    const { name, phone } = this.props.info;
+    return (
       <div style={style}>
-        <div><b>{name}</b></div>
+        <div>
+          <b>{name}</b>
+        </div>
         <div>{phone}</div>
       </div>
-    )
+    );
   }
 }
 
@@ -341,18 +325,12 @@ import PhoneInfo from './PhoneInfo';
 
 class PhoneInfoList extends Component {
   static defaultProps = {
-    data: []
-  }
+    data: [],
+  };
   render() {
     const { data } = this.props;
-    const list = data.map(
-      info => (<PhoneInfo key={info.id} info={info} />)
-    )
-    return(
-      <div>
-        { list }
-      </div>
-    )
+    const list = data.map((info) => <PhoneInfo key={info.id} info={info} />);
+    return <div>{list}</div>;
   }
 }
 
@@ -408,38 +386,34 @@ import PhoneForm from './components/PhoneForm';
 import PhoneInfoList from './components/PhoneInfoList';
 
 class App extends Component {
-  id = 2
+  id = 2;
   state = {
     information: [
       {
         id: 0,
         name: '주영',
-        phone: '000-0000-0000'
+        phone: '000-0000-0000',
       },
       {
         id: 1,
         name: '민수',
-        phone: '000-0000-0000'
-      }
-    ]
-  }
+        phone: '000-0000-0000',
+      },
+    ],
+  };
   handleCreate = (data) => {
     const { information } = this.state;
     this.setState({
-      information: information.concat({ id: this.id++, ...data })
-    })
-  }
+      information: information.concat({ id: this.id++, ...data }),
+    });
+  };
   render() {
-    return(
+    return (
       <div>
-        <PhoneForm
-          onCreate={this.handleCreate}
-        />
-        <PhoneInfoList
-          data={this.state.information}
-        />
+        <PhoneForm onCreate={this.handleCreate} />
+        <PhoneInfoList data={this.state.information} />
       </div>
-    )
+    );
   }
 }
 
@@ -448,12 +422,364 @@ export default App;
 
 확인해 보면 기존 데이터 렌더링 및 신규 데이터 추가도 확인해 볼 수 있다. 가끔 데이터에 고유 값이 없을 수도 있다. 그럴 경우에는 렌더링은 되지만 콘솔창에 경고창이 뜰 것이다. 꼭 배열을 렌더링 할 때는 고유의 key 값을 사용하도록 한다.
 
-## 데이터 제거 및 수정
+## 데이터 삭제
 
-이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메소드를 사용할 것이다.
+이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메소드를 사용할 것이다. App 컴포넌트에 handleRemove 함수를 만들어 준뒤 아래처럼 코드를 수정한다. 삭제할 id 값을 받아와 filter 메소드를 사용하여 id 값이 일치하지 않는 값들을 state에 다시 세팅 할 것이다. 함수를 만들었으면 이것을 하위 컴포넌트인 PhoneInfoList에 전달한다.
 
-*추후 추가 예정*
+```javascript
+import React, { Component } from 'react';
+import PhoneForm from './components/PhoneForm';
+import PhoneInfoList from './components/PhoneInfoList';
+
+class App extends Component {
+  id = 2;
+  state = {
+    information: [
+      {
+        id: 0,
+        name: '주영',
+        phone: '000-0000-0000',
+      },
+      {
+        id: 1,
+        name: '민수',
+        phone: '000-0000-0000',
+      },
+    ],
+  };
+  handleCreate = (data) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({ id: this.id++, ...data }),
+    });
+  };
+  handleRemove = (id) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.filter((info) => info.id !== id),
+    });
+  };
+  render() {
+    return (
+      <div>
+        <PhoneForm onCreate={this.handleCreate} />
+        <PhoneInfoList
+          data={this.state.information}
+          onRemove={this.handleRemove}
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+PhoneInfoList 컴포넌트는 props으로 전달받은 onRemove을 그대로 하위 컴포넌트인 PhoneInfo에 전달한다. 이 함수가 전달되지 않을 경우를 대비하여 defaultProps도 설정해 준다.
+
+```javascript
+import React, { Component } from 'react';
+import PhoneInfo from './PhoneInfo';
+
+class PhoneInfoList extends Component {
+  static defaultProps = {
+    data: [],
+    onRemove: () => console.warn('onRemove not defined'),
+  };
+  render() {
+    const { data, onRemove } = this.props;
+    const list = data.map((info) => (
+      <PhoneInfo key={info.id} info={info} onRemove={onRemove} />
+    ));
+    return <div>{list}</div>;
+  }
+}
+
+export default PhoneInfoList;
+```
+
+삭제 버튼 및 로직은 PhoneInfo 컴포넌트에서 구현하겠다. 우선 버튼을 추가하고 삭제 이벤트를 추가 해 준다. 삭제 버튼을 클릭하면 해당 컴포넌트의 id 값을 onRemove 함수에 인자값으로 넣고 호출한다. 삭제가 정상 작동할 것이다.
+
+```javascript
+import React, { Component } from 'react';
+
+class PhoneInfo extends Component {
+  static defaultProps = {
+    name: '이름',
+    phone: '000-0000-0000',
+    id: 0,
+  };
+  handleRemove = () => {
+    // delete 버튼을 킬릭하면 onRemove에 id값을 넣어서 호출
+    const { info, onRemove } = this.props;
+    onRemove(info.id);
+  };
+  render() {
+    const style = {
+      margin: '2px',
+      border: '1px solid #ccc',
+      padding: '2px',
+    };
+    const { name, phone } = this.props.info;
+    return (
+      <div style={style}>
+        <div>
+          <b>{name}</b>
+        </div>
+        <div>{phone}</div>
+        <button type="button" onClick={this.handleRemove}>
+          delete
+        </button>
+      </div>
+    );
+  }
+}
+
+export default PhoneInfo;
+```
+
+## 데이터 수정
+수정할 때도 마찬가지로 불변성을 지켜워야 하며, 기존의 배열과 그 내부에 있는 객체를 직접 수정하지 않도록 한다. 예를 들어 아래와 같은 객체로 이루어진 배열이 있다고 가정해 본다.
+
+```javascript
+const array = [
+  {
+    id: 0,
+    name: '주영',
+    phone: '000-0000-0000',
+  },
+  {
+    id: 1,
+    name: '민수',
+    phone: '000-0000-0000',
+  },
+];
+```
+
+기존의 값은 건들이지 않고, 객체의 id가 1인 객체의 name 값만 수정을 해보겠다.
+
+```javascript
+const modifiedArray = array.map((item) => {
+  return item.id === 1 ? { ...item, name: '인성' } : item;
+});
+console.log(modifiedArray);
+// 0: {id: 0, name: "주영", phone: "000-0000-0000"}
+// 1: {id: 1, name: "인성", phone: "000-0000-0000"}
+```
+
+현재 객체의 id 값이 1인 경우 새로운 객체를 생성하여 기존 값들을 넣은 뒤 name 값만 변경하여 할당 하였다. id 값이 1 아닌 수정이 필요 없는 객체는 기존 값 그대로 할당하였다. 이 원리를 이용하여 전화번호부 정보를 수정하도록 하겠다.
+
+App 컴포넌트에 handleUpdate라는 새로운 함수를 만든다. 이 함수는 id와 data라는 파라미터를 받아와서 필요한 정보를 업데이트 해준다. 이 함수는 PhoneInfoList의 onUpdata로 전달해 준다.
+
+```javascript
+import React, { Component } from 'react';
+import PhoneForm from './components/PhoneForm';
+import PhoneInfoList from './components/PhoneInfoList';
+
+class App extends Component {
+  id = 2;
+  state = {
+    information: [
+      {
+        id: 0,
+        name: '주영',
+        phone: '000-0000-0000',
+      },
+      {
+        id: 1,
+        name: '민수',
+        phone: '000-0000-0000',
+      },
+    ],
+  };
+  handleCreate = (data) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({ id: this.id++, ...data }),
+    });
+  };
+  handleRemove = (id) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.filter((item) => item.id !== id),
+    });
+  };
+  handleUpdate = (id, data) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.map((info) =>
+        info.id === id ? { ...info, ...data } : info
+      ),
+    });
+  };
+  render() {
+    return (
+      <div>
+        <PhoneForm onCreate={this.handleCreate} />
+        <PhoneInfoList
+          data={this.state.information}
+          onRemove={this.handleRemove}
+          onUpdate={this.handleUpdate}
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+이제 하위 컴포넌트 PhoneInfoList를 아래와 같이 수정해 준다.
+
+```javascript
+import React, { Component } from 'react';
+import PhoneInfo from './PhoneInfo';
+
+class PhoneInfoList extends Component {
+  static defaultProps = {
+    data: [],
+    onRemove: () => console.warn('onRemove not defined'),
+    onUpdate: () => console.warn('onUpdate not defined'),
+  };
+  render() {
+    const { data, onRemove, onUpdate } = this.props;
+    const list = data.map((info) => (
+      <PhoneInfo
+        key={info.id}
+        info={info}
+        onRemove={onRemove}
+        onUpdate={onUpdate}
+      />
+    ));
+    return <div>{list}</div>;
+  }
+}
+
+export default PhoneInfoList;
+```
+
+PhoneInfo 컴포넌트가 렌더링 하는 과정에 onUpdate를 그대로 전달하여 주고, onRemove과 마찬가지로 defaultProps도 설정해 준다.
+
+이제 PhoneInfo 컴포넌트를 수정해 준다. 이번에 수정될 코드의 양은 꽤 많다.
+
+```javascript
+import React, { Component } from 'react';
+
+class PhoneInfo extends Component {
+  static defaultProps = {
+    name: '이름',
+    phone: '000-0000-0000',
+    id: 0,
+  };
+  state = {
+    // modify 버튼을 클릭했을 때 editing 값은 true로 변경 된다. 이 값이 true 일 때에는, 기존의 텍스트 형태의 값이 input 형태로 변환 되어 수정 할 수 있게 된다.
+    editing: false,
+
+    // input 값은 동적이기 때문에 input 값을 담아야 할 값도 설정 한다.
+    name: '',
+    phone: '',
+  };
+  handleRemove = () => {
+    // delete 버튼을 킬릭하면 onRemove에 id값을 넣어서 호출
+    const { info, onRemove } = this.props;
+    onRemove(info.id);
+  };
+
+  // 수정 버튼이 클릭 될 때 마다 editing 값이 반전 반전되는 된다.
+  handleToggleEdit = () => {
+    const { editing } = this.state;
+    this.setState({
+      editing: !editing,
+    });
+  };
+
+  // input 값이 변경될 때 마다 state 값을 현재 값으로 변경해 준다.
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // editing 값이 바뀔 때 처리 할 로직이 있는 함수, 수정을 눌렀을 때는 기존 값이 input에 나타나고, apply 버튼을 누르면 input 값들이 부모한테 전달 된다.
+  componentDidUpdate(prevProps, prevState) {
+    const { info, onUpdate } = this.props;
+    if (!prevState.editing && this.state.editing) {
+      // editing 값이 true로 전활 될 때 info의 값을 state에 넣어준다.
+      this.setState({
+        name: info.name,
+        phone: info.phone,
+      });
+    }
+
+    if (prevState.editing && !this.state.editing) {
+      // editing 값이 false로 전환 될 때 현재 수정하고 있는 객체의 변경된 값을 onUpdate 함수에 태워 보낸다.
+      onUpdate(info.id, {
+        name: this.state.name,
+        phone: this.state.phone,
+      });
+    }
+  }
+
+  render() {
+    const style = {
+      margin: '2px',
+      border: '1px solid #ccc',
+      padding: '2px',
+    };
+
+    const { editing } = this.state;
+
+    // 수정모드
+    if (editing) {
+      return (
+        <div style={style}>
+          <div>
+            <input
+              type="text"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="phone"
+              value={this.state.phone}
+              onChange={this.handleChange}
+            />
+          </div>
+          <button onClick={this.handleRemove}>delete</button>
+          <button onClick={this.handleToggleEdit}>apply</button>
+        </div>
+      );
+    }
+
+    // 일반모드
+    const { name, phone } = this.props.info;
+    return (
+      <div style={style}>
+        <div>
+          <b>{name}</b>
+        </div>
+        <div>{phone}</div>
+        <button type="button" onClick={this.handleRemove}>
+          delete
+        </button>
+        <button type="button" onClick={this.handleToggleEdit}>
+          modify
+        </button>
+      </div>
+    );
+  }
+}
+
+export default PhoneInfo;
+```
+
+결과물을 확인해 보면 수정이 잘 되는 것을 확인해 볼 수 있다. 
 
 ## References
 > [누구든지 하는 리액트 6편: input 상태 관리하기](https://velopert.com/3634)  
-> [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)
+> [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)  
+> [누구든지 하는 리액트 8편: 배열 다루기 (2) 제거와 수정](https://velopert.com/3638)
