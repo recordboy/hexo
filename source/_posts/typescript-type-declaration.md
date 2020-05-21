@@ -38,7 +38,7 @@ b = 1; // error Type '1' is not assignable to type 'string'.  TS2322
 ## 타입 선언
 타입스크립트는 ES5, ES6의 상위 확장인 언어이므로 자바스크립트의 타입을 그대로 사용하며, 이외에도 타입스크립트의 고유의 타입이 추가로 제공된다.
 
-| Type | JavaScript | TypeScript | Description |
+| Type | JS | TS | Description |
 |:---|:---:|:---:|:---|
 | boolean | ◯ | ◯ | true와 false |
 | null | ◯ | ◯ | 값이 없다는 것을 명시 |
