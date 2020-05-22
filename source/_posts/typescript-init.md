@@ -101,7 +101,7 @@ const sum: number = add(1, 2);
 console.log(sum);
 ```
 
-`index.html` 파일을 생성하고 `main.ts` 파일을 연결한다. Parcel 번들러가 빌드시에 자동으로 타입스크립트를 컴파일한다.
+`index.html` 파일을 생성하고 `main.ts` 파일을 연결한다. Parcel 번들러가 빌드시에 자동으로 타입스크립트를 컴파일 할 것이다.
 
 ```html
 <!doctype html>
@@ -114,6 +114,13 @@ console.log(sum);
   <script src="main.ts"></script>
 </body>
 </html>
+```
+
+Parcel 번들러로 빌드해 준다. 이제 코드를 수정할 때 마다 타입스크립트가 자동으로 컴파일될 것이다.
+
+```
+$ npx parcel index.html
+// Server running at http://localhost:1234
 ```
 
 ## References
