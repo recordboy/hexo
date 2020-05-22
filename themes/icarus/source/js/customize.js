@@ -62,7 +62,7 @@
 
         function mainBgSet() {
             const star = document.getElementById('bg-main').querySelector('.particles-js-canvas-el');
-            star.style.top = Math.floor(ratio * -300) + 'px';
+            star.style.top = Math.floor(ratio * 200) + 'px';
             // mainTit.style.marginTop = Math.floor(ratio * 300) + 'px';
             mainDimmed.style.opacity = ratio;
         }
@@ -81,7 +81,7 @@
                     if (bgIntervalNum >= ratio * 100) {
                         clearInterval(bgInterval);
                     }
-                    star.style.top = Math.floor(ratio * -300) + 'px';
+                    star.style.top = Math.floor(ratio * 200) + 'px';
                     mainDimmed.style.opacity = bgIntervalRes;
                     console.log(bgIntervalRes)
                 }, 10);
