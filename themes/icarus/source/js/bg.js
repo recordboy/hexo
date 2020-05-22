@@ -2,7 +2,7 @@ particlesJS('bg-main',
   {
     "particles": {
       "number": {
-        "value": 500,
+        "value": 750,
         "density": {
           "enable": true,
           "value_area": 800
@@ -37,7 +37,7 @@ particlesJS('bg-main',
         }
       },
       "size": {
-        "value": 2,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,
@@ -55,7 +55,7 @@ particlesJS('bg-main',
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.5,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -89,7 +89,7 @@ particlesJS('bg-main',
         },
         "bubble": {
           "distance": 400,
-          "size": 2,
+          "size": 1.5,
           "duration": 2,
           "opacity": 1,
           "speed": 3
