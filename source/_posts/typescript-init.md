@@ -116,12 +116,13 @@ console.log(sum);
 </html>
 ```
 
-Parcel 번들러로 빌드해 준다. `http://localhost:1234`에서 결과물을 확인할 수 있다. 이제 코드를 수정할 때마다 타입스크립트가 자동으로 컴파일될 것이다.
+Parcel 번들러로 빌드해 준다.
 
 ```
 $ npx parcel index.html
-Server running at http://localhost:1234
 ```
+
+`http://localhost:1234`에서 결과물을 확인할 수 있으며, 이제 코드를 수정할 때마다 타입스크립트가 자동으로 컴파일될 것이다.
 
 ## References
 > [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
