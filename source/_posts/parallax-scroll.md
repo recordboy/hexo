@@ -1,6 +1,6 @@
 ---
 title: "Vanilla JS로 패럴랙스 스크롤 구현하기"
-date: 2020-05-01 13:37:06
+date: 2020-05-23 13:37:06
 categories: "ui"
 tags: [ui, vanilla js]
 thumbnail: "/gallery/thumbnail-js.png"
