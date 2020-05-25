@@ -111,8 +111,23 @@ function sum(a: number, b: number): number {
 ```
 
 ### 객체(Object)
+기본적으로 typeof 연산자가 `object`로 반환하는 모든 타입을 나타낸다. 여러 타입의 상위 타입이기 때문에 그다지 유용하지 않다.
+
 ```javascript
 let obj: object = {};
+let arr: object = [];
+let func: object = function() {};
+let date: object = new Date();
+```
+
+보다 정확하게 타입 지정을 하기 위해 아래와 같이 객체 속성들에 대한 타입을 개별적으로 지정할 수 있다.
+
+```javascript
+let user: { name: string, age: number } = {
+  name: 'a',
+  age: 20
+};
+console.log(user); // {name: "a", age: 20}
 ```
 
 ### 튜플(Tuple)
@@ -161,8 +176,7 @@ console.log(user); // ["a", 20, 30]
 ```
 
 ### 열거형(Enum)
-
-추가 수정 예정
+숫자 혹은 문자열 값 집합에 이름을 부여할 수 있는 타입으로, 값의 종류가 일정한 범위로 정해져 있는 경우 유용하다. 기본적으로 0부터 시작하며, 값은 1씩 증가한다.
 
 ```javascript
 enum obj {
@@ -172,7 +186,55 @@ enum obj {
   d,
   e
 }
+console.log(obj);
+// 0: "a"
+// 1: "b"
+// 2: "c"
+// 3: "d"
+// 4: "e"
+// a: 0
+// b: 1
+// c: 2
+// d: 3
+// e: 4
 ```
+
+수동으로 값을 변경할 수 있으며, 변경한 부분부터 다시 1씩 증가한다.
+
+```javascript
+enum obj {
+  a,
+  b = 10,
+  c,
+  d,
+  e
+}
+console.log(obj.b); // 10
+console.log(obj.c); // 11
+```
+
+### 모든 타입(Any)
+Any는 모든 타입을 의미하며, 기존의 자바스크립트 변수와 마찬가지로 어떠한 타입의 값도 할당할 수 있다. 불가피하게 타입을 선언할 수 없는 경우, 유용할 수 있다.
+
+```javascript
+let any:any = 'String';
+any = 0;
+console.log(any); // 0
+any = true;
+console.log(any); // true
+```
+
+### 알 수 없는 타입(Unknown)
+Any와 같은 최상위 타입인 Unknown은 알 수 없는 타입을 의미한다. Any와 같이 Unknown에는 어떠한 타입의 값도 할당할 수 있지만, Unknown을 다른 타입에는 할당할 수 없다. 
+
+```javascript
+let a: any = 'text';
+let b: unknown = 0;
+let c: boolean = a; // 모든 타입(any)은 어디딘 할당이 가능하다.
+let d: boolean = b; // 알 수 없는 타입(unknown)은 모든 타입(any)을 제외한 다른 타입에 할당할 수 없다.
+```
+
+추가 수정 예정
 
 ## References
 > [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
