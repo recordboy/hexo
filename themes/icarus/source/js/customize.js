@@ -9,7 +9,7 @@
         const navbarLogo = document.querySelector('.navbar-logo');
         const navbarStart = document.querySelector('.navbar-start');
         const navbarEnd = document.querySelector('.navbar-end');
-        const mainTit = document.getElementById('bg-main').querySelector('.tit');
+        const saturn = document.getElementById('bg-main').querySelector('.tit').childNodes[0];
         const windowHeight = window.innerHeight;
         let ratio = 0;
         let bgInterval = null;
@@ -63,7 +63,7 @@
         function mainBgSet() {
             const star = document.getElementById('bg-main').querySelector('.particles-js-canvas-el');
             star.style.top = Math.floor(ratio * 200) + 'px';
-            // mainTit.style.marginTop = Math.floor(ratio * 300) + 'px';
+            // saturn.style.width = Math.floor(ratio * 200) + 'px';
             mainDimmed.style.opacity = ratio;
         }
 
@@ -71,7 +71,7 @@
             if (ratio < 1 && ratio !== 0) {
                 const star = document.getElementById('bg-main').querySelector('.particles-js-canvas-el');
                 console.log('main bg init start');
-                // mainTit.style.marginTop = Math.floor(ratio * 300) + 'px';
+                // saturn.style.width = Math.floor(ratio * 200) + 'px';
                 mainDimmed.style.display = 'block';
                 bgInterval = setInterval(function() {
                     bgIntervalNum++;
