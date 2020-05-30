@@ -37,7 +37,6 @@
 
         window.addEventListener('scroll', function() {
             if (window.scrollY === 0) {
-                bgMain.style.backgroundPositionY = 0;
                 mainDimmed.style.display = 'none';
             } else {
                 mainDimmed.style.display = 'block';
@@ -57,7 +56,6 @@
         }
 
         function mainBgSet() {
-            bgMain.style.backgroundPositionY = Math.floor(ratio * 500) + 'px';
             mainDimmed.style.opacity = ratio;
         }
 
@@ -70,7 +68,6 @@
                     if (bgIntervalNum >= ratio * 100) {
                         clearInterval(bgInterval);
                     }
-                    bgMain.style.backgroundPositionY = Math.floor(ratio * 500) + 'px';
                     mainDimmed.style.opacity = bgIntervalRes;
                 }, 10);
             }
