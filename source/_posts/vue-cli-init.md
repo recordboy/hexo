@@ -8,7 +8,7 @@ toc: true
 ---
 
 ## Vue CLI
-CLI는 Command Line Interface의 약자로 윈도우에서는 command 창, 맥에서는 터미널 창에서 타이핑으로 명령어를 입력하여 원하는 바를 실행 시키는 도구를 말한다. 쉽게 Vue 프로젝트를 개발할 수 있게 해주는 아주 유용한 도구이다. Vue CLI은 내부적으로 Webpack을 활용한다. Vue CLI로 명령을 실행 시키면 CLI가 자동으로 최적화된 Webpack 형태의 결과물을 생성 시켜 준다.
+Vue CLI는 Vue 프로젝트를 개발할 수 있게 해주는 아주 유용한 도구이며, 여기서 CLI란 Command Line Interface의 약자로써 타이핑으로 명령어를 입력하여 원하는 바를 실행시키는 도구를 말한다. 윈도우에서는 명령 프롬프트(CMD), 맥에서는 터미널을 이용한다고 볼 수 있다. Vue CLI은 내부적으로 Webpack을 활용한다. Vue CLI로 명령을 실행 시키면 CLI가 자동으로 최적화된 Webpack 형태의 결과물을 생성 시켜 준다.
 
 <!-- more -->
 
@@ -76,8 +76,8 @@ $ npm run dev // vue-cli 2.x
 > * **unit-mocha:** javascript 진영에서 테스트 러너를 지원하는 테스트 프레임워크이다.
 
 ## References
-> [Vue CLI 3.0 사용하기](https://vuejs.kr/vue/vue-cli/2018/01/27/vue-cli-3)  
-> [Vue CLI 3.X 사용하기](https://velog.io/@skyepodium/Vue-CLI-3.X-사용하기)  
-> [Vue CLI 3 사용법](https://www.daleseo.com/vue-cli3)  
+> [Vue CLI 3.0 사용하기](https://vuejs.kr/vue/vue-cli/2018/01/27/vue-cli-3)
+> [Vue CLI 3.X 사용하기](https://velog.io/@skyepodium/Vue-CLI-3.X-사용하기)
+> [Vue CLI 3 사용법](https://www.daleseo.com/vue-cli3)
 > [[Vue.js] Vue Version 비교 (cli2 vs cli3)](https://soraji.github.io/front/2019/11/04/VueVersion)
 > [Vue-CLI 도구 활용방법](https://ux.stories.pe.kr/136)
