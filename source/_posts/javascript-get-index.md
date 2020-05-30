@@ -1,8 +1,8 @@
 ---
 title: "인덱스 구하기"
 date: 2018-01-15 21:28:59
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

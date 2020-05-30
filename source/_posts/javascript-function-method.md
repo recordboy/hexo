@@ -1,8 +1,8 @@
 ---
 title: "함수 메소드(call, apply, bind)"
 date: 2018-11-08 08:11:18
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

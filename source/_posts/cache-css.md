@@ -1,8 +1,8 @@
 ---
 title: "수정, 배포 CSS파일 캐시 방지"
 date: 2020-03-01 18:58:52
-categories: "css"
-tags: [css]
+categories: [Front-End, CSS]
+tags: [CSS, JavaScript]
 thumbnail: "/gallery/thumbnail-css.png"
 ---
 

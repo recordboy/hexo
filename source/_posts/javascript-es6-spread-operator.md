@@ -1,8 +1,8 @@
 ---
 title: "전개 연산자(Spread Operator)"
 date: 2020-04-29 20:09:38
-categories: "javascript"
-tags: [javascript, es6]
+categories: [Front-End, JavaScript]
+tags: [JavaScript, ES6]
 thumbnail: "/gallery/thumbnail-es6.png"
 toc: true
 ---

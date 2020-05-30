@@ -1,8 +1,8 @@
 ---
 title: "스코프(Scope)"
 date: 2017-12-02 19:14:45
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

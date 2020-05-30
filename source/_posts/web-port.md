@@ -1,8 +1,8 @@
 ---
 title: "포트(Port)"
 date: 2019-10-18 09:36:30
-categories: "web"
-tags: [web]
+categories: [Web]
+tags: [Web]
 thumbnail: "/gallery/thumbnail-web.png"
 ---
 

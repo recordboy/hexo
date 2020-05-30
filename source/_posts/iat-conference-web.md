@@ -1,8 +1,8 @@
 ---
-title: "웹 접근성 정의 및 대비 방법(Information Accessibility Technology Conference)"
+title: "웹 접근성 정의 및 대비 방법(IATC)"
 date: 2019-12-03 10:21:08
-categories: "html"
-tags: [html]
+categories: [Front-End, HTML]
+tags: [HTML, Web Accessibility]
 thumbnail: "/gallery/thumbnail-html.png"
 toc: true
 ---

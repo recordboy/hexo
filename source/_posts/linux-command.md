@@ -1,8 +1,8 @@
 ---
 title: "리눅스 명령어"
 date: 2019-10-10 09:28:27
-categories: "linux"
-tags: [linux, command]
+categories: [Server, Linux]
+tags: [Linux, Command]
 thumbnail: "/gallery/thumbnail-linux.png"
 toc: true
 ---

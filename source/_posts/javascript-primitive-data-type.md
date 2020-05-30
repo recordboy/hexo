@@ -1,8 +1,8 @@
 ---
 title: "자료형(원시 타입)"
 date: 2017-05-03 18:24:55
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

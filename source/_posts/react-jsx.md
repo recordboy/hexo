@@ -1,8 +1,8 @@
 ---
 title: "React JSX"
 date: 2020-03-07 19:57:39
-categories: "react"
-tags: [react]
+categories: [Front-End, React]
+tags: [React, JSX, JavaScript]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---

@@ -1,12 +1,12 @@
 ---
 title: "스벨트 요약"
 date: 2019-10-20 09:37:50
-categories: "svelte.js"
-tags: [svelte.js]
+categories: [Front-End, SvelteJS]
+tags: [SvelteJS, JavaScript]
 thumbnail: "/gallery/thumbnail-svelte.png"
 ---
 
-## REACT/VUE 에서 이젠 SVELTE
+## REACT/VUE에서 이젠 SVELTE
 
 W3C HTML5 Conference 2019에서 변규현 강사님의 내용을 간략하게 필기한 것
 

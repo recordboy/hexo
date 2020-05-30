@@ -1,8 +1,8 @@
 ---
 title: "CentOS7 깃 설치 및 로컬 세팅"
 date: 2019-12-11 10:39:26
-categories: "centos"
-tags: [linux, centos, git, youngcart5]
+categories: [Server, CentOS]
+tags: [Linux, CentOS, Git, YoungCart5]
 thumbnail: "/gallery/thumbnail-centos.png"
 toc: true
 ---

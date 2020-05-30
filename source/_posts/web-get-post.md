@@ -1,8 +1,8 @@
 ---
 title: "GET과 POST 차이"
 date: 2017-12-04 19:16:03
-categories: "web"
-tags: [web]
+categories: [Web]
+tags: [Web]
 thumbnail: "/gallery/thumbnail-web.png"
 toc: true
 ---

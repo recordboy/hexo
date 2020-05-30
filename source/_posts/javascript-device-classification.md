@@ -1,8 +1,8 @@
 ---
 title: "디바이스 구분 스크립트"
 date: 2019-11-18 10:10:16
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

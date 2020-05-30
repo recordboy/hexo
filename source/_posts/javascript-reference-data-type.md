@@ -1,8 +1,8 @@
 ---
 title: "자료형(참조 타입)"
 date: 2017-05-05 18:27:57
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

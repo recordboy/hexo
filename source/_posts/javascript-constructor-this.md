@@ -1,8 +1,8 @@
 ---
 title: "생성자 함수에서의 This"
 date: 2018-11-02 22:04:56
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

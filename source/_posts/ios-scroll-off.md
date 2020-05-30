@@ -1,8 +1,8 @@
 ---
 title: "IOS 스크롤 방지"
 date: 2018-06-11 21:51:16
-categories: "javascript"
-tags: [jquery, javascript]
+categories: [Front-End, jQuery]
+tags: [jQuey, JavaScript]
 thumbnail: "/gallery/thumbnail-jquery.png"
 ---
 

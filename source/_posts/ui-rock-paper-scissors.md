@@ -1,8 +1,8 @@
 ---
 title: "Vanilla JS로 짱깸뽀(가위 바위 보) 게임 만들기"
 date: 2020-02-05 17:38:06
-categories: "ui"
-tags: [ui, vanilla js, game]
+categories: [Front-End, UI]
+tags: [UI, Vanilla JS]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

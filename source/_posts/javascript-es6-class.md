@@ -1,8 +1,8 @@
 ---
 title: "ES6(ECMASrcipt 6) Class"
 date: 2020-03-04 19:53:03
-categories: "javascript"
-tags: [javascript, es6]
+categories: [Front-End, JavaScript]
+tags: [JavaScript, ES6]
 thumbnail: "/gallery/thumbnail-es6.png"
 toc: true
 ---

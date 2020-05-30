@@ -1,8 +1,8 @@
 ---
 title: "React 전화번호부 만들기"
 date: 2020-03-27 20:51:12
-categories: "react"
-tags: [react]
+categories: [Front-End, React]
+tags: [React, JSX, JavaScript]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "인터렉션 테스트"
 date: 2019-12-16 10:45:37
-categories: "ui"
-tags: [ui, jquery]
+categories: [Front-End, UI]
+tags: [UI, jQuery]
 thumbnail: "/gallery/thumbnail-jquery.png"
 ---
 

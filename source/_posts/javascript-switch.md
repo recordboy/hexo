@@ -1,8 +1,8 @@
 ---
 title: "switch 조건문"
 date: 2018-01-01 21:14:49
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

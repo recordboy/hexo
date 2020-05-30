@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 eval() 함수"
 date: 2017-12-01 18:36:04
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

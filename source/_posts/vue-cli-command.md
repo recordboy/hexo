@@ -1,8 +1,8 @@
 ---
 title: "Vue CLI 명령어(2.x)"
 date: 2019-07-01 08:52:44
-categories: "vue.js"
-tags: [vue.js, command]
+categories: [Front-End, Vue.js]
+tags: [Vue.js, Command]
 thumbnail: "/gallery/thumbnail-vue.png"
 ---
 

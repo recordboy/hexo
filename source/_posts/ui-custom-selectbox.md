@@ -1,8 +1,8 @@
 ---
 title: "커스텀 셀렉트박스(custom selectbox)"
 date: 2019-10-02 09:17:59
-categories: "ui"
-tags: [ui, jquery]
+categories: [Front-End, UI]
+tags: [UI, jQuery]
 thumbnail: "/gallery/thumbnail-jquery.png"
 toc: true
 ---

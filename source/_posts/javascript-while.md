@@ -1,8 +1,8 @@
 ---
 title: "while 반복문"
 date: 2018-01-16 21:20:27
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

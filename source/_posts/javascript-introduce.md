@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 소개"
 date: 2017-02-01 15:29:58
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

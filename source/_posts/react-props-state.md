@@ -1,8 +1,8 @@
 ---
 title: "React 데이터 관리(Props, State)"
 date: 2020-03-08 19:59:22
-categories: "react"
-tags: [react]
+categories: [Front-End, React]
+tags: [React, JSX, JavaScript]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---

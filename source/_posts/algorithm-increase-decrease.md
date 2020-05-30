@@ -1,8 +1,8 @@
 ---
 title: "증가 감소"
 date: 2017-12-15 21:04:48
-categories: "javascript"
-tags: [algorithm, javascript]
+categories: [Front-End, JavaScript]
+tags: [Algorithm, JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

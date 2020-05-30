@@ -1,8 +1,8 @@
 ---
 title: "배열 메소드"
 date: 2018-05-15 21:49:54
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 클로저"
 date: 2020-02-01 11:41:10
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

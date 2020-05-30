@@ -1,8 +1,8 @@
 ---
 title: "SASS 중첩(Nesting), 변수(Variables), 가져오기(Import)"
 date: 2020-02-09 15:08:04
-categories: "sass"
-tags: [sass]
+categories: [Front-End, SASS]
+tags: [SASS, CSS]
 thumbnail: "/gallery/thumbnail-sass.png"
 toc: true
 ---

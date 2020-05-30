@@ -1,8 +1,8 @@
 ---
-title: "입력 서식 관련 접근성(Information Accessibility Technology Conference)"
+title: "입력 서식 관련 접근성(IATC)"
 date: 2019-12-04 10:24:31
-categories: "html"
-tags: [html]
+categories: [Front-End, HTML]
+tags: [HTML, Web Accessibility]
 thumbnail: "/gallery/thumbnail-html.png"
 toc: true
 ---

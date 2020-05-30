@@ -1,8 +1,8 @@
 ---
 title: "깃 명령어"
 date: 2019-10-01 09:11:43
-categories: "git"
-tags: [git, command]
+categories: [Git, Git]
+tags: [Git, Command]
 thumbnail: "/gallery/thumbnail-git.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "타입스크립트(TypeScript) 타입 선언"
 date: 2020-05-12 10:46:47
-categories: "typescript"
-tags: [typescript, javascript]
+categories: [Front-End, TypeScript]
+tags: [TypeScript, JavaScript]
 thumbnail: "/gallery/thumbnail-ts.png"
 toc: true
 ---

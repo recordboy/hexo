@@ -1,8 +1,8 @@
 ---
 title: "ES5(ECMAScript 5)"
 date: 2020-02-13 15:12:44
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript, ES5]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Nginx 리눅스 명령어"
 date: 2020-01-04 10:49:13
-categories: "nginx"
-tags: [nginx, command]
+categories: [Server, Nginx]
+tags: [Nginx, Command]
 thumbnail: "/gallery/thumbnail-nginx.png"
 ---
 

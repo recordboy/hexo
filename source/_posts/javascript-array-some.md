@@ -1,8 +1,8 @@
 ---
 title: "ES5 Array.some"
 date: 2020-02-19 18:55:20
-categories: "javascript"
-tags: [javascript, es5]
+categories: [Front-End, JavaScript]
+tags: [JavaScript, ES5]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "ES5 Array.map"
 date: 2020-02-17 18:49:45
-categories: "javascript"
-tags: [javascript, es5]
+categories: [Front-End, JavaScript]
+tags: [JavaScript, ES5]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

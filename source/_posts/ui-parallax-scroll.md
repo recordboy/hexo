@@ -1,8 +1,8 @@
 ---
 title: "Vanilla JS로 패럴랙스 스크롤 적용하기"
 date: 2020-05-23 13:37:06
-categories: "ui"
-tags: [ui, vanilla js]
+categories: [Front-End, UI]
+tags: [UI, Vanilla JS]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

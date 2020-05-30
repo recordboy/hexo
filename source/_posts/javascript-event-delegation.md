@@ -1,8 +1,8 @@
 ---
 title: "이벤트 위임(Event Delegation)"
 date: 2020-03-02 19:05:42
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

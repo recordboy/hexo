@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 변수"
 date: 2017-05-02 17:02:04
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

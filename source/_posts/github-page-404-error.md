@@ -1,8 +1,8 @@
 ---
 title: "깃허브 호스팅 페이지에서 404 오류 나올 경우"
 date: 2020-03-03 19:50:48
-categories: "github"
-tags: [github]
+categories: [Git, Github]
+tags: [Github, Git]
 thumbnail: "/gallery/thumbnail-github.png"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "리눅스 서버 세팅"
 date: 2019-10-21 09:40:18
-categories: "linux"
-tags: [linux]
+categories: [Server, Linux]
+tags: [Linux]
 thumbnail: "/gallery/thumbnail-linux.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Vue Cli 2.x를 이용한 Github페이지 만들기"
 date: 2019-11-02 09:58:43
-categories: "vue.js"
-tags: [vue.js]
+categories: [Front-End, Vue.js]
+tags: [Vue.js]
 thumbnail: "/gallery/thumbnail-vue.png"
 toc: true
 ---

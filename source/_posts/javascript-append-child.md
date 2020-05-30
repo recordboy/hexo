@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 노드 생성 및 추가"
 date: 2017-12-12 20:44:40
-categories: "javascript"
-tags: [javascript]
+categories: [Front-End, JavaScript]
+tags: [JavaScript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 
