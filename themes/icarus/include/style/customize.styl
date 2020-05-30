@@ -4,7 +4,7 @@
 #bg-main
     display: none
     position: relative
-    background: linear-gradient( to top, #08194a, #000 )
+    background: url('/img/starbucks.jpg') no-repeat center top / cover
     opacity: 0
     
     .tit
@@ -12,20 +12,10 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-        padding-top: 80px
-        text-align: center
         font-size: 20px
         font-weight: normal
-        line-height: 25px
         letter-spacing: 1px
         color: #fff
-        
-        img
-            position: absolute
-            top: 0
-            left: 50%
-            transform: translateX(-50%)
-            width: 80px
 
     .dimmed
         display: none
@@ -37,6 +27,3 @@
         height: 100%
         background-color: #000
         opacity 0
-            
-    .particles-js-canvas-el
-        position: fixed

@@ -9,16 +9,11 @@
         const navbarLogo = document.querySelector('.navbar-logo');
         const navbarStart = document.querySelector('.navbar-start');
         const navbarEnd = document.querySelector('.navbar-end');
-        const saturn = document.getElementById('bg-main').querySelector('.tit').childNodes[0];
         const windowHeight = window.innerHeight;
         let ratio = 0;
         let bgInterval = null;
         let bgIntervalNum = 0;
         let bgIntervalRes = 0;
-
-        // particles
-        document.write('<script src="/js/particles.min.js"></script>');
-        document.write('<script src="/js/bg.js"></script>');
 
         // main init
         bgMain.style.display = 'block';
@@ -61,17 +56,12 @@
         }
 
         function mainBgSet() {
-            const star = document.getElementById('bg-main').querySelector('.particles-js-canvas-el');
-            star.style.top = Math.floor(ratio * 200) + 'px';
-            // saturn.style.width = Math.floor(ratio * 200) + 'px';
             mainDimmed.style.opacity = ratio;
+            bgMain.style.backgroundPositionY = Math.floor(ratio * 500) + 'px';
         }
 
         function mainBgInit() {
             if (ratio < 1 && ratio !== 0) {
-                const star = document.getElementById('bg-main').querySelector('.particles-js-canvas-el');
-                console.log('main bg init start');
-                // saturn.style.width = Math.floor(ratio * 200) + 'px';
                 mainDimmed.style.display = 'block';
                 bgInterval = setInterval(function() {
                     bgIntervalNum++;
@@ -79,7 +69,6 @@
                     if (bgIntervalNum >= ratio * 100) {
                         clearInterval(bgInterval);
                     }
-                    star.style.top = Math.floor(ratio * 200) + 'px';
                     mainDimmed.style.opacity = bgIntervalRes;
                 }, 10);
             }
