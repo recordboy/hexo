@@ -2,8 +2,9 @@
     let url = window.location.href;
     if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
 
-        const mainDimmed = document.getElementById('bg-main').querySelector('.dimmed');
-        const bgMain = document.querySelector('#bg-main');
+        const hero = document.querySelector('#hero');
+        const bg = hero.querySelector('.bg');
+        const dimmed = hero.querySelector('.dimmed');
         const navbar = document.querySelector('.navbar');
         const navbarMenu = document.querySelector('.navbar-menu');
         const navbarLogo = document.querySelector('.navbar-logo');
@@ -16,8 +17,8 @@
         let bgIntervalRes = 0;
 
         // main init
-        bgMain.style.display = 'block';
-        bgMain.style.height = windowHeight + 'px';
+        hero.style.display = 'block';
+        hero.style.height = windowHeight + 'px';
         navbar.style.position = 'absolute';
         navbar.style.width = '100%';
         navbar.style.backgroundColor = 'transparent';
@@ -37,9 +38,9 @@
 
         window.addEventListener('scroll', function() {
             if (window.scrollY === 0) {
-                mainDimmed.style.display = 'none';
+                dimmed.style.display = 'none';
             } else {
-                mainDimmed.style.display = 'block';
+                dimmed.style.display = 'block';
                 mainBgSet();
             }
             mainRatio();
@@ -52,23 +53,23 @@
         }
 
         function mainRatio() {
-            ratio = Math.floor(window.scrollY / windowHeight * 1000) / 1000;
+            ratio = Math.floor(window.scrollY / windowHeight * 500) / 1000;
         }
 
         function mainBgSet() {
-            mainDimmed.style.opacity = ratio;
+            dimmed.style.opacity = ratio;
         }
 
         function mainBgInit() {
             if (ratio < 1 && ratio !== 0) {
-                mainDimmed.style.display = 'block';
+                dimmed.style.display = 'block';
                 bgInterval = setInterval(function() {
                     bgIntervalNum++;
                     bgIntervalRes = Math.round(bgIntervalNum * 0.01 * 100) / 100;
                     if (bgIntervalNum >= ratio * 100) {
                         clearInterval(bgInterval);
                     }
-                    mainDimmed.style.opacity = bgIntervalRes;
+                    dimmed.style.opacity = bgIntervalRes;
                 }, 10);
             }
         }
