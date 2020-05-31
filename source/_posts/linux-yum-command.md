@@ -1,8 +1,8 @@
 ---
 title: "Yum 명령어"
 date: 2019-10-23 09:46:00
-categories: [Server, Linux]
-tags: [Linux, Yum]
+categories: [server, linux]
+tags: [linux, yum]
 thumbnail: "/gallery/thumbnail-linux.png"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "이미지 캐싱"
 date: 2019-10-17 09:34:04
-categories: [Web]
-tags: [Web]
+categories: [web]
+tags: [web]
 thumbnail: "/gallery/thumbnail-web.png"
 ---
 

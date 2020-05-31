@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 모듈 패턴"
 date: 2020-02-03 14:57:31
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

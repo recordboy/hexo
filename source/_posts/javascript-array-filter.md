@@ -1,8 +1,8 @@
 ---
 title: "ES5 Array.filter"
 date: 2020-02-18 18:53:36
-categories: [Front-End, JavaScript]
-tags: [JavaScript, ES5]
+categories: [front-end, javascript]
+tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

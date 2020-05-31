@@ -1,8 +1,8 @@
 ---
 title: "ES6 비구조화 할당(Destructuring Assignment)"
 date: 2020-04-30 20:51:12
-categories: [Front-End, JavaScript]
-tags: [JavaScript, ES6]
+categories: [front-end, javascript]
+tags: [javascript, es6]
 thumbnail: "/gallery/thumbnail-es6.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Nginx 기본 세팅"
 date: 2019-11-19 10:13:02
-categories: [Server, Nginx]
-tags: [Nginx, Linux]
+categories: [server, nginx]
+tags: [nginx, linux]
 thumbnail: "/gallery/thumbnail-nginx.png"
 ---
 

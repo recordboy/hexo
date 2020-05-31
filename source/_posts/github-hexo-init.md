@@ -1,8 +1,8 @@
 ---
 title: "헥소(HEXO)를 이용한 깃허브 블로그 만들기"
 date: 2020-04-20 20:12:05
-categories: [Git, Github]
-tags: [Github, Hexo]
+categories: [git, github]
+tags: [github, hexo]
 thumbnail: "/gallery/thumbnail-hexo.png"
 toc: true
 ---

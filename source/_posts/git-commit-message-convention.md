@@ -1,8 +1,8 @@
 ---
 title: "Git Commit Message Convention"
 date: 2019-11-01 09:54:06
-categories: [Git, Git]
-tags: [Git]
+categories: [git, git]
+tags: [git]
 thumbnail: "/gallery/thumbnail-git.png"
 toc: true
 ---

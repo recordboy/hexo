@@ -1,8 +1,8 @@
 ---
 title: "깃허브 블로그(Jekyll) SEO 세팅"
 date: 2019-12-01 10:15:25
-categories: [Git, Github]
-tags: [Github, Jekyll, SEO]
+categories: [git, github]
+tags: [github, jekyll, seo]
 thumbnail: "/gallery/thumbnail-github.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "SASS 연산(Operations)"
 date: 2020-02-10 15:11:16
-categories: [Front-End, SASS]
-tags: [SASS, CSS]
+categories: [front-end, sass]
+tags: [sass, css]
 thumbnail: "/gallery/thumbnail-sass.png"
 toc: true
 ---

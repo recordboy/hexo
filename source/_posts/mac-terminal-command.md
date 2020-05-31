@@ -1,8 +1,8 @@
 ---
 title: "맥 터미널 명령어"
 date: 2020-01-19 10:54:21
-categories: [Mac]
-tags: [Mac, Terminal, Command]
+categories: [mac]
+tags: [mac, terminal, command]
 thumbnail: "/gallery/thumbnail-mac.png"
 ---
 

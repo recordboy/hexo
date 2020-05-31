@@ -1,8 +1,8 @@
 ---
 title: "프로토타입(Prototype)"
 date: 2018-12-17 08:16:45
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

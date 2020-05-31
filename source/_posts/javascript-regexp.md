@@ -1,8 +1,8 @@
 ---
 title: "정규표현식"
 date: 2018-03-02 21:41:31
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "슬라이드 배너(slide banner)"
 date: 2019-04-10 08:24:06
-categories: [Front-End, UI]
-tags: [UI, Vanilla JS]
+categories: [front-end, ui]
+tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

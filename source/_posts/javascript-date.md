@@ -1,8 +1,8 @@
 ---
 title: "날짜 구하기(Data 함수)"
 date: 2017-12-13 20:48:10
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

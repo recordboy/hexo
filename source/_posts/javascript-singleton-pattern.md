@@ -1,8 +1,8 @@
 ---
 title: "자바스크립트 싱글톤 패턴"
 date: 2020-02-04 11:42:45
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

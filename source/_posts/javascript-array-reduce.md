@@ -1,8 +1,8 @@
 ---
 title: "ES5 Array.reduce"
 date: 2020-02-21 18:57:42
-categories: [Front-End, JavaScript]
-tags: [JavaScript, ES5]
+categories: [front-end, javascript]
+tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

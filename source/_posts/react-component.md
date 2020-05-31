@@ -1,8 +1,8 @@
 ---
 title: "React 초기 세팅 및 컴포넌트"
 date: 2020-03-06 19:55:52
-categories: [Front-End, React]
-tags: [React, JavaScript]
+categories: [front-end, react]
+tags: [react, javascript]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---

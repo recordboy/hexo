@@ -1,8 +1,8 @@
 ---
 title: "구구단 출력하기"
 date: 2018-02-20 21:32:29
-categories: [Front-End, JavaScript]
-tags: [Algorithm, JavaScript]
+categories: [front-end, javascript]
+tags: [algorithm, javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

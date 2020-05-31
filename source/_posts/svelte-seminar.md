@@ -1,8 +1,8 @@
 ---
 title: "스벨트 요약"
 date: 2019-10-20 09:37:50
-categories: [Front-End, SvelteJS]
-tags: [SvelteJS, JavaScript]
+categories: [front-end, svelte.js]
+tags: [svelte.js, javascript]
 thumbnail: "/gallery/thumbnail-svelte.png"
 ---
 

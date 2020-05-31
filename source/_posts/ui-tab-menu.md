@@ -1,8 +1,8 @@
 ---
 title: "탭메뉴(tab menu)"
 date: 2019-04-08 08:36:59
-categories: [Front-End, UI]
-tags: [UI, Vanilla JS]
+categories: [front-end, ui]
+tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

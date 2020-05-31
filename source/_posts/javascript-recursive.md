@@ -1,8 +1,8 @@
 ---
 title: "재귀 함수(Recursive Function)"
 date: 2017-12-16 21:13:28
-categories: [Front-End, JavaScript]
-tags: [JavaScript]
+categories: [front-end, javascript]
+tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Web Technology Terminology"
 date: 2019-03-25 08:21:31
-categories: [Web]
-tags: [Web]
+categories: [web]
+tags: [web]
 thumbnail: "/gallery/thumbnail-web.png"
 ---
 

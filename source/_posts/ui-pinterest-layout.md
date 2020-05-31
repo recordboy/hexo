@@ -1,8 +1,8 @@
 ---
 title: "핀터레스트 레이아웃 구현하기"
 date: 2019-12-08 10:29:47
-categories: [Front-End, UI]
-tags: [UI, Vanilla JS]
+categories: [front-end, ui]
+tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

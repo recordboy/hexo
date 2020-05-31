@@ -1,8 +1,8 @@
 ---
 title: "Vue Cli 초기 세팅"
 date: 2019-11-01 10:05:51
-categories: [Front-End, Vue.js]
-tags: [Vue.js]
+categories: [front-end, vue.js]
+tags: [vue.js]
 thumbnail: "/gallery/thumbnail-vue.png"
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: "APM(Apache, Mysql, PHP)"
 date: 2019-10-21 09:43:05
-categories: [Server, Linux]
-tags: [Linux, Apache, MySQL, PHP]
+categories: [server, linux]
+tags: [linux, apache, mysql, php]
 thumbnail: "/gallery/thumbnail-linux.png"
 ---
 

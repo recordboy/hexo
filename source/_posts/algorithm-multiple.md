@@ -1,8 +1,8 @@
 ---
 title: "배수 구하기"
 date: 2017-12-14 21:03:09
-categories: [Front-End, JavaScript]
-tags: [Algorithm, JavaScript]
+categories: [front-end, javascript]
+tags: [algorithm, javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 ---
 

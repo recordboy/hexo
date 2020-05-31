@@ -1,8 +1,8 @@
 ---
 title: "전체동의 체크박스(agree checkbox)"
 date: 2019-05-28 08:50:10
-categories: [Front-End, UI]
-tags: [UI, Vanilla JS]
+categories: [front-end, ui]
+tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

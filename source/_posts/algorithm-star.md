@@ -1,8 +1,8 @@
 ---
 title: "중첩 반복문(별찍기)"
 date: 2018-02-21 21:33:43
-categories: [Front-End, JavaScript]
-tags: [Algorithm, JavaScript]
+categories: [front-end, javascript]
+tags: [algorithm, javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---

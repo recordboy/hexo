@@ -1,8 +1,8 @@
 ---
 title: "VIM 명령어"
 date: 2019-12-06 10:28:19
-categories: [Server, Linux]
-tags: [Linux, Vim, Command]
+categories: [server, linux]
+tags: [linux, vim, command]
 thumbnail: "/gallery/thumbnail-vim.png"
 toc: true
 ---
