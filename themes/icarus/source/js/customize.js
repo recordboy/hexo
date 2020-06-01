@@ -53,7 +53,7 @@
         }
 
         function mainRatio() {
-            ratio = Math.floor(window.scrollY / windowHeight * 500) / 1000;
+            ratio = Math.floor(window.scrollY / windowHeight * 1000) / 1000;
         }
 
         function mainBgSet() {
