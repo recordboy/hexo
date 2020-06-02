@@ -63,14 +63,15 @@
         function mainBgInit() {
             if (ratio < 1 && ratio !== 0) {
                 dimmed.style.display = 'block';
-                bgInterval = setInterval(function() {
-                    bgIntervalNum++;
-                    bgIntervalRes = Math.round(bgIntervalNum * 0.01 * 100) / 100;
-                    if (bgIntervalNum >= ratio * 100) {
-                        clearInterval(bgInterval);
-                    }
-                    dimmed.style.opacity = bgIntervalRes;
-                }, 10);
+                dimmed.style.opacity = ratio;
+                // bgInterval = setInterval(function() {
+                //     bgIntervalNum++;
+                //     bgIntervalRes = Math.round(bgIntervalNum * 0.01 * 100) / 100;
+                //     if (bgIntervalNum >= ratio * 100) {
+                //         clearInterval(bgInterval);
+                //     }
+                //     dimmed.style.opacity = bgIntervalRes;
+                // }, 10);
             }
         }
 
