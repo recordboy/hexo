@@ -7,9 +7,10 @@ thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 아래는 배열을 무작위로 섞는 알고리즘이다.
-1. `arr`배열을 선언한 뒤 각 요소를 랜덤으로 추출하여 `newArr`라는 새로운 배열에 할당하도록 작성되었다.
 
 <!-- more -->
+
+`arr`배열을 선언한 뒤 각 요소를 랜덤으로 추출하여 `newArr`라는 새로운 배열에 할당하도록 작성되었다.
 
 ```javascript
 let arr = [1, 2, 3, 4, 5],
