@@ -1,1 +1,1 @@
-# hexo
+# HEXO Blog Repository
