@@ -8,7 +8,7 @@ toc: true
 ---
 
 ## Vue CLI
-Vue CLI는 Vue 프로젝트를 개발할 수 있게 해주는 아주 유용한 도구이며, 여기서 CLI란 Command Line Interface의 약자로써 타이핑으로 명령어를 입력하여 원하는 바를 실행시키는 도구를 말한다. 윈도우에서는 명령 프롬프트(CMD), 맥에서는 터미널을 이용한다고 볼 수 있다. Vue CLI은 내부적으로 Webpack을 활용한다. Vue CLI로 명령을 실행 시키면 CLI가 자동으로 최적화된 Webpack 형태의 결과물을 생성 시켜 준다.
+Vue CLI는 Vue 프로젝트를 개발할 수 있게 해주는 아주 유용한 도구이며, 여기서 CLI란 Command Line Interface의 약자로서 타이핑으로 명령어를 입력하여 원하는 바를 실행시키는 도구를 말한다. 윈도우에서는 명령 프롬프트(CMD), 맥에서는 터미널을 이용한다고 볼 수 있다. Vue CLI은 내부적으로 Webpack을 활용한다. Vue CLI로 명령을 실행 시키면 CLI가 자동으로 최적화된 Webpack 형태의 결과물을 생성 시켜 준다.
 
 <!-- more -->
 
