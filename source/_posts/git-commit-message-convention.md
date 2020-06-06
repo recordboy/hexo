@@ -1,5 +1,5 @@
 ---
-title: "Git Commit Message Convention"
+title: "깃 커밋 메시지 컨벤션(Git Commit Message Convention)"
 date: 2019-11-01 09:54:06
 categories: [git, git]
 tags: [git]
@@ -8,7 +8,6 @@ toc: true
 ---
 
 커밋 메시지는 타입, 제목, 본문(선택), 꼬리말(선택) 세 부분으로 작성한다.
-
 
 * [타입(Type)] 제목(Title)
 * 본문(Body)

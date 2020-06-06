@@ -105,4 +105,4 @@ toc: true
 
 ## References
 > [웹 접근성 이해](https://www.edwith.org/web-accessibility/joinLectures/23540)  
-> [레진 웹 접근성 가이드라인](https://github.com/lezhin/accessibility)  
+> [레진 웹 접근성 가이드라인](https://github.com/lezhin/accessibility)
