@@ -1,1 +1,1 @@
-# HEXO Blog Repository
+# Front-End Technology Blog Repository
