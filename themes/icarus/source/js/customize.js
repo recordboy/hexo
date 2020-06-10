@@ -18,7 +18,7 @@
 
         // main init
         hero.style.display = 'block';
-        hero.style.height = windowHeight + 'px';
+        // hero.style.height = windowHeight + 'px';
         navbar.style.position = 'absolute';
         navbar.style.width = '100%';
         navbar.style.backgroundColor = 'transparent';
