@@ -15,6 +15,10 @@
         let bgInterval = null;
         let bgIntervalNum = 0;
         let bgIntervalRes = 0;
+        
+        // particles
+        document.write('<script src="/js/particles.min.js"></script>');
+        document.write('<script src="/js/app.js"></script>');
 
         // main init
         hero.style.display = 'block';
