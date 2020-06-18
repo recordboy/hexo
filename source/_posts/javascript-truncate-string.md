@@ -28,7 +28,7 @@ console.log(str.substring(1, 4));
 // 나다라
 ```
 
-## substring(시작인덱스, 길이)
+## substr(시작인덱스, 길이)
 
 시작인덱스를 기준으로 문자열 길이로 자른다.
 
