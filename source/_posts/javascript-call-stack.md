@@ -3,7 +3,7 @@ title: "자바스크립트 호출 스택(Call Stack)"
 date: 2018-02-01 21:22:00
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: "자바스크립트 싱글톤 패턴"
 date: 2020-02-04 11:42:45
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 전체 시스템에서 하나의 인스턴스만 존재하도록 보장하는 객체 생성패턴을 의미한다. 대표적으로 $를 활용해서 DOM을 조작하고 이벤트도 다루는 jQuery가 있으며, 객체 리터럴도 싱글톤 패턴이라고 할수 있다.(자바스크립트에서 객체 리터럴로 생성한 객체는 다른 객체와 같을 수 없다. 객체 내부의 내용이 같더라도 참조하는 객체가 다르기 때문이다.) 객체 리터널은 한계가 있는데 비공개 프로퍼티 및 함수를 선언할 수 없다.

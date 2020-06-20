@@ -3,7 +3,7 @@ title: "타입스크립트(TypeScript) 타입 선언"
 date: 2020-05-12 10:46:47
 categories: [front-end, typescript]
 tags: [typescript, javascript]
-thumbnail: "/gallery/thumbnail-ts.png"
+# thumbnail: "/gallery/thumbnail-ts.png"
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: "리눅스 서버 세팅"
 date: 2019-10-21 09:40:18
 categories: [server, linux]
 tags: [linux]
-thumbnail: "/gallery/thumbnail-linux.png"
+# thumbnail: "/gallery/thumbnail-linux.png"
 toc: true
 ---
 

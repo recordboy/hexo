@@ -3,7 +3,7 @@ title: "ES6(ECMASrcipt 6) 클래스(Class)"
 date: 2020-03-04 19:53:03
 categories: [front-end, javascript]
 tags: [javascript, es6]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

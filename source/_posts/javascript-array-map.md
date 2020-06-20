@@ -3,7 +3,7 @@ title: "ES5 Array.map"
 date: 2020-02-17 18:49:45
 categories: [front-end, javascript]
 tags: [javascript, es5]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `Array.map` 메서드는 `Array.forEach`와 마찬가지로 배열의 각 요소를 순회하며 콜백 함수를 실행한다. 다만, 콜백에서 리턴되는 값을 배열로 만들어낸다. 원본 배열은 건들지 않고 그 요소들을 사용해서 혹은 약간 변형해서 새로운 배열을 만들어야 할 때 유용하다.

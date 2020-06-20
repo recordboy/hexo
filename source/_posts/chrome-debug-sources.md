@@ -3,7 +3,7 @@ title: "크롬으로 디버깅하기"
 date: 2020-01-29 10:58:03
 categories: [front-end, javascript]
 tags: [chrome, javascript, debug]
-thumbnail: "/gallery/thumbnail-chrome.png"
+# thumbnail: "/gallery/thumbnail-chrome.png"
 toc: true
 ---
 
