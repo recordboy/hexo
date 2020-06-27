@@ -64,7 +64,7 @@ particlesJS('hero',
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 1,
+        "opacity": 0.5,
         "width": 1
       },
       "move": {
