@@ -16,7 +16,7 @@ particlesJS('hero',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
@@ -64,7 +64,7 @@ particlesJS('hero',
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 1,
         "width": 1
       },
       "move": {
