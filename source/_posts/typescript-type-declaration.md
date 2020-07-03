@@ -3,7 +3,7 @@ title: "타입스크립트(TypeScript) 타입 선언"
 date: 2020-05-12 10:46:47
 categories: [front-end, typescript]
 tags: [typescript, javascript]
-# thumbnail: "/gallery/thumbnail-ts.png"
+thumbnail: "/gallery/thumbnail-ts.png"
 toc: true
 ---
 
@@ -224,21 +224,32 @@ any = true;
 console.log(any); // true
 ```
 
-### 알 수 없는 타입(Unknown)
-Any와 같은 최상위 타입인 Unknown은 알 수 없는 타입을 의미한다. Any와 같이 Unknown에는 어떠한 타입의 값도 할당할 수 있지만, Unknown을 다른 타입에는 할당할 수 없다. 
+### 빈 타입(Void)
+빈 타입인 Void는 리턴값이 없는 함수에서 사용된다. 리턴값의 타입을 명시하는 곳에 작성하며, 리턴값이 없는 함수는 `undefined`를 반환한다.
 
 ```javascript
-let a: any = 'text';
-let b: unknown = 0;
-let c: boolean = a; // 모든 타입(any)은 어디딘 할당이 가능하다.
-let d: boolean = b; // 알 수 없는 타입(unknown)은 모든 타입(any)을 제외한 다른 타입에 할당할 수 없다.
+function hello(): void {
+  console.log("hello");
+}
+console.log(hello()); // undefined
 ```
 
-추가 수정 예정
+### never
+Never 타입은 절대 발생할 수 없는 타입을 나타낸다.
+
+```javascript
+function errorMsg() {
+  throw new Error("오류 발생!");
+}
+console.log(errorMsg()); // Uncaught Error: 오류 발생!
+```
+
+`errorMsgd` 함수는 오류를 발생시키기 때문에 `null`, `undefined`를 포함한 어떠한 값도 반환하지 않는다. 이럴 경우 never 타입을 사용하면 된다.
 
 ## References
 > [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
 > [정적 타이핑](https://poiemaweb.com/typescript-typing)  
 > [타입스크립트 기초 연습](https://velog.io/@velopert/typescript-basics)  
 > [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)  
+> [3.1 기본 타입](https://ahnheejong.gitbook.io/ts-for-jsdev/03-basic-grammar/primitive-types)  
 > [타입스크립트 기초 연습](https://velog.io/@velopert/typescript-basics)

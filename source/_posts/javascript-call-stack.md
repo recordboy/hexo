@@ -3,13 +3,13 @@ title: "자바스크립트 호출 스택(Call Stack)"
 date: 2018-02-01 21:22:00
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 
 ## 호출 스택
 
-호출 스택이란 함수의 호출을 기록하는 `자료구조`이다. 기본적으로 우리가 프로그램 안에서 위치한 곳이며, 만약 우리가 어떤 함수를 실행시킨다면, 우리는 스택 위에 무언가를 올리는(push) 행위를 하는 것이다. 그리고 우리가 함수로부터 반환을 받을 때, 우리는 스택의 맨 위를 가져오는(pop) 것이다.
+호출 스택이란 **함수의 호출을 기록하는 자료구조**이다. 기본적으로 우리가 프로그램 안에서 위치한 곳이며, 만약 우리가 어떤 함수를 실행시킨다면, 우리는 스택 위에 무언가를 올리는(push) 행위를 하는 것이다. 그리고 우리가 함수로부터 반환을 받을 때, 우리는 스택의 맨 위를 가져오는(pop) 것이다.
 
 <!-- more -->
 
@@ -17,13 +17,13 @@ toc: true
 
 ```javascript
 function func01() {
-    throw new Error('Oops!');
+  throw new Error("Oops!");
 }
 function func02() {
-    func01();
+  func01();
 }
 function func03() {
-    func02();
+  func02();
 }
 func03();
 // Uncaught Error: Oops!
@@ -35,12 +35,39 @@ func03();
 
 위 코드를 실행해보면 콘솔창에 빨간 애러 스택들이 나온다. 보통 그것들은 호출 스택의 현재 상태를 나타내며, 실패함 함수를 스택처럼 위에서 아래로 나타낸다.
 
+크롬 개발자 도구의 디버깅 기능을 활용하여 호출스택을 확인해 볼 수 있다.
+
+```javascript
+function func01() {
+  console.log("hello");
+}
+function func02() {
+  func01();
+}
+function func03() {
+  func02();
+}
+debugger;
+func03();
+```
+
+위 코드를 실행하면 디버깅 모드가 시작될 것이다. 개발자 도구에서 `Sources` 패널의 `Call Stack`을 확인해 보면 처음에는 `(anonymous)`이 출력되며, `Step` 버튼을 클릭하여 다음 함수를 들어갈 때 마다 스택이 점점 쌓이는 것을 볼 수 있다.
+
+```
+func01
+func02
+func03
+(anonymous)
+```
+
+그리고 함수를 빠져 나갈 때 마다 스택이 위에서 부터 빠져 나가는 것을 확인할 수 있다. 이러한 각 단계를 **스택 프레임(Stack Frame)**이라고 한다.
+
 ## 스택 오버플로우
 스택의 사이즈를 초과했을 때 발생하는 오류인데 보통 재귀를 호출했을 때 나타난다.
 
 ```javascript
 function func() {
-    func();
+  func();
 }
 func();
 // Uncaught RangeError: Maximum call stack size exceeded
