@@ -1,4 +1,5 @@
 (function () {
+
   let url = window.location.href;
   if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
 
@@ -67,4 +68,5 @@
     navSet(navbarEnd);
 
   }
+
 }());
