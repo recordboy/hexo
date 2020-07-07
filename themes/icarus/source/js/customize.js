@@ -4,7 +4,6 @@
   if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
 
     const hero = document.querySelector('#hero');
-    const tit = hero.querySelector('.tit');
     const dimmed = hero.querySelector('.dimmed');
     const navbar = document.querySelector('.navbar');
     const navbarMenu = document.querySelector('.navbar-menu');
@@ -54,7 +53,6 @@
     }
 
     const mainBgSet = () => {
-      tit.style.opacity = 1 - ratio;
       dimmed.style.opacity = ratio;
     }
 
