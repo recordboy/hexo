@@ -1,5 +1,5 @@
 ---
-title: "VS Code에 ESLint, Prettier 적용하기"
+title: "리액트에 ESLint, Prettier 적용하기"
 date: 2020-07-06 19:54:44
 categories: [front-end, extension]
 tags: [extension, eslint, prettier]
@@ -7,7 +7,7 @@ tags: [extension, eslint, prettier]
 toc: true
 ---
 
-자바스크립트 개발을 하다 보면 문법 요류나 코드 정리로 인해 시간을 많이 소비한다. **ESLint**와 **Prettier**는 이런 상황을 해결해 주는 도구이며 이번 포스팅에서 설치와 초기 세팅 방법을 알아보도록 하겠다. 에디터는 VSCode를 기준으로 하겠다.
+리액트 개발을 하다 보면 문법 요류나 코드 정리로 인해 시간을 많이 소비한다. **ESLint**와 **Prettier**는 이러한 상황을 해결해 주는 도구들이며, VSCode와 연동해 사용이 가능하다. 이번 포스팅에서 설치와 초기 세팅 방법을 알아보도록 하겠다.
 
 ## ESLint
 ESLint는 ES + Lint의 합성어로 ES는 EcmaScript를 의미하고 Lint는 보푸라기라는 뜻인데 프로그래밍에서는 에러가 있는 코드에 표시를 달아놓는 것을 의미한다. 즉 ESLint는 JavaScript의 스타일 가이드를 따르지 않거나 문제가 있는 안티 패턴들을 찾아주고 일관된 코드 스타일로 작성하도록 도와준다. 코딩 컨벤션 및 안티 패턴을 자동 검출 하므로 옮바른 코딩 습관을 위해 필히 사용할 것을 권장한다.
@@ -59,14 +59,11 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 
 그리고 프로젝트의 루트 경로에 `.eslinrc.json`파일을 만들고 아래 내용을 추가한다.
 
-
-
-
 *추후 추가 예정*
 
 ## References
-> [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)  
 > [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  
+> [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)  
 > [ESLint 조금 더 잘 활용하기](https://tech.kakao.com/2019/12/05/make-better-use-of-eslint/)  
 > [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)  
 > [프론트엔드 개발환경의 이해: 린트](https://jeonghwan-kim.github.io/series/2019/12/30/frontend-dev-env-lint.html)  
