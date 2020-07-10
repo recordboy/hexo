@@ -21,12 +21,12 @@
         '.column-right > .card'
     ].forEach(selector => {
         $(selector).forEach(element => {
-            element.style.transition = '0s';
-            element.style.opacity = '0';
-            element.style.transform = 'scale(0.8)';
             if (element.id === 'hero') {
                 element.style.transform = 'scale(0)';
             }
+            element.style.transition = '0s';
+            element.style.opacity = '0';
+            element.style.transform = 'scale(0.8)';
             element.style.transformOrigin = 'center top';
         });
     });
