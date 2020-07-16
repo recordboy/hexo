@@ -188,7 +188,7 @@ getData()
 
 ## References
 > [[자바스크립트] 비동기 처리 2부 - Promise](https://www.daleseo.com/js-async-promise/)  
-> [Promise](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)  
 > [자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)  
-> [프로미스](https://poiemaweb.com/es6-promise)  
-> [JavaScript 비동기 처리를 위한 promise 이해하기](https://velog.io/@cyranocoding/2019-08-02-1808-작성됨-5hjytwqpqj)
+> [JavaScript 비동기 처리를 위한 promise 이해하기](https://velog.io/@cyranocoding/2019-08-02-1808-작성됨-5hjytwqpqj)  
+> [Promise](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)  
+> [프로미스](https://poiemaweb.com/es6-promise)
