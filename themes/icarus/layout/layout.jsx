@@ -19,7 +19,7 @@ module.exports = class extends Component {
             <body class={`is-${columnCount}-column`}>
                 <Navbar config={config} helper={helper} page={page} />
                 <div id="hero">
-                    <h1 class="tit">DEV LOG</h1>
+                    <h1 class="tit">Dev Log</h1>
                     <span class="dimmed"></span>
                     <span class="bg"></span>
                 </div>
