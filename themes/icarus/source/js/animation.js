@@ -1,4 +1,8 @@
 (function() {
+
+    // customize
+    customize();
+
     function $() {
         return Array.prototype.slice.call(document.querySelectorAll.apply(document, arguments));
     }
@@ -54,5 +58,31 @@
             });
         });
     });
-    
+
+    // customize
+    function customize() {
+        const url = window.location.href;
+        if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
+            const navbar = document.querySelector('.navbar');
+            const navbarMenu = document.querySelector('.navbar-menu');
+            const navbarLogo = document.querySelector('.navbar-logo');
+            const navbarStart = document.querySelector('.navbar-start');
+            const navbarEnd = document.querySelector('.navbar-end');
+            navbar.style.position = 'absolute';
+            navbar.style.width = '100%';
+            navbar.style.backgroundColor = 'transparent';
+            navbar.style.boxShadow = 'none';
+            navbarMenu.style.backgroundColor = 'transparent';
+            navbarLogo.childNodes[0].setAttribute('src', '/img/logo_white.png');
+            const navSet = target => {
+                for (let i = 0; i < target.childNodes.length; i++) {
+                    target.childNodes[i].style.color = '#fff';
+                }
+            }
+            navSet(navbarStart);
+            navSet(navbarEnd);
+        }
+
+    }
+
 }());
