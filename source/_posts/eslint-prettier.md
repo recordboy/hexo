@@ -12,11 +12,10 @@ toc: true
 <!-- more -->
 
 ## ESLint
-ESLint는 ES + Lint의 합성어로 ES는 EcmaScript를 의미하고 Lint는 보푸라기라는 뜻인데 프로그래밍에서는 에러가 있는 코드에 표시를 달아놓는 것을 의미한다. 즉 ESLint는 JavaScript의 스타일 가이드를 따르지 않거나 문제가 있는 안티 패턴들을 찾아주고 일관된 코드 스타일로 작성하도록 도와준다. 코딩 컨벤션 및 안티 패턴을 자동 검출 하므로 옮바른 코딩 습관을 위해 필히 사용할 것을 권장한다.
+ESLint는 ES + Lint의 합성어로 ES는 EcmaScript를 의미하고 Lint는 보푸라기라는 뜻인데, 프로그래밍에서는 에러가 있는 코드에 표시를 달아 놓는 것을 의미한다. 즉 ESLint는 JavaScript의 스타일 가이드를 따르지 않거나 문제가 있는 안티 패턴들을 찾아주고 일관된 코드 스타일로 작성하도록 도와준다. 코딩 컨벤션 및 안티 패턴을 자동 검출 하므로 옮바른 코딩 습관을 위해 필히 사용할 것을 권장한다.
 
 ESLint는 스타일 가이드를 편리하게 적용하기 위해 사용되기도 하는데, 많은 개발자가 사용중인 [Airbnb Style Guide](https://github.com/airbnb/javascript), [Google Style Guide](https://github.com/google/eslint-config-google)가 대표적인 예이다. 이 포스팅에서는 `Airbnb Style Guide`를 사용하도록 하겠다.
 
-### ESLint 살펴보기
 ESLint가 어떻게 오류를 잡아주는지 예제를 통해 간단히 알아보자.
 
 ```
@@ -25,24 +24,28 @@ $ cd test
 $ touch test.js
 ```
 
-`test` 디렉토리를 만들고 `test.js` 파일을 생성하였다.
+프로젝트를 생성할 디렉토리로 이동하여 `test` 폴더를 만들고 `test.js` 파일을 생성하였다.
 
 ```javascript
-var foo = text
+var foo = text;
 ```
 
-세미콜론도 안닫혀 있고, 문자열에 따옴표도 없고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다. 이제 ESLint를 설치하도록 하겠다.
+문자열에 따옴표도 없고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다.
+
+### ESLint 설치
+npm 프로젝트를 하나 생성하고 ESLint를 설치하도록 하겠다.
 
 ```
 $ npm init -y
 $ npm i -D eslint
 ```
-NPM 프로젝트를 하나 생성하고 ESLint를 설치하도록 하겠다.
 
-> **여기서 잠깐**
+> **여기서 잠깐!**
 > * `npm init -y` 명령어에 `-y`는 `--yes`의 축약법으로 npm 프로젝트를 초기 세팅할 때 아무 질문 없이 기본값으로 프로젝트가 세팅된다. 비슷한 명령어로` --force(-f)`가 있다.
-> * `npm i -D eslint` 명령어의 `-D`는 `--save-dev`의 축약법이다.
-> * `--save-dev` 옵션은 설치한 패키지 정보를 `./package.json` 파일의 `devDependencies` 항목에 저장하며, npm install을 할 때 해당 패키지가 같이 설치되며, 설치할 때 `--production` 옵션을 붙이면 해당 패키지를 제외하고 npm이 설치된다. 비슷한 옵션으로 `--save`가 있는데 이 옵션은 설치한 패키지 정보가 `./package.json`의 `dependencies`에 추가되며, npm install을 할 때 해당 패키지는 항상 설치가 된다. 아무 옵션을 넣지 않으면 순수하게 `./node_modules`에 패키지만 설치한다.  
+> * `npm i -D eslint` 명령어의 `-D`는 `--save-dev`의 축약법이며, 비슷한 옵션으로 `--save`가 있다. 차이는 아래를 참고한다.
+>   * `--save-dev`는 설치한 패키지 정보를 `./package.json` 파일의 `devDependencies` 항목에 저장하며, npm install을 할 때 해당 패키지가 같이 설치된다. 설치할 때 `--production` 옵션을 붙이면 해당 패키지를 제외하고 npm이 설치된다.
+>   * `--save`는 설치한 패키지 정보가 `./package.json`의 `dependencies`에 추가되며, npm install을 할 때 해당 패키지는 항상 설치가 된다.
+>   * 아무 옵션을 넣지 않으면 순수하게 `./node_modules`에 패키지만 설치한다.
 
 설치가 끝나면 ESLint 실행 파일이 `./node_modules` 디렉토리 안에 생성될 것이다. ESLint 설정 파일을 생성하기 위해 아래 명령어를 실행한다.
 
@@ -66,6 +69,37 @@ $ node_modules/.bin/eslint --init
 ? What format do you want your config file to be in?
     ❯ JavaScript
 ```
+
+답변을 전부 마치면 루트 경로에 `.eslintrc.js` 파일이 생성되며, 여기에서 ESLint를 설정할 수 있다.
+
+```javascript
+module.exports = {
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+};
+```
+
+### ESLint 검사
+
+* 환경(env): 프로젝트의 사용 환경을 설정한다.
+* 확장(extends): 다른 ESLint 설정을 확장해서 사용할때 설정한다. 위 파일에서는 ESLint가 추천하는 규칙을 적용하라는 설정이며, 실제 프로젝트에서는 위에서 언급한 `airbnb`나 `prettier` 등을 확장해서 사용한다.
+* 파서 옵션(parserOptions): ESLint 사용을 위해 지원하려는 Javascript 언어 옵션을 설정할 수 있다.
+* 규칙(rules): 프로젝트에서 자체적으로 덮어쓰고 싶은 규칙을 정의할 때 사용한다.
+
+설정 규칙 및 리스트는 상당히 방대하며, [ESLint 공식 레퍼런스](https://eslint.org/docs/rules/)에서 참고 가능하다.
+
+
+
+
 
 *추후 추가 예정*
 
@@ -116,6 +150,7 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 ## References
 > [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  
 > [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
+> [ESLint 설정 살펴보기](https://velog.io/@kyusung/eslint-config-2)  
 > [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)  
 > [ESLint 조금 더 잘 활용하기](https://tech.kakao.com/2019/12/05/make-better-use-of-eslint/)  
 > [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)  
