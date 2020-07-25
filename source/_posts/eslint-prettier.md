@@ -27,7 +27,7 @@ $ touch test.js
 프로젝트를 생성할 디렉토리로 이동하여 `test` 폴더를 만들고 `test.js` 파일을 생성하였다.
 
 ```javascript
-var foo = text;;
+let foo = text;;
 ```
 
 문자열에 따옴표도 없고, 세미콜론도 두개고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다.
@@ -40,7 +40,6 @@ $ npm init -y
 $ npm i -D eslint
 ```
 
-> **여기서 잠깐!**
 > * `npm init -y` 명령어에 `-y`는 `--yes`의 축약법으로 npm 프로젝트를 초기 세팅할 때 아무 질문 없이 기본값으로 프로젝트가 세팅된다. 비슷한 명령어로` --force(-f)`가 있다.
 > * `npm i -D eslint` 명령어의 `-D`는 `--save-dev`의 축약법이며, 비슷한 옵션으로 `--save`가 있다. 차이는 아래를 참고한다.
 >   * `--save-dev`는 설치한 패키지 정보를 `./package.json` 파일의 `devDependencies` 항목에 저장하며, npm install을 할 때 해당 패키지가 같이 설치된다. 설치할 때 `--production` 옵션을 붙이면 해당 패키지를 제외하고 npm이 설치된다.
@@ -118,7 +117,7 @@ C:\code\test\test.js
 2. `text`가 정의되지 않았음
 3. 불필요한 세미콜론이 있음
 
-여기서 다시 검사 명령어에 `--fix`를 붙이면 `no-extra-semi`항목을 자동으로 고쳐준다.
+위에서 3번째 항목에는 오른쪽에 [no-extra-semi](https://eslint.org/docs/rules/no-extra-semi)라고 나와있다. 이는 ESLint가 의도된 것이 아닌 실수라고 판단한 것이며, 자동으로 코드를 수정할 수 있다. 검사 명령어에 `--fix`를 붙이면 `no-extra-semi`항목을 자동으로 고쳐준다.
 
 ```
 $ node_modules/.bin/eslint test.js --fix
@@ -140,11 +139,49 @@ $ node_modules/.bin/eslint test.js --fix
 $ npm run lint
 ```
 
-*추후 추가 예정*
-
-
 ## Prettier
-Prettier는 기존의 코드에 적용되어있던 스타일들을 전부 무시하고, 정해진 규칙에 따라 자동으로 코드 스타일을 정리해 주는 도구이다. ESLint와 다른점이라면 ESLint는 문법 에러를 잡아내고, 특정 문법 요소를 쓰도록 만드는 등 코드 퀄리티와 관련된 것을 고치기 위해 사용되지만 Prettier는 코드 한 줄의 최대 길이나, 탭의 길이는 몇으로 할 것인지, 따옴표는 홀따옴표(')나 쌍따옴표(")중 무엇을 사용 할 것인지 등등 코드 퀄리티보단 코딩 스타일을 일괄적으로 통일하는 도구에 가깝다.
+Prettier는 기존의 코드에 적용되어있던 스타일들을 전부 무시하고, 정해진 규칙에 따라 자동으로 코드 스타일을 정리해 주는 코드 포멧터이다.
+
+> 코드 포멧터(Code Formatter)란 개발자가 작성한 코드를 정해진 코딩 스타일을 따르도록 변환해주는 도구를 말한다.
+
+ESLint와 다른점이라면 ESLint는 문법 에러를 잡아내고, 특정 문법 요소를 쓰도록 만드는 등 코드 퀄리티와 관련된 것을 고치기 위해 사용되지만 Prettier는 코드 한 줄의 최대 길이나, 탭의 길이는 몇으로 할 것인지, 따옴표는 홀따옴표(')나 쌍따옴표(")중 무엇을 사용 할 것인지 등등 코드 퀄리티보단 코딩 스타일을 일괄적으로 통일하는 도구에 가깝다.
+
+다시 테스트를 위해 `test.js`에 엉망인 코드를 작성하였다.
+
+```javascript
+let func=function 
+( )
+    {
+  let 
+foo  
+='text'
+return     foo}
+```
+
+### Prettier 설치
+Prettier을 아래 명령어로 설치해 준다.
+
+```
+$ npm i prettier -D -E
+```
+
+> 위 명령어중 `-E`는 `--save-exac`의 축약법이다. 위 ESLint 모듈을 설치할때와 다르게 Prettier에서는 이 옵션을 붙이는 것을 권장하는데, 버전이 달라지면서 생길 스타일 변화를 막기 위해서라고 한다.
+
+### Prettier 실행
+
+아래 명령어를 사용하면 엉망인 코드가 올바른 코드로 포멧팅되어 터미널창에 출력이 된다.
+
+```
+$ npx prettier test.js
+```
+```
+let func = function () {
+  let foo = "text";
+  return foo;
+};
+```
+
+*추후 추가 예정*
 
 ## ESLint와 Prettier 설치하기
 * Node.js모듈 설치
@@ -163,7 +200,7 @@ $ npm i -D eslint
 Prettier 모듈도 같이 설치해 준다.
 
 ```
-$ npm install prettier --save-dev --save-exact
+$ npm i prettier -D -E
 ```
 
 > 위 ESLint 모듈을 설치할때와 다르게 --save-exact 옵션이 추가되었는데, Prettier에서는 이 옵션을 붙이는 것을 권장한다. 버전이 달라지면서 생길 스타일 변화를 막기 위해서라고 한다.
