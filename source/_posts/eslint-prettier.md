@@ -1,5 +1,5 @@
 ---
-title: "ESLint, Prettier 적용하기"
+title: "ESLint, Prettier 맛보기 및 리액트에 적용하기"
 date: 2020-07-06 19:54:44
 categories: [front-end, extension]
 tags: [extension, eslint, prettier]
@@ -27,10 +27,10 @@ $ touch test.js
 프로젝트를 생성할 디렉토리로 이동하여 `test` 폴더를 만들고 `test.js` 파일을 생성하였다.
 
 ```javascript
-var foo = text;
+var foo = text;;
 ```
 
-문자열에 따옴표도 없고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다.
+문자열에 따옴표도 없고, 세미콜론도 두개고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다.
 
 ### ESLint 설치
 npm 프로젝트를 하나 생성하고 ESLint를 설치하도록 하겠다.
@@ -88,8 +88,6 @@ module.exports = {
 };
 ```
 
-### ESLint 검사
-
 * 환경(env): 프로젝트의 사용 환경을 설정한다.
 * 확장(extends): 다른 ESLint 설정을 확장해서 사용할때 설정한다. 위 파일에서는 ESLint가 추천하는 규칙을 적용하라는 설정이며, 실제 프로젝트에서는 위에서 언급한 `airbnb`나 `prettier` 등을 확장해서 사용한다.
 * 파서 옵션(parserOptions): ESLint 사용을 위해 지원하려는 Javascript 언어 옵션을 설정할 수 있다.
@@ -97,11 +95,53 @@ module.exports = {
 
 설정 규칙 및 리스트는 상당히 방대하며, [ESLint 공식 레퍼런스](https://eslint.org/docs/rules/)에서 참고 가능하다.
 
+### ESLint 검사
+이제 위에서 엉망으로 작성한 test.js 파일을 아래 명령어를 사용하여 검사해 보자.
 
+```
+$ node_modules/.bin/eslint test.js
+```
 
+터미널에서 오류를 세가지를 아래처럼 알려준다.
 
+```
+C:\code\test\test.js
+  1:5   error  'foo' is assigned a value but never used  no-unused-vars
+  1:11  error  'text' is not defined                     no-undef
+  1:16  error  Unnecessary semicolon                     no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+```
+
+1. `foo`에 값이 할당되었지만 사용되지 않음
+2. `text`가 정의되지 않았음
+3. 불필요한 세미콜론이 있음
+
+여기서 다시 검사 명령어에 `--fix`를 붙이면 `no-extra-semi`항목을 자동으로 고쳐준다.
+
+```
+$ node_modules/.bin/eslint test.js --fix
+```
+
+명령어를 실행하면 세미콜론이 두개에서 한개로 바뀐것을 확인할 수 있다.
+
+실제 프로젝트에서는 검사할 파일이 많은데 위와 같이 일일히 터미널에서 ESLint를 실행하는것은 비효율적이다. 그래서 일반적으로 ESLint를 사용할때는 `package.json` 파일에 따로 설정해준다. 전체 파일을 상대로 ESLint를 실행되도록 설정해 보자.
+
+```javascript
+  "scripts": {
+    "lint": "eslint ."
+  },
+```
+
+이제 터미널에 아래 명령어를 실행하면 전체 파일을 상대로 ESLint가 실행될 것이다.
+
+```
+$ npm run lint
+```
 
 *추후 추가 예정*
+
 
 ## Prettier
 Prettier는 기존의 코드에 적용되어있던 스타일들을 전부 무시하고, 정해진 규칙에 따라 자동으로 코드 스타일을 정리해 주는 도구이다. ESLint와 다른점이라면 ESLint는 문법 에러를 잡아내고, 특정 문법 요소를 쓰도록 만드는 등 코드 퀄리티와 관련된 것을 고치기 위해 사용되지만 Prettier는 코드 한 줄의 최대 길이나, 탭의 길이는 몇으로 할 것인지, 따옴표는 홀따옴표(')나 쌍따옴표(")중 무엇을 사용 할 것인지 등등 코드 퀄리티보단 코딩 스타일을 일괄적으로 통일하는 도구에 가깝다.
@@ -118,7 +158,6 @@ Prettier는 기존의 코드에 적용되어있던 스타일들을 전부 무시
 ```
 $ npm i -D eslint
 ```
-
 
 ### Prettier 모듈 설치
 Prettier 모듈도 같이 설치해 준다.
