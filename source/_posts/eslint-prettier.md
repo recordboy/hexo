@@ -1,5 +1,5 @@
 ---
-title: "ESLint, Prettier 맛보기 및 리액트에 적용하기"
+title: "ESLint, Prettier 적용하기"
 date: 2020-07-06 19:54:44
 categories: [front-end, extension]
 tags: [extension, eslint, prettier]
@@ -169,17 +169,35 @@ $ npm i prettier -D -E
 
 ### Prettier 실행
 
-아래 명령어를 사용하면 엉망인 코드가 올바른 코드로 포멧팅되어 터미널창에 출력이 된다.
-
 ```
 $ npx prettier test.js
 ```
+
+위 명령어를 사용하면 엉망인 코드가 아래처럼 올바른 코드로 포멧팅되어 터미널창에 출력이 된다.
+
 ```
 let func = function () {
   let foo = "text";
   return foo;
 };
 ```
+
+코드 자체를 수정하고 싶다면 명령어에 `--write` 옵션을 추가하면 된다. 
+
+```
+$ npx prettier --write test.js
+```
+
+에디터에 아래처럼 코드가 수정된다.
+
+```javascript
+let func = function () {
+  let foo = "text";
+  return foo;
+};
+```
+
+이제 리액트 프로젝트에 ESLint와 Prettier를 적용하는 방법을 알아보겠다.
 
 *추후 추가 예정*
 
@@ -226,6 +244,7 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 ## References
 > [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  
 > [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
+> [[자바스크립트] Prettier로 코딩 스타일 통일하기](https://www.daleseo.com/js-prettier/)  
 > [ESLint 설정 살펴보기](https://velog.io/@kyusung/eslint-config-2)  
 > [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)  
 > [ESLint 조금 더 잘 활용하기](https://tech.kakao.com/2019/12/05/make-better-use-of-eslint/)  
