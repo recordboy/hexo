@@ -21,7 +21,6 @@ module.exports = class extends Component {
                 <div id="hero">
                     <h1 class="tit">Dev Log</h1>
                     <span class="dimmed"></span>
-                    <span class="bg"></span>
                 </div>
                 <section class="section">
                     <div class="container">
