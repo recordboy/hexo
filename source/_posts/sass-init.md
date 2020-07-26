@@ -3,7 +3,7 @@ title: "SASS 설치 및 기본 사용"
 date: 2020-02-07 15:05:58
 categories: [front-end, sass]
 tags: [sass, css]
-# thumbnail: "/gallery/thumbnail-sass.png"
+thumbnail: "/gallery/thumbnail-sass.png"
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: "Web Technology Terminology"
 date: 2019-03-25 08:21:31
 categories: [web]
 tags: [web]
-# thumbnail: "/gallery/thumbnail-web.png"
+thumbnail: "/gallery/thumbnail-web.png"
 ---
 
 틈틈히 웹 관련 용어를 정리하는 곳

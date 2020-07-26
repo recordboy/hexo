@@ -3,7 +3,7 @@ title: "보험 상품 개발 프로세스 및 보험 용어"
 date: 2020-05-06 13:37:46
 categories: [economy, insurance]
 tags: [economy, insurance]
-# thumbnail: "/gallery/thumbnail-web.png"
+thumbnail: "/gallery/thumbnail-web.png"
 toc: true
 ---
 

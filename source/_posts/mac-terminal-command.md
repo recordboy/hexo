@@ -3,7 +3,7 @@ title: "맥 터미널 명령어"
 date: 2020-01-19 10:54:21
 categories: [mac]
 tags: [mac, terminal, command]
-# thumbnail: "/gallery/thumbnail-mac.png"
+thumbnail: "/gallery/thumbnail-mac.png"
 ---
 
 | 명령어 | Windows 커맨드 | Mac OS 터미널 |

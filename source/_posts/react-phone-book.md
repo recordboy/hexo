@@ -3,7 +3,7 @@ title: "리액트로 전화번호부 만들기"
 date: 2020-03-27 20:51:12
 categories: [front-end, react]
 tags: [react, javascript, jsx]
-# thumbnail: "/gallery/thumbnail-react.png"
+thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---
 
