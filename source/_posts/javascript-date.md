@@ -3,7 +3,7 @@ title: "날짜 구하기(Data 함수)"
 date: 2017-12-13 20:48:10
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 Data 객체는 날짜와 시간을 제공하는 생성자 함수이다. 

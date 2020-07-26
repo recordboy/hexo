@@ -3,7 +3,7 @@ title: "생성자 함수에서의 This"
 date: 2018-11-02 22:04:56
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

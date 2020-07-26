@@ -3,7 +3,7 @@ title: "switch 조건문"
 date: 2018-01-01 21:14:49
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

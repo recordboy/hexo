@@ -3,7 +3,7 @@ title: "while 반복문"
 date: 2018-01-16 21:20:27
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 `while`문은 조건을 검사하여 `true`일경우 계속 구문을 실행시키는 반복문이다.

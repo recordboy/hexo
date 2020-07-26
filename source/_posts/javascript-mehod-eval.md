@@ -3,7 +3,7 @@ title: "자바스크립트 eval() 함수"
 date: 2017-12-01 18:36:04
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 ## eval() 정의

@@ -3,7 +3,7 @@ title: "CentOS7 PHP 설치"
 date: 2019-10-24 09:47:28
 categories: [server, centos]
 tags: [linux, centos, php]
-thumbnail: "/gallery/thumbnail-centos.png"
+# thumbnail: "/gallery/thumbnail-centos.png"
 toc: true
 ---
 
