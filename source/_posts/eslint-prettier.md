@@ -1,8 +1,8 @@
 ---
 title: "ESLint, Prettier 적용하기"
 date: 2020-07-06 19:54:44
-categories: [front-end, extension]
-tags: [extension, eslint, prettier]
+categories: [front-end, tools]
+tags: [eslint, prettier, tools, module, extension]
 # thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
@@ -261,7 +261,7 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 
 그리고 프로젝트의 루트 경로에 `.eslinrc.json`파일을 만들고 아래 내용을 추가한다.
 
-```json
+```javascript
 {
   "plugins": ["prettier"],
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
@@ -279,7 +279,7 @@ VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도�
 
 설정은 json파일에 직접 설정이 가능하며, 우층 상단의 Open Setting(JSON)아이콘을 클릭한다. `settings.json`파일이 열렸다면, 아래 처럼 설정해준다.
 
-```json
+```javascript
 {
   // Set the default
   "editor.formatOnSave": false,
