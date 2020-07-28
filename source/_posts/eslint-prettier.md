@@ -14,7 +14,7 @@ toc: true
 ## ESLint
 ESLint는 ES + Lint의 합성어로 ES는 EcmaScript를 의미하고 Lint는 보푸라기라는 뜻인데, 프로그래밍에서는 에러가 있는 코드에 표시를 달아 놓는 것을 의미한다. 즉 ESLint는 JavaScript의 스타일 가이드를 따르지 않거나 문제가 있는 안티 패턴들을 찾아주고 일관된 코드 스타일로 작성하도록 도와준다. 코딩 컨벤션 및 안티 패턴을 자동 검출 하므로 옮바른 코딩 습관을 위해 필히 사용할 것을 권장한다.
 
-ESLint는 스타일 가이드를 편리하게 적용하기 위해 사용되기도 하는데, 많은 개발자가 사용중인 [Airbnb Style Guide](https://github.com/airbnb/javascript), [Google Style Guide](https://github.com/google/eslint-config-google)가 대표적인 예이다. 이 포스팅에서는 `Airbnb Style Guide`를 사용하도록 하겠다.
+ESLint는 스타일 가이드를 편리하게 적용하기 위해 사용되기도 하는데, 많은 개발자가 사용중인 [Airbnb Style Guide](https://github.com/airbnb/javascript), [Google Style Guide](https://github.com/google/eslint-config-google)가 대표적인 예이다.
 
 ESLint가 어떻게 오류를 잡아주는지 예제를 통해 간단히 알아보자.
 
@@ -175,7 +175,7 @@ $ npx prettier test.js
 
 위 명령어를 사용하면 엉망인 코드가 아래처럼 올바른 코드로 포멧팅되어 터미널창에 출력이 된다.
 
-```
+```javascript
 let func = function () {
   let foo = "text";
   return foo;
@@ -199,32 +199,54 @@ let func = function () {
 
 이제 리액트 프로젝트에 ESLint와 Prettier를 적용하는 방법을 알아보겠다.
 
-*추후 추가 예정*
+## 리액트에 ESLint와 Prettier 적용하기
+이 포스팅에서는 CRA(Create React App)을 이용하여 생성한 리액트 프로젝트를 기준으로 한다. 아래 명령어를 사용하여 리액트 프로젝트를 생성한다.
 
-## ESLint와 Prettier 설치하기
-* Node.js모듈 설치
-* VSCode에서 ESLint, Prettier 익스텐션 설치
+### 리액트 프로젝트 생성
 
-> ESLint, Prettier 익스텐션을 설치하는 이유는 ESLint와 Prettier를 VSCode와 연동하기 위해서 이다.
-
-### ESLint 모듈 설치
-작업할 디렉토리로 이동하고 아래 명령어를 입력하여 ESLint 모듈을 설치하도록 한다. 참고로 ESLint는 전역으로 설치할 수 있으나 권장되지는 않는다.
-
+**자바스크립트 사용 경우**
 ```
-$ npm i -D eslint
+$ create-react-app 프로젝트이름 --use-npm
 ```
 
-### Prettier 모듈 설치
-Prettier 모듈도 같이 설치해 준다.
+**타입스크립트 사용 경우**
+```
+$ create-react-app 프로젝트이름 --use-npm --template typescript
+```
 
+CRA로 생성된 프로젝트는 안에 ESLint가 따로 탑재되어 있기 때문에 위처럼 따로 설치할 필요가 없다. 만약 CRA로 생성한 프로젝트에 수동으로 ESLint를 설치한다면, 프로젝트는 실행이 안되고, 터미널에 아래 경고가 출력될 것이다.
+
+```
+There might be a problem with the project dependency tree.
+It is likely not a bug in Create React App, but something you need to fix locally.
+
+The react-scripts package provided by Create React App requires a dependency:
+
+  "eslint": "^6.6.0"
+
+Don't try to install it manually: your package manager does it automatically.
+However, a different version of eslint was detected higher up in the tree:
+
+  /Users/kongseongjoo/Documents/app/node_modules/eslint (version: 7.5.0) 
+
+Manually installing incompatible versions is known to cause hard-to-debug issues.
+
+If you would prefer to ignore this check, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project.
+That will permanently disable this message but you might encounter other issues.
+.
+.
+.
+```
+
+이는 기본 탑재되는 node_module과 수동설치한 node_module의 버전 호환성 문제이며 터미널 경고 아래에 해결 방법이 나온다. CRA로 생성된 프로젝트는 ESLint를 따로 설치를 하지 않도록 한다.
+
+### Prettier 설치
 ```
 $ npm i prettier -D -E
 ```
 
-> 위 ESLint 모듈을 설치할때와 다르게 --save-exact 옵션이 추가되었는데, Prettier에서는 이 옵션을 붙이는 것을 권장한다. 버전이 달라지면서 생길 스타일 변화를 막기 위해서라고 한다.
-
 ### 필요한 추가 모듈
-Prettier와 ESLint를 같이 사용하려면 아래 모듈을 추가로 설치해 줘야 한다.
+Prettier와 ESLint를 같이 사용하려면 아래 모듈을 추가로 설치해야 한다.
 
 * **eslint-config-prettier**
 ESLint의 formatting 관련 설정 중 Prettier와 충돌하는 부분을 비활성화 한다.
@@ -238,6 +260,45 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 ```
 
 그리고 프로젝트의 루트 경로에 `.eslinrc.json`파일을 만들고 아래 내용을 추가한다.
+
+```json
+{
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+
+### ESLint, Prettier 익스텐션 설치
+Node 모듈을 설치했으니, 이제 VSCode와 같이 사용할 때 필요한 익스텐션을 설치하고 설정을 바꿔주자. VSCode의 Extensions: Marketplace로 들어가서 ESLint와 Prettier를 검색하여 설치한다.
+
+### VSCode 설정
+VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도록 설정해보자. VSCode 설정(윈도우, 리눅스에서는 Ctrl + , 맥에서는 Cmd + ,)으로 들어간다. 설정으로 들어가면 Search settings 입력창 아래에 User와 Workspace 항목이 있다. User는 VSCode 자체 설정으로 모든 프로젝트에 적용이 되고, Workspace항목은 현재 프로젝트에서만 설정이 적용되며, `.vscode/settings.json`에 설정 항목이 저장된다. ESLint와 Prettier의 경우 프로젝트별로 설정이 다른경우가 많이 때문에 작업공간마다 설정파일을 따로 관리하는 것을 선호한다.
+
+설정은 json파일에 직접 설정이 가능하며, 우층 상단의 Open Setting(JSON)아이콘을 클릭한다. `settings.json`파일이 열렸다면, 아래 처럼 설정해준다.
+
+```json
+{
+  // Set the default
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+### 스타일 규칙 설정
+사실상 이제 모든 설정이 끝났으니 여기서 프로젝트를 바로 시작해도 된다. 하지만 스타일 규칙을 미리 정하는 것이 유지보수 측면에서 훨씬 좋을 것이다.
+
+#### ESLint 설정
+[ESLint 규칙](https://eslint.org/docs/rules/)은 상당히 방대하며, 모든것을 다 바꾸기 어렵기 때문에 여러가지 규칙을 정해준 모음이 있는데 위에서 언급한 Airbnb Style Guide나 Google Style Guide가 있다.
 
 *추후 추가 예정*
 
