@@ -275,9 +275,7 @@ $ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 Node 모듈을 설치했으니, 이제 VSCode와 같이 사용할 때 필요한 익스텐션을 설치하고 설정을 바꿔주자. VSCode의 Extensions: Marketplace로 들어가서 ESLint와 Prettier를 검색하여 설치한다.
 
 ### VSCode 설정
-VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도록 설정해보자. VSCode 설정(윈도우, 리눅스에서는 Ctrl + , 맥에서는 Cmd + ,)으로 들어간다. 설정으로 들어가면 Search settings 입력창 아래에 User와 Workspace 항목이 있다. User는 VSCode 자체 설정으로 모든 프로젝트에 적용이 되고, Workspace항목은 현재 프로젝트에서만 설정이 적용되며, `.vscode/settings.json`에 설정 항목이 저장된다. ESLint와 Prettier의 경우 프로젝트별로 설정이 다른경우가 많이 때문에 작업공간마다 설정파일을 따로 관리하는 것을 선호한다.
-
-설정은 json파일에 직접 설정이 가능하며, 우층 상단의 Open Setting(JSON)아이콘을 클릭한다. `settings.json`파일이 열렸다면, 아래 처럼 설정해준다.
+VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도록 설정해보자. VSCode 설정(윈도우, 리눅스에서는 Ctrl + , 맥에서는 Cmd + ,)으로 들어간다. 설정으로 들어가면 Search settings 입력창 아래에 User와 Workspace 항목이 있다. User는 VSCode 자체 설정으로 모든 프로젝트에 적용이 되고, Workspace는 현재 프로젝트에서만 설정이 적용되며, `.vscode/settings.json`에 설정 항목이 저장된다. ESLint와 Prettier의 경우 프로젝트별로 설정이 다른경우가 많이 때문에 작업공간마다 설정파일을 따로 관리하는 것을 선호한다. 설정은 json파일에 직접 입력이 가능하며, 우측 상단에 종이 모양의 Open Setting(JSON)아이콘을 클릭하면 `settings.json`파일이 열린다. 아래처럼 설정한다.
 
 ```javascript
 {
@@ -295,7 +293,7 @@ VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도�
 ```
 
 ### 스타일 규칙 설정
-사실상 이제 모든 설정이 끝났으니 여기서 프로젝트를 바로 시작해도 된다. 하지만 스타일 규칙을 미리 정하는 것이 유지보수 측면에서 훨씬 좋을 것이다.
+사실상 이제 모든 설정이 끝났으니 여기서 바로 프로젝트를 시작해도 된다. 하지만 스타일 규칙을 미리 정하는 것이 유지보수 측면에서 훨씬 좋을 것이다.
 
 #### ESLint 설정
 [ESLint 규칙](https://eslint.org/docs/rules/)은 상당히 방대하며, 모든것을 다 바꾸기 어렵기 때문에 여러가지 규칙을 정해준 모음이 있는데 위에서 언급한 Airbnb Style Guide나 Google Style Guide가 있다.
