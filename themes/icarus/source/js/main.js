@@ -199,12 +199,13 @@
         if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
             const hero = document.querySelector('#hero');
             const dimmed = hero.querySelector('.dimmed');
+            let timer = null;
             let ratio = 0;
             hero.style.display = 'block';
-            hero.style.display === 'block' ? hero.classList.add('on') : hero.classList.remove('on');
             window.onload = () => {
                 mainRatio();
                 mainBgInit();
+                mainBgChange();
             };
             window.addEventListener('scroll', () => {
                 if (window.scrollY === 0) {
@@ -227,6 +228,18 @@
                     dimmed.style.opacity = ratio;
                 }
             };
+            const mainBgChange = () => {
+                hero.classList = 'bg02';
+                timer = setInterval(() => {
+                    if (hero.classList.value === 'bg01') {
+                        hero.classList = 'bg02';
+                    } else if (hero.classList.value === 'bg02') {
+                        hero.classList = 'bg03';
+                    } else if (hero.classList.value === 'bg03') {
+                        hero.classList = 'bg01';
+                    }
+                }, 5000);
+            }
         }
     }
 
