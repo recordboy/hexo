@@ -256,10 +256,10 @@ Prettier를 ESLint 플러그인으로 추가한다. 즉, Prettier에서 인식�
 아래 명령어를 입력하여 위에서 언급한 모듈을 설치한다.
 
 ```
-$ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
+$ npm i eslint-plugin-prettier eslint-config-prettier -D
 ```
 
-그리고 프로젝트의 루트 경로에 `.eslinrc.json`파일을 만들고 아래 내용을 추가한다.
+그리고 프로젝트의 루트 경로에 `.eslintrc.json`파일을 만들고 아래 내용을 추가한다.
 
 ```javascript
 {
@@ -292,18 +292,48 @@ VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도�
 }
 ```
 
-### 스타일 규칙 설정
-사실상 이제 모든 설정이 끝났으니 여기서 바로 프로젝트를 시작해도 된다. 하지만 스타일 규칙을 미리 정하는 것이 유지보수 측면에서 훨씬 좋을 것이다.
+### ESLint 설정
+[ESLint 규칙](https://eslint.org/docs/rules/)은 상당히 방대하며, 모든것을 다 바꾸기 어렵기 때문에 여러가지 규칙을 정해준 모음이 있는데 위에서 언급한 Airbnb Style Guide나 Google Style Guide가 있다. 여기선 Airbnb를 적용해 보겠다.
 
-#### ESLint 설정
-[ESLint 규칙](https://eslint.org/docs/rules/)은 상당히 방대하며, 모든것을 다 바꾸기 어렵기 때문에 여러가지 규칙을 정해준 모음이 있는데 위에서 언급한 Airbnb Style Guide나 Google Style Guide가 있다.
+#### Airbnb Style Guide 적용
+아래 명령어를 사용하여 Airbnb를 설치해준다.
 
-*추후 추가 예정*
+```
+$ npm i -D eslint-config-airbnb
+```
+
+> eslint-config-airbnb 말고도 eslint-config-airbnb-base가 있는데, 차이는 base에는 리액트 관련 규칙이 들어있지 않다는 점이다.
+
+그리고 `.eslintrc.json`파일의 `"extends"`속성에 `"airbnb"`를 추가 해준다.
+
+```javascript
+{
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "airbnb"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+
+`App.js`파일을 열어보면 빨간줄이 엄청 그어져 있을 것이다. Airbnb의 규칙이 상당히 까다롭기 때문이다. 꼭 Airbnb 규칙을 따를 필요는 없다. [ESLint 문서](https://eslint.org/docs/user-guide/configuring)에서 본인 스타일에 맞는 스타일을 찾거나 수정하여 사용하면 된다.
+
+### Prettier 설정
+ESLint 설정 파일과 마찬가지로 루트 경로에 `.prettierrc.json`을 만들어 준다. [Prettier의 옵션 문서](https://prettier.io/docs/en/options.html)에서 필요한 옵션을 골라 설정해 주면 된다. 아래는 간단한 예시이다.
+
+```json
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true
+}
+```
 
 ## References
-> [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  
 > [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
 > [[자바스크립트] Prettier로 코딩 스타일 통일하기](https://www.daleseo.com/js-prettier/)  
+> [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  
 > [ESLint 설정 살펴보기](https://velog.io/@kyusung/eslint-config-2)  
 > [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)  
 > [ESLint 조금 더 잘 활용하기](https://tech.kakao.com/2019/12/05/make-better-use-of-eslint/)  
