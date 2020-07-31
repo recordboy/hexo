@@ -34,7 +34,7 @@ export default App;
 `http://localhost:3000`에 들어가보면 hello 라고 정상적으로 출력 될 것이다. 이제 본격적으로 하위 컴포넌트를 만들어 App.js에 연결해 보겠다.
 
 ## 입력 폼 컴포넌트 추가
-src 디렉토리 내부에 components 디렉토리를 만든 뒤 그 안에 PhoneForm.js 파일을 만든 뒤 아래 코드를 입력한다.
+src 디렉토리 내부에 components 디렉토리를 만든 뒤 그 안에 PhoneForm.jsx 파일을 만든 뒤 아래 코드를 입력한다.
 
 ### 이름 인풋 값 state에 할당
 ```javascript
@@ -282,7 +282,7 @@ render 함수에서도 위와 같이 비구조와 할당으로 information 값�
 * PhoneInfoList: 여러개의 PhoneInfo 컴포넌트를 보여줌
 
 #### PhoneInfo 생성
-PhoneInfo.js 파일을 만들고 아래처럼 작성한다.
+PhoneInfo.jsx 파일을 만들고 아래처럼 작성한다.
 
 ```javascript
 import React, { Component } from 'react';
