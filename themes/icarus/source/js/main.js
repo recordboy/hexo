@@ -236,6 +236,8 @@
                     } else if (hero.classList.value === 'bg02') {
                         hero.classList = 'bg03';
                     } else if (hero.classList.value === 'bg03') {
+                        hero.classList = 'bg04';
+                    } else if (hero.classList.value === 'bg04') {
                         hero.classList = 'bg01';
                     }
                 }, 5000);
