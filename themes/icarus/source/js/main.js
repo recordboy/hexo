@@ -212,7 +212,7 @@
                     dimmed.style.display = 'none';
                 } else {
                     dimmed.style.display = 'block';
-                    window.scrollY < 750 && mainBgSet();
+                    window.scrollY < window.innerHeight && mainBgSet();
                 }
                 mainRatio();
             });
