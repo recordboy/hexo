@@ -1,5 +1,5 @@
 ---
-title: "웹 접근성 정의 및 대비 방법(IATC)"
+title: "[IATC] 웹 접근성 정의 및 대비 방법"
 date: 2019-12-03 10:21:08
 categories: [front-end, html]
 tags: [html, web accessibility]

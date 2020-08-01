@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 모듈 패턴"
+title: "[JavaScript] 자바스크립트 모듈 패턴"
 date: 2020-02-03 14:57:31
 categories: [front-end, javascript]
 tags: [javascript]

@@ -1,5 +1,5 @@
 ---
-title: "VIM 명령어"
+title: "[VIM] VIM 명령어"
 date: 2019-12-06 10:28:19
 categories: [server, linux]
 tags: [linux, vim, command]

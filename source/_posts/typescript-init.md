@@ -1,5 +1,5 @@
 ---
-title: "타입스크립트(TypeScript) 시작하기"
+title: "[TypeScript] 타입스크립트 시작하기"
 date: 2020-05-09 16:36:46
 categories: [front-end, typescript]
 tags: [typescript, javascript]

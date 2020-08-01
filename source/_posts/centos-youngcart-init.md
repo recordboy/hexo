@@ -1,5 +1,5 @@
 ---
-title: "CentOS7 영카트 설치 및 초기 세팅"
+title: "[CentOS] CentOS7 영카트 설치 및 초기 세팅"
 date: 2019-12-10 10:33:20
 categories: [server, centos]
 tags: [linux, centos, nginx, youngcart5]

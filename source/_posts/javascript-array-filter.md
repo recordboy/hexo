@@ -1,5 +1,5 @@
 ---
-title: "ES5 Array.filter"
+title: "[JavaScript] ES5 Array.filter"
 date: 2020-02-18 18:53:36
 categories: [front-end, javascript]
 tags: [javascript, es5]

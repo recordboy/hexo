@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 노드 생성 및 추가"
+title: "[JavaScript] 자바스크립트 노드 생성 및 추가"
 date: 2017-12-12 20:44:40
 categories: [front-end, javascript]
 tags: [javascript]

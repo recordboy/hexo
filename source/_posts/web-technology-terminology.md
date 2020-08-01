@@ -1,5 +1,5 @@
 ---
-title: "Web Technology Terminology"
+title: "[Web] Web Technology Terminology"
 date: 2019-03-25 08:21:31
 categories: [web]
 tags: [web]

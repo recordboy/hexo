@@ -1,5 +1,5 @@
 ---
-title: "바닐라 자바스크립트로 인덱스 구하기"
+title: "[JavaScript] 바닐라 자바스크립트로 인덱스 구하기"
 date: 2018-01-15 21:28:59
 categories: [front-end, javascript]
 tags: [javascript, vanillajs]

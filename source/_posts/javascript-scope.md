@@ -1,5 +1,5 @@
 ---
-title: "스코프(Scope)"
+title: "[JavaScript] 스코프(Scope)"
 date: 2017-12-02 19:14:45
 categories: [front-end, javascript]
 tags: [javascript]

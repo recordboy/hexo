@@ -1,5 +1,5 @@
 ---
-title: "switch 조건문"
+title: "[JavaScript] switch 조건문"
 date: 2018-01-01 21:14:49
 categories: [front-end, javascript]
 tags: [javascript]

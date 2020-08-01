@@ -1,5 +1,5 @@
 ---
-title: "리눅스 명령어"
+title: "[Linux] 리눅스 명령어"
 date: 2019-10-10 09:28:27
 categories: [server, linux]
 tags: [linux, command]

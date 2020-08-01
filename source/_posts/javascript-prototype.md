@@ -1,5 +1,5 @@
 ---
-title: "프로토타입(Prototype)"
+title: "[JavaScript] 프로토타입(Prototype)"
 date: 2018-12-17 08:16:45
 categories: [front-end, javascript]
 tags: [javascript]

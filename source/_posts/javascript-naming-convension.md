@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 변수 명명 규칙"
+title: "[JavaScript] 자바스크립트 변수 명명 규칙"
 date: 2020-02-05 15:01:00
 categories: [front-end, javascript]
 tags: [javascript]

@@ -1,5 +1,5 @@
 ---
-title: "맥 터미널 명령어"
+title: "[Mac] 맥 터미널 명령어"
 date: 2020-01-19 10:54:21
 categories: [mac]
 tags: [mac, terminal, command]

@@ -1,5 +1,5 @@
 ---
-title: "핀터레스트 레이아웃 구현하기"
+title: "[UI] 핀터레스트 레이아웃 구현하기"
 date: 2019-12-08 10:29:47
 categories: [front-end, ui]
 tags: [ui, vanillajs]

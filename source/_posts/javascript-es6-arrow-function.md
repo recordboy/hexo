@@ -1,5 +1,5 @@
 ---
-title: "화살표 함수(Arrow Function)"
+title: "[JavaScript] 화살표 함수(Arrow Function)"
 date: 2020-04-29 20:13:36
 categories: [front-end, javascript]
 tags: [javascript, es6]

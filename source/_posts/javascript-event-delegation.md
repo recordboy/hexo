@@ -1,5 +1,5 @@
 ---
-title: "이벤트 위임(Event Delegation)"
+title: "[JavaScript] 이벤트 위임(Event Delegation)"
 date: 2020-03-02 19:05:42
 categories: [front-end, javascript]
 tags: [javascript]

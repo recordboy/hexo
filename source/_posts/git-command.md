@@ -1,5 +1,5 @@
 ---
-title: "깃 명령어"
+title: "[Git] 깃 명령어"
 date: 2019-10-01 09:11:43
 categories: [git, git]
 tags: [git, command]

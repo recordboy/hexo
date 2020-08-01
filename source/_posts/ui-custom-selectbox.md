@@ -1,5 +1,5 @@
 ---
-title: "커스텀 셀렉트박스(custom selectbox)"
+title: "[UI] 커스텀 셀렉트박스(custom selectbox)"
 date: 2019-10-02 09:17:59
 categories: [front-end, ui]
 tags: [ui, jquery]

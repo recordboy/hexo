@@ -1,5 +1,5 @@
 ---
-title: "ES6 비구조화 할당(Destructuring Assignment)"
+title: "[JavaScript] 비구조화 할당(Destructuring Assignment)"
 date: 2020-04-30 20:51:12
 categories: [front-end, javascript]
 tags: [javascript, es6]

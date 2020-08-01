@@ -1,5 +1,5 @@
 ---
-title: "리액트(React) 소개"
+title: "[React] 리액트 소개"
 date: 2020-03-05 19:54:10
 categories: [front-end, react]
 tags: [react, javascript]

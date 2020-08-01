@@ -1,5 +1,5 @@
 ---
-title: "이미지 캐싱"
+title: "[Web] 이미지 캐싱"
 date: 2019-10-17 09:34:04
 categories: [web]
 tags: [web]

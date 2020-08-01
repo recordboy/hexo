@@ -1,5 +1,5 @@
 ---
-title: "비동기 처리와 콜백 함수(Callback Function)"
+title: "[JavaScript] 비동기 처리와 콜백 함수"
 date: 2020-06-04 14:51:02
 categories: [front-end, javascript]
 tags: [javascript]

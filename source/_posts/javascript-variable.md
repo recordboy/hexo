@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 변수"
+title: "[JavaScript] 자바스크립트 변수"
 date: 2017-05-02 17:02:04
 categories: [front-end, javascript]
 tags: [javascript]

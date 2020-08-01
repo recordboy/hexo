@@ -1,5 +1,5 @@
 ---
-title: "슬라이드 배너(slide banner)"
+title: "[UI] 슬라이드 배너(slide banner)"
 date: 2019-04-10 08:24:06
 categories: [front-end, ui]
 tags: [ui, vanillajs]

@@ -1,5 +1,5 @@
 ---
-title: "CentOS7 Apache 설치"
+title: "[CentOS] CentOS7 Apache 설치"
 date: 2019-10-25 09:50:30
 categories: [server, centos]
 tags: [linux, centos]

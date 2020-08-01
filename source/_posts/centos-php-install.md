@@ -1,5 +1,5 @@
 ---
-title: "CentOS7 PHP 설치"
+title: "[CentOS] CentOS7 PHP 설치"
 date: 2019-10-24 09:47:28
 categories: [server, centos]
 tags: [linux, centos, php]

@@ -1,5 +1,5 @@
 ---
-title: "디바이스 구분 스크립트"
+title: "[JavaScript] 디바이스 구분 스크립트"
 date: 2019-11-18 10:10:16
 categories: [front-end, javascript]
 tags: [javascript]

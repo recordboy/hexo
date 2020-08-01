@@ -1,5 +1,5 @@
 ---
-title: "깃허브 호스팅 페이지에서 404 오류 나올 경우"
+title: "[Github] 깃허브 호스팅 페이지에서 404 오류 나올 경우"
 date: 2020-03-03 19:50:48
 categories: [git, github]
 tags: [github, git]
@@ -7,6 +7,8 @@ thumbnail: "/gallery/thumbnail-github.png"
 ---
 
 깃허브 호스팅 페이지가 404에러가 뜰 경우 아래 명령어를 실행하자, 설명은 아래 레퍼런스 참조
+
+<!-- more -->
 
 ```
 $ git commit --allow-empty -m 'Trigger rebuild'

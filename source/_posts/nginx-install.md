@@ -1,5 +1,5 @@
 ---
-title: "Nginx 기본 세팅"
+title: "[Nginx] Nginx 기본 세팅"
 date: 2019-11-19 10:13:02
 categories: [server, nginx]
 tags: [nginx, linux]

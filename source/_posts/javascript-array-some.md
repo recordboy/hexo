@@ -1,5 +1,5 @@
 ---
-title: "ES5 Array.some"
+title: "[JavaScript] ES5 Array.some"
 date: 2020-02-19 18:55:20
 categories: [front-end, javascript]
 tags: [javascript, es5]

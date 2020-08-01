@@ -1,5 +1,5 @@
 ---
-title: "문자열 자르기"
+title: "[JavaScript] 문자열 자르기"
 date: 2017-12-04 20:50:52
 categories: [front-end, javascript]
 tags: [javascript]

@@ -1,5 +1,5 @@
 ---
-title: "var, let, const 차이"
+title: "[JavaScript] var, let, const 차이"
 date: 2019-06-05 08:12:48
 categories: [front-end, javascript]
 tags: [javascript]

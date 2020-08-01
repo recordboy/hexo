@@ -1,5 +1,5 @@
 ---
-title: "재귀 함수(Recursive Function)"
+title: "[JavaScript] 재귀 함수(Recursive Function)"
 date: 2017-12-16 21:13:28
 categories: [front-end, javascript]
 tags: [javascript]

@@ -1,5 +1,5 @@
 ---
-title: "IOS 스크롤 방지"
+title: "[jQuery] IOS 스크롤 방지"
 date: 2018-06-11 21:51:16
 categories: [front-end, jquery]
 tags: [jquey, javascript]

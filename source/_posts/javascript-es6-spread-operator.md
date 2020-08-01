@@ -1,5 +1,5 @@
 ---
-title: "전개 연산자(Spread Operator)"
+title: "[JavaScript] 전개 연산자(Spread Operator)"
 date: 2020-04-29 20:09:38
 categories: [front-end, javascript]
 tags: [javascript, es6]

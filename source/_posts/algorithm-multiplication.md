@@ -1,5 +1,5 @@
 ---
-title: "구구단 출력하기"
+title: "[Algorithm] 구구단 출력하기"
 date: 2018-02-20 21:32:29
 categories: [front-end, javascript]
 tags: [algorithm, javascript]

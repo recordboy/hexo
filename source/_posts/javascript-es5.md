@@ -1,5 +1,5 @@
 ---
-title: "ES5(ECMAScript 5)"
+title: "[JavaScript] ES5(ECMAScript 5)"
 date: 2020-02-13 15:12:44
 categories: [front-end, javascript]
 tags: [javascript, es5]

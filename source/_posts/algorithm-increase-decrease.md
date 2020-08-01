@@ -1,5 +1,5 @@
 ---
-title: "인덱스 증가 감소"
+title: "[Algorithm] 인덱스 증가 감소"
 date: 2017-12-15 21:04:48
 categories: [front-end, javascript]
 tags: [algorithm, javascript]

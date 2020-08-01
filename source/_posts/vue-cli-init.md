@@ -1,5 +1,5 @@
 ---
-title: "Vue Cli 초기 세팅"
+title: "[Vue] Vue Cli 초기 세팅"
 date: 2019-11-01 10:05:51
 categories: [front-end, vue.js]
 tags: [vue.js]

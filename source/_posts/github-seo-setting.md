@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그(Jekyll) SEO 세팅"
+title: "[GitHub] 깃허브 블로그(Jekyll) SEO 세팅"
 date: 2019-12-01 10:15:25
 categories: [git, github]
 tags: [github, jekyll, seo]

@@ -1,5 +1,5 @@
 ---
-title: "ES5 Array.map"
+title: "[JavaScript] ES5 Array.map"
 date: 2020-02-17 18:49:45
 categories: [front-end, javascript]
 tags: [javascript, es5]

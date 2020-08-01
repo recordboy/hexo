@@ -1,5 +1,5 @@
 ---
-title: "Vue CLI 명령어(2.x)"
+title: "[Vue] Vue CLI 명령어(2.x)"
 date: 2019-07-01 08:52:44
 categories: [front-end, vue.js]
 tags: [vue.js, command]

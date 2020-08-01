@@ -1,5 +1,5 @@
 ---
-title: "SASS 연산(Operations)"
+title: "[SASS] SASS 연산(Operations)"
 date: 2020-02-10 15:11:16
 categories: [front-end, sass]
 tags: [sass, css]
