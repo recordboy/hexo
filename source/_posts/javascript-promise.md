@@ -3,7 +3,7 @@ title: "비동기 처리를 위한 프로미스(Promise)"
 date: 2020-06-05 09:07:04
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

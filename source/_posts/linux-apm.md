@@ -3,7 +3,7 @@ title: "APM(Apache, Mysql, PHP)"
 date: 2019-10-21 09:43:05
 categories: [server, linux]
 tags: [linux, apache, mysql, php]
-# thumbnail: "/gallery/thumbnail-linux.png"
+thumbnail: "/gallery/thumbnail-linux.png"
 ---
 
 웹서버 구축을 하기위해 APM(Apache, Mysql, PHP) 3개의 패키지가 설치되어야 한다. 

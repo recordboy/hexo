@@ -3,7 +3,7 @@ title: "배열 메소드"
 date: 2018-05-15 21:49:54
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

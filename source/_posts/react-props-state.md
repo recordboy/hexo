@@ -3,7 +3,7 @@ title: "리액트 데이터 관리(Props, State)"
 date: 2020-03-08 19:59:22
 categories: [front-end, react]
 tags: [react, javascript, jsx]
-# thumbnail: "/gallery/thumbnail-react.png"
+thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---
 

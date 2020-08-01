@@ -3,7 +3,7 @@ title: "자료형(원시 타입)"
 date: 2017-05-03 18:24:55
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 ---
 

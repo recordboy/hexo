@@ -3,7 +3,7 @@ title: "리액트(React) 소개"
 date: 2020-03-05 19:54:10
 categories: [front-end, react]
 tags: [react, javascript]
-# thumbnail: "/gallery/thumbnail-react.png"
+thumbnail: "/gallery/thumbnail-react.png"
 toc: true
 ---
 

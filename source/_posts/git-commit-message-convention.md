@@ -3,7 +3,7 @@ title: "깃 커밋 메시지 컨벤션(Git Commit Message Convention)"
 date: 2019-11-01 09:54:06
 categories: [git, git]
 tags: [git]
-# thumbnail: "/gallery/thumbnail-git.png"
+thumbnail: "/gallery/thumbnail-git.png"
 toc: true
 ---
 

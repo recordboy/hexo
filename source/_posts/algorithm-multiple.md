@@ -3,7 +3,7 @@ title: "배수 구하기"
 date: 2017-12-14 21:03:09
 categories: [front-end, javascript]
 tags: [algorithm, javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 0부터 100까지 특정 배수를 구하는법이다. 반복문과 조건문, 나머지 연산자가 사용된다.

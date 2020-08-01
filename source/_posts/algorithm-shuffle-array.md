@@ -3,7 +3,7 @@ title: "랜덤 배열(Shuffle)"
 date: 2020-06-04 13:18:39
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 아래는 배열을 무작위로 섞는 알고리즘이다.

@@ -3,7 +3,7 @@ title: "Vanilla JS로 짱깸뽀(가위 바위 보) 게임 만들기"
 date: 2020-02-05 17:38:06
 categories: [front-end, ui]
 tags: [ui, vanillajs]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/thumbnail-js.png"
 ---
 
 바닐라 자바스크립트로 만든 추억의 짱깸뽀 게임이다.
