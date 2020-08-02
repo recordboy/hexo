@@ -20,8 +20,8 @@ $searchbox-bg-close-active ?= $grey-lighter
 $searchbox-fg-result-header ?= $grey-light
 $searchbox-fg-result-item-secondary ?= $grey-light
 $searchbox-bg-result-item-hover ?= $searchbox-bg-input
-$searchbox-fg-result-item-active ?= findColorInvert($primary)
-$searchbox-bg-result-item-active ?= $primary
+// $searchbox-fg-result-item-active ?= findColorInvert($primary)
+$searchbox-bg-result-item-active ?= $white
 $searchbox-bg-result-item-highlight ?= $grey
 // footer styles
 $searchbox-bg-pagination-item ?= $searchbox-bg-input
@@ -156,7 +156,8 @@ $searchbox-bg-pagination-item-disabled ?= $searchbox-bg-container
     .searchbox-result-preview
         margin-top: .25em
 
-    .searchbox-result-item:not(:active):not(.active)
+    // .searchbox-result-item:not(:active):not(.active)
+    .searchbox-result-item
         .searchbox-result-preview
             color: $searchbox-fg-result-item-secondary
 
