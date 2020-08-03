@@ -222,8 +222,7 @@
                     } else if (navBg.classList.value === 'bg type05') {
                         navBg.classList = 'bg type01';
                     }
-                    console.log(1);
-                }, 5000);
+                }, 3000);
             }
         }
     }
