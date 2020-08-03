@@ -685,7 +685,7 @@ class PhoneInfo extends Component {
     onRemove(info.id);
   };
 
-  // 수정 버튼이 클릭 될 때 마다 editing 값이 반전 반전되는 된다.
+  // 수정 버튼이 클릭 될 때 마다 editing 값이 반전 반전된다.
   handleToggleEdit = () => {
     const { editing } = this.state;
     this.setState({
