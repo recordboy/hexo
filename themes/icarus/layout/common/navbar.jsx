@@ -60,6 +60,7 @@ class Navbar extends Component {
                     </div>
                 </div>
             </div>
+            <div className="bg type01"></div>
         </nav>;
     }
 }

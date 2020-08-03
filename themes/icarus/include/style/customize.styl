@@ -1,39 +1,15 @@
 /* ---------------------------------
  *             Customize
  * --------------------------------- */
-#hero
-    display: none
-    position: relative
-    overflow: hidden
-    height: 200px
-
-    &:before, &:after
-        content: ""
-        position: absolute
-        width: 100%
-        height: 200%
-        background-image: url(/img/git.png)
-        background-position: center
-        background-size: auto 400px
-        -webkit-animation: heroBgMove 20s linear infinite
-        animation: heroBgMove 20s linear infinite
-    
-    &:before
-        top: 200%
-
-    .dimmed
-        display: none
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 20
-        width: 100%
-        height: 100%
-        background-color: #000
-        opacity 0
+.navbar
+    &.on
+        .navbar-item
+            color: #fff
 
     .bg
-        position: absolute
+        display: none
+        overflow hidden
+        position absolute
         top: 0
         left: 0
         z-index: -10
@@ -41,14 +17,30 @@
         height: 100%
         transition: 5s
 
-    &.bg01 .bg
-        background: #330033
-    &.bg02 .bg
-        background: #000033
-    &.bg03 .bg
-        background: #003300
-    &.bg04 .bg
-        background: #330000
+        &:before, &:after
+            content: ""
+            position: absolute
+            width: 100%
+            height: 200%
+            background-image: url(/img/git.png)
+            background-position: center
+            background-size: auto 240px
+            -webkit-animation: heroBgMove 10s linear infinite
+            animation: heroBgMove 10s linear infinite
+        
+        &:before
+            top: 200%
+
+        &.type01
+            background: #ff6666
+        &.type02
+            background: #cc66ff
+        &.type03
+            background: #6699ff
+        &.type04
+            background: #66cc99
+        &.type05
+            background: #ff9933
 
 @-webkit-keyframes heroBgMove 
     0% 
@@ -65,3 +57,4 @@
     to 
         -webkit-transform: translateY(-100%)
         transform: translateY(-100%)
+        

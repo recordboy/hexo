@@ -197,49 +197,32 @@
     function customize() {
         const url = window.location.href;
         if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
-            const hero = document.querySelector('#hero');
-            const dimmed = hero.querySelector('.dimmed');
             let timer = null;
-            let ratio = 0;
-            hero.style.display = 'block';
+            let nav = document.querySelector('.navbar');
+            let navBg = nav.querySelector('.bg');
+            let navLogo = nav.querySelector('.navbar-logo');
+
+            nav.classList.add('on');
+            navBg.style.display = 'block';
+            navLogo.childNodes[0].setAttribute('src', '/img/logo_white.png');
             window.onload = () => {
-                mainRatio();
-                mainBgInit();
-                mainBgChange();
+                navBgChange();
             };
-            window.addEventListener('scroll', () => {
-                if (window.scrollY === 0) {
-                    dimmed.style.display = 'none';
-                } else {
-                    dimmed.style.display = 'block';
-                    window.scrollY < window.innerHeight && mainBgSet();
-                }
-                mainRatio();
-            });
-            const mainRatio = () => {
-                ratio = Math.floor(window.scrollY / hero.clientHeight * 1000) / 1000;
-            };
-            const mainBgSet = () => {
-                dimmed.style.opacity = ratio;
-            };
-            const mainBgInit = () => {
-                if (ratio < 1 && ratio !== 0) {
-                    dimmed.style.display = 'block';
-                    dimmed.style.opacity = ratio;
-                }
-            };
-            const mainBgChange = () => {
-                hero.classList = 'bg02';
+
+            const navBgChange = () => {
                 timer = setInterval(() => {
-                    if (hero.classList.value === 'bg01') {
-                        hero.classList = 'bg02';
-                    } else if (hero.classList.value === 'bg02') {
-                        hero.classList = 'bg03';
-                    } else if (hero.classList.value === 'bg03') {
-                        hero.classList = 'bg04';
-                    } else if (hero.classList.value === 'bg04') {
-                        hero.classList = 'bg01';
+                    if (navBg.classList.value === 'bg type01') {
+                        navBg.classList = 'bg type02';
+                    } else if (navBg.classList.value === 'bg type02') {
+                        navBg.classList = 'bg type03';
+                    } else if (navBg.classList.value === 'bg type03') {
+                        navBg.classList = 'bg type04';
+                    } else if (navBg.classList.value === 'bg type04') {
+                        navBg.classList = 'bg type05';
+                    } else if (navBg.classList.value === 'bg type05') {
+                        navBg.classList = 'bg type01';
                     }
+                    console.log(1);
                 }, 5000);
             }
         }
