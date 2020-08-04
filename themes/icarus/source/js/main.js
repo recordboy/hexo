@@ -189,42 +189,4 @@
             link.target = '_blank';
         });
     }
-
-    // customize
-    customize();
-
-    // customize
-    function customize() {
-        const url = window.location.href;
-        if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
-            let timer = null;
-            let nav = document.querySelector('.navbar');
-            let navBg = nav.querySelector('.bg');
-            let navLogo = nav.querySelector('.navbar-logo');
-
-            nav.classList.add('on');
-            navBg.style.display = 'block';
-            navLogo.childNodes[0].setAttribute('src', '/img/logo_white.png');
-            window.onload = () => {
-                navBgChange();
-            };
-
-            const navBgChange = () => {
-                timer = setInterval(() => {
-                    if (navBg.classList.value === 'bg type01') {
-                        navBg.classList = 'bg type02';
-                    } else if (navBg.classList.value === 'bg type02') {
-                        navBg.classList = 'bg type03';
-                    } else if (navBg.classList.value === 'bg type03') {
-                        navBg.classList = 'bg type04';
-                    } else if (navBg.classList.value === 'bg type04') {
-                        navBg.classList = 'bg type05';
-                    } else if (navBg.classList.value === 'bg type05') {
-                        navBg.classList = 'bg type01';
-                    }
-                }, 3000);
-            }
-        }
-    }
-
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
