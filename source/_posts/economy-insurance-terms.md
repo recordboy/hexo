@@ -137,8 +137,6 @@ toc: true
 ### 청약
 보험 계약자가 보험 상품에 대한 가입을 위해 의사 표시를 하는 것
 
-*추후 추가 예정*
-
 ## References
 > [헷갈리는 보험 용어 알아두기 1편](https://gbsb.tistory.com/411?category=734611)  
 > [보험[insurance,保險]](http://www.doopedia.co.kr/doopedia/master/master.do?_method=view&MAS_IDX=101013000753005)  
