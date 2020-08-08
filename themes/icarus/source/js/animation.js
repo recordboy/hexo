@@ -68,6 +68,7 @@
                 navBgChange();
             };
             const navBgChange = () => {
+                navBg.classList = 'bg type02';
                 timer = setInterval(() => {
                     if (navBg.classList.value === 'bg type01') {
                         navBg.classList = 'bg type02';
@@ -76,8 +77,6 @@
                     } else if (navBg.classList.value === 'bg type03') {
                         navBg.classList = 'bg type04';
                     } else if (navBg.classList.value === 'bg type04') {
-                        navBg.classList = 'bg type05';
-                    } else if (navBg.classList.value === 'bg type05') {
                         navBg.classList = 'bg type01';
                     }
                 }, 2000);
