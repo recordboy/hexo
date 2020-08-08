@@ -8,7 +8,7 @@ subtitle: '프론트엔드 기술 블로그'
 description: '프론트엔드 기술에 대한 기록 전용 블로그'
 keywords: 'html,css,javascript,react,vue,jquery,git,linux,centos,nginx,mysql,github,sass,algorithm'
 author: recordboy
-language: ko
+language: en
 timezone: ''
 
 # URL
@@ -81,7 +81,7 @@ use_date_for_updated: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 20
+per_page: 50
 pagination_dir: page
 
 # Include / Exclude file(s)
