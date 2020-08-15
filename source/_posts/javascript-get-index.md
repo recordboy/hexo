@@ -10,7 +10,7 @@ thumbnail: "/gallery/thumbnail-js.png"
 
 <!-- more -->
 
-**HTML**
+## HTML
 ```html
 <ul id="ul">
     <li>0</li>
@@ -20,7 +20,7 @@ thumbnail: "/gallery/thumbnail-js.png"
 </ul>
 ```
 
-**javascript**
+## javascript
 ```javascript
 var ul = document.getElementById('ul'),
     li = ul.getElementsByTagName('li');
@@ -33,7 +33,7 @@ for (var i = 0; i < li.length; i++) {
 }
 ```
 
-**결과**
+## 결과
 아래 리스트 요소를 클릭하면 인덱스가 경고창에 출력되는 것을 확인할 수 있다.
 
 <ul id="ul">
