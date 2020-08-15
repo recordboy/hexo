@@ -1,5 +1,5 @@
 ---
-title: 소개
+title: About
 date: 2020-04-11 23:42:36
 ---
 
