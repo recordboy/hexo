@@ -57,10 +57,10 @@
     function customize() {
         const url = window.location.href;
         if (url === 'https://recordboy.github.io/' || url === 'http://localhost:4000/') {
+            const nav = document.querySelector('.navbar');
+            const navBg = nav.querySelector('.bg');
+            const navLogo = nav.querySelector('.navbar-logo');
             let timer = null;
-            let nav = document.querySelector('.navbar');
-            let navBg = nav.querySelector('.bg');
-            let navLogo = nav.querySelector('.navbar-logo');
             nav.classList.add('on');
             navBg.style.display = 'block';
             navLogo.childNodes[0].setAttribute('src', '/img/logo_ko_white.png');
