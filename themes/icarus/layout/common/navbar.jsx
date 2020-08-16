@@ -32,7 +32,7 @@ class Navbar extends Component {
             <div class="container">
                 <div class="navbar-brand justify-content-center">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
-                        {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="20" />}
+                        {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
                     </a>
                 </div>
                 <div class="navbar-menu">
