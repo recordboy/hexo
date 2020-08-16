@@ -63,7 +63,7 @@
             let navLogo = nav.querySelector('.navbar-logo');
             nav.classList.add('on');
             navBg.style.display = 'block';
-            navLogo.childNodes[0].setAttribute('src', '/img/logo_white.png');
+            navLogo.childNodes[0].setAttribute('src', '/img/logo_ko_white.png');
             window.onload = () => {
                 navBgChange();
             };
