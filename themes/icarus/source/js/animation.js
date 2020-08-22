@@ -1,7 +1,6 @@
 (function() {
     
-    // customize
-    customize();
+    // customize();
 
     function $() {
         return Array.prototype.slice.call(document.querySelectorAll.apply(document, arguments));
