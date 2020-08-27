@@ -4,6 +4,16 @@ date: 2018-01-16 21:20:27
 categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 `while`문은 조건을 검사하여 `true`일경우 계속 구문을 실행시키는 반복문이다.

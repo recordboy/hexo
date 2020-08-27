@@ -5,6 +5,16 @@ categories: [front-end, react]
 tags: [react, javascript, jsx]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 리액트로 간단한 전화번호부를 만들어 보자, 우선 새로운 리액트 프로젝트를 만들고, 로컬 서버를 시작한다. 프로젝트 이름은 `phone-book`으로 하겠다.

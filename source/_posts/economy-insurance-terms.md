@@ -5,6 +5,16 @@ categories: [economy, insurance]
 tags: [economy, insurance]
 thumbnail: "/gallery/thumbnail-web.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 보험 개요

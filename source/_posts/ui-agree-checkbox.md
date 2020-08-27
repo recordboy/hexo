@@ -5,6 +5,16 @@ categories: [front-end, ui]
 tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 vanilla JS로 만들어진 전체동의 체크박스, 보통 이용 약관에 많이 사용되된다.

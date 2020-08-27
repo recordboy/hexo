@@ -5,6 +5,16 @@ categories: [git, git]
 tags: [git, command]
 thumbnail: "/gallery/thumbnail-git.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 자주 쓴 명령어 위주로 작성, 추후 계속 추가 예정

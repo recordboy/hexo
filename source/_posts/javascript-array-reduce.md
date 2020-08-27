@@ -4,6 +4,16 @@ date: 2020-02-21 18:57:42
 categories: [front-end, javascript]
 tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 `Array.reduce`메서드는 배열의 각 요소를 순회하며 콜백 함수를 실행하며 이전 리턴값을 넘겨 받는다. 이전 값을 넘겨 받아 현재 값과 어떠한 작업을 수행하고 싶을 때 적합한 메서드이다. 인자 값이 다른 메서드와 약간 다르며, 콜백 함수 뒤에 인자를 하나 더 줄 수 있다. 이 인자는 첫 콜백함수의 이전 값으로 주입된다.

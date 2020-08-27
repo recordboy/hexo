@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 자바스크립트는 비동기 처리를 위한 하나의 패턴으로 [콜백 함수](/2020/06/04/javascript-asynchronous-callback/)를 사용한다. 하지만 콜백 패턴은 가독성이 나쁘고, 비동기 처리 중 발생한 에러의 예외처리가 곤란하며, 여러개의 비동기 처리 로직을 한꺼번에 처리하는 것도 한계가 있다. ES6에서 비동기 처리를 위한 또 다른 패턴으로 프로미스(Promise)를 도입하였다. **프로미스는 비동기적으로 요청한 결과(성공/실패)를 나타내는 객체**로서, 콜백 패턴이 가진 단점을 보완하며, 비동기 처리 시점을 명확하게 표현한다.

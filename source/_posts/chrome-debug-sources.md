@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [chrome, javascript, debug]
 thumbnail: "/gallery/thumbnail-chrome.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 크롬 개발자 도구의 `Sources`패널로 디버깅을 할 수 있다.

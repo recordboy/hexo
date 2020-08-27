@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## ECMAScript(ES)의 정의

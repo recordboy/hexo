@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 자바스크립트는 클래스라는 개념이 없다. 클래스는 자바, 파이썬, 루바 등 객체지향 언어에서 빠질수 없는 개념이다. 하지만 자바스크립트도 객체지향언어인데, 클래스 대신 프로토타입(Prototype)을 기반으로 클래스의 상속 기능을 흉내내도록 구현하여 사용한다. 그래서 자바스크립트는 프로토타입 기반의 객체 지향 언어라고 한다.

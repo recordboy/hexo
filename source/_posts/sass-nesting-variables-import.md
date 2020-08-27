@@ -5,6 +5,16 @@ categories: [front-end, sass]
 tags: [sass, css]
 thumbnail: "/gallery/thumbnail-sass.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 중첩(Nesting)

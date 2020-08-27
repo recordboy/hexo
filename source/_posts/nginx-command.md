@@ -4,6 +4,16 @@ date: 2020-01-04 10:49:13
 categories: [server, nginx]
 tags: [nginx, command]
 thumbnail: "/gallery/thumbnail-nginx.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 | 명령어 | 동작 |

@@ -4,6 +4,16 @@ date: 2019-12-12 10:43:21
 categories: [server, mysql]
 tags: [linux, mysql]
 thumbnail: "/gallery/thumbnail-linux.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 리눅스 MySQL 시작, 정지, 재시작, 상태확인

@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 자바스크립트에서 자주 쓰이는 배열 메소드 정리

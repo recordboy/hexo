@@ -4,6 +4,16 @@ date: 2020-01-19 10:54:21
 categories: [mac]
 tags: [mac, terminal, command]
 thumbnail: "/gallery/thumbnail-mac.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 | 명령어 | Windows 커맨드 | Mac OS 터미널 |

@@ -4,6 +4,16 @@ date: 2019-10-18 09:36:30
 categories: [web]
 tags: [web, network]
 thumbnail: "/gallery/thumbnail-web.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 포트(Port)

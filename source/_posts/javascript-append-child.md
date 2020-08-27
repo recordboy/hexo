@@ -4,6 +4,16 @@ date: 2017-12-12 20:44:40
 categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 노드 생성

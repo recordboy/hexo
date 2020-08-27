@@ -5,6 +5,16 @@ categories: [server, centos]
 tags: [linux, centos, php]
 thumbnail: "/gallery/thumbnail-centos.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 설치환경

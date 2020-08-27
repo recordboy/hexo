@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [algorithm, javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 중첩 반복문의 별찍기 예제이다. 알고리즘 기초 문제로 자주 등장하는 예제중 하나이다. 우선 하단의 별모양으로 찍어보자

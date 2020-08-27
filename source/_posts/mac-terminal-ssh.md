@@ -4,6 +4,16 @@ date: 2020-01-21 10:55:53
 categories: [mac]
 tags: [mac, terminal]
 thumbnail: "/gallery/thumbnail-mac.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 윈도우에서는 Putty라는 프로그램으로 ssh접속을 하였지만 맥에서는 터미널로 바로 접속이 가능하다.

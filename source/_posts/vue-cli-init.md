@@ -5,6 +5,16 @@ categories: [front-end, vue.js]
 tags: [vue.js]
 thumbnail: "/gallery/thumbnail-vue.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## Vue CLI

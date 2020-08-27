@@ -5,6 +5,16 @@ categories: [front-end, ui]
 tags: [ui, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 vanilla JS로 제작된 기본 탭 메뉴

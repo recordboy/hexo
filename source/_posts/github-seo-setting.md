@@ -5,6 +5,16 @@ categories: [git, github]
 tags: [github, jekyll, seo]
 thumbnail: "/gallery/thumbnail-github.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 검색 엔진 최적화(Search Engine Optimization)

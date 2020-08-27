@@ -5,6 +5,16 @@ categories: [front-end, ui]
 tags: [ui, jquery]
 thumbnail: "/gallery/thumbnail-jquery.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 기존의 `select` 태그는 CSS 적용이 안되는 부분이 많아 디자인에 제약이 많다.  

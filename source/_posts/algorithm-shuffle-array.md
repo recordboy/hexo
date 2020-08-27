@@ -4,6 +4,16 @@ date: 2020-06-04 13:18:39
 categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 아래는 배열을 무작위로 섞는 알고리즘이며, `arr`배열을 선언한 뒤 각 요소를 랜덤으로 추출하여 `newArr`라는 새로운 배열에 할당하도록 작성되었다.

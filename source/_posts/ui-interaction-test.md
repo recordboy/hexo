@@ -4,6 +4,16 @@ date: 2019-12-16 10:45:37
 categories: [front-end, ui]
 tags: [ui, jquery]
 thumbnail: "/gallery/thumbnail-jquery.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 리스트 페이지

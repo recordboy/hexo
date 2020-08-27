@@ -4,6 +4,16 @@ date: 2020-03-03 19:50:48
 categories: [git, github]
 tags: [github, git]
 thumbnail: "/gallery/thumbnail-github.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 깃허브 호스팅 페이지가 404에러가 뜰 경우 아래 명령어를 실행하자, 설명은 아래 레퍼런스 참조

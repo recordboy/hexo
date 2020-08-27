@@ -4,6 +4,16 @@ date: 2018-01-15 21:28:59
 categories: [front-end, javascript]
 tags: [javascript, vanillajs]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 제이쿼리의 `index()`를 바닐라 자바스크립트로 구현하는 방법이다.

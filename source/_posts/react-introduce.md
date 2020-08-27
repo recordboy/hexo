@@ -5,6 +5,16 @@ categories: [front-end, react]
 tags: [react, javascript]
 thumbnail: "/gallery/thumbnail-react.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 리액트는 페이스북이 제작한 프론트엔드 라이브러리이다. 프론트엔드 프레임워크/라이브러리는 대표적으로 React, Angular, Vue 이렇게 세가지가 있다.

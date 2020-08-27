@@ -5,6 +5,16 @@ categories: [web]
 tags: [web]
 thumbnail: "/gallery/thumbnail-web.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## HTTP

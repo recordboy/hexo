@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 `var`는 변수를 선언하는 키워드이며, ES6부터 `let`과 `const`가 추가되었다.

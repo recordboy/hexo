@@ -4,6 +4,16 @@ date: 2019-11-18 10:10:16
 categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 어떤 디바이스로 접속했는지 확인 가능한 코드

@@ -4,6 +4,16 @@ date: 2019-11-19 10:13:02
 categories: [server, nginx]
 tags: [nginx, linux]
 thumbnail: "/gallery/thumbnail-nginx.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## Nginx 설치

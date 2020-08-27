@@ -5,6 +5,16 @@ categories: [git, github]
 tags: [github, hexo]
 thumbnail: "/gallery/thumbnail-hexo.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## 헥소(HEXO)란?

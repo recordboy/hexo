@@ -5,6 +5,16 @@ categories: [front-end, html]
 tags: [html, web accessibility]
 thumbnail: "/gallery/thumbnail-html.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 2019년 11월 22일 정보접근성 기술 컨퍼런스를 다녀온뒤 세미나 내용을 정리 및 입력 서식 관련 접근성 대비에 관련한 내용이다.

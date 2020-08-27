@@ -4,6 +4,16 @@ date: 2019-10-20 09:37:50
 categories: [front-end, svelte.js]
 tags: [svelte.js, javascript]
 thumbnail: "/gallery/thumbnail-svelte.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 ## REACT/VUE에서 이젠 SVELTE

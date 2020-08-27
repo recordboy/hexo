@@ -5,6 +5,16 @@ categories: [front-end, javascript]
 tags: [javascript]
 thumbnail: "/gallery/thumbnail-js.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 객체를 생성하는 방법은 크게 객체 리터럴 방식과 사용자 정의 생성자 함수 방식, 객체 생성자 함수 방식이 있다. 

@@ -4,6 +4,16 @@ date: 2020-02-20 18:56:51
 categories: [front-end, javascript]
 tags: [javascript, es5]
 thumbnail: "/gallery/thumbnail-js.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 `Array.every`메서드는 `Array.some`와 비슷하지만 모든 요소가 조건을 만족해야 `true`를 반환한다.

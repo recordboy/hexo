@@ -4,6 +4,16 @@ date: 2019-11-05 10:03:22
 categories: [front-end, vue.js]
 tags: [vue.js]
 thumbnail: "/gallery/thumbnail-vue.png"
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 Vue Cli 2.x 버전을 이용하여 프로젝트를 생성하면 웹펙 설정파일이 자동으로 생성되지만 3.x 버전부터는 직접 만들어줘야 한다. 때문에 2.x 버전하고 방법이 약간 다르다.

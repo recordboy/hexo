@@ -5,6 +5,16 @@ categories: [server, linux]
 tags: [linux, vim, command]
 thumbnail: "/gallery/thumbnail-vim.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 VIM 명령어 정리

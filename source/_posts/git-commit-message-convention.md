@@ -5,6 +5,16 @@ categories: [git, git]
 tags: [git]
 thumbnail: "/gallery/thumbnail-git.png"
 toc: true
+widgets:
+  - type: toc
+    position: right
+  - type: categories
+    position: right
+  - type: tags
+    position: right
+sidebar:
+  right:
+    sticky: true
 ---
 
 커밋 메시지는 타입, 제목, 본문(선택), 꼬리말(선택) 세 부분으로 작성한다.
