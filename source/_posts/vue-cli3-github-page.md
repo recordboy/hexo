@@ -7,9 +7,9 @@ thumbnail: "/gallery/thumbnail-vue.png"
 widgets:
   - type: toc
     position: right
-  - type: categories
-    position: right
   - type: tags
+    position: right
+  - type: categories
     position: right
 sidebar:
   right:
