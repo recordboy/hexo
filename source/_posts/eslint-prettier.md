@@ -3,7 +3,7 @@ title: "[React] ESLint, Prettier 적용하기"
 date: 2020-07-06 19:54:44
 categories: [front-end, react]
 tags: [eslint, prettier, tools, module, extension]
-thumbnail: "/gallery/thumbnail-react.png"
+thumbnail: "/gallery/photo/thumbnail-lint.png"
 toc: true
 widgets:
   - type: toc

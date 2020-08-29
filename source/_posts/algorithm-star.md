@@ -3,7 +3,7 @@ title: "[Algorithm] 중첩 반복문(별찍기)"
 date: 2018-02-21 21:33:43
 categories: [front-end, javascript]
 tags: [algorithm, javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
   - type: toc

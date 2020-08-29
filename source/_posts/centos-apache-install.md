@@ -3,7 +3,7 @@ title: "[CentOS] CentOS7 Apache 설치"
 date: 2019-10-25 09:50:30
 categories: [server, centos]
 tags: [linux, centos]
-thumbnail: "/gallery/thumbnail-centos.png"
+# thumbnail: "/gallery/thumbnail-centos.png"
 widgets:
   - type: toc
     position: right

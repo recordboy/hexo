@@ -3,7 +3,7 @@ title: "[JavaScript] 재귀 함수(Recursive Function)"
 date: 2017-12-16 21:13:28
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

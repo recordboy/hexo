@@ -3,7 +3,7 @@ title: "[JavaScript] 자바스크립트 소개"
 date: 2017-02-01 15:29:58
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

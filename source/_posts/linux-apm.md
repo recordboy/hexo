@@ -3,7 +3,7 @@ title: "[Linux] APM(Apache, Mysql, PHP)"
 date: 2019-10-21 09:43:05
 categories: [server, linux]
 tags: [linux, apache, mysql, php]
-thumbnail: "/gallery/thumbnail-linux.png"
+# thumbnail: "/gallery/thumbnail-linux.png"
 widgets:
   - type: toc
     position: right

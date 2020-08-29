@@ -3,7 +3,7 @@ title: "[Web] Web Technology Terminology"
 date: 2019-03-25 08:21:31
 categories: [web]
 tags: [web]
-thumbnail: "/gallery/thumbnail-web.png"
+# thumbnail: "/gallery/thumbnail-web.png"
 widgets:
   - type: toc
     position: right

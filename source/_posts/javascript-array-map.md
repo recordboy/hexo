@@ -3,7 +3,7 @@ title: "[JavaScript] ES5 Array.map"
 date: 2020-02-17 18:49:45
 categories: [front-end, javascript]
 tags: [javascript, es5]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

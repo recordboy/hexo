@@ -3,7 +3,7 @@ title: "[Algorithm] 인덱스 증가 감소"
 date: 2017-12-15 21:04:48
 categories: [front-end, javascript]
 tags: [algorithm, javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

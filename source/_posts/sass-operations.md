@@ -3,7 +3,7 @@ title: "[SASS] SASS 연산(Operations)"
 date: 2020-02-10 15:11:16
 categories: [front-end, sass]
 tags: [sass, css]
-thumbnail: "/gallery/thumbnail-sass.png"
+# thumbnail: "/gallery/thumbnail-sass.png"
 toc: true
 widgets:
   - type: toc

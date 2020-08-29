@@ -3,7 +3,7 @@ title: "[JavaScript] ES5 Array.reduce"
 date: 2020-02-21 18:57:42
 categories: [front-end, javascript]
 tags: [javascript, es5]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

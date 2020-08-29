@@ -3,7 +3,7 @@ title: "[Web] GET과 POST 차이"
 date: 2017-12-04 19:16:03
 categories: [web]
 tags: [web]
-thumbnail: "/gallery/thumbnail-web.png"
+# thumbnail: "/gallery/thumbnail-web.png"
 toc: true
 widgets:
   - type: toc

@@ -3,7 +3,7 @@ title: "[JavaScript] while 반복문"
 date: 2018-01-16 21:20:27
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

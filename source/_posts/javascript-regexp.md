@@ -3,7 +3,7 @@ title: "[JavaScript] 정규표현식"
 date: 2018-03-02 21:41:31
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
   - type: toc

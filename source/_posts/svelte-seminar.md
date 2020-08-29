@@ -3,7 +3,7 @@ title: "[Svelte] 스벨트 요약"
 date: 2019-10-20 09:37:50
 categories: [front-end, svelte.js]
 tags: [svelte.js, javascript]
-thumbnail: "/gallery/thumbnail-svelte.png"
+# thumbnail: "/gallery/thumbnail-svelte.png"
 widgets:
   - type: toc
     position: right

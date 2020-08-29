@@ -3,7 +3,7 @@ title: "[JavaScript] 자료형(참조 타입)"
 date: 2017-05-05 18:27:57
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
   - type: toc

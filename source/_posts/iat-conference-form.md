@@ -3,7 +3,7 @@ title: "[IATC] 입력 서식 관련 접근성"
 date: 2019-12-04 10:24:31
 categories: [front-end, html]
 tags: [html, web accessibility]
-thumbnail: "/gallery/thumbnail-html.png"
+# thumbnail: "/gallery/thumbnail-html.png"
 toc: true
 widgets:
   - type: toc

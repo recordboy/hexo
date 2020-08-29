@@ -3,7 +3,7 @@ title: "[JavaScript] 함수 메소드(call, apply, bind)"
 date: 2018-11-08 08:11:18
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
   - type: toc

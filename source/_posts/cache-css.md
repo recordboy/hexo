@@ -3,7 +3,7 @@ title: "[CSS] 수정, 배포 CSS파일 캐시 방지"
 date: 2020-03-01 18:58:52
 categories: [front-end, css]
 tags: [css, javascript]
-thumbnail: "/gallery/thumbnail-css.png"
+# thumbnail: "/gallery/thumbnail-css.png"
 widgets:
   - type: toc
     position: right

@@ -3,7 +3,7 @@ title: "[Crawling] 웹 크롤링(Web Crawling)"
 date: 2019-08-20 08:54:33
 categories: [node.js]
 tags: [web crawling, node.js]
-thumbnail: "/gallery/thumbnail-node.png"
+# thumbnail: "/gallery/thumbnail-node.png"
 toc: true
 widgets:
   - type: toc

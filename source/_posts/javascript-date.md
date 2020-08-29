@@ -3,7 +3,7 @@ title: "[JavaScript] 날짜 구하기(Data 함수)"
 date: 2017-12-13 20:48:10
 categories: [front-end, javascript]
 tags: [javascript]
-thumbnail: "/gallery/thumbnail-js.png"
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: right

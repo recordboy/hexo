@@ -3,7 +3,7 @@ title: "[UI] 커스텀 셀렉트박스(custom selectbox)"
 date: 2019-10-02 09:17:59
 categories: [front-end, ui]
 tags: [ui, jquery]
-thumbnail: "/gallery/thumbnail-jquery.png"
+# thumbnail: "/gallery/thumbnail-jquery.png"
 toc: true
 widgets:
   - type: toc
