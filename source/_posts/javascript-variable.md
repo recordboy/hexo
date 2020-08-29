@@ -8,9 +8,9 @@ toc: true
 widgets:
   - type: toc
     position: right
-  - type: tags
-    position: right
   - type: categories
+    position: right
+  - type: tags
     position: right
 sidebar:
   right:
