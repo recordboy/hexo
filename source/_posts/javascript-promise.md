@@ -3,7 +3,7 @@ title: "[JavaScript] 비동기 처리를 위한 프로미스"
 date: 2020-06-05 09:07:04
 categories: [front-end, javascript]
 tags: [javascript]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/images/thumbnail-099.png"
 toc: true
 widgets:
   - type: toc
