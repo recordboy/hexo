@@ -3,7 +3,7 @@ title: "[UI] Vanilla JS로 패럴랙스 적용하기"
 date: 2020-05-23 13:37:06
 categories: [front-end, ui]
 tags: [ui, vanillajs]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/images/thumbnail-096.png"
 toc: true
 widgets:
   - type: toc

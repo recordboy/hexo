@@ -3,7 +3,7 @@ title: "[JavaScript] 비구조화 할당(Destructuring Assignment)"
 date: 2020-04-30 20:51:12
 categories: [front-end, javascript]
 tags: [javascript, es6]
-# thumbnail: "/gallery/thumbnail-js.png"
+thumbnail: "/gallery/images/thumbnail-092.png"
 toc: true
 widgets:
   - type: toc
