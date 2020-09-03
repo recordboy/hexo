@@ -17,7 +17,6 @@ sidebar:
     sticky: true
 ---
 
-<del>블로그 히어로 영역 변경</dle>
 * <del>[particles.js](https://vincentgarreau.com/particles.js/) 적용</dle>
 * 백그라운드에 패럴랙스 적용
 * [구현 화면](https://recordboy.github.io/ui/parallax-scroll/)  
