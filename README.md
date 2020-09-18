@@ -1,1 +1,1 @@
-FE Blog Repository
+Front-End Blog Repository
