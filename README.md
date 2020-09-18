@@ -1,1 +1,1 @@
-Front-End Technology Blog Repository
+Blog Repository
