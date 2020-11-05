@@ -17,13 +17,13 @@ sidebar:
     sticky: true
 ---
 
+## 기본 구조
+
 ```
 my-app/
 ├── clinet
 └── index.js
 ```
-
-<!-- more -->
 
 ## 프로젝트 초기화 및 익스프레스 설치
 ### 프로젝트 초기화
@@ -34,6 +34,8 @@ $ mkdir my-app
 $ cd my-app 
 $ npm init -y
 ```
+
+<!-- more -->
 
 ### 익스프레스/모듈 설치
 익스프레스 서버 생성 및 필요 모듈 추가한다.
