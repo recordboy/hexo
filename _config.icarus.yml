@@ -3,7 +3,7 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /img/logo_ko.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -39,25 +39,25 @@ head:
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: 
+        title: 기록맨
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: 
+        url: https://recordboy.github.io/
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
-        image: 
+        image: /img/logo_ko.png
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 
+        site_name: 기록맨
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: recordboy
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: 
+        description: 프론트엔드 기술 블로그
         # Twitter card type (twitter:card)
         twitter_card: 
         # Twitter ID (twitter:creator)
@@ -94,7 +94,7 @@ head:
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: https://recordboy.github.io/rss2.xml
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
@@ -108,27 +108,27 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://github.com/recordboy'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+        # Creative Commons:
+        #     icon: fab fa-creative-commons
+        #     url: 'https://creativecommons.org/'
+        # Attribution 4.0 International:
+        #     icon: fab fa-creative-commons-by
+        #     url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://github.com/recordboy'
 # Article related configurations
 article:
     # Code highlight settings
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-light
+        theme: atelier-sulphurpool-light
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -155,55 +155,55 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: 'recordboy'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
-    # Alipay donate button configurations
-    -
-        type: alipay
-        # Alipay qrcode image URL
-        qrcode: ''
-    # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
-    # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
-    # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: ''
+# donates:
+#     # "Afdian.net" donate button configurations
+#     -
+#         type: afdian
+#         # URL to the "Afdian.net" personal page
+#         url: ''
+#     # Alipay donate button configurations
+#     -
+#         type: alipay
+#         # Alipay qrcode image URL
+#         qrcode: ''
+#     # "Buy me a coffee" donate button configurations
+#     -
+#         type: buymeacoffee
+#         # URL to the "Buy me a coffee" page
+#         url: ''
+#     # Patreon donate button configurations
+#     -
+#         type: patreon
+#         # URL to the Patreon page
+#         url: ''
+#     # Paypal donate button configurations
+#     -
+#         type: paypal
+#         # Paypal business ID or email address
+#         business: ''
+#         # Currency code
+#         currency_code: USD
+#     # Wechat donate button configurations
+#     -
+#         type: wechat
+#         # Wechat qrcode image URL
+#         qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
     type: sharethis
     # URL to the ShareThis share plugin script
-    install_url: ''
+    install_url: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ea6ce700117cc59
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
@@ -211,42 +211,6 @@ sidebar:
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
-    # Profile widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: profile
-        # Author name
-        author: Your name
-        # Author title
-        author_title: Your title
-        # Author's current location
-        location: Your location
-        # URL or path to the avatar image
-        avatar: 
-        # Whether show the rounded avatar image
-        avatar_rounded: false
-        # Email address for the Gravatar
-        gravatar: 
-        # URL or path for the follow button
-        follow_link: 'https://github.com/ppoffice'
-        # Links to be shown on the bottom of the profile widget
-        social_links:
-            Github:
-                icon: fab fa-github
-                url: 'https://github.com/ppoffice'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
-            Dribbble:
-                icon: fab fa-dribbble
-                url: 'https://dribbble.com'
-            RSS:
-                icon: fas fa-rss
-                url: /
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -254,6 +218,11 @@ widgets:
         type: toc
         # Whether to show the index of each heading
         index: true
+    # Categories widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: categories
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -261,46 +230,94 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
-    # Categories widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: categories
+            Github: 'https://github.com/recordboy'
+            Velog: 'https://velog.io/@recordboy'
+            Disqus: 'https://disqus.com/by/recordboy/'
+            Codepen: 'https://codepen.io/recordboy'
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
-    # Archives widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
+    # Archives widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: archives
+    # Profile widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: profile
+        # Author name
+        author: 기록맨
+        # Author title
+        author_title: FE Developer
+        # Author's current location
+        location: Republic of Korea
+        # URL or path to the avatar image
+        avatar: ./img/avatar.png
+        # Whether show the rounded avatar image
+        avatar_rounded: true
+        # Email address for the Gravatar
+        gravatar: 
+        # URL or path for the follow button
+        follow_link: 'https://github.com/recordboy'
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/recordboy'
+            Velog:
+                icon: fas fa-pencil-alt
+                url: 'https://velog.io/@recordboy'
+            linkedin:
+                icon: fab fa-linkedin-in
+                url: 'https://www.linkedin.com/in/seongju-kang-4a704b179/'
+            Codepen:
+                icon: fab fa-codepen
+                url: 'https://codepen.io/recordboy'
+            RSS:
+                icon: fas fa-rss
+                url: 'https://recordboy.github.io/rss2.xml'
+            # Github:
+            #     icon: fab fa-github
+            #     url: 'https://github.com/ppoffice'
+            # Facebook:
+            #     icon: fab fa-facebook
+            #     url: 'https://facebook.com'
+            # Twitter:
+            #     icon: fab fa-twitter
+            #     url: 'https://twitter.com'
+            # Dribbble:
+            #     icon: fab fa-dribbble
+            #     url: 'https://dribbble.com'
+            # RSS:
+            #     icon: fas fa-rss
+            #     url: /
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: subscribe_email
         # Hint text under the email input
-        description: 
+        description: Subscribe to get the lastest update!
         # Feedburner ID
-        feedburner_id: ''
+        feedburner_id: recordboy
     # Google AdSense unit configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
-        # AdSense client ID
-        client_id: ''
-        # AdSense AD unit ID
-        slot_id: ''
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: adsense
+    #     # AdSense client ID
+    #     client_id: ''
+    #     # AdSense AD unit ID
+    #     slot_id: ''
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
@@ -320,7 +337,7 @@ plugins:
         tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
+    busuanzi: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
@@ -347,7 +364,7 @@ plugins:
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
-        tracking_id: 
+        tracking_id: UA-150818933-1
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
     hotjar:
