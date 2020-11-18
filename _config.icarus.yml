@@ -128,7 +128,7 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atelier-sulphurpool-light
+        theme: atom-one-dark
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -378,7 +378,7 @@ plugins:
     mathjax: false
     # Enable the Outdated Browser plugin
     # http://outdatedbrowser.com/
-    outdated_browser: false
+    outdated_browser: true
     # Show a progress bar at top of the page on page loading
     progressbar: true
     # Statcounter statistics
