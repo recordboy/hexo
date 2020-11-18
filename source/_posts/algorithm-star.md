@@ -7,11 +7,11 @@ tags: [algorithm, javascript]
 toc: true
 widgets:
   - type: toc
-    position: right
+    position: left
   - type: categories
-    position: right
+    position: left
   - type: tags
-    position: right
+    position: left
 sidebar:
   right:
     sticky: true

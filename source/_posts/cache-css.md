@@ -6,11 +6,11 @@ tags: [css, javascript]
 # thumbnail: "/gallery/thumbnail-css.png"
 widgets:
   - type: toc
-    position: right
+    position: left
   - type: categories
-    position: right
+    position: left
   - type: tags
-    position: right
+    position: left
 sidebar:
   right:
     sticky: true

@@ -6,11 +6,11 @@ tags: [svelte.js, javascript]
 # thumbnail: "/gallery/thumbnail-svelte.png"
 widgets:
   - type: toc
-    position: right
+    position: left
   - type: categories
-    position: right
+    position: left
   - type: tags
-    position: right
+    position: left
 sidebar:
   right:
     sticky: true
