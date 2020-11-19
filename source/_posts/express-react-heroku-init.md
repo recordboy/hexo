@@ -13,7 +13,7 @@ widgets:
   - type: tags
     position: left
 sidebar:
-  right:
+  left:
     sticky: true
 ---
 
