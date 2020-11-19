@@ -4,6 +4,7 @@ date: 2020-09-22 17:10:56
 categories: [front-end, javascript]
 tags: [http, javascript]
 # thumbnail: "/gallery/thumbnail-js.png"
+toc: true
 widgets:
   - type: toc
     position: left
