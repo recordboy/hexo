@@ -141,7 +141,11 @@ returnPromise()
 ```javascript
 function getData() {
   return new Promise((resolve, reject) => {
-    setTimeout((data) => {
+    setTimeout(() => {
+
+      const data = 'my-data';  // data 값이 있다면 data 값을 출력 
+      // const data = ''; // data 값이 없다면 에러를 출력
+
       if (data) {
         resolve(data);
       }
@@ -152,7 +156,7 @@ function getData() {
 
 getData()
   .then((data) => {
-    console.log(data); // 응답 값 출력
+    console.log(data); // my-data
   })
   .catch((err) => {
     console.log(err); // Error: Request is failed
@@ -168,7 +172,9 @@ getData()
 function getData() {
   return new Promise((resolve, reject) => {
     setTimeout((data) => {
-      data = 10; // 응답 값이 10이 왔다고 가정
+
+      const data = 10; // data 값이 10일 경우
+
       if (data) {
         resolve(data);
       }
