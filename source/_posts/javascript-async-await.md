@@ -2,7 +2,7 @@
 title: "[JavaScript] Async/Await를 이용한 비동기 처리"
 date: 2020-11-20 16:07:51
 categories: [front-end, javascript]
-tags: [javascript, es8, ]
+tags: [javascript, es8]
 # thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
