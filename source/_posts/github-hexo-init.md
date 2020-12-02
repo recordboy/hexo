@@ -79,14 +79,9 @@ ERROR Please install the missing dependencies your Hexo site root directory:
 ERROR npm install --save bulma-stylus@0.8.0 hexo-component-inferno@^0.2.4 hexo-renderer-inferno@^0.1.3 inferno@^7.3.3 inferno-create-element@^7.3.3
 ```
 
-`icarus`테마는 위 패키지 설치가 필요해 보인다. 하나씩 차례대로 설치해 준다.
+`icarus`테마는 위 패키지 설치가 필요해 보인다. 필요 패키지를 다시 설치한다.
 
 ```
-$ npm install bulma-stylus
-$ npm install hexo-component-inferno
-$ npm install hexo-renderer-inferno
-$ npm install inferno
-$ npm install inferno-create-element
 $ npm install --save bulma-stylus@0.8.0 hexo-component-inferno@^0.2.4 hexo-renderer-inferno@^0.1.3 inferno@^7.3.3 inferno-create-element@^7.3.3
 ```
 설치한 후 다시 서버를 실행하면 성공적으로 `icarus`테마 사이트가 만들어 진다.
