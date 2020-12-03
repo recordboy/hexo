@@ -35,7 +35,7 @@ sidebar:
 
 ```
 my-app/
-├── clinet                  // 클라이언트(리액트) 영역
+├── clinet                 // 클라이언트(리액트) 영역
 │   ├── build              // 배포 전용 파일
 │   ├── node_modules
 │   ├── public             // 정적 파일 리소스
