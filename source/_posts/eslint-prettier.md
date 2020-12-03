@@ -50,6 +50,7 @@ $ npm init -y
 $ npm i -D eslint
 ```
 
+> **축약법 간단 설명**
 > * `npm init -y` 명령어에 `-y`는 `--yes`의 축약법으로 npm 프로젝트를 초기 세팅할 때 아무 질문 없이 기본값으로 프로젝트가 세팅된다. 비슷한 명령어로` --force(-f)`가 있다.
 > * `npm i -D eslint` 명령어의 `-D`는 `--save-dev`의 축약법이며, 비슷한 옵션으로 `--save`가 있다. 차이는 아래를 참고한다.
 >   * `--save-dev`는 설치한 패키지 정보를 `./package.json` 파일의 `devDependencies` 항목에 저장하며, npm install을 할 때 해당 패키지가 같이 설치된다. 설치할 때 `--production` 옵션을 붙이면 해당 패키지를 제외하고 npm이 설치된다.
