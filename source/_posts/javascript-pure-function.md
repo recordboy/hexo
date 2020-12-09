@@ -2,7 +2,7 @@
 title: "[JavaScript] 함수형 프로그래밍의 순수 함수(Pure Function)"
 date: 2020-12-09 11:30:35
 categories: [front-end, javascript]
-tags: [javascript]
+tags: [javascript, pure function, functional programming]
 # thumbnail: "/gallery/thumbnail-js.png"
 toc: true
 widgets:
