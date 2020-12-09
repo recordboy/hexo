@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] 함수형 프로그래밍의 순수 함수(Pure Function)"
+title: "[JavaScript] 함수형 프로그래밍의 순수 함수"
 date: 2020-12-09 11:30:35
 categories: [front-end, javascript]
 tags: [javascript, pure function, functional programming]
