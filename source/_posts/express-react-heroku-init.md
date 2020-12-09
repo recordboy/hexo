@@ -35,7 +35,7 @@ sidebar:
 
 ```
 my-app/
-├── clinet                 // 클라이언트(리액트) 영역
+├── clinet                  // 클라이언트(리액트) 영역
 │   ├── build              // 배포 전용 파일
 │   ├── node_modules
 │   ├── public             // 정적 파일 리소스
@@ -99,6 +99,7 @@ console.log(`server running at http ${port}`);
 ```
 
 노드몬으로 서버 구동해보자.
+
 ```
 $ nodemon server
 ```
@@ -106,6 +107,7 @@ $ nodemon server
 [http://localhost:5000/api/data](http://localhost:5000/api/data)경로에 들어가 보면 `{"greeting":"Hello World"}`를 확인해 볼 수 있다.
 
 ### 헤로쿠 실행 스크립트 추가
+
 헤로쿠 앱을 시작하려면 아래 명령어가 필요하다. `package.json`파일의 `script`에 하단 명령어를 추가해 준다.
 
 ```json
@@ -194,7 +196,7 @@ function App() {
 export default App;
 ```
 
-수정하고 `client`디렉토리로 가서 리액트를 실행한다.
+버튼을 누르면 `fetch` 함수를 이용하여 `http://localhost:5000/api/data`에서 데이터를 가져오겠다는 코드다. 수정하고 `client`디렉토리로 가서 리액트를 실행한다.
 
 ```
 $ npm start
