@@ -1,8 +1,8 @@
 ---
-title: "[JavaScript] 랜덤 배열(Shuffle)"
+title: "[Algorithm] 랜덤 배열(Shuffle)"
 date: 2020-06-04 13:18:39
 categories: [front-end, javascript]
-tags: [javascript]
+tags: [algorithm, javascript]
 # thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
