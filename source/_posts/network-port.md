@@ -1,8 +1,8 @@
 ---
-title: "[Port] 포트(Port)"
+title: "[Network] 포트(Port)"
 date: 2019-10-18 09:36:30
-categories: [web]
-tags: [web, network]
+categories: [network]
+tags: [network]
 # thumbnail: "/gallery/thumbnail-web.png"
 widgets:
   - type: toc
