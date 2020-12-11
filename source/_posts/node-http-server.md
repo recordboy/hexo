@@ -4,6 +4,7 @@ date: 2020-08-04 10:15:25
 categories: [node.js]
 tags: [node.js]
 # thumbnail: "/gallery/thumbnail-node.png"
+toc: true
 widgets:
   - type: toc
     position: left
