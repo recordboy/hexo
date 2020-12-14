@@ -20,7 +20,7 @@ Vue Cli 2.x 버전을 이용하여 프로젝트를 생성하면 웹펙 설정파
 
 <!-- more -->
 
-설치할 디렉터리로 가서 프로젝트를 생성해 준다.
+설치할 디렉토리로 가서 프로젝트를 생성해 준다.
 
 ```
 $ vue create 'ProjectName'
@@ -34,7 +34,7 @@ git remote add origin 'url'
 git push origin master
 ```
 
-코드를 빌드하면 `dist` 디렉토리에 출력되어도록 되어있기 때문에 `vue.config.js` 파일을 만들어서 설정을 변경해둔다. 우선 최상단 디렉터리에 `vue.config.js`파일을 생성해 준 뒤 아래 코드를 입력해준다. 원격 저장소의 프로젝트명과 동일하게 `publicPath`를 수정해준다.
+코드를 빌드하면 `dist` 디렉토리에 출력되어도록 되어있기 때문에 `vue.config.js` 파일을 만들어서 설정을 변경해둔다. 우선 최상단 디렉토리에 `vue.config.js`파일을 생성해 준 뒤 아래 코드를 입력해준다. 원격 저장소의 프로젝트명과 동일하게 `publicPath`를 수정해준다.
 
 ```javascript
 // vue.config.js 
@@ -43,7 +43,7 @@ module.exports = {
     outputDir: 'docs'
 }
 ```
-빌드를 하면 `/docs` 디렉토리가 생성된다. 후에 최상단 디렉터리의 `.gitignore` 파일에 `/dist` 를 주석처리 해준다. 이제 깃에 푸쉬해준다.
+빌드를 하면 `/docs` 디렉토리가 생성된다. 후에 최상단 디렉토리의 `.gitignore` 파일에 `/dist` 를 주석처리 해준다. 이제 깃에 푸쉬해준다.
 
 ```
 git add ./
