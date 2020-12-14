@@ -188,7 +188,7 @@ console.log(first); // 1
 console.log(second); // 2
 console.log(rest); // [3, 4, 5]
 ```
-변수 first과 second의 각각의 인덱스 값에 맞는 값이 차례로 들어가고(1, 2), rest에는 할당 받지 못한 나머지 값을이 대입된다.
+변수 first과 second의 각각의 인덱스 값에 맞는 값이 차례로 들어가고(1, 2), rest에는 할당 받지 못한 나머지 값들이 대입된다.
 
 ## References
 > [ES6 문법으로 다시 시작하는 자바스크립트](https://hudi.kr/es6-문법으로-다시-시작하는-자바스크립트/)  
