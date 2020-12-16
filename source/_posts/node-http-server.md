@@ -134,7 +134,7 @@ http
   });
 ```
 
-요청이 들어오면 `fs`모듈로 HTML 파일을 읽어 클라이언트의 응답 값으로 보낼 수 있다.
+요청이 들어오면 `fs` 모듈로 HTML 파일을 읽어 클라이언트의 응답 값으로 보낼 수 있다. [http://localhost:8080](http://localhost:8080/)에 들어가면 추가한 HTML 파일을 확인할 수 있다.
 
 ## References
 > [Node.js 교과서](https://www.zerocho.com/books)  
