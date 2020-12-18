@@ -28,11 +28,11 @@ sidebar:
 
 ```javascript
 function factorial(x) {
-    if (x < 0) return;
-    if (x === 0) return 1;
-    return x * factorial(x - 1);
+  if (x < 0) return;
+  if (x === 0) return 1;
+  return x * factorial(x - 1);
 }
-factorial(3); // 6
+console.log(factorial(3)); // 6
 ```
 
 결과 값이 나오는 과정을 순서대로 살펴보겠다.
