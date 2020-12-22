@@ -89,3 +89,6 @@ request(url, function (error, response, html){
 > [Node.js로 멜론 순위 차트 데이터 파싱](http://leechoong.com/posts/2017/nodejs_cheerio)  
 > [[Node.js] node.js환경에서 웹 크롤링 하기(cheerio-httpcli)](https://hanswsw.tistory.com/6)  
 > [[Node.js] 크롤링 DOM parsing ( request, cheerio, iconv 모듈 )](https://victorydntmd.tistory.com/94)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

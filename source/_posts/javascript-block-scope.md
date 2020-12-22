@@ -129,3 +129,6 @@ b = 2;
 
 ## References
 > [자바스크립트 변수와 스코프(유효범위)](https://yuddomack.tistory.com/entry/자바스크립트-변수와-스코프유효범위)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -76,3 +76,6 @@ fetch('https://recordboy.github.io/ui/dummy/data.json')
 > [fetch](https://ko.javascript.info/fetch)  
 > [fetch() 함수 사용법](https://yeri-kim.github.io/posts/fetch/#fetch-함수-기본)  
 > [Javascript에서의 비동기 통신](https://m.blog.naver.com/dndlab/221783285664)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

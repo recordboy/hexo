@@ -341,3 +341,6 @@ $ git push heroku master
 > [Deploy React and Express to Heroku) 배포](https://daveceddia.com/deploy-react-express-app-heroku/)  
 > [Express 서버와 React: Proxy 활용과 빌드 및 헤로쿠(Heroku) 배포](https://chaewonkong.github.io/posts/express-with-react.html)  
 > [[React.js] 프록시(Proxy) 설정을 통해 CORS 이슈를 해결해보자!](https://cbw1030.tistory.com/267)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

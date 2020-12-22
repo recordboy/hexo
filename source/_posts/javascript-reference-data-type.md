@@ -95,3 +95,6 @@ console.log(obj2.val); // 20
 ```
 
 우선 obj1에 객체 리터널을 선언하고, val 프로퍼티에 10을 담았다. 그리고 obj2에 obj1을 할당했다. obj2의 val프로퍼티의 값은 10이 출력된다. 여기서 obj1의 val에 20을 담았다. obj2의 val값을 건들지도 않았는데 obj1 처럼 val값이 20으로 봐뀌어있다. 어떻게 된 것일까? 값 자체가 복사되는 원시값과는 달리 참조타입은 참조(객체를 가르키는 참조값 혹은 메모리 주소)만 복사되고 실제 값은 복사되지 않는다. 즉 obj1과 obj2는 실제 데이터를 가지고 있는 객체의 참조(주소)값만 가지고 있는 것이다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

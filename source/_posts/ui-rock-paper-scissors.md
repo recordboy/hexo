@@ -32,3 +32,6 @@ sidebar:
 
 ## 코드
 [여기를 클릭하면 코드를 확인할 수 있다.](https://github.com/recordboy/rock-paper-scissors)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

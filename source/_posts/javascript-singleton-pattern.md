@@ -85,3 +85,6 @@ console.log(singleton1 === singleton2); // true
 
 ## References
 > [싱글톤(singleton) 패턴](https://webclub.tistory.com/150)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

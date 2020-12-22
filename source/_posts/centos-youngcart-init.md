@@ -329,3 +329,6 @@ FTP로 youngcart5.tar.gz를 /data/web_htdocs에 업로드 후 압축을 푼다.
 
 ## References
 > [MySQL 5.7 세팅 (CentOS7)](https://mosei.tistory.com/entry/MySQL-57-세팅-CentOS7)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

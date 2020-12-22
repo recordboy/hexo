@@ -55,3 +55,6 @@ sidebar:
 > [깃허브(GitHub)로 취업하기](https://sujinlee.me/professional-github)  
 > [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit)  
 > [좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)  
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

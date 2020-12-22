@@ -150,3 +150,6 @@ sidebar:
 > [보험[insurance,保險]](http://www.doopedia.co.kr/doopedia/master/master.do?_method=view&MAS_IDX=101013000753005)  
 > [보험상품](https://terms.naver.com/entry.nhn?docId=3431579&cid=58438&categoryId=58438)  
 > [상품개발 프로세스](https://m.aig.co.kr/wm/content.html?contentId=DPWMS331)  
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -196,3 +196,6 @@ $ git pull origin 브랜치명 --allow-unrelated-histories
 > [Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기](https://www.holaxprogramming.com/2017/04/16/github-page-and-hexo/)  
 > [Github 블로그 만들기 with Hexo - 초기설정](https://mingpd.github.io/2019/04/14/github-blog-with-hexo-1/)  
 > [Jekyll을 이용한 무료 블로그 만들기](https://wepplication.github.io/programming/jekyll/)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -110,3 +110,6 @@ Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
 > [PHP 7.2 설치(업그레이드) [CentOS 7 / remi RPM repository]](https://blog.asamaru.net/2018/02/14/install-php-7-2-on-centos-with-remi-rpm-repository)  
 > [RHEL/CentOS 5,6,7 에 EPEL 과 Remi/WebTatic Repository 설치하기](https://www.lesstif.com/pages/viewpage.action?pageId=6979743)  
 > [YUM 명령어와 epel 저장소 추가하는 방법](https://mainia.tistory.com/5614)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

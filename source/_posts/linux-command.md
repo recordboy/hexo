@@ -152,3 +152,6 @@ MySQL 설치 경로 확인
 ```
 # find / -name mysql
 ```
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

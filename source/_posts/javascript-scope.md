@@ -64,3 +64,6 @@ console.log(boo); // Uncaught ReferenceError: foo is not defined
 
 ## eval 스코프
 * eval의 경우 eval()을 사용해 매개변수를 사용하면 이를 사용했을 경우에만 해당 스코프에 담긴 값을 불러온다. 각각 선언할때 고유한 스코프를 가지는 것이 특징이다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

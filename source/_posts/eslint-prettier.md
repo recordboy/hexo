@@ -353,3 +353,6 @@ ESLint 설정 파일과 마찬가지로 루트 경로에 `.prettierrc.json`을 �
 > [ESLint(TSLint)와 Prettier 함께 사용하기](https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html)  
 > [리액트 프로젝트에 ESLint 와 Prettier 끼얹기](https://velog.io/@velopert/eslint-and-prettier-in-react)  
 > [ESLint](https://poiemaweb.com/eslint)  
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

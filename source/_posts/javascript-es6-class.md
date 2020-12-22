@@ -213,3 +213,6 @@ Inner.msg2(); // 안녕
 > [[JS] javascript - OOP Class, Super](https://velog.io/@hytenic/Javascript-javascript-OOP-Class-Super)  
 > [ES6 Class 파헤치기](https://jongmin92.github.io/2017/06/18/JavaScript/class/#index)  
 > [클래스](https://poiemaweb.com/es6-class)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -530,3 +530,6 @@ window.addEventListener('load', function(){
     }
 });
 ```
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

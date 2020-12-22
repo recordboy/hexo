@@ -101,3 +101,6 @@ setInterval(slide, 1000);
 ```
 
 다음 인덱스를 1식 빼고, 다음 인덱스가 0보다 작이질 시 슬라이드 갯수의 1을 뺀 값을 대입하면 된다. 1을 빼는 이유는 프래그래밍에서 수의 시작은 0부터 시작하기 때문이다. 네번째 슬라이드의 인덱스는 3이 될 것이다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

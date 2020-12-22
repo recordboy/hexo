@@ -36,3 +36,6 @@ console.log(Math.ceil(num)); // 4
 var num = 3.5;
 console.log(Math.floor(num)); // 3
 ```
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

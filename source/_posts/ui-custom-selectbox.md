@@ -360,3 +360,6 @@ $(function(){
     var select = new CustomSelectBox('.select_box');
 });
 ```
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

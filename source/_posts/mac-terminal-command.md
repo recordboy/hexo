@@ -29,3 +29,6 @@ sidebar:
 | 파일 이동 | move | mv |
 | 디렉토리 이름 바꾸기 | ren | mv |
 | Explorer/Finder 에서 열기 | start | open |
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

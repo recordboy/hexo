@@ -123,3 +123,6 @@ func(); // Object {name: "obj2"}
 ```
 
 obj1 의 funcThis 메서드를 obj2 객체로 가져와서 func 변수에 할당했다. func 함수를 실행하면 obj2 객체가 출력된다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -49,3 +49,6 @@ ECMAScript(ES)는 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 �
 > [[Javascript] ES5 (ECMAScript 5)](https://k39335.tistory.com/81)  
 > [자바스크립트 Array forEach](https://yuddomack.tistory.com/entry/자바스크립트-Array-forEach?category=754152)  
 > [ECMA스크립트](https://ko.wikipedia.org/wiki/ECMA스크립트)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

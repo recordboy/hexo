@@ -59,3 +59,6 @@ var obj = new Func("foo");
 ## References
 > [자바스크립트에서 사용되는 this에 대한 설명 1](https://github.com/FEDevelopers/tech.description/wiki/자바스크립트에서-사용되는-this에-대한-설명-1#41-생성자-실행에서의-this)  
 > [함수 호출과 this](https://valuefactory.tistory.com/674)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

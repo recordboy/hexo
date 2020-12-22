@@ -35,3 +35,6 @@ sidebar:
 조금 더 효율적인 방법은 이미지를 불러오는 경로 마지막에 파라미터를 추가하는 방법을 사용하면 된다.  
 * 변경 전 : "img.png"
 * 변경 후 : "img.png?ver=1.0"
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

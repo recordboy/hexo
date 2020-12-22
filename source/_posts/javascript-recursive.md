@@ -46,3 +46,6 @@ console.log(factorial(3)); // 6
 ## References
 > [재귀 함수](https://www.everdevel.com/JavaScript/recursive-function)  
 > [자바스크립트 개발자라면 알아야 할 33가지 개념 #23 자바스크립트 : 자바스크립트 재귀(Recursion) 이해하기](https://velog.io/@jakeseo_me/자바스크립트-개발자라면-알아야-할-33가지-개념-23-자바스크립트-자바스크립트-재귀Recursion-이해하기)  
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

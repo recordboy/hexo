@@ -196,3 +196,6 @@ console.log(rest); // [3, 4, 5]
 > [[JavaScript] 전개 연산자 ( Spread Operator )](https://blog.naver.com/zoz0312/221622159150)  
 > [3. 배열을 좀 더 직관적으로 활용, 전개연산자 (spread operator)](https://pro-self-studier.tistory.com/13)  
 > [전개 구문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

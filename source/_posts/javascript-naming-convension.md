@@ -98,3 +98,6 @@ function foo() {
 
 ## References
 > [코딩 컨벤션](https://ui.toast.com/fe-guide/ko_CODING-CONVENSION/)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

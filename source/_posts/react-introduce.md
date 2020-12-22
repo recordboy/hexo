@@ -52,3 +52,6 @@ sidebar:
 ## References
 > [누구든지 하는 리액트 1편: 리액트는 무엇인가](https://velopert.com/3612)  
 > [React 인가 Vue 인가?](https://joshua1988.github.io/web_dev/vue-or-react/)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

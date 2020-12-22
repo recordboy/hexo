@@ -99,3 +99,6 @@ func();
 > [자바스크립트 개발자라면 알아야 할 33가지 개념 #1 콜스택 (번역)](https://velog.io/@jakeseo_me/2019-03-15-2303-작성됨-rmjta5a3xh)  
 > [자료구조 : 자료구조란? (Data Structure)](https://andrew0409.tistory.com/148)  
 > [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

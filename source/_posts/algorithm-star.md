@@ -346,3 +346,6 @@ console.log(star);
 ```
 
 k값은 17, i는 5 * 2 = 10 이다. 참이다. 별을 한번 찍고, 다시 비교, 16 > 10 이다. 이과정을 네번 반복하고 계속 찍어 내려간다. 마지막 i값이 8일때 k는 17 i는 8*2 = 16 참이다. 다시 돌아서 k--은 16 이다. 16 < 16 거짓이다. 반복문을 빠져 나온다. 제대로 출력되는 것을 확인할 수 있다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

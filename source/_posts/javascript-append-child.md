@@ -182,3 +182,6 @@ window.onload = function () {
 
 ## References
 > [HTML DOM appendChild() Method](https://www.w3schools.com/jsref/met_node_appendchild.asp)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

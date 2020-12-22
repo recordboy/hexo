@@ -152,3 +152,6 @@ console.log(kang.__proto__);
 > [[Javascript ] 프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-이해하기-f8e67c286b67)  
 > [Javascript 기초 - Object prototype 이해하기](http://insanehong.kr/post/javascript-prototype)  
 > [JavaScript : 프로토타입(prototype) 이해](http://www.nextree.co.kr/p7323)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

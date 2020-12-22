@@ -46,3 +46,6 @@ sidebar:
 ## References
 > [포트 (컴퓨터 네트워킹)](https://ko.wikipedia.org/wiki/포트_(컴퓨터_네트워킹))  
 > [포트](https://namu.wiki/w/포트)  
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

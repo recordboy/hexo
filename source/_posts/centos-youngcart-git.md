@@ -153,3 +153,6 @@ $ git pull origin master
 $ git branch --set-upstream-to=origin/master master
 $ git pull
 ```
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

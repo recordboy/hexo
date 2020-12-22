@@ -322,3 +322,6 @@ CSS에는 현재 파일에 다른 CSS를 불러오는 `@import`라는 속성이 
 > [CSS 전처리기](https://developer.mozilla.org/ko/docs/Glossary/CSS_preprocessor)  
 > [Sass는 SCSS로 쓰세요](https://designmeme.github.io/ko/blog/write-sass-with-scss/)  
 > [[사스(Sass)] Sass 기본 사용법 (컴파일 및 명령어)](https://i-fiction.tistory.com/9)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -22,3 +22,6 @@ sidebar:
 | # sudo systemctl stop nginx | 웹서버 정지 |
 | # sudo systemctl start nginx | 웹서버 재시작 |
 | # sudo systemctl reload nginx | 설정 리로드 |
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>

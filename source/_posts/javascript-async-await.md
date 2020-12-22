@@ -230,3 +230,6 @@ getResult();
 > [자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)  
 > [async와 await](https://ko.javascript.info/async-await#ref-259)  
 > [자바스크립트의 Async/Await 가 Promises를 사라지게 만들 수 있는 6가지 이유](https://medium.com/@constell99/자바스크립트의-async-await-가-promises를-사라지게-만들-수-있는-6가지-이유-c5fe0add656c)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>new PartnersCoupang.G({ id:390604 });</script>
