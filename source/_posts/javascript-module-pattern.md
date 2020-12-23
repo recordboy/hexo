@@ -67,7 +67,7 @@ var module = (function() {
         return privateKey++;
     }
 
-    // 공개될 멤버(특권 메소드) 정의
+    // 공개될 멤버(특권 메서드) 정의
     return {
         publicKey: privateKey,
         publicMethod: function() {
@@ -81,7 +81,7 @@ console.log(module.publicMethod()); // 0
 console.log(module.publicMethod()); // 1
 ```
 
-모듈 패턴의 반환값은 함수가 아닌 객체이다. 위의 코드를 순서대로 보면 익명함수가 자동으로 실행되고 반환된 객체를 module 변수에 할당한다. 따라서 module.publicMethod()처럼 메소드를 호출할 수 있다. 자동 호출되는점을 제외하고 클로저와 유사하다.
+모듈 패턴의 반환값은 함수가 아닌 객체이다. 위의 코드를 순서대로 보면 익명함수가 자동으로 실행되고 반환된 객체를 module 변수에 할당한다. 따라서 module.publicMethod()처럼 메서드를 호출할 수 있다. 자동 호출되는점을 제외하고 클로저와 유사하다.
 
 ### 클로저 경우
 ```javascript

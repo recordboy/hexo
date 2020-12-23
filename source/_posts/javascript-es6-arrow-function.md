@@ -116,7 +116,7 @@ console.log(result); // [2, 4, 6]
 function 키워드로 생성된 함수는 함수가 어떻게 호출되었는지에 따라 this가 바인딩할 객체가 동적으로 결정된다.
 
 #### 일반 함수의 this
-일반 함수(여기서 일반 함수란 중첩 함수나 객체의 함수인 메소드, 콜백 함수가 아닌 전역 스코프에 있는 함수를 말한다.)를 호출하게 되면 this는 전역 객체인 window를 바인딩 한다.
+일반 함수(여기서 일반 함수란 중첩 함수나 객체의 함수인 메서드, 콜백 함수가 아닌 전역 스코프에 있는 함수를 말한다.)를 호출하게 되면 this는 전역 객체인 window를 바인딩 한다.
 
 ```javascript
 function func() {
@@ -135,8 +135,8 @@ function Func() {
 var obj = new Func();
 ```
 
-#### 메소드의 this
-function 키워드로 만들어진 메소드의 this는 자신을 포함하는 객체를 바인딩 한다.
+#### 메서드의 this
+function 키워드로 만들어진 메서드의 this는 자신을 포함하는 객체를 바인딩 한다.
 
 ```javascript
 var obj = {
@@ -149,7 +149,7 @@ var obj = {
 obj.getName();
 ```
 
-obj 객체의 getName 메소드 안에서의 this는 obj 객체를 바인딩 하고 있다. this.myName 호출하면 값이 제대로 출력된다.
+obj 객체의 getName 메서드 안에서의 this는 obj 객체를 바인딩 하고 있다. this.myName 호출하면 값이 제대로 출력된다.
 
 ### 화살표 함수의 this
 화살표 함수는 자신의 this를 바인딩하지 않고 언제나 상위 스코프인 this를 바인딩 한다. 이를 Lexical this 라고 한다.
@@ -188,7 +188,7 @@ const Func = () => {}
 console.log(Func.prototype) //undefined
 ```
 
-#### 메소드의 this
+#### 메서드의 this
 ```javascript
 var obj = {
     myName: '나나',
@@ -199,7 +199,7 @@ var obj = {
 }
 obj.getName();
 ```
-화살표 함수로 만들어진 메소드의 this는 자신을 포함하는 객체를 바인딩하지 않고 window를 바인딩하기 때문에 화살표 함수는 메소드에 적합하지 않다.
+화살표 함수로 만들어진 메서드의 this는 자신을 포함하는 객체를 바인딩하지 않고 window를 바인딩하기 때문에 화살표 함수는 메서드에 적합하지 않다.
 
 ## References
 > [화살표 함수](https://poiemaweb.com/es6-arrow-function)  

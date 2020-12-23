@@ -255,7 +255,7 @@ users.map((user) => {
 // jp
 ```
 
-`users` 배열의 `map` 메소드로 인하여 `renderUser` 함수에 `users`의 객체가 각각 전달된다. 각 객체의 key 값이 `renderUser`함수의 파라미터 받는 부분에서 비구조화 할당을 받았기 때문에 함수 내에서 객체의 key 값을 각각 가져올 수 있게 된다.
+`users` 배열의 `map` 메서드로 인하여 `renderUser` 함수에 `users`의 객체가 각각 전달된다. 각 객체의 key 값이 `renderUser`함수의 파라미터 받는 부분에서 비구조화 할당을 받았기 때문에 함수 내에서 객체의 key 값을 각각 가져올 수 있게 된다.
 
 ```javascript
 const users = [
@@ -271,7 +271,7 @@ users.map(({name, age, addr}) => {
 });
 ```
 
-마찬가지로 위처럼 `map` 메소드의 파라미터에도 바로 사용할 수 있다.
+마찬가지로 위처럼 `map` 메서드의 파라미터에도 바로 사용할 수 있다.
 
 ## for of 문을 이용한 비구조화 할당  
 배열 내 객체들은 for of 문을 사용하여 비구조화 할 수 있다.

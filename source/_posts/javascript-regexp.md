@@ -57,28 +57,28 @@ var re = /pa/i;
 
 `/` 는 시작, 종료기호 이며, `pa`는 패턴, `i`는 프래그 이다.
 
-## 정규표현식 메소드
+## 정규표현식 메서드
 
-자바스크립트에서 정규표현식 패턴들은 `RegExp`의 `exec` 메소드와 `test` 메소드, 그리고 `String`의  `match`메소드, `replace`메소드, `search`메소드, `split` 메소드와 함께 쓰인다. 
+자바스크립트에서 정규표현식 패턴들은 `RegExp`의 `exec` 메서드와 `test` 메서드, 그리고 `String`의  `match`메서드, `replace`메서드, `search`메서드, `split` 메서드와 함께 쓰인다. 
 
-|메소드|설명|
+|메서드|설명|
 |:---|:---|
 | RegExp.exec() | 어떤 문자열에서 정규표현식과 일치하는 문자열 검색을 수행한다. 결과로 배열을 리턴하거나 null을 반환한다. |
 | RegExp.test() | 대상 문자열 속에 일치하는 문자열이 포함되어 있는지 검사하고 true 또는 false를 반환한다. |
 | String.match() | 문자열이 정규식과 매치되는 부분을 검색한다. |
-| String.replace() | 대응되는 문자열을 찾아 다른 문자열로 치환하는 String 메소드이다. |
-| String.search() | 대응되는 문자열이 있는지 검사하는 String 메소드 이다. 대응된 부분의 인덱스를 반환한다. 대응되는 문자열을 찾지 못했다면 -1을 반환한다. |
-| String.split() | 정규식 혹은 문자열로 대상 문자열을 나누어 배열로 반환하는 String 메소드이다. |
+| String.replace() | 대응되는 문자열을 찾아 다른 문자열로 치환하는 String 메서드이다. |
+| String.search() | 대응되는 문자열이 있는지 검사하는 String 메서드 이다. 대응된 부분의 인덱스를 반환한다. 대응되는 문자열을 찾지 못했다면 -1을 반환한다. |
+| String.split() | 정규식 혹은 문자열로 대상 문자열을 나누어 배열로 반환하는 String 메서드이다. |
 
 ```javascript
 var str = 'this is a pen.';
 var regexr = /is/ig;
 
-// RegExp 객체의 메소드
+// RegExp 객체의 메서드
 console.log(regexr.exec(str)); // ["is", index: 2, input: "this is a pen.", groups: undefined]
 console.log(regexr.test(str)); // true
 
-// String 객체의 메소드
+// String 객체의 메서드
 console.log(str.match(regexr)); // (2) ["is", "is"]
 console.log(str.replace(regexr, 'is')); // this is a pen.
 console.log(str.search(regexr)); // 2

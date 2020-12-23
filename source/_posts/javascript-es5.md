@@ -27,7 +27,7 @@ ECMAScript(ES)는 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 �
 
 자바스크립트는 계속해서 발전하며 기술이 추가되었고, 새로운 표준이 발표될 때 마다 ECMAScript 1, 2, 3, 4, 5, 6 ... 뒤에 숫자를 붙여서 명명하였다. 우리가 기존에 쓰고 있는 JavaScript는 2009년에 발표된 ECMAScript 5(ES5)라고 생각하면 된다. ES5는 IE9에서 `use strict`를 지원하지 않는 것 빼고는 대부분의 브라우저 버전에서 ES5 문법을 지원한다.
 
-## ES5에서 추가된 메소드 및 키워드
+## ES5에서 추가된 메서드 및 키워드
 
 * use strict
 * String.trim()

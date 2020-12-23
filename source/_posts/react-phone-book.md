@@ -121,14 +121,14 @@ class PhoneForm extends Component {
 export default PhoneForm;
 ```
 
-phone 인풋태그가 추가되었으니 해당 값을 가져오는 이벤트 핸들러 함수를 하나 더 만들어야 될 것 같지만 [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)문법을 사용하면 따로 메소드를 추가 안하고 위처럼 작성이 가능하다. 
+phone 인풋태그가 추가되었으니 해당 값을 가져오는 이벤트 핸들러 함수를 하나 더 만들어야 될 것 같지만 [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)문법을 사용하면 따로 메서드를 추가 안하고 위처럼 작성이 가능하다. 
 
 우선 인풋 태그에 name 값을 추가 하여 각 인풋을 구분할 수 있게 되었다. setState 함수를 보면 `[e.target.name]`로 이벤트 객체의 name 값을 state의 키값으로 활용하고 있다. 즉 name 인풋을 입력하면 `[e.target.name]`값은 name이기 때문에 state의 name 프로퍼티에 e.target.value 값을 할당, phone 인풋을 입력하면 `[e.target.name]`값은 phone이기 때문에 state의 phone 프로퍼티에 e.target.value 값을 할당 한다고 보면 된다. 두 인풋 값이 하단에 잘 출력되는 것을 확인할 수 있다.
 
 ## 부모 컴포넌트에게 정보 전달하기
-PhoneForm 컴포넌트에 있는 값을 부모(App)컴포넌트에 값을 전달해줄 차례다. 이런 상황에는, 부모 컴포넌트에서 메소드를 만들고, 이 메소드를 자식에게 전달한 다음에 자식 내부에서 호출하는 방식을 사용한다.
+PhoneForm 컴포넌트에 있는 값을 부모(App)컴포넌트에 값을 전달해줄 차례다. 이런 상황에는, 부모 컴포넌트에서 메서드를 만들고, 이 메서드를 자식에게 전달한 다음에 자식 내부에서 호출하는 방식을 사용한다.
 
-순서를 보면 우선 App에서 handleCreate라는 메소드를 만들고 이를 props를 이용하여 PhoneForm 컴포넌트에 전달을 한다. 그리고 PhoneForm 컴포넌트에 submit 버튼을 추가하여 이벤트가 발생하면 props로 받은 함수를 호출하여 App에서 파라미터로 받은 값을 사용할 수 있도록 하겠다. 우선 App 컴포넌트는 아래와 같이 수정해 준다.
+순서를 보면 우선 App에서 handleCreate라는 메서드를 만들고 이를 props를 이용하여 PhoneForm 컴포넌트에 전달을 한다. 그리고 PhoneForm 컴포넌트에 submit 버튼을 추가하여 이벤트가 발생하면 props로 받은 함수를 호출하여 App에서 파라미터로 받은 값을 사용할 수 있도록 하겠다. 우선 App 컴포넌트는 아래와 같이 수정해 준다.
 
 ```javascript
 import React, { Component } from 'react';
@@ -200,7 +200,7 @@ export default PhoneForm;
 
 render 함수 안을 먼저 보면, submit 버튼을 추가하고, form태그에는 onSubmit 이벤트를 등록하였다. 인풋의 value 값은 현재 state 값을 참조하도록 하여 실시간으로 변경되는 값으로 할당되도록 하였다. state 값이 실시간으로 바뀌는지 확인하기 위한 인풋 아래 텍스트들은 삭제해준다.
 
-메소드는 handleSubmit 함수를 추가하였는데, 우선 submit 이벤트가 발생하면 페이지가 리로드되기 때문에 함수가 실행될 때 e.preventDefault 함수를 이용하여 리로드를 막는다. 다음에 props으로 받은 onCreate 함수를 실행하여 현재 state 값을 전달해주고, 현재 값은 초기화 해준다. submit 버튼을 클릭하면 콘솔창에 전달받은 인풋값이 정상적으로 출력될 것이다.
+메서드는 handleSubmit 함수를 추가하였는데, 우선 submit 이벤트가 발생하면 페이지가 리로드되기 때문에 함수가 실행될 때 e.preventDefault 함수를 이용하여 리로드를 막는다. 다음에 props으로 받은 onCreate 함수를 실행하여 현재 state 값을 전달해주고, 현재 값은 초기화 해준다. submit 버튼을 클릭하면 콘솔창에 전달받은 인풋값이 정상적으로 출력될 것이다.
 
 ## 데이터 추가
 PhoneForm 컴포넌트의 데이터를 부모 컴포넌트로 전달했으니 이제 부모 컴포넌트에 데이터를 계속 추가 하도록 하겠다. 
@@ -434,7 +434,7 @@ export default App;
 
 ## 데이터 삭제
 
-이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메소드를 사용할 것이다. App 컴포넌트에 handleRemove 함수를 만들어 준뒤 아래처럼 코드를 수정한다. 삭제할 id 값을 받아와 filter 메소드를 사용하여 id 값이 일치하지 않는 값들을 state에 다시 세팅 할 것이다. 함수를 만들었으면 이것을 하위 컴포넌트인 PhoneInfoList에 전달한다.
+이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메서드를 사용할 것이다. App 컴포넌트에 handleRemove 함수를 만들어 준뒤 아래처럼 코드를 수정한다. 삭제할 id 값을 받아와 filter 메서드를 사용하여 id 값이 일치하지 않는 값들을 state에 다시 세팅 할 것이다. 함수를 만들었으면 이것을 하위 컴포넌트인 PhoneInfoList에 전달한다.
 
 ```javascript
 import React, { Component } from 'react';

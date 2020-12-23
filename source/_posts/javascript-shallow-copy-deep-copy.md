@@ -56,7 +56,7 @@ console.log(a === b); // false
 객체를 그대로 복사하여 사용할 경우 기존 객체의 원본 데이터가 더럽혀 질 수 있기 때문에 객체의 깊은 복사는 매우 중요하다. 객체를 깊이 복사하는 방법에 대해 몇가지 알아보자.
 
 ### Object.assign()
-`Object.assign()` 메소드를 활용하는 방법이다.
+`Object.assign()` 메서드를 활용하는 방법이다.
 
 > **문법**
 > `Object.assign(생성할 객체, 복사할 객체)` 메서드의 첫번째 인수로 빈 객체를 넣어주며, 두번째 인수로 할당할 객체를 넣으면 된다.
@@ -71,7 +71,7 @@ console.log(obj); // { a: 1 }
 console.log(obj === newObj); // false
 ```
 
-새로운 `newObj` 객체를 `Object.assign()` 메소드를 사용하여 생성하였으며, `newObj.a` 값을 변경하여도 기존의 `obj`는 변하지 않았다. 서로의 객체를 비교해도 `false`로 뜨며 서로 참조값이 다르다는 것을 알 수 있다.
+새로운 `newObj` 객체를 `Object.assign()` 메서드를 사용하여 생성하였으며, `newObj.a` 값을 변경하여도 기존의 `obj`는 변하지 않았다. 서로의 객체를 비교해도 `false`로 뜨며 서로 참조값이 다르다는 것을 알 수 있다.
 
 #### Object.assign()는 2차원 객체는 깊은 복사가이루어지지 않는다
 하지만 `Object.assign()`를 활용한 복사는 완벽한 깊은 복사가 아니다.
@@ -137,11 +137,11 @@ console.log(obj.b.c === newObj.b.c); // true
 
 하지만 `Object.assign()`와 마찬가지로 2차원 객체는 얕은 복사가 되는 것을 확인할 수 있다.
 
-### JSON 객체 메소드를 이용
-객체의 깊은 복사를 위해 JSON 객체의 `stringify()`, `parse()` 메소드를 사용할 수 있다.
+### JSON 객체 메서드를 이용
+객체의 깊은 복사를 위해 JSON 객체의 `stringify()`, `parse()` 메서드를 사용할 수 있다.
 
 > **문법**
-> `JSON.stringify()` 메소드는 인수로 객체를 받으며 받은 객체는 문자열로 치환되며, `JSON.parse()` 메소드는 문자열을 인수로 받으며, 받은 문자열을 객체로 치환한다.
+> `JSON.stringify()` 메서드는 인수로 객체를 받으며 받은 객체는 문자열로 치환되며, `JSON.parse()` 메서드는 문자열을 인수로 받으며, 받은 문자열을 객체로 치환한다.
 
 ```javascript
 const obj = {
@@ -159,7 +159,7 @@ console.log(obj); // { a: 1, b: { c: 2 } }
 console.log(obj.b.c === newObj.b.c); // false
 ```
 
-`obj` 객체를 `JSON.stringify()` 메소드를 이용하여 문자열로 변환한 뒤 다시 `JSON.parse()` 메소드로 객체로 변환하였다. 문자열로 변환한 뒤 다시 객체로 변환하였기에 2차원 객체에 대한 참조가 사라졌다. 하지만 이 방법도 2가지 문제가 있는데, 다른 방법에 비해 성능이 느린 점과 `JSON.stringify()` 메소드는 함수를 만났을 때 `undefined`로 처리한다는 점이다.
+`obj` 객체를 `JSON.stringify()` 메서드를 이용하여 문자열로 변환한 뒤 다시 `JSON.parse()` 메서드로 객체로 변환하였다. 문자열로 변환한 뒤 다시 객체로 변환하였기에 2차원 객체에 대한 참조가 사라졌다. 하지만 이 방법도 2가지 문제가 있는데, 다른 방법에 비해 성능이 느린 점과 `JSON.stringify()` 메서드는 함수를 만났을 때 `undefined`로 처리한다는 점이다.
 
 ```javascript
 const obj = {
@@ -217,7 +217,7 @@ console.log(obj.b.c === newObj.b.c); // false
 하지만 이미 객체의 깊은 복사를 위한 오픈 소스가 존재하며 `lodash` 모듈의 `cloneDeep()`을 이용하면 된다.
 
 ### lodash 모듈의 cloneDeep()
-`lodash` 모듈의 `cloneDeep()` 메소드를 이용하여 객체의 깊은 복사가 가능하다. 해당 모듈을 설치해 준 뒤 아래 코드를 실행시켜 보자.
+`lodash` 모듈의 `cloneDeep()` 메서드를 이용하여 객체의 깊은 복사가 가능하다. 해당 모듈을 설치해 준 뒤 아래 코드를 실행시켜 보자.
 
 ```
 & npm i lodash
