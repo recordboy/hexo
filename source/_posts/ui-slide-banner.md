@@ -156,7 +156,7 @@ window.addEventListener('load', function(){
 </script>
 <style>
 .uiWrap * {
-    margin: 0;
+    margin: 0 0 10px;
     padding: 0;
 }
 
