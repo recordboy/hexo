@@ -46,6 +46,14 @@ for (var i = 0; i < 10; i++) {
 
 *이 저장될 star를 선언한뒤 하나씩 *을 한번씩 추가한뒤 반복문이 끝나지 않고 바로 콘솔창으로 출력이 된다. 콘솔창에 10번 출력되면 되는줄 알고 반복문을 왜 중첩으로 사용해야 되지? 라는 짧은 생각을 했었던 적이 있었다. 화면에 출력하는 것도 함수를 호출하는 것이기 때문에 10번 출력한다는 것은 그만큼 비효율적이다. 반복문이 돌아갈때마다 출력하는 것이 아닌, 구해진 값을 담아 한번에 출력해야 좀 더 효율적인 방법이라 할 수 있다. 이렇게 하기 위해선 반복문이 중첩으로 사용되어야 한다.
 
+<div style="overflow: hidden;">
+<a href="https://coupa.ng/bOfEJC" target="_blank" style="display: block; float: left; width: 20%;"><img src="https://static.coupangcdn.com/image/affiliate/banner/70ea7a712597c36c2ccda0e85ccea62a@2x.jpg" alt="Apple 애플워치3, 38mm, GPS, 스페이스 그레이 알루미늄 케이스, 블랙 스포츠 밴드" width="100%" /></a>
+<a href="https://coupa.ng/bOfGfF" target="_blank" style="display: block; float: left; width: 20%;"><img src="https://static.coupangcdn.com/image/affiliate/banner/d69a83f91f18a50260d858fa60d16c78@2x.jpg" alt="피컴 목스트레칭기구 목해먹 넥해먹 목견인기 목당기미 목보호대, 1개" width="100%" /></a>
+<a href="https://coupa.ng/bOfFGi" target="_blank" style="display: block; float: left; width: 20%;"><img src="https://static.coupangcdn.com/image/affiliate/banner/399c2e5ea57e8fc6fc0045985f9cf53c@2x.jpg" alt="얼라이브 원스 데일리 포맨 멀티 비타민, 60정, 1개" width="100%" /></a>
+<a href="https://coupa.ng/bOfFCk" target="_blank" style="display: block; float: left; width: 20%;"><img src="https://static.coupangcdn.com/image/affiliate/banner/2e7537ed1bf44257aed8693d97fafddf@2x.jpg" alt="아이소라이프 [아이소넥] 목마사지기 정형용 일자목 운동 의료기기, 1개" width="100%" /></a>
+<a href="https://coupa.ng/bOfFv0" target="_blank" style="display: block; float: left; width: 20%;"><img src="https://static.coupangcdn.com/image/affiliate/banner/66bfeb60f8065217012074be5d62f027@2x.jpg" alt="[한우 판매 인증점][소돼박]결제 후 당일 배송 가능!매일 16시 배송출발!1+등급 이상 프리미엄 한우 선물 세트(꽃갈비살600g 꽃등심600g 총 - 1200g)" width="100%" /></a>
+</div>
+
 ## 기본 별찍기
 
 ```javascript
