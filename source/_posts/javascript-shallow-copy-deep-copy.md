@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] 얕은 복사(Shallow Copy)와 깊은 복사(Deep Copy)"
+title: "[JavaScript] 얕은 복사와 깊은 복사"
 date: 2020-12-15 15:01:25
 categories: [front-end, javascript]
 tags: [javascript]
