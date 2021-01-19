@@ -55,7 +55,7 @@ async function func() {
 console.log(func()); // Promise { 'my-data' }
 ```
 
-위 코드를 보면 `func()`는 `my-data` 값을 리턴하고 있지만 실제 리턴값은 프라미스 객체를 리턴하고 있다.
+위 코드를 보면 `func()`는 `my-data` 값을 리턴하고 있지만 실제 리턴값은 프로미스 객체를 리턴하고 있다.
 
 ```javascript
 async function func() {
