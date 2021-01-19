@@ -117,11 +117,11 @@ function func(name) {
 
 var closure01 = func('민수');
 var closure02 = func('인성');
-var closure03 = func('주영');
+var closure03 = func('한나');
 
 console.log(closure01()) // 민수
 console.log(closure02()) // 인성
-console.log(closure03()) // 주영
+console.log(closure03()) // 한나
 ```
 
 위의 구문을 보면 txt변수가 동적으로 변화하는 것처럼 보이지만, 실제로는 txt변수 자체가 여러번 생성된 것이다. 즉, closure01(), closure02(), closure03()은 서로 다른 환경을 가지고 있다. 서로 다른 환경을 가지고 있다는것은 그만큼 메모리면에서 큰 비효율을 낳는다.

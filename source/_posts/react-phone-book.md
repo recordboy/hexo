@@ -222,7 +222,7 @@ App 컴포넌트의 state에 information 이라는 배열을 만들고, 그 안�
 ```javascript
 {
   id: 0,
-  name: '주영',
+  name: '한나',
   phone: '000-0000-0000'
 }
 ```
@@ -239,7 +239,7 @@ class App extends Component {
     information: [
       {
         id: 0,
-        name: '주영',
+        name: '한나',
         phone: '000-0000-0000',
       },
       {
@@ -280,7 +280,7 @@ this.setState({
 render 함수에서도 위와 같이 비구조와 할당으로 information 값을 선언하였으며, [JSON.stringify()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)를 이용해 문자열로 변환하여 출력하였다. send 버튼을 클릭하면 배열에 전달된 데이터 객체가 제대로 출력되는 것을 확인할 수 있다.
 
 ```
-[{"id":0,"name":"주영","phone":"000-0000-0000"},{"id":1,"name":"민수","phone":"000-0000-0000"},{"id":2,"name":"인성","phone":"000-0000-0000"}]
+[{"id":0,"name":"한나","phone":"000-0000-0000"},{"id":1,"name":"민수","phone":"000-0000-0000"},{"id":2,"name":"인성","phone":"000-0000-0000"}]
 ```
 
 ## 데이터 렌더링
@@ -401,7 +401,7 @@ class App extends Component {
     information: [
       {
         id: 0,
-        name: '주영',
+        name: '한나',
         phone: '000-0000-0000',
       },
       {
@@ -447,7 +447,7 @@ class App extends Component {
     information: [
       {
         id: 0,
-        name: '주영',
+        name: '한나',
         phone: '000-0000-0000',
       },
       {
@@ -555,7 +555,7 @@ export default PhoneInfo;
 const array = [
   {
     id: 0,
-    name: '주영',
+    name: '한나',
     phone: '000-0000-0000',
   },
   {
@@ -573,7 +573,7 @@ const modifiedArray = array.map((item) => {
   return item.id === 1 ? { ...item, name: '인성' } : item;
 });
 console.log(modifiedArray);
-// 0: {id: 0, name: "주영", phone: "000-0000-0000"}
+// 0: {id: 0, name: "한나", phone: "000-0000-0000"}
 // 1: {id: 1, name: "인성", phone: "000-0000-0000"}
 ```
 
@@ -592,7 +592,7 @@ class App extends Component {
     information: [
       {
         id: 0,
-        name: '주영',
+        name: '한나',
         phone: '000-0000-0000',
       },
       {

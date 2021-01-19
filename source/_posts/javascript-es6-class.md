@@ -27,7 +27,7 @@ ES6에서 `class`라는 문법이 추가되었고, 기존의 prototype 기반으
 ### 함수 표현식
 클래스가 선언되기 전에 인스턴스를 생성하여 에러가 뜬다.
 ```javascript
-var obj = new Person('주영');
+var obj = new Person('한나');
 obj.getName(); // TypeError
 
 var Person = function(name) {
@@ -41,8 +41,8 @@ var Person = function(name) {
 ### 함수 선언식
 인스턴스를 함수 선언 전에 생성해도 오류가 나지 않는다. 클래스를 선언식으로 작성하여 호이스팅되었기 때문이다.
 ```javascript
-var obj = new Person('주영');
-obj.getName(); // 주영
+var obj = new Person('한나');
+obj.getName(); // 한나
 
 function Person(name) {
     this.name = name;
