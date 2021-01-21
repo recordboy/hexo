@@ -160,6 +160,10 @@ module.exports = class extends Component {
 
             {adsenseClientId ? <script data-ad-client={adsenseClientId}
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
+            
+            {/* naver */}
+            <meta name="naver-site-verification" content="543ec882f0490de121e9e07d9c29c2c8380464df" />
+            
         </head>;
     }
 };
