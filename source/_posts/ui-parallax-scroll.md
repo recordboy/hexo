@@ -22,5 +22,7 @@ sidebar:
 * [구현 화면](https://recordboy.github.io/ui/parallax-scroll/)  
 * [코드](https://github.com/recordboy/ui/tree/master/parallax-scroll)
 
+<!-- more -->
+
 <script src="https://ads-partners.coupang.com/g.js"></script>
 <script>new PartnersCoupang.G({ id:390604 });</script>
