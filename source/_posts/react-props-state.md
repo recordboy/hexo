@@ -354,5 +354,3 @@ export default App;
 > [누구든지 하는 리액트 4편: props 와 state](https://velopert.com/3629)  
 > [React 기억법(4) - React 필수요소 props, state](https://trustyoo86.github.io/react/2017/11/18/props-state-react.html)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

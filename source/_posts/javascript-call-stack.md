@@ -100,5 +100,3 @@ func();
 > [자료구조 : 자료구조란? (Data Structure)](https://andrew0409.tistory.com/148)  
 > [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

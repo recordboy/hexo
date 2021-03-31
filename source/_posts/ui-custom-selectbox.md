@@ -366,5 +366,3 @@ $(function(){
 셀렉트박스가 여러 개일 경우 태그를 각각 추가해 준 뒤 인스턴스도 각각 생성해 주면 된다. 여러개의 셀렉트 박스 예시는 [여기](https://recordboy.github.io/ui/custom-selectbox/)를 참고하면 되며, 소스는 [여기](https://github.com/recordboy/ui/blob/master/custom-selectbox/index.html)에 있다.
 
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

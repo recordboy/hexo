@@ -69,5 +69,3 @@ GitHub Pages 항목에서 Source 옵션을 master branch /docs folder로 선택�
 > [vue github page 만들기](https://yhmane.tistory.com/72)  
 > [Problems deploying to github pages with vue project](https://stackoverflow.com/questions/47615863/problems-deploying-to-github-pages-with-vue-project)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

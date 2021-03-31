@@ -230,5 +230,3 @@ ReactDOM.render(
 > [누구든지 하는 리액트 2편: 리액트 프로젝트 시작하기](https://velopert.com/3621)  
 > [[React] 프로젝트 디렉토리 구조 파악하기](https://uhou.tistory.com/168)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -90,5 +90,3 @@ console.log(str.split(regexr)); // (3) ["th", " ", " a pen."]
 > [5.26 RegExp 정규표현식](https://poiemaweb.com/js-regexp)  
 > [정규 표현식](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/정규식)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -92,5 +92,3 @@ $ npm run dev // vue-cli 2.x
 > [[Vue.js] Vue Version 비교 (cli2 vs cli3)](https://soraji.github.io/front/2019/11/04/VueVersion)
 > [Vue-CLI 도구 활용방법](https://ux.stories.pe.kr/136)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

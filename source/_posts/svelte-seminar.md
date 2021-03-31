@@ -48,5 +48,3 @@ W3C HTML5 Conference 2019에서 변규현 강사님의 내용을 간략하게 �
 > [SvelteJS(스벨트) - 새로운 개념의 프론트엔드 프레임워크(updated)](https://heropy.blog/2019/09/29/svelte)
 > [웹 프레임워크 Svelte를 소개합니다.](https://velog.io/@ashnamuh/hello-svelte)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

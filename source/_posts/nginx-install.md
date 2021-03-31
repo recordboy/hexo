@@ -64,5 +64,3 @@ nginx 다시 로드 하기
 # sudo service nginx reload
 ```
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

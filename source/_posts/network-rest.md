@@ -101,5 +101,3 @@ REST는 설계 가이드일 뿐 표준이 아니며 명확한 표준이 없다.
 > [[Server] Restful API란?](https://mangkyu.tistory.com/46)  
 > [REST 아키텍처를 훌륭하게 적용하기 위한 몇 가지 디자인 팁](https://spoqa.github.io/2012/02/27/rest-introduction.html)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

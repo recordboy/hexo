@@ -63,5 +63,3 @@ shuffle([1, 2, 3, 4, 5]);
 
  `shuffle()`에 배열을 인자로 넘겨 호출한다. 함수안 반복문의 인덱스 값은 내림차순으로 할당된다. `Math.random()`로 배열 요소의 난수를 구한 뒤 `x`에 배열의 마지막 요소를 할당하고, 마지막 요소 자리에 난수를 인덱스로 가지는 요소를 대입한다. 난수를 인덱스 값으로 가지는 요소 자리에는 아까 할당해둔 `x`값을 대입한다. 이 로직을 반복하여 랜덤 배열을 얻게 된다.
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

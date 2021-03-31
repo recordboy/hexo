@@ -64,5 +64,3 @@ for (var i = 0; i < li.length; i++) {
 }
 </script>
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

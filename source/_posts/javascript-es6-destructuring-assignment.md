@@ -313,5 +313,3 @@ console.log(jpFriend); // miko
 > [JavaScript ) 비구조화 할당 알아보기](https://velog.io/@public_danuel/destructuring-assignment)  
 > [구조 분해 할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

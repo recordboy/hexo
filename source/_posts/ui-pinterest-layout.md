@@ -302,5 +302,3 @@ function boxLayout() {
 ## References
 > [핀터레스트(Masonry) 스타일 레이아웃을 만드는 세 가지 방법](https://n-log.tistory.com/33)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

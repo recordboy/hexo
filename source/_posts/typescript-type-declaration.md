@@ -264,5 +264,3 @@ console.log(errorMsg()); // Uncaught Error: 오류 발생!
 > [3.1 기본 타입](https://ahnheejong.gitbook.io/ts-for-jsdev/03-basic-grammar/primitive-types)  
 > [타입스크립트 기초 연습](https://velog.io/@velopert/typescript-basics)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

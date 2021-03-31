@@ -140,5 +140,3 @@ function afterStep2(value2) {
 > [프로미스](https://poiemaweb.com/es6-promise)  
 > [콜백 지옥](https://librewiki.net/wiki/콜백_지옥)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

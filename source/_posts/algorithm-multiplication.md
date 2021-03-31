@@ -78,5 +78,3 @@ console.log(result);
 
 로직을 살펴보면, result가 선언되고 외부 반복문이 시작된다. i가 1인 상태에서 내부 반복문으로 들어간다. result에 대입되는 값을 해석해 보면 i에 문자열 x을 더하고 j값을 더한뒤 문자열 = 을 더하고 값을 더한뒤 줄바꿈 처리를 했다. 내부 반복문이 다시 실행된다. i값이 1상태에서 j는 2에서 반복문이 실행된다. i는 몇단인지 구분되는 값이 된다. 이런식으로 중첩되어 값을 계산하고 마지막엔 콘솔창에 값을 출력하게 된다.
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

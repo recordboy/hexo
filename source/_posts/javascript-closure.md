@@ -170,5 +170,3 @@ console.log(obj.get());
 ## References
 > [JavaScript 클로저(Closure)](https://hyunseob.github.io/2016/08/30/javascript-closure/)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

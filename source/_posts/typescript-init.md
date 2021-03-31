@@ -139,5 +139,3 @@ $ npx parcel index.html
 > [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)  
 > [타입스크립트, 써야할까?](https://hyunseob.github.io/2018/08/12/do-you-need-to-use-ts/)  
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -252,5 +252,3 @@ console.log(obj.b.c === newObj.b.c); // false
 > [JavaScript로 Deep Copy 하는 여러 방법](https://chaewonkong.github.io/posts/js-deep-copy.html)  
 > [Javascript:Shallow and Deep Copy :: 마이구미](https://mygumi.tistory.com/322)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

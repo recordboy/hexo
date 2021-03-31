@@ -56,5 +56,3 @@ git push origin
 > [vue-cli で作ったサイトを GitHub Pages にデプロイする](http://blog.snowcait.info/2019/03/23/vue-js-on-github-pages)  
 > [Deploy vue-cli 3 project to github pages](https://medium.com/@Roli_Dori/deploy-vue-cli-3-project-to-github-pages-ebeda0705fbd)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

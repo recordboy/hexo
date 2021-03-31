@@ -229,5 +229,3 @@ http
 > [[Node.js코드랩] 2.기본 모듈 http](https://jeonghwan-kim.github.io/series/2018/12/02/node-web-2_http.html)  
 > [기본 스크립트와 http 객체](https://araikuma.tistory.com/453)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

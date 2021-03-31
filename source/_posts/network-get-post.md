@@ -58,5 +58,3 @@ POST는 제출하다라는 뜻으로 BODY에 데이터를 넣어 전송하며 �
 > [get 방식의 글자 256자 제한은 잘못된 상식](https://uiandwe.tistory.com/1133)  
 > [GET방식 과 POST방식](https://mommoo.tistory.com/60)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

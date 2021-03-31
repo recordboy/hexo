@@ -185,5 +185,3 @@ console.log(app.module.publicMethod()); // 1
 > [module pattern (모듈패턴) #1](https://webclub.tistory.com/5)  
 > [[JS_Design Pattern] 2. 모듈 패턴 (Module Pattern)](https://asfirstalways.tistory.com/234)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

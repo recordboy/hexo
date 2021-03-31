@@ -38,5 +38,3 @@ document.write('<link type="text/css" href="./common.css?bust=' + bust + '" />')
 ## References
 > [수정배포된 CSS/JS 파일 캐시 방지](https://www.letmecompile.com/css-js-파일-캐시-방지/)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

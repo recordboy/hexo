@@ -146,5 +146,3 @@ arr.every(function(element) {
 > [Array.prototype.forEach()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)  
 > [알아두면 좋은 자바스크립트 배열 메서드](https://medium.com/@ryuhangyeong00/알아두면-좋은-자바스크립트-배열-메서드-7cd469de880c)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

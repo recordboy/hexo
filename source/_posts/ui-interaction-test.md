@@ -46,5 +46,3 @@ sidebar:
 ### 임시 구현
 [Test](https://recordboy.github.io/ui/web-native-camera/)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -50,5 +50,3 @@ console.log(func(12, 25)); // FRI
 ## References
 > [프로그래머스 문제 풀이 Level 1](https://www.zerocho.com/category/Algorithm/post/5b79898d337215001b3a18eb)  
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

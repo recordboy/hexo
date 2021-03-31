@@ -28,5 +28,3 @@ sidebar:
 ## References
 > [리눅스 MySQL 시작, 정지, 재시작, 상태확인](http://blog.naver.com/PostView.nhn?blogId=hailey_jo&logNo=221371629870&parentCategoryNo=&categoryNo=8&viewDate=&isShowPopularPosts=true&from=search)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

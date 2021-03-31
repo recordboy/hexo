@@ -29,5 +29,3 @@ MySQL은 DBMS의 종류중 하나로서 전세계적으로 가장 널리 사용�
 ## PHP
 PHP는 웹서버쪽에서 실행 되는 스크립트 언어로서 주로 HTML 코드를 프로그래밍적으로 생성한다. 장점으로는 빠른 생산성, 저렴한 유지비용, 거의 모든 운영 체제에 구현이 가능하다.
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

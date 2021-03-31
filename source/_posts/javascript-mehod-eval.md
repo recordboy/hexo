@@ -39,5 +39,3 @@ console.log(eval('2 + 2'));
 > [eval() 사용과 문제점 : #eval() is evil](https://webclub.tistory.com/512)  
 > [JavaScript eval 함수](https://programmingsummaries.tistory.com/179)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

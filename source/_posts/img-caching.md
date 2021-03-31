@@ -36,5 +36,3 @@ sidebar:
 * 변경 전 : "img.png"
 * 변경 후 : "img.png?ver=1.0"
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

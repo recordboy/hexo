@@ -794,5 +794,3 @@ export default PhoneInfo;
 > [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)  
 > [누구든지 하는 리액트 8편: 배열 다루기 (2) 제거와 수정](https://velopert.com/3638)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

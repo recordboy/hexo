@@ -24,5 +24,3 @@ sidebar:
 | temp | 임시 폴더 |
 |  |  |
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

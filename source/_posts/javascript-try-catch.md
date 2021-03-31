@@ -258,5 +258,3 @@ try {
 > [에러 처리를 어떻게 하면 좋을까? - 1](https://rinae.dev/posts/how-to-handle-errors-1)  
 > [예외 ( throw,[try/catch/finally])](https://www.opentutorials.org/module/4302/26560)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

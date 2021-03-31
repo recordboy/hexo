@@ -139,5 +139,3 @@ VIM 명령어 정리
 ## References
 > [Linux 문서편집기 vi, vim 명령어 정리](https://hyeonstorage.tistory.com/274)  
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

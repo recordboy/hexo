@@ -66,5 +66,3 @@ for (var i = 0; i <= 100; i++) {
 
 3의 배수가 출력되는걸 확인할 수 있다.
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

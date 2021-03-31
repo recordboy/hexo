@@ -159,5 +159,3 @@ Sitemap: https://recordboy.github.io/sitemap.xml
 > [RSS피드란?](https://4343282.tistory.com/164)  
 > [robots.txt 파일 만들기](https://support.google.com/webmasters/answer/6062596?hl=ko)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

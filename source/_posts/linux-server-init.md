@@ -71,5 +71,3 @@ $ passwd
 > [Yum - 위키백과](https://ko.wikipedia.org/wiki/Yum)  
 > [[리눅스 서버 구축하기] 1. 기초 지식 알아보기](http://library.gabia.com/contents/infrahosting/3448)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

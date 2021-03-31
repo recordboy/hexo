@@ -155,5 +155,3 @@ console.log(obj); // { a: 1 }
 > [자바스크립트의 함수형 프로그래밍 1 : 순수 함수란?](https://soldonii.tistory.com/80)  
 > [순수 함수란? (함수형 프로그래밍의 뿌리, 함수의 부수효과를 없앤다)](https://jeong-pro.tistory.com/23)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

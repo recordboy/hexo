@@ -38,5 +38,3 @@ $('body').addClass('scrollOff').on('scroll touchmove mousewheel', function (e) {
 $('body').removeClass('scrollOff').off('scroll touchmove mousewheel');
 ```
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

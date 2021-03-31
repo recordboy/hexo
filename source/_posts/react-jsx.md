@@ -274,5 +274,3 @@ export default App;
 > [누구든지 하는 리액트 3편: JSX](https://velopert.com/3626)  
 > [JSX 소개](https://ko.reactjs.org/docs/introducing-jsx.html)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

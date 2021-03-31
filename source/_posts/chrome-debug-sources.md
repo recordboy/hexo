@@ -116,5 +116,3 @@ function greetinf() {
 > [크롬 개발자 도구를 이용한 자바스크립트 디버깅](https://subicura.com/2018/02/14/javascript-debugging.html)  
 > [생활코딩 - Sources](https://opentutorials.org/course/580/2869)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

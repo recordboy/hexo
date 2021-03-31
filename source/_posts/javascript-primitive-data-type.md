@@ -114,5 +114,3 @@ var boolean = false; // 논리형 초기화
 var obj = null; // 객체 초기화
 ```
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

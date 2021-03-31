@@ -209,5 +209,3 @@ getData()
 > [Promise](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)  
 > [프로미스](https://poiemaweb.com/es6-promise)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

@@ -112,5 +112,3 @@ Apache 재시작
 > [CentOS 아파치 상태/재시작/시작/중지 명령어](https://web-inf.tistory.com/16)
 > [리눅스 공인 IP 확인](https://zetawiki.com/wiki/리눅스_공인_IP_확인)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>

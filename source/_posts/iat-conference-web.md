@@ -161,5 +161,3 @@ W3C는 UI요소 및 그래픽 콘텐츠에 한에서 명도대비를 3:1을 제�
 > [[웹표준]WCAG 2.1 가이드라인](https://medium.com/@yoonjioh90/웹표준-wcag-2-1-가이드라인-8f17dd55804e)  
 > [한국웹접근성성인인증평가원](http://www.wa.or.kr/index.asp)
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>new PartnersCoupang.G({ id:390604 });</script>
