@@ -154,4 +154,3 @@ console.log(obj); // { a: 1 }
 > [JS 함수형 프로그래밍을 위한 사전 지식 : 순수함수, 일급함수](https://darrengwon.tistory.com/595)  
 > [자바스크립트의 함수형 프로그래밍 1 : 순수 함수란?](https://soldonii.tistory.com/80)  
 > [순수 함수란? (함수형 프로그래밍의 뿌리, 함수의 부수효과를 없앤다)](https://jeong-pro.tistory.com/23)
-

@@ -152,6 +152,13 @@ search:
     type: insight
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+    type: utterances
+    repo: recordboy/recordboy-comments
+    issue_term: pathname        # Required if issue_number is not set
+    issue_number: 100           # Required if issue_term is not set. Every post can be mapped to a separate, manually-created GitHub issue.
+    label: some-issue-label     # Optional
+    theme: github-light         # Optional
 # comment:
 #     type: disqus
 #     # Disqus shortname
