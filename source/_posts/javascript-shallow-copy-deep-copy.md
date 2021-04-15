@@ -103,9 +103,9 @@ console.log(obj); // { a: 1, b: { c: 3 } }
 console.log(obj.b.c === newObj.b.c); // true
 ```
 
-2차원 객체를 `newObj`에 복사하고, `newObj.b.c`의 값을 변경하였다. 기존 `obj` 객체를 출력해보면 `newObj.b.c`의 값도 `3`으로 변경되었다. 복사된 하위 객체 `{ c: 2 }`도 결국 객체이기 때문에 얕은 복사가 이루어진 것이다. 이는 `Object.assign()` 메서드의 한계이며, **전개 연산자(Spread Operator)** 를 이용한 객체의 복사에도 같은 문제가 있다.
+2차원 객체를 `newObj`에 복사하고, `newObj.b.c`의 값을 변경하였다. 기존 `obj` 객체를 출력해보면 `newObj.b.c`의 값도 `3`으로 변경되었다. 복사된 하위 객체 `{ c: 2 }`도 결국 객체이기 때문에 얕은 복사가 이루어진 것이다. 이는 `Object.assign()` 메서드의 한계이며, **전개연산자(Spread Operator)** 를 이용한 객체의 복사에도 같은 문제가 있다.
 
-### 전개 연산자(Spread Operator)
+### 전개연산자(Spread Operator)
 
 ```javascript
 const obj = { a: 1 };
@@ -117,7 +117,7 @@ console.log(obj); // { a: 1 }
 console.log(obj === newObj); // false
 ```
 
-전개 연산자를 활용해도 객체의 깊은 복사가 가능하다.
+전개연산자를 활용해도 객체의 깊은 복사가 가능하다.
 
 ```javascript
 const obj = {
