@@ -17,7 +17,10 @@ sidebar:
     sticky: true
 ---
 
-이번에는 Puppeteer를 활용하여 웹 크롤러를 만들어 보겠다. 클라이언트는 React, 서버는 Express를 사용하고 로컬에서 작업이 끝나면 Heroku에 배포까지 해보자. 만들어볼 결과물은 [https://recordboy-scrap-sample.herokuapp.com/](https://recordboy-scrap-sample.herokuapp.com/)에서 확인할 수 있으며, 소스는 [https://github.com/recordboy/scrap-sample](https://github.com/recordboy/scrap-sample)에서 확인할 수 있다.
+이번에는 Puppeteer를 활용하여 웹 크롤러를 만들어 보겠다. 클라이언트는 React, 서버는 Express를 사용하고 로컬에서 작업이 끝나면 Heroku에 배포까지 해보자. 결과물과 소스는 아래에서 확인할 수 있다.
+
+* 결과물: [https://recordboy-scrap-sample.herokuapp.com](https://recordboy-scrap-sample.herokuapp.com/)
+* 소스: [https://github.com/recordboy/scrap-sample](https://github.com/recordboy/scrap-sample)
 
 > 결과물은 헤로쿠에 배포되었기 때문에 처음 페이지가 열릴때 로딩시간이 10초에서 30초정도 걸릴수 있다.
 
