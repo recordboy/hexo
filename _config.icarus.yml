@@ -225,41 +225,10 @@ widgets:
         type: toc
         # Whether to show the index of each heading
         index: true
-    # Categories widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: categories
-    # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Github: 'https://github.com/recordboy'
-            Velog: 'https://velog.io/@recordboy'
-            Disqus: 'https://disqus.com/by/recordboy/'
-            Codepen: 'https://codepen.io/recordboy'
-    # Recent posts widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: recent_posts
-    # Tags widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: tags
-    # Archives widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: archives
     # Profile widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: profile
         # Author name
         author: 기록맨
@@ -307,6 +276,37 @@ widgets:
             # RSS:
             #     icon: fas fa-rss
             #     url: /
+    # Categories widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: categories
+    # Recommendation links widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: links
+        # Names and URLs of the sites
+        links:
+            Github: 'https://github.com/recordboy'
+            Velog: 'https://velog.io/@recordboy'
+            Disqus: 'https://disqus.com/by/recordboy/'
+            Codepen: 'https://codepen.io/recordboy'
+    # Recent posts widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: recent_posts
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: tags
+    # Archives widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: archives
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
