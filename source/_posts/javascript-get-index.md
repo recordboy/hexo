@@ -44,7 +44,26 @@ for (var i = 0; i < li.length; i++) {
 ```
 
 ## 결과
-아래 리스트 요소를 클릭하면 인덱스가 경고창에 출력되는 것을 확인할 수 있다.
+아래 리스트 요소를 클릭하면 인덱스가 `alert`에 출력되는 것을 확인할 수 있다.
+
+<style>
+#ul {
+    margin: 0;
+    list-style: none;
+}
+#ul > li {
+    border-radius: 5px;
+    padding: 2px 10px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #fff;
+}
+#ul > li:hover {
+    background-color: #333;
+}
+</style>
 
 <ul id="ul">
     <li>0</li>
