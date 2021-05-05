@@ -280,15 +280,18 @@ widgets:
             Github:
                 icon: fab fa-github
                 url: 'https://github.com/recordboy'
-            Velog:
-                icon: fas fa-pencil-alt
-                url: 'https://velog.io/@recordboy'
-            linkedin:
-                icon: fab fa-linkedin-in
-                url: 'https://www.linkedin.com/in/seongju-kang-4a704b179/'
             Codepen:
                 icon: fab fa-codepen
                 url: 'https://codepen.io/recordboy'
+            linkedin:
+                icon: fab fa-linkedin-in
+                url: 'https://www.linkedin.com/in/seongju-kang-4a704b179/'
+            Instagram:
+                icon: fab fa-instagram
+                url: 'https://www.instagram.com/'
+            Velog:
+                icon: fas fa-pencil-alt
+                url: 'https://velog.io/@recordboy'
             RSS:
                 icon: fas fa-rss
                 url: 'https://recordboy.github.io/rss2.xml'
