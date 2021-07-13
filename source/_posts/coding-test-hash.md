@@ -1,10 +1,9 @@
 ---
-title: [Algorithm] 프로그래머스 코딩테스트 풀이 - 해시
+title: "[Algorithm] 프로그래머스 코딩테스트 풀이 - 해시"
 date: 2021-07-13 10:30:22
 categories: [front-end, javascript]
 tags: [algorithm, javascript, hash]
-# thumbnail: "/gallery/thumbnail-javascript.png"
-toc: true
+# thumbnail: "/gallery/thumbnail-js.png"
 widgets:
   - type: toc
     position: left
@@ -17,9 +16,9 @@ sidebar:
     sticky: true
 ---
 
-# 코딩테스트 - 해시
-
 코딩테스트 플랫폼인 프로그래머스에서 해시 문제 및 풀이를 포스팅해보았다. 언어는 자바스크립트를 기준으로 작성하였다.
+
+<!-- more -->
 
 **해시**  
 해시란 데이터를 다루는 기술중 하나로서 해시함수를 이용하여 임의의 길이를 갖는 데이터를 고정된 길이의 데이터로 매핑하는 것을 말한다.
@@ -227,7 +226,3 @@ pop 장르는 3,100회 재생되었으며, pop 노래는 다음과 같습니다.
 #### 코드
 
 추가 내용 업로드 예정
-
-```javascript
-
-```
