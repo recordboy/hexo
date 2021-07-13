@@ -29,10 +29,10 @@ sidebar:
 ## 예제
 
 ```javascript
-var arr = ['a', 'b', 'c'];
+var arr = ["a", "b", "c"];
 
 arr.forEach(function (item) {
-    console.log(item);
+  console.log(item);
 });
 
 // a
@@ -41,16 +41,16 @@ arr.forEach(function (item) {
 ```
 
 ```javascript
-var arr = ['a', 'b', 'c'];
+var arr = ["a", "b", "c"];
 
 // 배열의 모든 요소에 EDIT라는 문자열을 더하기
 arr.forEach(function (item, index, array) {
-    array[index] = item + 'EDIT';
+  array[index] = item + "EDIT";
 });
 
 console.log(arr);
 ```
 
 ## References
-> [[JavaScript] Array 객체에서 놓치기 쉬운 6개의 메서드](https://programmingsummaries.tistory.com/357)  
 
+> [[JavaScript] Array 객체에서 놓치기 쉬운 6개의 메서드](https://programmingsummaries.tistory.com/357)
